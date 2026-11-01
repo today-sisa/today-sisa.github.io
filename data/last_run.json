@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 120,
+   "count": 116,
    "raw_entries": 120
   },
   {
@@ -15,8 +15,8 @@
   {
    "source": "SBS",
    "via": "direct",
-   "count": 16,
-   "raw_entries": 16
+   "count": 15,
+   "raw_entries": 15
   },
   {
    "source": "JTBC",
@@ -33,25 +33,25 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 86,
+   "count": 87,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 96,
+   "count": 89,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 92,
+   "count": 89,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 88,
+   "count": 92,
    "raw_entries": 100
   },
   {
@@ -63,93 +63,97 @@
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 97,
+   "count": 98,
    "raw_entries": 100
   }
  ],
  "notes": [],
  "candidates_by_source": {
-  "연합뉴스": 13,
-  "연합뉴스TV": 13,
-  "SBS": 13,
-  "JTBC": 13,
-  "YTN": 13,
-  "KBS": 13,
-  "MBC": 12
+  "연합뉴스": 18,
+  "연합뉴스TV": 17,
+  "SBS": 17,
+  "JTBC": 17,
+  "YTN": 17,
+  "KBS": 17,
+  "MBC": 17
  },
- "model": "gemini-flash-lite-latest",
+ "model": "gemini-flash-latest",
  "picks": [
   {
    "rank": 1,
    "type": "debate",
-   "source": "MBC",
-   "title": "쏟아지는 AI 음악·책‥\"내 작품도 무단 학습?\""
+   "source": "YTN",
+   "title": "공정위 점검도 비껴간 교복 담합...교육청, 감사 착수"
   },
   {
    "rank": 2,
-   "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "중국도 이제 노령화 걱정…노인부양비율, 아동부양비율 첫 추월"
+   "type": "debate",
+   "source": "KBS",
+   "title": "“비싸고 칙칙한 롱패딩 누가 입어요?”…10대들, 스파오로 갈아탄 이유는? [잇슈#태그]"
   },
   {
    "rank": 3,
    "type": "useful",
    "source": "SBS",
-   "title": "'와르르' 도로 뒤덮자 너도나도…펼쳐진 광경"
+   "title": "\"떡 먹으려고\" 10시간 대기…'열풍' 숨은 이유?"
   },
   {
    "rank": 4,
    "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "31호 태풍 '인파' 북상…10월 태풍 어디로?"
+   "source": "SBS",
+   "title": "\"바이낸스 해킹은 북한 소행\"…FBI 공식 확인"
   },
   {
    "rank": 5,
-   "type": "useful",
-   "source": "KBS",
-   "title": "주말 핼러윈 ‘인파 관리’…현장 상황실 가동"
+   "type": "debate",
+   "source": "SBS",
+   "title": "\"애는 남편이 보라 해\"…눈치 준 상사에 \"괴롭힘 맞다\""
   }
  ],
  "items": [
   {
    "rank": 1,
    "body_chars": 0,
-   "video_candidates": 1,
+   "video_candidates": 2,
    "video": true,
    "problems": []
   },
   {
    "rank": 2,
    "body_chars": 0,
-   "video_candidates": 0,
-   "video": false,
+   "video_candidates": 1,
+   "video": true,
    "problems": []
   },
   {
    "rank": 3,
-   "body_chars": 1230,
-   "video_candidates": 0,
-   "video": false,
-   "problems": []
-  },
-  {
-   "rank": 4,
-   "body_chars": 1076,
+   "body_chars": 1780,
    "video_candidates": 1,
    "video": true,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 바람이 불어 바다로 나가는 것…",
-    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 태풍이 힘을 잃고 사라지는 것…"
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 문이 열리자마자 떡을 사러 달려감…",
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 떡을 만들려고 새벽에 운동하는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 떡을 팔려고 멀리까지 달려가는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 내게 의미 있는 곳에만 정확하게 씀…",
+    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 물건을 하나도 사지 않고 아끼는 소비…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 15자 이내로): 가장 싼 물건만 골라서 사 모으는 소…"
    ]
   },
   {
+   "rank": 4,
+   "body_chars": 1628,
+   "video_candidates": 6,
+   "video": true,
+   "problems": []
+  },
+  {
    "rank": 5,
-   "body_chars": 1137,
+   "body_chars": 1593,
    "video_candidates": 1,
    "video": true,
    "problems": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-10-30T11:13+09:00"
+ "finished_at": "2026-11-02T07:24+09:00"
 }

@@ -1,0 +1,20 @@
+{
+ "handles": [
+  "@ytnnews24",
+  "@kbsnews",
+  "@MBCNEWS11",
+  "@sbsnews8",
+  "@yonhapnewstv23",
+  "@jtbc_news",
+  "@VIDEOMUG"
+ ],
+ "ids": {
+  "UChlgI3UHCOnwUGzWzbJ3H5w": "YTN",
+  "UCVUjd2vUGrWvLOP9ni9nHCQ": "KBS News",
+  "UCF4Wxdo3inmxP-Y59wXDsFw": "MBC News",
+  "UCkinYTS9IHqOEwR1Sze2JTw": "SBS 뉴스",
+  "UCTHCOPwqNfZ0uiKOvFyhGwg": "연합뉴스TV",
+  "UCsU-I-vHLiaMfV_ceaYz5rQ": "JTBC News",
+  "UCvJLW0RinU1SUfruZK8ElYw": "비디오머그"
+ }
+}
