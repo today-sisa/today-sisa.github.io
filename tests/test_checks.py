@@ -55,4 +55,18 @@ mixed = g.apply_banned(cfg, many)
 dist = g.RUN["candidates_by_source"]
 print(dist)
 assert len(mixed) == min(cfg["max_candidates"], len(many)) and all(dist[s] == 5 for s in ["YTN", "KBS", "SBS"])
+# 말투 검사
+yo = copy.deepcopy(ws)
+yo["main"]["summary"] = ["노인이 늘어났어요.", "비율이 처음 역전됐다.", "변화가 생기고 있어요."]
+tp = g.tone_problems(yo)
+print(tp)
+assert tp and "역전됐다" in tp[0]
+yo["main"]["summary"][1] = "비율이 처음 역전됐어요."
+for x in yo["main"]["facts_opinions"]: x["sentence"] = x["sentence"].rstrip(".") + "요."
+for x in yo["main"]["facts_opinions"]: x["reason"] = "그래요."
+yo["main"]["challenge"] = "생각해 보세요."
+a = yo["main"]["activity"]
+a["issue"] = "막아야 할까요?"; a["choose_question"] = "어느 쪽이에요?"; a["other_side_question"] = "좋은 점은요?"
+a["side_a"]["reasons"] = ["집중할 수 있어요."]; a["side_b"]["reasons"] = ["연습이 필요해요."]
+assert g.tone_problems(yo) == [], g.tone_problems(yo)
 print("추가 검사 통과")

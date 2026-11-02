@@ -566,18 +566,40 @@ def check_worksheet(cfg: dict, ws: dict, pick: dict, source_text: str) -> list[s
     return problems
 
 
+YO_END = re.compile(r"요[.?!…~)\"'’”]*$")
+
+
+def tone_problems(ws: dict) -> list[str]:
+    """아이가 읽는 문장이 '~요' 체인지 검사 (낱말 뜻·육하원칙·이름 같은 짧은 말은 제외)"""
+    m = ws.get("main") or {}
+    act = m.get("activity") or {}
+    texts = list(m.get("summary", []))
+    for x in m.get("facts_opinions", []):
+        texts += [x.get("sentence", ""), x.get("reason", "")]
+    for side in ("side_a", "side_b"):
+        texts += list((act.get(side) or {}).get("reasons", []))
+    texts += [v for k, v in act.items() if isinstance(v, str) and (k.endswith("_question") or k == "issue")]
+    if m.get("challenge"):
+        texts.append(m["challenge"])
+    bad = [t for t in texts if isinstance(t, str) and t.strip() and not YO_END.search(t.strip())]
+    return [f"'~요' 체가 아닌 문장 {len(bad)}개 (모두 '~요'로 끝나게): " + " / ".join(b[:18] for b in bad[:4])] if bad else []
+
+
 def make_worksheet(cfg, pick, by_id, body, videos, d) -> dict:
     prompt = build_worksheet_prompt(pick, by_id, body, videos, d)
     source_text = prompt  # 자료 전체를 숫자 검사 기준으로
     mock = f"worksheet_{pick['type']}.json" if (FIXTURES / f"worksheet_{pick['type']}.json").exists() else "worksheet.json"
     ws = gemini(cfg, prompt, mock, temperature=0.5)
     problems = check_worksheet(cfg, ws, pick, source_text)
-    if problems and not MOCK:
-        log(f"{pick['rank']}순위 학습지 검사 문제 → 한 번 다시 요청:", problems)
-        fix = prompt + "\n\n[이전 출력의 문제점 — 모두 고쳐서 다시 출력]\n- " + "\n- ".join(problems)
-        ws = gemini(cfg, fix, "worksheet.json", temperature=0.3)
-        problems = check_worksheet(cfg, ws, pick, source_text)
-    ws["_problems"] = problems
+    tone = tone_problems(ws)
+    if (problems or tone) and not MOCK:
+        log(f"{pick['rank']}순위 학습지 검사 문제 → 한 번 다시 요청:", problems + tone)
+        fix = prompt + "\n\n[이전 출력의 문제점 — 모두 고쳐서 다시 출력]\n- " + "\n- ".join(problems + tone)
+        ws2 = gemini(cfg, fix, "worksheet.json", temperature=0.3)
+        p2 = check_worksheet(cfg, ws2, pick, source_text)
+        if len(p2) <= len(problems):  # 다시 받은 것이 더 나쁘지 않으면 바꿈
+            ws, problems = ws2, p2
+    ws["_problems"] = problems  # 말투 문제는 교사 화면 경고에는 넣지 않음 (내용 오류만 표시)
     return ws
 
 
