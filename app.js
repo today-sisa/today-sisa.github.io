@@ -56,7 +56,7 @@ function render(st){
   window.scrollTo({top:0});
 }
 window.addEventListener('popstate', e => { if(e.state) render(e.state); });
-const TEACHER_VIEWS = new Set(['teacherHome','teacherMode','guide','share','results','classSetup','classReady','devNote']);
+const TEACHER_VIEWS = new Set(['teacherHome','teacherMode','guide','share','results','classSetup','classReady','devNote','classLog','studentLog','pastNews','pastDay']);
 document.getElementById('backBtn').onclick = () => history.back();
 document.getElementById('devBtn').onclick = () => go('devNote', {from: (history.state && history.state.view) || ''});
 document.getElementById('homeBtn').onclick = () => go(soloMode && ITEM ? 'soloHome' : CLASS && STUDENT ? 'studentHome' : 'home', soloMode && ITEM ? {r:ITEM.rank} : {});
@@ -76,7 +76,14 @@ function banners(forTeacher, it){
   return h;
 }
 const footer = () => `<p class="foot">뉴스 선정과 학습지는 AI가 자동으로 만들었어요. 수업 전 선생님 검토를 권장합니다. 기사 원문은 각 언론사에 있으며, 이 사이트는 새로 쓴 요약과 링크만 제공합니다.</p>`;
-const reviewLink = it => `${BASE}?date=${DAY.date}&r=${it.rank}&v=1`;
+const reviewLink = (it, D = DAY) => `${BASE}?date=${D.date}&r=${it.rank}&v=1`;
+const dayCache = {};
+async function dayFor(date){   // 지난 날짜 학습지 불러오기 (없으면 오늘 것)
+  if(!date || date === DAY.date) return DAY;
+  if(!dayCache[date]) dayCache[date] = normalize(await getJSON(`data/archive/${date}.json`));
+  return dayCache[date];
+}
+const fmtDate = d => { const [y,m,dd] = d.split('-').map(Number); return `${m}월 ${dd}일(${'일월화수목금토'[new Date(y,m-1,dd).getDay()]})`; };
 const videoLink = v => v ? `https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}` : '';
 
 /* ───────── 첫 화면 ───────── */
@@ -189,6 +196,7 @@ VIEWS.teacherHome = () => {
       ? `<b>우리 반: ${esc(mine.name)}</b>${mine.code ? ` · 반코드 <b>${esc(mine.code)}</b>` : ''}
          <p class="muted" id="topicNow">오늘 주제: ${topicRank ? `${topicRank}순위` : '아직 고르지 않음 (고를 때까지 아이들은 기다리는 화면을 봐요)'}</p>
          <div class="row"><button class="btn sun small-btn" id="toRes" type="button">답 모아 보기</button>
+           <button class="btn ghost small-btn" id="toLog" type="button">우리 반 기록</button>
            <button class="btn ghost small-btn" id="toQR" type="button">QR·반 링크 보기</button>
            ${mine.sheetUrl ? `<a class="btn ghost small-btn" href="${esc(mine.sheetUrl)}" target="_blank" rel="noopener">내 답안 시트 열기</a>` : ''}</div>`
       : `<b>먼저 반을 만들어 주세요 (처음 한 번 3분)</b><p class="muted">내 구글 시트를 연결하면 반코드와 QR이 생기고, 아이들 답이 시트로 모여요.</p>
@@ -218,12 +226,15 @@ VIEWS.teacherHome = () => {
         </div>
         ${it.needs_review ? `<p class="muted" style="color:var(--warn)">자동 검사에서 확인이 필요한 부분이 있어요. 교사용에서 확인해 주세요.</p>` : ''}
       </div></li>`).join('')}</ol>
+    <div class="row" style="justify-content:center"><button class="btn ghost" id="toPast" type="button">📚 지난 뉴스 · 학습지 다시 보기</button></div>
     <details class="panel"><summary>오늘 뉴스가 수업에 맞지 않나요?</summary>
       <p class="muted">이유를 보내 주시면 선정 지침을 고치는 데 씁니다.</p>
       <div class="row">${['너무 어려움','부적절함','지루함','기타'].map(r => `<button class="btn ghost small-btn" data-reason="${r}" type="button">${r}</button>`).join('')}</div>
       <input type="text" id="fbMemo" placeholder="한 줄 메모 (선택)"><p class="muted" id="fbMsg"></p>
     </details>${footer()}`);
   chMode.onclick = () => go('teacherMode');
+  toPast.onclick = () => go('pastNews');
+  if(mine) toLog.onclick = () => go('classLog', {tab:'date'});
   if(mine){ toQR.onclick = () => go('classReady'); toRes.onclick = () => go('results', {r: topicRank || 1}); refreshTopic(mine); }
   else if(!paper) toSetup.onclick = () => go('classSetup');
   document.querySelectorAll('[data-topic]').forEach(b => b.onclick = () => setTopic(mine, Number(b.dataset.topic), b));
@@ -371,20 +382,22 @@ const pct = (n, d) => d ? Math.round(n / d * 100) : 0;
 const bar = (label, n, total, cls = '') => `<div class="bar-row"><div class="bar-label">${label}</div>
   <div class="bar-track"><div class="bar-fill ${cls}" style="width:${pct(n,total)}%"></div></div><div class="bar-num">${n}명${total ? ` · ${pct(n,total)}%` : ''}</div></div>`;
 
-VIEWS.results = async ({r}) => {
+VIEWS.results = async ({r, date}) => {
   if(!teacherOK()) return go('teacherGate', {}, true);
   clearInterval(resTimer);
   const mine = LS.get('myClass', null);
   if(!mine) return go('classSetup', {}, true);
-  const it = itemByRank(r);
+  let D; try{ D = await dayFor(date); }catch(e){ return show('<p class="muted">그날 학습지를 불러오지 못했어요.</p>'); }
+  const past = D !== DAY;
+  const it = D.items.find(x => x.rank === Number(r)) || D.items[0];
   const hideNames = LS.get('hideNames', false);
-  show(`<div class="tabs" role="tablist">${DAY.items.filter(full).map(x => `<button role="tab" aria-selected="${x.rank===it.rank}" data-rr="${x.rank}" type="button">${x.rank}순위</button>`).join('')}</div>
+  show(`${past ? `<p class="muted">${fmtDate(D.date)} 기록</p>` : ''}<div class="tabs" role="tablist">${D.items.filter(full).map(x => `<button role="tab" aria-selected="${x.rank===it.rank}" data-rr="${x.rank}" type="button">${x.rank}순위</button>`).join('')}</div>
     <h2>${esc(it.title)}</h2>
     <div class="row"><label class="muted"><input type="checkbox" id="hideN" ${hideNames?'checked':''}> 이름 가리기 (TV에 띄울 때)</label>
-      <label class="muted"><input type="checkbox" id="autoR" checked> 15초마다 새로고침</label>
+      <label class="muted"><input type="checkbox" id="autoR" ${past ? '' : 'checked'}> 15초마다 새로고침</label>
       <button class="btn ghost small-btn" id="reload" type="button">지금 새로고침</button></div>
     <div id="resBody"><p class="muted">답을 불러오는 중이에요.</p></div>`, true);
-  document.querySelectorAll('[data-rr]').forEach(b => b.onclick = () => go('results', {r:Number(b.dataset.rr)}, true));
+  document.querySelectorAll('[data-rr]').forEach(b => b.onclick = () => go('results', {r:Number(b.dataset.rr), date: past ? D.date : undefined}, true));
   hideN.onchange = () => { LS.set('hideNames', hideN.checked); load(); };
   reload.onclick = () => load();
   const myView = history.state;
@@ -395,15 +408,15 @@ VIEWS.results = async ({r}) => {
     const m = LS.get('myClass', mine);
     const body = document.getElementById('resBody'); if(!body) return;
     let res = null;
-    try{ res = await (await fetch(`${m.url}?action=answers&date=${DAY.date}&key=${encodeURIComponent(m.key || '')}`)).json(); }
+    try{ res = await (await fetch(`${m.url}?action=answers&date=${D.date}&key=${encodeURIComponent(m.key || '')}`)).json(); }
     catch(e){ body.innerHTML = '<p class="muted">시트에 연결하지 못했어요. 인터넷 연결을 확인해 주세요.</p>'; return; }
     if(!res.ok){ return keyHelp(body, m); }
-    renderResults(body, it, (res.rows||[]).filter(x => (x.detail && x.detail.rank === it.rank) || String(x.title).startsWith(`[${it.rank}순위]`)), document.getElementById('hideN').checked);
+    renderResults(body, it, (res.rows||[]).filter(x => rankOf(x) === it.rank), document.getElementById('hideN').checked);
   }
   load();
 };
 
-async function keyHelp(body, m){
+async function keyHelp(body, m, onDone = () => VIEWS.results(history.state.params)){
   let ping = {};
   try{ ping = await (await fetch(m.url + '?action=ping')).json(); }catch(e){}
   if(!(ping.version >= 2)){
@@ -420,7 +433,7 @@ async function keyHelp(body, m){
       mkKey.disabled = true;
       const key = await initKey(m.url);
       if(!key){ mkMsg.textContent = '만들지 못했어요. 다시 눌러 주세요.'; mkKey.disabled = false; return; }
-      LS.set('myClass', {...m, key}); VIEWS.results(history.state.params);
+      LS.set('myClass', {...m, key}); onDone();
     };
     return;
   }
@@ -429,7 +442,7 @@ async function keyHelp(body, m){
     <input type="text" id="keyIn" autocomplete="off" placeholder="열쇠 붙여 넣기">
     <div class="row"><button class="btn" id="keyGo" type="button">확인</button><span class="muted" id="keyMsg"></span></div></div>`;
   keyGo.onclick = () => { const k = keyIn.value.trim(); if(!k){ keyMsg.textContent = '열쇠를 붙여 넣어 주세요.'; return; }
-    LS.set('myClass', {...m, key:k}); VIEWS.results(history.state.params); };
+    LS.set('myClass', {...m, key:k}); onDone(); };
 }
 
 function renderResults(body, it, rows, hide){
@@ -485,6 +498,154 @@ function renderResults(body, it, rows, hide){
   body.innerHTML = h;
 }
 
+/* ───────── 지난 뉴스 (모든 선생님) ───────── */
+VIEWS.pastNews = () => {
+  if(!teacherOK()) return go('teacherGate', {}, true);
+  const list = INDEX.filter(e => !e.hidden && e.date !== DAY.date);
+  show(`<h2>📚 지난 뉴스</h2><p class="muted">날짜를 누르면 그날의 뉴스 5개를 다시 보고, 학습지를 인쇄할 수 있어요.</p>
+    ${list.length ? `<ul class="rank-list">${list.map(e => `<li><span class="num" style="width:auto;border-radius:10px;padding:0 8px">${fmtDate(e.date)}</span><div>
+      <button class="link-btn" data-day="${e.date}" type="button" style="font-size:17px;text-align:left">${(e.titles||[e.title]).map(esc).join(' · ')}</button></div></li>`).join('')}</ul>`
+      : '<div class="panel"><p>아직 지난 뉴스가 없어요. 내일부터 하루씩 쌓여요.</p></div>'}`);
+  document.querySelectorAll('[data-day]').forEach(b => b.onclick = () => go('pastDay', {date:b.dataset.day}));
+};
+VIEWS.pastDay = async ({date}) => {
+  if(!teacherOK()) return go('teacherGate', {}, true);
+  let D; try{ D = await dayFor(date); }catch(e){ return show('<p class="muted">그날 학습지를 불러오지 못했어요.</p>'); }
+  const mine = getMode() === 'web' ? LS.get('myClass', null) : null;
+  show(`<h2>${fmtDate(D.date)}의 뉴스</h2>
+    <ol class="rank-list">${D.items.map(it => `<li><span class="num">${it.rank}</span><div>
+      <span class="tag ${it.type}">${TYPE_NAME[it.type]||''}</span><span class="tag cat">${esc(it.category)}</span>
+      <h3 style="margin-top:6px">${esc(it.title)}</h3><p>${(it.summary||[]).map(esc).join(' ')}</p>
+      <div class="row">${full(it) ? `<button class="btn sun small-btn" data-pp="${it.rank}" type="button">학습지 인쇄</button>
+        <button class="btn ghost small-btn" data-pg="${it.rank}" type="button">교사용</button>
+        ${mine ? `<button class="btn ghost small-btn" data-pr="${it.rank}" type="button">그날 답 보기</button>` : ''}` : ''}
+        ${it.video ? `<a class="btn ghost small-btn" href="${videoLink(it.video)}" target="_blank" rel="noopener">영상</a>` : ''}
+        <a class="btn ghost small-btn" href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문</a></div>
+    </div></li>`).join('')}</ol>`);
+  document.querySelectorAll('[data-pp]').forEach(b => b.onclick = () => printSheet(D.items.find(x => x.rank === Number(b.dataset.pp)), false, D));
+  document.querySelectorAll('[data-pg]').forEach(b => b.onclick = () => go('guide', {r:Number(b.dataset.pg), date:D.date}));
+  document.querySelectorAll('[data-pr]').forEach(b => b.onclick = () => go('results', {r:Number(b.dataset.pr), date:D.date}));
+};
+
+/* ───────── 우리 반 기록 (웹앱 학습지) ───────── */
+const rankOf = x => Number((x.detail && x.detail.rank) || (/^\[(\d)순위\]/.exec(x.title || '') || [])[1] || 0);
+const titleOf = x => String(x.title || '').replace(/^\[\d순위\]\s*/, '');
+function foOf(x){   // [맞힌 수, 문장 수]
+  if(x.detail && Array.isArray(x.detail.fo) && x.detail.fo.length) return [x.detail.fo.filter(Boolean).length, x.detail.fo.length];
+  const m = /(\d+)\s*\/\s*(\d+)/.exec(x.fo || ''); return m ? [Number(m[1]), Number(m[2])] : [0, 0];
+}
+const stuKey = x => `${x.number}|${x.name}`;
+const LOG_PAGE = 20;
+async function loadLog(m, count, onProgress){
+  const dates = INDEX.filter(e => e.date <= todayKST()).map(e => e.date).slice(0, count);
+  const tag = m.url.slice(-14);
+  const out = {};
+  let done = 0, bad = false;
+  const one = async date => {
+    const ck = `log:${tag}:${date}`, c = LS.get(ck, null);
+    if(c && c.at > date){ out[date] = c.rows; }      // 그날이 지난 뒤 받아 둔 기록은 바뀌지 않음
+    else{
+      try{
+        const r = await (await fetch(`${m.url}?action=answers&date=${date}&key=${encodeURIComponent(m.key || '')}`)).json();
+        if(!r.ok){ bad = true; return; }
+        out[date] = r.rows || [];
+        LS.set(ck, {at: todayKST(), rows: out[date]});
+      }catch(e){ out[date] = null; }
+    }
+    done++; onProgress && onProgress(done, dates.length);
+  };
+  for(let i = 0; i < dates.length; i += 4) await Promise.all(dates.slice(i, i + 4).map(one));
+  if(bad) throw new Error('key');
+  // 같은 날 같은 학생이 여러 번 내면 마지막 것만
+  const byDate = {};
+  dates.forEach(d => { if(!out[d]) return; const mp = new Map(); out[d].forEach(x => mp.set(stuKey(x), x)); byDate[d] = [...mp.values()]; });
+  return {dates, byDate, more: INDEX.filter(e => e.date <= todayKST()).length > dates.length};
+}
+
+VIEWS.classLog = async ({tab = 'date', count = LOG_PAGE}) => {
+  if(!teacherOK()) return go('teacherGate', {}, true);
+  const m = LS.get('myClass', null);
+  if(!m) return go('classSetup', {}, true);
+  const tabs = [['date','날짜별'],['student','학생별'],['week','주별 흐름']];
+  show(`<h2>우리 반 기록</h2>
+    <div class="tabs" role="tablist">${tabs.map(([k,v]) => `<button role="tab" aria-selected="${k===tab}" data-lt="${k}" type="button">${v}</button>`).join('')}</div>
+    <div id="logBody"><p class="muted" id="logMsg">기록을 불러오는 중이에요.</p></div>`, true);
+  document.querySelectorAll('[data-lt]').forEach(b => b.onclick = () => go('classLog', {tab:b.dataset.lt, count}, true));
+  let L;
+  try{ L = await loadLog(m, count, (d, n) => { const e = document.getElementById('logMsg'); if(e) e.textContent = `기록을 불러오는 중이에요. (${d}/${n})`; }); }
+  catch(e){ return keyHelp(document.getElementById('logBody'), m, () => VIEWS.classLog({tab, count})); }
+  const body = document.getElementById('logBody'); if(!body) return;
+  const moreBtn = L.more ? `<div class="row" style="justify-content:center"><button class="btn ghost" id="more" type="button">더 지난 기록 불러오기</button></div>` : '';
+  const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
+
+  if(tab === 'date'){
+    body.innerHTML = `<ul class="rank-list">${L.dates.map(d => {
+      const rows = L.byDate[d];
+      if(rows === undefined) return `<li><span class="num log-date">${fmtDate(d)}</span><div class="muted">불러오지 못했어요</div></li>`;
+      const ranks = {}; rows.forEach(x => { const r = rankOf(x); if(r) ranks[r] = (ranks[r]||0) + 1; });
+      const main = Object.entries(ranks).sort((a,b) => b[1]-a[1])[0];
+      const title = main ? titleOf(rows.find(x => rankOf(x) === Number(main[0]))) : '';
+      const f = rows.reduce((s, x) => { const [a,b] = foOf(x); return [s[0]+a, s[1]+b]; }, [0,0]);
+      return `<li><span class="num log-date">${fmtDate(d)}</span><div>
+        ${rows.length ? `<button class="link-btn" data-ld="${d}" data-lr="${main ? main[0] : 1}" type="button" style="font-size:17px;text-align:left">${main ? `${main[0]}순위 · ` : ''}${esc(title)}</button>
+          <p class="muted">낸 학생 ${rows.length}명${f[1] ? ` · 사실·의견 ${pct(f[0], f[1])}%` : ''}</p>`
+          : '<p class="muted">낸 학생이 없어요</p>'}</div></li>`;
+    }).join('')}</ul>${moreBtn}`;
+    body.querySelectorAll('[data-ld]').forEach(b => b.onclick = () => go('results', {r:Number(b.dataset.lr), date:b.dataset.ld}));
+  }
+
+  if(tab === 'student'){
+    const S = new Map();
+    L.dates.forEach(d => (L.byDate[d] || []).forEach(x => {
+      const k = stuKey(x); if(!S.has(k)) S.set(k, {number:x.number, name:x.name, days:0, f:[0,0]});
+      const s = S.get(k); s.days++; const [a,b] = foOf(x); s.f[0]+=a; s.f[1]+=b;
+    }));
+    const list = [...S.entries()].sort((a,b) => Number(a[1].number) - Number(b[1].number));
+    const n = L.dates.filter(d => L.byDate[d]).length;
+    body.innerHTML = list.length ? `<p class="muted">최근 ${n}일 기록 · 이름을 누르면 그 학생의 답을 모아 볼 수 있어요.</p>
+      <div class="panel">${list.map(([k, s]) => `<div class="stu-row"><button class="link-btn" data-sk="${esc(k)}" type="button">${esc(s.number)}번 ${esc(s.name)}</button>
+        <span class="muted">참여 ${s.days}일${s.f[1] ? ` · 사실·의견 ${pct(s.f[0], s.f[1])}%` : ''}</span></div>`).join('')}</div>${moreBtn}`
+      : `<div class="panel"><p>아직 낸 학생이 없어요.</p></div>`;
+    body.querySelectorAll('[data-sk]').forEach(b => b.onclick = () => go('studentLog', {k:b.dataset.sk, count}));
+  }
+
+  if(tab === 'week'){
+    const W = new Map();
+    L.dates.forEach(d => {
+      const rows = L.byDate[d]; if(!rows) return;
+      const dt = new Date(d); const mon = new Date(dt); mon.setDate(dt.getDate() - ((dt.getDay() + 6) % 7));
+      const wk = mon.toISOString().slice(0,10);
+      if(!W.has(wk)) W.set(wk, {stu:new Set(), subs:0, f:[0,0]});
+      const w = W.get(wk); rows.forEach(x => { w.stu.add(stuKey(x)); w.subs++; const [a,b] = foOf(x); w.f[0]+=a; w.f[1]+=b; });
+    });
+    const weeks = [...W.entries()].sort((a,b) => a[0] < b[0] ? -1 : 1);
+    const maxS = Math.max(1, ...weeks.map(([,w]) => w.subs));
+    body.innerHTML = weeks.length ? `<div class="panel"><h3>주별 낸 횟수</h3>${weeks.map(([k,w]) =>
+        bar(`${fmtDate(k).replace(/\(.\)/,'')} 주 <span class="muted">(${w.stu.size}명)</span>`, w.subs, maxS)).join('').replace(/ · \d+%/g,'').replace(/(\d+)명<\/div>/g, '$1번</div>')}</div>
+      <div class="panel"><h3>주별 사실·의견 정답률</h3>${weeks.map(([k,w]) => w.f[1]
+        ? `<div class="bar-row"><div class="bar-label">${fmtDate(k).replace(/\(.\)/,'')} 주</div><div class="bar-track"><div class="bar-fill ok" style="width:${pct(w.f[0],w.f[1])}%"></div></div><div class="bar-num">${pct(w.f[0],w.f[1])}%</div></div>` : '').join('')}</div>${moreBtn}`
+      : `<div class="panel"><p>아직 기록이 없어요.</p></div>`;
+  }
+  const mb = document.getElementById('more'); if(mb) mb.onclick = () => go('classLog', {tab, count: count + LOG_PAGE}, true);
+};
+
+VIEWS.studentLog = async ({k, count = LOG_PAGE}) => {
+  if(!teacherOK()) return go('teacherGate', {}, true);
+  const m = LS.get('myClass', null);
+  if(!m) return go('classSetup', {}, true);
+  show(`<p class="muted" style="margin-top:20px">불러오는 중이에요.</p>`);
+  let L; try{ L = await loadLog(m, count); }catch(e){ return go('classLog', {tab:'student'}, true); }
+  const items = [];
+  L.dates.forEach(d => (L.byDate[d] || []).forEach(x => { if(stuKey(x) === k) items.push({d, x}); }));
+  const [num, name] = k.split('|');
+  const f = items.reduce((s, {x}) => { const [a,b] = foOf(x); return [s[0]+a, s[1]+b]; }, [0,0]);
+  show(`<h2>${esc(num)}번 ${esc(name)}</h2>
+    <p class="muted">최근 ${L.dates.length}일 중 <b>${items.length}일</b> 참여${f[1] ? ` · 사실·의견 정답률 <b>${Math.round(f[0]/f[1]*100)}%</b>` : ''}</p>
+    ${items.map(({d, x}) => `<div class="panel"><p class="muted">${fmtDate(d)} · ${rankOf(x) || '-'}순위 · 낱말 ${esc((x.words||'').split(' ')[0])} · 사실·의견 ${esc((x.fo||'').split(' ')[0])}</p>
+      <h3 style="margin-top:2px">${esc(titleOf(x))}</h3>
+      ${(x.answers||[]).filter(q => q.a).map(q => `<p class="muted">${esc(q.q)}</p><div class="answer">${esc(q.a)}</div>`).join('')}</div>`).join('') || '<div class="panel"><p>낸 기록이 없어요.</p></div>'}`, true);
+};
+
 /* ───────── 교사용 자료 ───────── */
 function questionLabel(it, k){
   const a = it.activity || {};
@@ -492,10 +653,11 @@ function questionLabel(it, k){
     wonder_question:a.wonder_question, why_question:a.why_question, rewrite_question:a.rewrite_question,
     challenge:it.challenge}[k] || k;
 }
-VIEWS.guide = ({r}) => {
+VIEWS.guide = async ({r, date}) => {
   if(!teacherOK()) return go('teacherGate', {}, true);
-  const it = itemByRank(r), t = it.teacher || {};
-  show(`${banners(true, it)}<h2>${esc(it.title)}</h2><p class="muted">${r}순위 · ${TYPE_NAME[it.type]} · 교사용</p>
+  let D; try{ D = await dayFor(date); }catch(e){ return show('<p class="muted">그날 학습지를 불러오지 못했어요.</p>'); }
+  const it = D.items.find(x => x.rank === Number(r)) || D.items[0], t = it.teacher || {};
+  show(`${D === DAY ? banners(true, it) : ''}<h2>${esc(it.title)}</h2><p class="muted">${D === DAY ? '' : fmtDate(D.date) + ' · '}${r}순위 · ${TYPE_NAME[it.type]} · 교사용</p>
     <div class="row"><button class="btn" id="pr1" type="button">학습지 인쇄</button>
       <button class="btn ghost" id="pr2" type="button">정답·예시 답안 포함 인쇄</button></div>
     <div class="panel">
@@ -506,8 +668,8 @@ VIEWS.guide = ({r}) => {
       <h3>더 물어볼 질문</h3><ul>${(t.extra_questions||[]).map(q => `<li>${esc(q)}</li>`).join('')}</ul>
       <h3>지도할 때 주의할 점</h3><ul>${(t.cautions||[]).map(q => `<li>${esc(q)}</li>`).join('')}</ul>
     </div>`);
-  pr1.onclick = () => printSheet(it, false);
-  pr2.onclick = () => printSheet(it, true);
+  pr1.onclick = () => printSheet(it, false, D);
+  pr2.onclick = () => printSheet(it, true, D);
 };
 
 /* ───────── 반 만들기 ───────── */
@@ -969,11 +1131,11 @@ async function qrDataURL(text){
   const c = tmp.querySelector('canvas');
   return c ? c.toDataURL('image/png') : '';
 }
-async function printSheet(it, withAnswers){
+async function printSheet(it, withAnswers, D = DAY){
   const a = it.activity || {}, t = it.teacher || {};
   const lines = n => Array.from({length:n}, () => '<div class="lines"></div>').join('');
   const L3 = {who:'누가', what:'무엇을', why:'왜'};
-  const qr = await qrDataURL(reviewLink(it));
+  const qr = await qrDataURL(reviewLink(it, D));
   let act = '';
   if(it.type === 'useful') act = `<b class="t">③ 나와 어떤 관계가 있을까?</b>
       <p class="q">✏️ ${esc(a.impact_question)}</p>${lines(2)}<p class="q">✏️ ${esc(a.wonder_question)}</p>${lines(2)}`;
@@ -985,9 +1147,9 @@ async function printSheet(it, withAnswers){
       <p>제목들의 느낌에 ○ 하세요: ${(a.feeling_choices||[]).map(c => `(　) ${esc(c)}`).join('　')}</p>
       <p class="q">✏️ ${esc(a.why_question)}</p>${lines(2)}<p class="q">✏️ ${esc(a.rewrite_question)}</p>${lines(2)}`;
   let html = `${qr ? `<div class="qr"><img src="${qr}" alt="">뉴스 다시 보기</div>` : ''}<h1>${esc(it.title)}</h1>
-    <div class="meta"><span>오늘의 시사 · ${esc(DAY.date)} · 출처 ${esc(it.source)} (새로 쓴 요약, AI 생성)</span><span>____학년 ____번 이름: ________</span></div>
+    <div class="meta"><span>오늘의 시사 · ${esc(D.date)} · 출처 ${esc(it.source)} (새로 쓴 요약, AI 생성)</span><span>____학년 ____번 이름: ________</span></div>
     <div class="box" style="clear:both"><b class="t">① 오늘의 낱말 — 알맞은 뜻에 ○ 하세요</b>
-      <table>${(it.words||[]).map(w => `<tr><td style="width:16%"><b>${esc(w.word)}</b></td><td>${shuffleSeeded([w.meaning,...(w.wrong||[])], DAY.date+w.word).map(o=>`(　) ${esc(o)}`).join('　　')}</td></tr>`).join('')}</table></div>
+      <table>${(it.words||[]).map(w => `<tr><td style="width:16%"><b>${esc(w.word)}</b></td><td>${shuffleSeeded([w.meaning,...(w.wrong||[])], D.date+w.word).map(o=>`(　) ${esc(o)}`).join('　　')}</td></tr>`).join('')}</table></div>
     <div class="box"><b class="t">② 읽고 채우기</b><p>${(it.summary||[]).map(esc).join(' ')}</p>
       <table class="w3"><tr>${Object.values(L3).map(v=>`<th>${v}</th>`).join('')}</tr><tr>${Object.keys(L3).map(()=>'<td></td>').join('')}</tr></table>
       <p class="small">기사에 없으면 '기사에 없음'이라고 써요.</p></div>
