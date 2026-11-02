@@ -111,7 +111,8 @@ async function showStats(){
   if(!CFG.REGISTRY_URL) return;
   const BIG = CFG.STATS_MIN || 10;   // 이 숫자부터는 "함께 공부 중" 문구, 그 전에는 "함께 시작했어요"
   let st = LS.get('stats', null);
-  if(!st || Date.now() - st.at > 3 * 3600e3){
+  // 1명 이상이면 3시간, 0명이면 2분만 기억 (처음 들어온 직후 숫자가 늦게 뜨지 않게)
+  if(!st || Date.now() - st.at > (Number(st.teachers) >= 1 ? 3 * 3600e3 : 120e3)){
     try{ const j = await (await fetch(`${CFG.REGISTRY_URL}?action=stats`)).json(); if(j.ok && typeof j.teachers === 'number'){ st = {...j, at:Date.now()}; LS.set('stats', st); } }catch(e){}
   }
   const el = document.getElementById('stats');
@@ -182,7 +183,7 @@ function sayHello(mode){
   if(!CFG.REGISTRY_URL || LS.get('helloSent', false)) return;
   let id = LS.get('deviceId', '');
   if(!id){ id = randKey().replace(/[^A-Za-z0-9]/g, '').slice(0, 16); LS.set('deviceId', id); }
-  fetch(`${CFG.REGISTRY_URL}?action=hello&id=${id}&mode=${mode}`).then(r => r.json()).then(j => { if(j.ok) LS.set('helloSent', true); }).catch(() => {});
+  fetch(`${CFG.REGISTRY_URL}?action=hello&id=${id}&mode=${mode}`).then(r => r.json()).then(j => { if(j.ok){ LS.set('helloSent', true); LS.del('stats'); } }).catch(() => {});
 }
 
 VIEWS.teacherHome = () => {
