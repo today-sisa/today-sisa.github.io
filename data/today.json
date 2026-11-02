@@ -1,117 +1,127 @@
 {
  "version": 2,
- "date": "2026-11-02",
- "generated_at": "2026-11-02T07:24+09:00",
+ "date": "2026-11-03",
+ "generated_at": "2026-11-03T07:12+09:00",
  "hidden": false,
  "sample": false,
  "items": [
   {
-   "title": "교복 가격 짜고 치기, 어떻게 막을까?",
+   "title": "함께 성장하는 내년 살림살이",
    "words": [
     {
-     "word": "담합",
-     "meaning": "가격을 몰래 짜고 맞춤",
+     "word": "예산안",
+     "meaning": "나라 살림의 돈 계획",
      "wrong": [
-      "물건을 싸게 팖",
-      "새 물건을 만듦"
+      "세금을 내는 종이",
+      "새로 만든 법률안"
      ]
     },
     {
-     "word": "감사",
-     "meaning": "잘못이 없나 살펴봄",
+     "word": "시정연설",
+     "meaning": "나랏일 계획 발표",
      "wrong": [
-      "고마운 마음을 전함",
-      "물건값을 깎아 줌"
+      "법을 만드는 회의",
+      "선거 전 홍보 연설"
      ]
     }
    ],
    "summary": [
-    "교복 가게들이 몰래 짜고 가격을 올린 정황이 나왔습니다.",
-    "공정한 조사를 피하자 교육청이 직접 조사에 나섰습니다.",
-    "학생과 학부모 피해를 막기 위해 규칙을 강화해야 합니다."
+    "정부가 내년 예산안을 발표했어요.",
+    "모두 함께 성장하자고 강조했어요.",
+    "일자리와 안전에 돈을 써요."
    ],
    "five_w": {
-    "who": "교복 업체와 교육청",
+    "who": "대통령",
     "when": "2026년 11월 2일",
-    "where": "기사에 없음",
-    "what": "교복 가격 담합 감사 착수",
-    "how": "교육청이 직접 살펴봄",
-    "why": "가격을 짜고 올려 피해를 줘서"
+    "where": "국회",
+    "what": "내년 예산안 발표",
+    "how": "국회 시정연설",
+    "why": "예산안 통과 요청"
    },
    "activity": {
-    "issue": "교복 가격 정하기, 정부가 직접 정해야 할까?",
-    "side_a": {
-     "title": "정부 직접 관리",
-     "reasons": [
-      "가격을 짜고 올리는 일을 막아 학부모 부담을 덜어요."
-     ]
-    },
-    "side_b": {
-     "title": "가게 자율 결정",
-     "reasons": [
-      "가게들이 자유롭게 경쟁해야 좋은 옷을 만들어요."
-     ]
-    },
-    "choose_question": "나는 어느 쪽? 왜 그렇게 생각해?",
-    "other_side_question": "반대쪽 생각의 좋은 점 한 가지는?"
+    "impact_question": "우리 동네엔 어떤 도움이 될까요?",
+    "wonder_question": "더 알고 싶은 점 한 가지는요?"
    },
    "facts_opinions": [
     {
-     "sentence": "교육청이 교복 담합 조사를 시작했다.",
+     "sentence": "내년 예산안은 약 821조 원이에요.",
      "answer": "사실",
-     "reason": "실제 일어난 일이다."
+     "reason": "숫자로 확인돼요."
     },
     {
-     "sentence": "교복 가격은 지금보다 훨씬 비싸다.",
+     "sentence": "모두 함께 성장해야 해요.",
      "answer": "의견",
-     "reason": "생각이나 느낌이다."
+     "reason": "생각과 바람이에요."
     },
     {
-     "sentence": "업체들이 가격을 미리 의논했다.",
+     "sentence": "대통령이 국회에서 연설했어요.",
      "answer": "사실",
-     "reason": "실제로 드러난 행동이다."
+     "reason": "실제 일어난 일이에요."
     },
     {
-     "sentence": "교복은 모든 학생에게 꼭 필요하다.",
+     "sentence": "이 정책이 가장 훌륭해요.",
      "answer": "의견",
-     "reason": "사람마다 생각이 다르다."
+     "reason": "사람마다 달라요."
     }
    ],
-   "challenge": "교복 가격을 정직하게 정하려면 어떤 방법이 필요할까?",
+   "challenge": "예산을 어디에 쓰면 좋을까요?",
    "curriculum": [
-    "사회 5-1 법의 의미와 역할",
-    "사회 6-1 공정한 경쟁과 경제 활동"
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
    ],
    "teacher": {
     "sample_answers": {
-     "choose_question": "정부가 직접 관리해야 한다고 생각합니다. 가게들이 몰래 가격을 짜면 학생들이 비싼 값을 내고 피해를 보기 때문입니다.",
-     "other_side_question": "가게 자율에 맡기면 업체끼리 더 질 좋고 편한 교복을 만들기 위해 스스로 노력할 수 있습니다.",
-     "challenge": "학교와 학부모, 학생이 함께 참여하는 위원회를 만들어 가격이 적당한지 같이 결정하면 좋겠습니다."
+     "impact_question": "우리 동네에 안전 시설이나 도서관이 더 많이 생겨 생활이 편리해질 것 같아요.",
+     "wonder_question": "821조 원이라는 큰돈을 정부가 어떻게 마련하는지 궁금해요.",
+     "challenge": "어린이들이 안전하게 놀 수 있는 놀이터와 공원을 만드는 데 쓰면 좋겠어요."
     },
     "extra_questions": [
-     "만약 우리 학교 준비물 가격을 가게들이 마음대로 올린다면 어떤 일이 생길까요?",
-     "공정한 경쟁이 소비자에게 왜 중요한지 이야기해 볼까요?"
+     "예산이란 무엇이고 왜 정부는 국회의 동의를 받아야 할까요?",
+     "내가 나라의 살림을 맡는다면 가장 먼저 해결하고 싶은 문제는 무엇인가요?"
     ],
     "cautions": [
-     "교복 판매 업체를 무조건 나쁜 집단으로 몰아가기보다, 시장 경제에서 공정한 경쟁 규칙이 왜 필요한지에 초점을 맞추어 지도합니다."
+     "정치적 갈등보다는 국가 예산이 국민의 일상과 안전에 어떻게 쓰이는지에 초점을 맞춰 지도합니다.",
+     "조 단위의 큰 금액을 학생들이 직관적으로 이해하기 어려우므로, 가정의 한 달 용돈이나 살림살이에 빗대어 설명하면 좋습니다."
     ]
    },
    "rank": 1,
-   "type": "debate",
+   "type": "useful",
    "category": "정책",
-   "topic": "교복 가격 담합과 교육청 감사",
-   "reason": "학생 생활과 밀접한 교복을 매개로 시장경제의 공정 경쟁 가치와 가격 담합 문제를 토론하기 적합합니다.",
+   "topic": "821조 슈퍼 예산안 시정연설",
+   "reason": "정부의 내년도 예산안 편성과 재정 운용 방향을 다룬 핵심 정책 뉴스로 사회 교과 연계성이 높다.",
    "source": "YTN",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9md0hZUUtFcm5JUlB0YWJEZmlpTUtfWUJDRkpBM3hxRTJGUVBLMVdUV1k4T2pQNWJhQzJ4eDdYWmpkS1lJMEFCbWZfSDNveFhTeEZ3MjM0MkVuWHh6cXc?oc=5",
-   "original_title": "공정위 점검도 비껴간 교복 담합...교육청, 감사 착수",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBwRVNWVlEwYjFfV0FZcEFCRl9ZUkVmbXY2ck5vZ200NkcwdXAtNlRRQ0VvWnN1eVBkaVp6c0lQbWdTdFdwU2hRMHVEVGprYlZaREFFLUU3TDI5OGpGTUtLZkMtWEVDMHVzZjc2MDZHSQ?oc=5",
+   "original_title": "이 대통령, 821조 '슈퍼 예산' 시정연설...\"모두의 성장으로 대전환\"",
    "member_titles": [
-    "공정위 점검도 비껴간 교복 담합...교육청, 감사 착수"
+    "821조 원 역대 최대 예산안…\"모두의 성장으로 대전환\"",
+    "'성장' 36번 강조한 이 대통령…'주택' 넣고 '북한'은 뺐다",
+    "이 대통령, 821조 '슈퍼 예산' 시정연설...\"모두의 성장으로 대전환\"",
+    "이 대통령 \"모두의 성장으로 대전환\"‥'821조' 예산안 협조 당부",
+    "이 대통령, 오늘 예산안 시정연설…역대 최대 821조원 직접 설득",
+    "이 대통령, 오늘 ‘820조 규모’ 예산안 시정연설"
    ],
    "pub": "2026-11-02",
-   "related": [],
+   "related": [
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008827036&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008827037&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ISzA2YmVuTGtrdU5RQzlYRXk4R2R0RkRraUFNekRlbzdfTmpTdnpjZU51Q2ZhNFBLZVB3RjZQOUtTSklTNXhCOFJYVkVaTEdkUF9jLXJicFRJVzVGVFhTamk5T2xqVTZZT0NsV205UUEwNTN5eDJYMNIBeEFVX3lxTE1VM3hVR2FxZXFLYVNLVC1mbXppSDhYWkN0OEc1X29zSnJiZHh2Nnp1MUItRmV1RU9TZW0tN2p2LTd3M3ZhX1plcE9vRS1maEZjTEk4bEk4UU85RkhwVV9RZ1hrWl9EdEpLM25ZOHJUU1RTV0FicW5QWQ?oc=5"
+    },
+    {
+     "source": "JTBC",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tMEFMNjJ2VUJCcU9fMV9FMkcwSWd5UXlaNFB5RjNXeUtGeHdBam5OT0ZFNTJOUTR2R2VIa0ZUeXU1OHdOeTZGLUJ2MGx2dVZMaTZLSA?oc=5"
+    }
+   ],
    "video": {
-    "id": "QDDVRZVm5Yc",
-    "title": "공정위 점검도 비껴간 교복 담합...교육청, 감사 착수 / YTN",
+    "id": "HTQk9-s2rSo",
+    "title": "이 대통령, 821조 '슈퍼 예산' 시정연설...\"모두의 성장으로 대전환\" / YTN",
     "channel": "YTN",
     "kind": "news",
     "match": 1.0
@@ -120,345 +130,112 @@
    "review_notes": []
   },
   {
-   "title": "비싼 패딩 대신 실속 패딩을 입어요",
+   "title": "늘어나는 북한의 해커 부대",
    "words": [
     {
-     "word": "스파오",
-     "meaning": "옷을 빠르게 만드는 가게",
+     "word": "해커",
+     "meaning": "전산망에 몰래 드는 사람",
      "wrong": [
-      "운동화를 파는 가게",
-      "비싼 옷을 파는 가게"
+      "컴퓨터 고치는 기사",
+      "게임을 만드는 사람"
      ]
     },
     {
-     "word": "실속",
-     "meaning": "값은 싸고 실용적인 것",
+     "word": "양성",
+     "meaning": "가르쳐서 길러 냄",
      "wrong": [
-      "비싸고 유명한 것",
-      "겉모습만 화려한 것"
+      "물건을 새로 만듦",
+      "시험에 합격함"
      ]
     }
    ],
    "summary": [
-    "10대들이 비싼 패딩을 찾지 않는다.",
-    "값싸고 가벼운 옷을 더 좋아한다.",
-    "브랜드보다 가성비를 따져서 산다."
+    "북한의 사이버 인력이 8천 명이 넘는 걸로 보여요.",
+    "매년 뛰어난 실력의 해커들을 따로 길러내고 있어요.",
+    "인터넷과 전산망을 지키는 사이버 안보가 중요해졌어요."
    ],
    "five_w": {
-    "who": "10대 학생들",
-    "when": "요즘 겨울",
-    "where": "옷 가게",
-    "what": "실속형 겨울옷 구매",
-    "how": "빠르게 옷을 골라 삼",
-    "why": "비싼 옷값이 부담돼서"
+    "who": "북한 사이버 인력",
+    "when": "2024년 기준",
+    "where": "북한 안팎",
+    "what": "해커 부대 규모 증가",
+    "how": "전문 인력 집중 교육",
+    "why": "사이버 전력을 키우려고"
    },
    "activity": {
-    "issue": "겨울옷, 비싼 브랜드와 실속형 중 어느 쪽?",
-    "side_a": {
-     "title": "브랜드 패딩",
-     "reasons": [
-      "오랫동안 입을 수 있어서"
-     ]
-    },
-    "side_b": {
-     "title": "실속형 패딩",
-     "reasons": [
-      "가성비가 아주 좋아서"
-     ]
-    },
-    "choose_question": "나는 어느 쪽? 왜 그렇게 생각해?",
-    "other_side_question": "반대쪽 생각의 좋은 점 한 가지는?"
+    "impact_question": "인터넷 공격은 우리 삶에 어떤 피해를 줄까요?",
+    "wonder_question": "사이버 공격을 막으려면 무엇이 더 궁금한가요?"
    },
    "facts_opinions": [
     {
-     "sentence": "10대들이 실속형 옷을 많이 산다.",
+     "sentence": "북한 사이버 인력은 약 8천400명으로 추산돼요.",
      "answer": "사실",
-     "reason": "가게의 판매 통계로 알 수 있다"
+     "reason": "군이 조사한 숫자예요."
     },
     {
-     "sentence": "학생들은 유행에 매우 민감하다.",
+     "sentence": "북한 해커들은 세계에서 가장 위협적이에요.",
      "answer": "의견",
-     "reason": "사람마다 다르게 생각할 수 있다"
+     "reason": "개인의 생각이에요."
     },
     {
-     "sentence": "비싼 패딩의 인기가 예전만 못하다.",
+     "sentence": "북한은 해마다 정예 해커를 100명씩 길러내요.",
      "answer": "사실",
-     "reason": "매장 분위기와 판매량 조사 결과다"
+     "reason": "실제 조사된 내용이에요."
     },
     {
-     "sentence": "브랜드 옷이 질이 무조건 더 좋다.",
+     "sentence": "우리도 해커를 더 많이 키워야만 해요.",
      "answer": "의견",
-     "reason": "직접 확인하기 전엔 단정할 수 없다"
+     "reason": "주장하는 생각이에요."
     }
    ],
-   "challenge": "내가 만약 옷을 만든다면 어떤 옷을 만들고 싶니?",
+   "challenge": "사이버 공격으로부터 우리 정보를 지키는 좋은 방법을 써 봐요.",
    "curriculum": [
-    "사회 5-1 우리 사회의 법과 제도",
-    "사회 6-1 우리나라의 경제 발전"
+    "사회 5-2 통일 한국의 미래",
+    "사회 6-1 우리나라의 정치 발전"
    ],
    "teacher": {
     "sample_answers": {
-     "choose_question": "나는 실속형이 좋다. 유행이 빨리 바뀌고 비싼 옷은 부담스럽기 때문이다.",
-     "other_side_question": "비싼 브랜드 패딩은 한 번 사면 여러 해 동안 따뜻하게 입을 수 있다.",
-     "challenge": "가볍고 따뜻하면서도 세탁하기 편한 숏패딩을 만들고 싶다."
+     "impact_question": "은행 전산망이 멈춰서 돈을 찾지 못하거나, 병원 시스템이 마비되어 환자 치료가 늦어질 수 있습니다. 신호등이 꺼져 교통 혼란이 올 수도 있습니다.",
+     "wonder_question": "우리나라는 북한의 해킹 공격을 막기 위해 어떤 첨단 기술이나 보안 시스템을 갖추고 있는지 궁금합니다.",
+     "challenge": "비밀번호를 자주 바꾸고 복잡하게 만들며, 수상한 문자 메시지의 링크나 모르는 이메일 첨부파일을 함부로 열지 않아야 합니다."
     },
     "extra_questions": [
-     "내가 옷을 고를 때 가장 중요하게 보는 것은 무엇인가요?",
-     "유행을 너무 좇을 때 생기는 문제는 무엇이 있을까요?"
+     "눈에 보이지 않는 사이버 공간에서의 공격이 실제 전쟁만큼 위험한 이유는 무엇일까요?",
+     "안전한 인터넷 세상을 만들기 위해 국가와 개인이 각각 해야 할 일은 무엇일까요?"
     ],
     "cautions": [
-     "학생들이 특정 브랜드를 비난하거나 과시하는 소비를 옹호하지 않도록 지도합니다.",
-     "합리적인 소비의 의미를 되새겨보는 데 초점을 맞춥니다."
+     "특정 국가나 집단에 대한 맹목적인 적개심이나 공포감을 심어주지 않도록 주의합니다.",
+     "현대 사회에서 정보 보안과 사이버 안보가 국가 안보 및 개인 생활에 직결된다는 점을 이해하도록 돕습니다."
     ]
    },
    "rank": 2,
-   "type": "debate",
-   "category": "생활·문화",
-   "topic": "10대들의 실속형 겨울옷 소비",
-   "reason": "고가 브랜드 유행을 따르던 기존 소비문화에서 실용적이고 가성비 높은 소비로 변화하는 10대들의 선택을 합리적 소비 관점에서 이야기할 수 있습니다.",
-   "source": "KBS",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5JZ285NmlGaDdiTzVyeEJqU0Y3Nl8wU2FHWjY1RGw2eWY5RktwZlVtRGRVMTlObUtnQ014Si1oczVFNDVGUzd3RU5Hb3RCbVRuVklEcUxiUzIxY2c?oc=5",
-   "original_title": "“비싸고 칙칙한 롱패딩 누가 입어요?”…10대들, 스파오로 갈아탄 이유는? [잇슈#태그]",
-   "member_titles": [
-    "“비싸고 칙칙한 롱패딩 누가 입어요?”…10대들, 스파오로 갈아탄 이유는? [잇슈#태그]"
-   ],
-   "pub": "2026-10-31",
-   "related": [],
-   "video": {
-    "id": "k8g8eaoBgew",
-    "title": "[잇슈#태그] \"비싸고 칙칙한 롱패딩 누가 입어요?\"…10대들, 스파오로 갈아탄 이유는? / KBS 2026.10.30.",
-    "channel": "KBS News",
-    "kind": "news",
-    "match": 1.0
-   },
-   "needs_review": false,
-   "review_notes": []
-  },
-  {
-   "title": "디저트를 사려고 밤을 새우는 이유",
-   "words": [
-    {
-     "word": "떡픈런",
-     "meaning": "문이 열리자마자 떡을 사러 달려감",
-     "wrong": [
-      "떡을 만들려고 새벽에 운동하는 일",
-      "떡을 팔려고 멀리까지 달려가는 일"
-     ]
-    },
-    {
-     "word": "영점소비",
-     "meaning": "내게 의미 있는 곳에만 정확하게 씀",
-     "wrong": [
-      "물건을 하나도 사지 않고 아끼는 소비",
-      "가장 싼 물건만 골라서 사 모으는 소비"
-     ]
-    }
-   ],
-   "summary": [
-    "과일 찹쌀떡을 사려는 줄이 길게 이어집니다.",
-    "오랜 시간 기다려 사는 과정을 즐깁니다.",
-    "자신에게 의미 있는 곳에 돈을 씁니다."
-   ],
-   "five_w": {
-    "who": "사람들",
-    "when": "최근",
-    "where": "디저트 매장",
-    "what": "찹쌀떡 디저트 구매",
-    "how": "몇 시간씩 줄을 서서",
-    "why": "특별한 경험을 하려고"
-   },
-   "activity": {
-    "impact_question": "내가 좋아하는 간식을 사려고 줄을 서 본 적이 있나요?",
-    "wonder_question": "유행하는 디저트를 직접 먹어보고 싶나요?"
-   },
-   "facts_opinions": [
-    {
-     "sentence": "서울의 한 디저트 매장에 긴 대기 행렬이 이어졌습니다.",
-     "answer": "사실",
-     "reason": "현장을 직접 취재한 내용입니다."
-    },
-    {
-     "sentence": "매장에 줄을 서는 것은 시간 낭비입니다.",
-     "answer": "의견",
-     "reason": "사람마다 다르게 생각할 수 있습니다."
-    },
-    {
-     "sentence": "매장은 최근 온라인 예약제로 방식을 바꿨습니다.",
-     "answer": "사실",
-     "reason": "실제 바뀐 판매 방식입니다."
-    },
-    {
-     "sentence": "경험을 사는 소비 방식이 가장 훌륭합니다.",
-     "answer": "의견",
-     "reason": "개인의 가치관이 담긴 생각입니다."
-    }
-   ],
-   "challenge": "내가 만약 긴 줄을 서야 한다면 몇 시간까지 기다릴 수 있나요?",
-   "curriculum": [
-    "사회 5-1 우리 사회의 모순과 해결",
-    "사회 6-2 우리 주위의 경제생활"
-   ],
-   "teacher": {
-    "sample_answers": {
-     "impact_question": "예시: 인기 있는 놀이공원 표를 사려고 한 시간 동안 기다려 본 적이 있습니다.",
-     "wonder_question": "예시: 사람들이 왜 그렇게 줄을 서서 사 먹는지 그 맛이 궁금합니다.",
-     "challenge": "예시: 아무리 맛있어도 한 시간이 넘으면 기다리지 않고 다른 것을 먹겠습니다."
-    },
-    "extra_questions": [
-     "내가 꼭 사고 싶은 물건이 있다면 그 이유는 무엇인가요?",
-     "유행을 따라가는 소비와 나의 필요에 따른 소비는 어떻게 다를까요?"
-    ],
-    "cautions": [
-     "학생들이 특정 소비 성향을 무조건 비판하거나 낭비라고 단정하지 않도록 지도합니다.",
-     "기사에 나온 현상을 사회 현상과 연결하여 자연스럽게 이해하도록 돕습니다."
-    ]
-   },
-   "rank": 3,
    "type": "useful",
-   "category": "생활·문화",
-   "topic": "찹쌀떡 디저트 오픈런 열풍",
-   "reason": "전통 음식의 현대적 재해석과 새로운 소비 트렌드를 긍정적이고 친근한 눈높이에서 살펴볼 수 있습니다.",
-   "source": "SBS",
-   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825253&plink=RSSLINK&cooper=RSSREADER",
-   "original_title": "\"떡 먹으려고\" 10시간 대기…'열풍' 숨은 이유?",
+   "category": "과학·환경",
+   "topic": "북한 해커 부대와 사이버 안보",
+   "reason": "디지털·AI 기술의 양면성과 사이버 안보의 중요성을 초등학생 눈높이에서 다룰 수 있다.",
+   "source": "YTN",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9laDZfWi04VUZxS0hxWWdnWVV6eGNLRThIZHA2SUI5cjdMSXhSXy1CcmMwWUNYdEFHQXVPS3VzR0JOdDZNV00zVVViV0ZRRUlaQUdleVJWYWpXaXUxTHVEYXNtUzlnbVBzR2MzWEJXNA?oc=5",
+   "original_title": "국가가 관리하는 북한 해커 부대...\"AI 날개 달면 지옥문\"",
    "member_titles": [
-    "\"떡 먹으려고\" 10시간 대기…'열풍' 숨은 이유?"
-   ],
-   "pub": "2026-11-01",
-   "related": [],
-   "video": {
-    "id": "NqfoLRCSms8",
-    "title": "\"떡 먹으려고\" 10시간 대기..'열풍' 숨은 이유? / SBS 8뉴스",
-    "channel": "SBS 뉴스",
-    "kind": "news",
-    "match": 1.0
-   },
-   "needs_review": true,
-   "review_notes": [
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 문이 열리자마자 떡을 사러 달려감…",
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 떡을 만들려고 새벽에 운동하는 일…",
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 떡을 팔려고 멀리까지 달려가는 일…",
-    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 내게 의미 있는 곳에만 정확하게 씀…",
-    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 물건을 하나도 사지 않고 아끼는 소비…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 15자 이내로): 가장 싼 물건만 골라서 사 모으는 소…"
-   ]
-  },
-  {
-   "title": "인터넷 돈 훔친 해킹 사건",
-   "words": [
-    {
-     "word": "가상자산",
-     "meaning": "인터넷에서 쓰는 돈",
-     "wrong": [
-      "은행의 종이 지폐",
-      "금으로 만든 동전"
-     ]
-    },
-    {
-     "word": "해킹",
-     "meaning": "몰래 정보를 훔침",
-     "wrong": [
-      "컴퓨터를 고침",
-      "새 프로그램을 짬"
-     ]
-    }
-   ],
-   "summary": [
-    "인터넷 돈 거래소가 큰 해킹 피해를 보았습니다.",
-    "미국 수사 기관은 북한 해킹 조직을 범인으로 지목했습니다.",
-    "거래소는 피해를 수습하며 거래를 다시 시작했습니다."
-   ],
-   "five_w": {
-    "who": "북한 해킹 조직",
-    "when": "10월 31일 미국 발표",
-    "where": "가상자산 거래소",
-    "what": "인터넷 돈 도난 사건",
-    "how": "컴퓨터망 침입",
-    "why": "돈을 마련하려고"
-   },
-   "activity": {
-    "impact_question": "인터넷 범죄는 우리 삶에 어떤 피해를 줄까?",
-    "wonder_question": "이 사건에서 더 알고 싶은 점은 무엇일까?"
-   },
-   "facts_opinions": [
-    {
-     "sentence": "미국 수사 기관이 해킹 배후를 발표했다.",
-     "answer": "사실",
-     "reason": "실제로 발표한 일임"
-    },
-    {
-     "sentence": "거래소는 피해 돈의 일부를 채워 넣었다.",
-     "answer": "사실",
-     "reason": "실제로 일어난 일임"
-    },
-    {
-     "sentence": "가상자산은 너무 위험해서 쓰면 안 된다.",
-     "answer": "의견",
-     "reason": "개인의 생각임"
-    },
-    {
-     "sentence": "인터넷 보안을 지금보다 더 늘려야 한다.",
-     "answer": "의견",
-     "reason": "주장하는 생각임"
-    }
-   ],
-   "challenge": "인터넷 계정을 안전하게 지키는 나만의 방법을 써 보세요.",
-   "curriculum": [
-    "사회 5-2 사회의 새로운 변화와 오늘날의 우리",
-    "사회 6-2 통일 한국의 미래와 지구촌의 평화"
-   ],
-   "teacher": {
-    "sample_answers": {
-     "impact_question": "내 개인 정보나 온라인 계정이 털려 돈을 잃거나 불편을 겪을 수 있습니다.",
-     "wonder_question": "국제적으로 일어난 인터넷 해킹 범죄를 어떻게 처벌하고 피해를 되찾을 수 있는지 궁금합니다.",
-     "challenge": "비밀번호를 숫자와 문자를 섞어 길게 만들고, 정기적으로 바꿉니다."
-    },
-    "extra_questions": [
-     "눈에 보이지 않는 디지털 자산을 지키려면 어떤 노력이 필요할까요?",
-     "국경을 넘나드는 사이버 범죄를 막기 위해 여러 나라가 어떻게 협력해야 할까요?"
-    ],
-    "cautions": [
-     "특정 국가나 집단에 대한 무조건적인 혐오 발언으로 이어지지 않도록 사이버 안보와 정보 보호의 관점에서 지도해 주세요."
-    ]
-   },
-   "rank": 4,
-   "type": "useful",
-   "category": "세계",
-   "topic": "가상자산 해킹과 사이버 안보",
-   "reason": "국경을 넘는 사이버 범죄와 국가 차원의 안보 문제를 디지털 사회 및 세계 평화의 관점에서 이해하도록 돕습니다.",
-   "source": "SBS",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2WVJnMGY1WTFGNmFQUFRPQ1czWkxFbTBiRTY1bVJ5M2FjSkE4N29qWFpia0xvN25XZ1RvckpvTzdVT0MzT1pZb2VncjhYVWw0M0ZwUnF5S21MY0hoYm1GN091YzJDeU5lVXc?oc=5",
-   "original_title": "\"바이낸스 해킹은 북한 소행\"…FBI 공식 확인",
-   "member_titles": [
-    "\"배후는 북한\"…8조 원 빠져나가는데 '속수무책'",
-    "'북한 지목'에도 굳건한 트럼프…대화 고집하는 이유 보니",
-    "\"바이낸스 해킹 북한 소행\"…FBI가 지목한 ‘배후 조직’",
-    "트럼프 \"바이낸스 해킹 배후 북한이면 직접 논의할 것\"",
-    "\"바이낸스 해킹은 북한 소행\"…FBI 공식 확인"
+    "\"서울대 의대 갈 정도 애들을 해커로 양성\"",
+    "국가가 관리하는 북한 해커 부대...\"AI 날개 달면 지옥문\"",
+    "\"북 소행? 잘 모르겠어요\" 북 해킹 선 긋는 트럼프"
    ],
    "pub": "2026-11-02",
    "related": [
     {
      "source": "SBS",
-     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825245&plink=RSSLINK&cooper=RSSREADER"
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008827034&plink=RSSLINK&cooper=RSSREADER"
     },
     {
-     "source": "JTBC",
-     "link": "https://news.jtbc.co.kr/article/NB12325911"
-    },
-    {
-     "source": "JTBC",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZZTFtQjFLZER4N1A4ZGdDSzdTWk44eE1RWXhRMEFOYjZDcFVnVFY3aFpRdld3cmRpN2QxZmYxaEpzangxenRfMXhvejBzWlZHVFdBRQ?oc=5"
-    },
-    {
-     "source": "JTBC",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBwQU1jT3c1VHlUTUVTWEg5Z1paSXdTVWpHZF9GeWZndFVXQ0VmZ1FJbjhreWkyQ0VpSnFvRFBJSjhzZThYeHJwTkFXcDB4dThwQWYwWQ?oc=5"
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBvUDVvQ3FlQ1VPNUdqcUFGOXJHbkRrMFpoUEh1SHRTQ3hFTFpOdTV0OFZIQllQalB2Q2pLRFdVZTRURnRQcnpIdm9YMXJ0TWJOem1ERTJleFVBa1ZYa3c?oc=5"
     }
    ],
    "video": {
-    "id": "f8iNagYfW64",
-    "title": "\"바이낸스 해킹은 북한 소행\"..FBI 공식 확인 / SBS 모닝와이드",
-    "channel": "SBS 뉴스",
+    "id": "l2GCE4Foseg",
+    "title": "국가가 관리하는 북한 해커 부대...\"AI 날개 달면 지옥문\" / YTN",
+    "channel": "YTN",
     "kind": "news",
     "match": 1.0
    },
@@ -466,119 +243,342 @@
    "review_notes": []
   },
   {
-   "title": "상사의 말 한마디, 괴롭힘일까 아닐까?",
+   "title": "국민 아버지 최불암 배우의 별세",
    "words": [
     {
-     "word": "연가",
-     "meaning": "쉬겠다고 내는 휴가",
+     "word": "영면",
+     "meaning": "사람이 편안하게 죽음",
      "wrong": [
-      "일에 대한 보수",
-      "회사에서 주는 상"
+      "영원히 잠을 안 잠",
+      "영리하게 면접을 봄"
      ]
     },
     {
-     "word": "감봉",
-     "meaning": "월급을 깎는 벌",
+     "word": "구도자",
+     "meaning": "진리를 찾아가는 사람",
      "wrong": [
-      "일자리를 잃는 일",
-      "출근을 막는 벌"
+      "구름을 돕는 사람들",
+      "구경하는 사람들의 모임"
      ]
     }
    ],
    "summary": [
-    "상사가 부하에게 육아 관련 발언 등을 했습니다.",
-    "법원은 이 말이 직장 괴롭힘이 맞다고 보았습니다.",
-    "상사는 일상 대화라며 징계가 부당하다고 했습니다."
+    "국민 배우 고 최불암이 영면에 들었어요.",
+    "생전 어린이 돕는 일에 진심이었어요.",
+    "마지막 길에 어린이재단을 방문했어요."
    ],
    "five_w": {
-    "who": "구청 간부와 부하 직원",
-    "when": "최근 판결",
-    "where": "서울행정법원",
-    "what": "상사 발언의 괴롭힘 인정 판결",
-    "how": "소송에서 상사 패소 판결로",
-    "why": "개인 생활 간섭과 압박감 때문에"
+    "who": "고 최불암 배우",
+    "when": "2026년 11월 2일",
+    "where": "초록우산 어린이재단 등",
+    "what": "향년 87세로 별세함",
+    "how": "장례미사와 추모 속에서",
+    "why": "오랜 연기와 나눔을 남기고"
    },
    "activity": {
-    "issue": "상사의 참견, 직장 괴롭힘으로 벌해야 할까?",
-    "side_a": {
-     "title": "괴롭힘이다",
-     "reasons": [
-      "개인 휴가를 막고 마음에 큰 부담을 줘요."
-     ]
-    },
-    "side_b": {
-     "title": "괴롭힘 아니다",
-     "reasons": [
-      "일상적인 대화나 조언으로 볼 수도 있어요."
-     ]
-    },
-    "choose_question": "나는 어느 쪽? 왜 그렇게 생각해?",
-    "other_side_question": "반대쪽 생각의 좋은 점 한 가지는?"
+    "impact_question": "이 배우의 삶은 우리 사회에 어떤 영향을 주었나요?",
+    "wonder_question": "고인에게 더 알고 싶은 것 한 가지는요?"
    },
    "facts_opinions": [
     {
-     "sentence": "법원은 감봉 처분이 적정하다고 판결했다.",
+     "sentence": "고 최불암 배우는 향년 87세로 별세했어요.",
      "answer": "사실",
-     "reason": "실제 판결 결과라서"
+     "reason": "기사에 나온 실제 일이에요."
     },
     {
-     "sentence": "상사의 말은 일상적인 대화 수준이었다.",
+     "sentence": "생전의 푸근한 웃음소리가 오래도록 그리울 것 같아요.",
      "answer": "의견",
-     "reason": "보는 사람마다 달라서"
+     "reason": "사람들의 생각을 나타내요."
     },
     {
-     "sentence": "A 씨는 구청장을 상대로 소송을 냈다.",
+     "sentence": "장지로 가기 전 어린이재단에 들렀어요.",
      "answer": "사실",
-     "reason": "실제 일어난 일이라서"
+     "reason": "기사에 보도된 사실이에요."
     },
     {
-     "sentence": "직장 내 괴롭힘 처벌 기준이 너무 엄격하다.",
+     "sentence": "어린이를 도울 때 진짜 어른이 된다는 말은 감동적이에요.",
      "answer": "의견",
-     "reason": "개인의 주장이라서"
+     "reason": "말에 대한 개인의 느낌이에요."
     }
    ],
-   "challenge": "서로 존중하는 교실을 만들기 위해 피해야 할 말은 무엇일까요?",
+   "challenge": "주변의 고마운 어른에게 전할 마음을 한 문장으로 써요.",
    "curriculum": [
     "사회 5-1 인권 존중과 정의로운 사회",
     "사회 6-1 우리나라의 정치 발전"
    ],
    "teacher": {
     "sample_answers": {
-     "choose_question": "괴롭힘에 해당한다고 생각합니다. 휴가를 자유롭게 쓰는 것은 권리인데, 상사가 개인적인 가정 상황까지 간섭하며 눈치를 주는 것은 일하는 사람에게 큰 정신적 고통을 주기 때문입니다.",
-     "other_side_question": "직장에서 오가는 모든 말을 감시하거나 법으로 처벌하면 사람들 사이의 편안한 소통이 줄어들 수 있다는 우려를 이해할 수 있습니다.",
-     "challenge": "친구의 외모나 가정환경, 개인적인 사생활에 대해 함부로 참견하거나 명령조로 말하는 행동을 조심해야 합니다."
+     "impact_question": "따뜻한 위로와 나눔을 실천하며 우리 사회를 훈훈하게 만들었어요.",
+     "wonder_question": "생전에 가장 기억에 남는 배역은 무엇이었을지 궁금해요.",
+     "challenge": "늘 우리를 따뜻하게 보살펴 주셔서 정말 고맙습니다."
     },
     "extra_questions": [
-     "내가 선의로 건넨 말도 듣는 사람에겐 상처나 괴롭힘이 될 수 있을까요?",
-     "학교나 교실에서 장난과 괴롭힘을 가르는 기준은 무엇이라고 생각하나요?"
+     "내가 생각하는 진짜 어른의 모습은 어떤 모습인가요?",
+     "나도 주변 사람들에게 어떤 도움을 줄 수 있을까요?"
     ],
     "cautions": [
-     "상사 개인에 대한 일방적인 비난으로 흐르지 않도록, 직급 간 위계에서 생기는 언어의 영향력과 표현의 자유 사이의 균형에 초점을 맞춰 지도합니다.",
-     "아이들이 학교생활에서 친구나 후배에게 무심코 던지는 참견이나 간섭을 돌아보는 계기로 확장해 지도해 주세요."
+     "학생들이 슬픈 감정에만 빠지지 않고 고인의 따뜻한 나눔 정신에 집중하도록 지도합니다.",
+     "배우의 별세라는 사실을 차분하고 바르게 전달합니다."
     ]
    },
-   "rank": 5,
-   "type": "debate",
-   "category": "사회",
-   "topic": "육아 발언과 직장 내 괴롭힘 판결",
-   "reason": "일과 가정 양립 지원의 중요성과 말 한마디가 상대방에게 미치는 영향 및 인권 보호 기준을 생각하게 합니다.",
-   "source": "SBS",
-   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824951&plink=RSSLINK&cooper=RSSREADER",
-   "original_title": "\"애는 남편이 보라 해\"…눈치 준 상사에 \"괴롭힘 맞다\"",
+   "rank": 3,
+   "type": "useful",
+   "category": "생활·문화",
+   "topic": "국민 배우 고(故) 최불암 별세",
+   "reason": "한국 문화계의 큰발자취를 남긴 배우의 삶을 조명하며 학생들에게 따뜻한 추모의 의미를 전달한다.",
+   "source": "YTN",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9TVzVJVzVBYkJZZTMyZlRabk9PRjdTcHZENmRvejUtTlBlX1VZWW10ZEV1eVhEbzVZbkFFS0UtdnFyaU9yb3FtUmhZSzhESlQ3a2c3d0h3YWNLSTI2MnFrektHTEV6WHdudnpLNXR0QQ?oc=5",
+   "original_title": "최불암의 '아들'들이 추억하는 '아버지' 최불암 [현장영상+]",
    "member_titles": [
-    "\"애는 남편이 보라 해\"…눈치 준 상사에 \"괴롭힘 맞다\""
+    "최불암의 '아들'들이 추억하는 '아버지' 최불암 [현장영상+]",
+    "따뜻한 웃음 주고 떠난 국민 아버지…아베마리아로 작별",
+    "\"최불암 프란치스코 형제님, 영원한 안식 누리시길...\" [현장영상+]",
+    "오늘 고 최불암 발인식...염수정 추기경 장례미사 집전"
    ],
-   "pub": "2026-11-01",
-   "related": [],
+   "pub": "2026-11-02",
+   "related": [
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008827046&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB6VWVoOWJkRGZMQjlGbEJ0NDhDcmlSVk95Z3N0V2YxbUYxc1NxMVEyeXFyb2RWUXp2bTNDVHUyTEk4Vmw1YVgxNTYxWGZ1RDBkUnhZWjBoeWtSU2FyV0E?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9PbTVacU5SOXNWemlyQlU0SXpKcWdvaWJKcWtENlZ4OVZKQnRmZlp0RjhzRjNGVmdoX0J4YmdkQ08zUFVJZ0djRnFITy1DRU5yQmhyMDBvWEdTVTJtbGc?oc=5"
+    }
+   ],
    "video": {
-    "id": "RTZiJXOK7f8",
-    "title": "\"늦게 왔네\" \"애는 남편이 보라 해\"..눈치 준 상사에 \"괴롭힘 맞다\" (자막뉴스) / SBS",
-    "channel": "SBS 뉴스",
+    "id": "iyRnpeziAdI",
+    "title": "최불암의 '아들'들이 추억하는 '아버지' 최불암 [현장영상+] / YTN",
+    "channel": "YTN",
     "kind": "news",
     "match": 1.0
    },
-   "needs_review": false,
-   "review_notes": []
+   "needs_review": true,
+   "review_notes": [
+    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 어린이를 도울 때 진짜 어른이 된다는…"
+   ]
+  },
+  {
+   "title": "서산 삵에서 나온 조류인플루엔자",
+   "words": [
+    {
+     "word": "삵",
+     "meaning": "고양이와 닮은 야생 동물이에요.",
+     "wrong": [
+      "날아다니는 새의 한 종류예요.",
+      "물가에 사는 작은 물고기예요."
+     ]
+    },
+    {
+     "word": "조류인플루엔자",
+     "meaning": "새들이 걸리는 전염병이에요.",
+     "wrong": [
+      "겨울철에 내리는 차가운 눈이에요.",
+      "사람이 걸리는 감기 병이에요."
+     ]
+    }
+   ],
+   "summary": [
+    "서산에서 발견된 삵에게서 조류인플루엔자가 나왔어요.",
+    "야생동물 사체에서 바이러스가 나온 첫 사례예요.",
+    "죽은 동물을 보면 만지지 말고 꼭 신고해야 해요."
+   ],
+   "five_w": {
+    "who": "서산의 삵",
+    "when": "최근",
+    "where": "충남 서산",
+    "what": "조류인플루엔자 감염",
+    "how": "사체 검사로 확인",
+    "why": "기사에 없음"
+   },
+   "activity": {
+    "impact_question": "죽은 동물을 만지면 우리 동네엔 어떤 일이 생길까요?",
+    "wonder_question": "다른 야생동물도 검사했는지 궁금해요."
+   },
+   "facts_opinions": [
+    {
+     "sentence": "서산에서 발견된 삵에게서 바이러스가 나왔어요.",
+     "answer": "사실",
+     "reason": "검사 결과로 밝혀진 내용이에요."
+    },
+    {
+     "sentence": "야생동물 사체를 절대 만지면 안 돼요.",
+     "answer": "사실",
+     "reason": "위험을 막기 위한 행동 수칙이에요."
+    },
+    {
+     "sentence": "앞으로 더 많은 동물이 감염될 거예요.",
+     "answer": "의견",
+     "reason": "앞날을 미리 짐작한 내용이에요."
+    },
+    {
+     "sentence": "이번 일은 자연환경 보호가 부족해서 생겼어요.",
+     "answer": "의견",
+     "reason": "사람의 생각이 담긴 주장이에요."
+    }
+   ],
+   "challenge": "야생동물 사체를 발견했을 때 안전하게 대처하는 방법을 한 문장으로 써 보세요.",
+   "curriculum": [
+    "사회 5-1 국토와 우리 생활",
+    "사회 6-2 우리 속의 세계"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "바이러스가 퍼져서 주변 동물이 아프거나 우리 건강에도 나쁜 영향을 줄 수 있어요.",
+     "wonder_question": "사람이나 다른 동물에게 전염될 위험은 얼마나 높을지 더 알고 싶어요.",
+     "challenge": "가까이 가지 않고 바로 어른이나 119에 신고해요."
+    },
+    "extra_questions": [
+     "내가 산이나 들에서 죽은 동물을 보면 어떻게 해야 할까요?",
+     "야생동물과 우리가 안전하게 공존하려면 어떤 노력이 필요할까요?"
+    ],
+    "cautions": [
+     "아이들이 야생동물 전염병에 대해 지나친 공포를 가지지 않도록 정확한 예방 행동 위주로 지도해 주세요."
+    ]
+   },
+   "rank": 4,
+   "type": "useful",
+   "category": "과학·환경",
+   "topic": "서산 삵 조류인플루엔자 발견",
+   "reason": "야생동물과 전염병 확산 방지를 위한 생태계 보호 및 안전 수칙을 배울 수 있는 과학 뉴스다.",
+   "source": "YTN",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLMHpHSVdSMHh2Qlg1Z2dZY3Z2WkY0VVhaeVItaHFBVHVKc2NMS3BBLW9mMExBcWNuNnFVcVViWS1uY1Jhb2F1YlIxaU5EYzBLOXNFeGxfbW9SaXdIcnh1MGZkWks2cVBZaE14eDVkcw?oc=5",
+   "original_title": "서산 삵에서 조류인플루엔자...\"동물 사체 보면 만지지 말고 신고\"",
+   "member_titles": [
+    "서산 삵에서 조류인플루엔자...\"동물 사체 보면 만지지 말고 신고\""
+   ],
+   "pub": "2026-11-02",
+   "related": [],
+   "video": {
+    "id": "pThCOPOH5zQ",
+    "title": "서산 삵에서 조류인플루엔자...\"동물 사체 보면 만지지 말고 신고\" / YTN",
+    "channel": "YTN",
+    "kind": "news",
+    "match": 1.0
+   },
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 고양이와 닮은 야생 동물이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 날아다니는 새의 한 종류예요.…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 물가에 사는 작은 물고기예요.…",
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 겨울철에 내리는 차가운 눈이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 사람이 걸리는 감기 병이에요.…"
+   ]
+  },
+  {
+   "title": "우리나라 수출 9천억 달러 넘었어요",
+   "words": [
+    {
+     "word": "수출",
+     "meaning": "다른 나라에 물건을 팔아요",
+     "wrong": [
+      "다른 나라에서 물건을 사와요",
+      "나라 안에서 물건을 사고팔아요"
+     ]
+    },
+    {
+     "word": "돌파",
+     "meaning": "어려운 목표를 넘어섰어요",
+     "wrong": [
+      "목표를 이루지 못하고 멈춰요",
+      "처음으로 새로운 계획을 세워요"
+     ]
+    }
+   ],
+   "summary": [
+    "우리나라 수출이 처음으로 9천억 달러를 넘었어요.",
+    "10월 한 달 동안만 1천153억 달러를 팔았어요.",
+    "이대로라면 수출 1조 달러 달성도 확실해요."
+   ],
+   "five_w": {
+    "who": "우리나라",
+    "when": "2026년 10월",
+    "where": "기사에 없음",
+    "what": "수출 9천억 달러 돌파",
+    "how": "기사에 없음",
+    "why": "기사에 없음"
+   },
+   "activity": {
+    "impact_question": "수출이 많아지면 우리 생활에 어떤 점이 좋아질까요?",
+    "wonder_question": "우리가 가장 많이 파는 물건은 무엇인가요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "우리나라 수출이 9천억 달러를 넘었어요.",
+     "answer": "사실",
+     "reason": "뉴스에서 확인된 실제 기록이에요."
+    },
+    {
+     "sentence": "10월 한 달 동안 1천153억 달러를 기록했어요.",
+     "answer": "사실",
+     "reason": "조사해서 나온 정확한 숫자예요."
+    },
+    {
+     "sentence": "수출 1조 달러를 꼭 달성할 거예요.",
+     "answer": "의견",
+     "reason": "앞으로 일어날 일을 생각한 것이에요."
+    },
+    {
+     "sentence": "우리나라 경제가 앞으로 더 좋아질 거예요.",
+     "answer": "의견",
+     "reason": "기록을 보고 짐작한 생각이에요."
+    }
+   ],
+   "challenge": "우리나라가 수출을 늘리려면 어떤 물건을 만들어야 할까요?",
+   "curriculum": [
+    "사회 5-2 우리 경제의 발전",
+    "사회 6-1 우리나라의 경제 성장"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "나라에 돈이 많이 들어와서 경제가 튼튼해지고 일자리가 늘어날 것 같아요.",
+     "wonder_question": "반도체나 자동차 같은 기술 제품을 가장 많이 팔 것 같아요.",
+     "challenge": "다른 나라 사람들이 꼭 필요로 하는 새로운 기술이나 친환경 제품을 만들어요."
+    },
+    "extra_questions": [
+     "우리가 수입하는 물건과 수출하는 물건의 차이는 무엇인가요?",
+     "세계 여러 나라와 무역을 할 때 가장 중요한 것은 무엇일까요?"
+    ],
+    "cautions": [
+     "어려운 경제 용어인 '달러'나 '수출'의 개념을 아이들이 일상생활과 연결해 이해할 수 있도록 돕습니다.",
+     "숫자의 크기 자체에 놀라기보다 우리 경제가 그만큼 성장했다는 의미에 집중하게 지도합니다."
+    ]
+   },
+   "rank": 5,
+   "type": "useful",
+   "category": "경제",
+   "topic": "한국 수출 9천억 달러 돌파",
+   "reason": "우리 나라의 무역 성과와 경제 구조를 쉽게 이해할 수 있는 경제 교육용 기사다.",
+   "source": "MBC",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5UNEgxWkpScUxRSDI4Zm9uNXRoRFdUdHBtcG1PYlVSWE4tU08wTHc3M0hzblBlZGRDU3o4aUl1TUlxV09LVjZOY0lteTY3eVRVTVVKbFZEQ0xJb09hcmdCV19HNVNUVUNKV1dZZFFyeDljUXF60gF0QVVfeXFMTlZBV20wVlpYZGQyNXZmaE40bVVGZERVYVVLbk5Nc3pXWkJ5VlpIcnF2NVRjRkFQNXBOdXlnQUk4djdwblV2dDdiMXlMa3F5WkszdzVkdXFxQnU0NGN1Ymh3TWpmU1NWRFRNYWszVHcyU2hVUUE?oc=5",
+   "original_title": "한국 수출 첫 9천억 달러 돌파‥10월 1천153억 달러",
+   "member_titles": [
+    "한국 수출 첫 9천억 달러 돌파‥10월 1천153억 달러",
+    "10월 수출 1,153억달러…연간 1조 달러 눈앞"
+   ],
+   "pub": "2026-11-01",
+   "related": [
+    {
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lQVJfMzYtZUJ2VS1fZTRNSlkxWU0xQVlCS0Y0RVFOTGU5YmNvSlJDVnhfU3lPNV9tT05ZSEJYTlZCQ3hSdktQellvc0Nxc1FwaVZoTG1za0FPS0ZiczJzQjY1QzJDY1k?oc=5"
+    }
+   ],
+   "video": {
+    "id": "CK7TBdAlLac",
+    "title": "미국·중국·독일 이어 세계 4번째…꿈일 줄만 알았던 '이게' 된다고?｜수출 '1조 달러' 11월 중 달성 확실시 [이슈ZIP] / 연합뉴스TV(YonhapnewsTV)",
+    "channel": "연합뉴스TV",
+    "kind": "news",
+    "match": 0.3333333333333333
+   },
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 나라 안에서 물건을 사고팔아요…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 처음으로 새로운 계획을 세워요…"
+   ]
   }
  ]
 }

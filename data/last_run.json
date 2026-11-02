@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 116,
+   "count": 118,
    "raw_entries": 120
   },
   {
@@ -33,37 +33,37 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 87,
+   "count": 93,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 89,
+   "count": 100,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 89,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 92,
+   "count": 84,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 88,
+   "count": 92,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 98,
+   "count": 97,
    "raw_entries": 100
   }
  ],
@@ -77,83 +77,87 @@
   "KBS": 17,
   "MBC": 17
  },
- "model": "gemini-flash-latest",
+ "model": "gemini-flash-lite-latest",
  "picks": [
   {
    "rank": 1,
-   "type": "debate",
+   "type": "useful",
    "source": "YTN",
-   "title": "공정위 점검도 비껴간 교복 담합...교육청, 감사 착수"
+   "title": "이 대통령, 821조 '슈퍼 예산' 시정연설...\"모두의 성장으로 대전환\""
   },
   {
    "rank": 2,
-   "type": "debate",
-   "source": "KBS",
-   "title": "“비싸고 칙칙한 롱패딩 누가 입어요?”…10대들, 스파오로 갈아탄 이유는? [잇슈#태그]"
+   "type": "useful",
+   "source": "YTN",
+   "title": "국가가 관리하는 북한 해커 부대...\"AI 날개 달면 지옥문\""
   },
   {
    "rank": 3,
    "type": "useful",
-   "source": "SBS",
-   "title": "\"떡 먹으려고\" 10시간 대기…'열풍' 숨은 이유?"
+   "source": "YTN",
+   "title": "최불암의 '아들'들이 추억하는 '아버지' 최불암 [현장영상+]"
   },
   {
    "rank": 4,
    "type": "useful",
-   "source": "SBS",
-   "title": "\"바이낸스 해킹은 북한 소행\"…FBI 공식 확인"
+   "source": "YTN",
+   "title": "서산 삵에서 조류인플루엔자...\"동물 사체 보면 만지지 말고 신고\""
   },
   {
    "rank": 5,
-   "type": "debate",
-   "source": "SBS",
-   "title": "\"애는 남편이 보라 해\"…눈치 준 상사에 \"괴롭힘 맞다\""
+   "type": "useful",
+   "source": "MBC",
+   "title": "한국 수출 첫 9천억 달러 돌파‥10월 1천153억 달러"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 0,
-   "video_candidates": 2,
+   "body_chars": 1648,
+   "video_candidates": 4,
    "video": true,
    "problems": []
   },
   {
    "rank": 2,
-   "body_chars": 0,
-   "video_candidates": 1,
+   "body_chars": 1737,
+   "video_candidates": 2,
    "video": true,
    "problems": []
   },
   {
    "rank": 3,
-   "body_chars": 1780,
-   "video_candidates": 1,
+   "body_chars": 1744,
+   "video_candidates": 8,
    "video": true,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 문이 열리자마자 떡을 사러 달려감…",
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 떡을 만들려고 새벽에 운동하는 일…",
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 떡을 팔려고 멀리까지 달려가는 일…",
-    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 내게 의미 있는 곳에만 정확하게 씀…",
-    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 물건을 하나도 사지 않고 아끼는 소비…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 15자 이내로): 가장 싼 물건만 골라서 사 모으는 소…"
+    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 어린이를 도울 때 진짜 어른이 된다는…"
    ]
   },
   {
    "rank": 4,
-   "body_chars": 1628,
-   "video_candidates": 6,
+   "body_chars": 0,
+   "video_candidates": 1,
    "video": true,
-   "problems": []
+   "problems": [
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 고양이와 닮은 야생 동물이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 날아다니는 새의 한 종류예요.…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 물가에 사는 작은 물고기예요.…",
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 겨울철에 내리는 차가운 눈이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 사람이 걸리는 감기 병이에요.…"
+   ]
   },
   {
    "rank": 5,
-   "body_chars": 1593,
+   "body_chars": 0,
    "video_candidates": 1,
    "video": true,
-   "problems": []
+   "problems": [
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 나라 안에서 물건을 사고팔아요…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 처음으로 새로운 계획을 세워요…"
+   ]
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-02T07:24+09:00"
+ "finished_at": "2026-11-03T07:12+09:00"
 }
