@@ -109,14 +109,17 @@ VIEWS.home = () => {
 // "○○명의 선생님, ○○개 반이 함께" — 하루 몇 번만 새로 가져옴, 적을 때는 숨김
 async function showStats(){
   if(!CFG.REGISTRY_URL) return;
-  const MIN = CFG.STATS_MIN || 10;
+  const BIG = CFG.STATS_MIN || 10;   // 이 숫자부터는 "함께 공부 중" 문구, 그 전에는 "함께 시작했어요"
   let st = LS.get('stats', null);
   if(!st || Date.now() - st.at > 3 * 3600e3){
     try{ const j = await (await fetch(`${CFG.REGISTRY_URL}?action=stats`)).json(); if(j.ok && typeof j.teachers === 'number'){ st = {...j, at:Date.now()}; LS.set('stats', st); } }catch(e){}
   }
   const el = document.getElementById('stats');
-  if(!el || !st || !(Number(st.teachers) >= MIN)) return;
-  el.innerHTML = `🌱 지금 <b>${st.teachers.toLocaleString()}명의 선생님</b>${st.classes ? `, <b>${st.classes.toLocaleString()}개 반</b>이` : '이'} 함께 시사 공부 중`;
+  const t = Number(st && st.teachers), c = Number(st && st.classes) || 0;
+  if(!el || !(t >= 1)) return;
+  el.innerHTML = t >= BIG
+    ? `🌱 지금 <b>${t.toLocaleString()}명의 선생님</b>${c ? `, <b>${c.toLocaleString()}개 반</b>이` : '이'} 함께 시사 공부 중`
+    : `🌱 <b>${t}명의 선생님</b>${c ? `과 <b>${c}개 반</b>이` : '이'} 오늘의 시사를 함께 시작했어요`;
   el.hidden = false;
 }
 
