@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-<script src="config.js?v=20261102a"></script>
-<script src="lib/qrcode.min.js?v=20261102a" defer></script>
+<script src="config.js?v=20261102c"></script>
+<script src="lib/qrcode.min.js?v=20261102c" defer></script>
 <style>
 :root{
   --ink:#1F2A44; --ink-soft:#4B5672; --line:#D5DEEA; --paper:#FBFCFE; --sky:#E3EEFA; --sky-deep:#BFD6F0;
@@ -96,9 +96,21 @@ label.field{display:block;margin:12px 0 4px;font-size:16px}
 .w5 button.open{border-style:solid;background:var(--sky)}
 
 .sides{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.side{border-radius:var(--r-sm);padding:12px 14px;cursor:pointer;border:3px solid transparent;text-align:left}
+.side{position:relative;border-radius:var(--r-sm);padding:14px 14px 14px 52px;cursor:pointer;border:3px solid transparent;text-align:left;transition:opacity .15s,transform .1s}
+.side:active{transform:scale(.98)}
 .side.a{background:var(--a-soft)}.side.b{background:var(--b-soft)}
-.side.a.picked{border-color:var(--a)}.side.b.picked{border-color:var(--b)}
+.side.a.picked{border-color:var(--a);background:#cfe0f5}.side.b.picked{border-color:var(--b);background:#dbe8c4}
+.side.dim{opacity:.55}
+.pick-mark{position:absolute;left:14px;top:14px;width:28px;height:28px;border-radius:50%;border:3px solid var(--ink-soft);background:#fff;
+  display:grid;place-items:center;font-size:17px;line-height:1;color:#fff}
+.side.a.picked .pick-mark{background:var(--a);border-color:var(--a)}.side.b.picked .pick-mark{background:var(--b);border-color:var(--b)}
+.pick-opt{position:relative;padding-left:48px!important}
+.pick-opt .pick-mark{left:12px;top:50%;transform:translateY(-50%);width:24px;height:24px;font-size:14px}
+.pick-opt.picked .pick-mark{background:var(--a);border-color:var(--a)}
+.pick-hint{font-size:17px;background:var(--sun-soft);border-radius:var(--r-sm);padding:8px 12px;margin:8px 0 10px}
+.shake{animation:shake .5s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@media (prefers-reduced-motion:reduce){.shake{animation:none}}
 .side ul{margin:6px 0 0;padding-left:18px;font-size:16px}
 
 .fo{border:2px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;margin:8px 0;background:#fff}
@@ -135,27 +147,30 @@ ol.steps{padding-left:22px}ol.steps li{margin:6px 0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* 인쇄용 A4 */
-#print{display:none}
+/* 인쇄용 A4 — 화면에서도 같은 크기로 재서 한 장에 맞춤 */
+#print{display:none;font-size:12pt;line-height:1.45;color:#111;background:#fff;font-weight:700}
+#print.measure{display:block;position:absolute;left:-10000px;top:0;width:184mm}
+#print h1{font-size:20pt;margin:0 0 2mm}
+#print .meta{font-size:10pt;color:#555;margin-bottom:2.5mm;display:flex;justify-content:space-between;gap:4mm}
+#print .box{border:1.2pt solid #333;border-radius:3mm;padding:2.6mm 4mm;margin:0 0 3mm;break-inside:avoid}
+#print .box b.t{display:block;font-size:11pt;margin-bottom:1mm}
+#print .lines{border-bottom:.6pt solid #999;height:9mm}
+#print .q{margin-top:2.5mm}
+#print .w3 td{height:12mm}
+#print .side-p{background:#f3f3f3;border-radius:2mm;padding:2mm 3mm}
+#print .pbox{display:inline-block;width:5.5mm;height:5.5mm;border:1.4pt solid #222;border-radius:1mm;vertical-align:-1mm;margin-right:2mm;background:#fff}
+#print .pbox.sm{width:4.5mm;height:4.5mm;margin:0 1mm 0 0}
+#print p{margin:1mm 0}
+#print table{width:100%;border-collapse:collapse;font-size:12pt}
+#print td,#print th{border:.6pt solid #888;padding:2mm 2.5mm;vertical-align:top}
+#print .two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+#print .pb{break-before:page}
+#print .small{font-size:10pt}
 @media print{
   @page{size:A4;margin:12mm 13mm}
-  body{background:#fff;font-size:12pt;line-height:1.45}
+  body{background:#fff}
   #app,.top{display:none!important}
-  #print{display:block}
-  #print h1{font-size:20pt;margin:0 0 2mm}
-  #print .meta{font-size:10pt;color:#555;margin-bottom:2.5mm;display:flex;justify-content:space-between;gap:4mm}
-  #print .box{border:1.2pt solid #333;border-radius:3mm;padding:2.6mm 4mm;margin:0 0 3mm;break-inside:avoid}
-  #print .box b.t{display:block;font-size:11pt;margin-bottom:1mm}
-  #print .lines{border-bottom:.6pt solid #999;height:9mm}
-  #print .q{margin-top:2.5mm}
-  #print .w3 td{height:12mm}
-  #print .side-p{background:#f3f3f3;border-radius:2mm;padding:2mm 3mm}
-  #print p{margin:1mm 0}
-  #print table{width:100%;border-collapse:collapse;font-size:12pt}
-  #print td,#print th{border:.6pt solid #888;padding:2mm 2.5mm;vertical-align:top}
-  #print .two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
-  #print .pb{break-before:page}
-  #print .small{font-size:10pt}
+  #print{display:block;position:static;width:auto}
 }
 
 /* 머리 버튼 */
@@ -231,6 +246,6 @@ ol.steps{padding-left:22px}ol.steps li{margin:6px 0}
 <main id="app" class="wrap" aria-live="polite"><p class="muted" style="margin-top:30px">오늘의 뉴스를 불러오는 중이에요.</p></main>
 <section id="print" aria-hidden="true"></section>
 <div id="qrTmp" hidden></div>
-<script src="app.js?v=20261102a"></script>
+<script src="app.js?v=20261102c"></script>
 </body>
 </html>

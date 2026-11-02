@@ -957,7 +957,7 @@ VIEWS.step = ({i, r, tv}) => {
     return bindNav();
   }
 
-  if(i === 3){ activityStep(bar, nav); return bindNav(); }
+  if(i === 3){ activityStep(bar, nav, bindNav); return; }
 
   if(i === 4){
     state.fo = state.fo || {};
@@ -983,28 +983,50 @@ function writeBox(k, q, bare){
 }
 const bindWrites = () => document.querySelectorAll('[data-wr]').forEach(t => t.oninput = () => { state[t.dataset.wr] = t.value; saveAns(); });
 
-function activityStep(bar, nav){
+function activityStep(bar, nav, bindNav){
   const it = ITEM, a = it.activity || {};
   let body = '';
   if(it.type === 'useful') body = `<h2>이 뉴스, 나와 어떤 관계가 있을까?</h2>` + writeBox('impact_question', a.impact_question) + writeBox('wonder_question', a.wonder_question);
   if(it.type === 'debate'){
-    const side = s => `<button type="button" class="side ${s} ${state.side===s?'picked':''}" data-side="${s}">
+    const side = s => `<button type="button" class="side ${s} ${state.side===s?'picked':''} ${state.side && state.side!==s?'dim':''}" data-side="${s}" aria-pressed="${state.side===s}">
+      <span class="pick-mark" aria-hidden="true">${state.side===s ? '✔' : ''}</span>
       <b>${esc(a['side_'+s].title)}</b><ul>${(a['side_'+s].reasons||[]).map(x => `<li>${esc(x)}</li>`).join('')}</ul></button>`;
-    body = `<h2>${esc(a.issue)}</h2><p class="muted">두 입장 모두 이유가 있어요. 내 생각과 가까운 쪽을 눌러요.</p>
-      <div class="sides">${side('a')}${side('b')}</div>` + writeBox('choose_question', a.choose_question) + writeBox('other_side_question', a.other_side_question);
+    body = `<h2>${esc(a.issue)}</h2>
+      <p class="pick-hint">${state.side ? '✔ 골랐어요. 바꾸고 싶으면 다른 쪽을 눌러요.' : '👆 두 입장 모두 이유가 있어요. <b>내 생각과 가까운 쪽을 눌러요.</b>'}</p>
+      <div class="sides">${side('a')}${side('b')}</div><p class="muted" id="pickMsg"></p>` + writeBox('choose_question', a.choose_question) + writeBox('other_side_question', a.other_side_question);
   }
   if(it.type === 'media'){
     body = `<h2>같은 사건, 다른 제목</h2>
       <div class="heads">${(it.headlines||[]).map(h => `<div class="head"><small>${esc(h.source)}</small>${esc(h.title)}</div>`).join('')}</div>
       <div class="panel"><p><b>제목들이 주는 느낌은 어떤가요?</b></p><div class="opts">${(a.feeling_choices||[]).map(c =>
-        `<button type="button" class="opt ${state.feeling===c?'picked':''}" data-feel="${esc(c)}">${esc(c)}</button>`).join('')}</div></div>` +
+        `<button type="button" class="opt pick-opt ${state.feeling===c?'picked':''}" data-feel="${esc(c)}" aria-pressed="${state.feeling===c}"><span class="pick-mark" aria-hidden="true">${state.feeling===c ? '✔' : ''}</span>${esc(c)}</button>`).join('')}</div></div>` +
       writeBox('why_question', a.why_question) + writeBox('rewrite_question', a.rewrite_question);
   }
   show(bar + body + nav());
   bindWrites();
+  if(bindNav) bindNav();
   const re = () => keepScroll(() => VIEWS.step(history.state.params));
   document.querySelectorAll('[data-side]').forEach(b => b.onclick = () => { state.side = b.dataset.side; saveAns(); re(); });
   document.querySelectorAll('[data-feel]').forEach(b => b.onclick = () => { state.feeling = b.dataset.feel; saveAns(); re(); });
+  // 찬반·느낌을 고르지 않고 넘어가려 하면 알려 주기 (TV 화면은 함께 이야기하므로 그대로 넘어감)
+  const need = it.type === 'debate' ? 'side' : it.type === 'media' ? 'feeling' : '';
+  const nx = document.getElementById('next');
+  if(need && nx && !tvMode){
+    const go4 = nx.onclick;
+    nx.onclick = () => {
+      if(state[need]) return go4 && go4();
+      const box = document.querySelector(need === 'side' ? '.sides' : '.pick-opt');
+      if(box){ box.scrollIntoView({behavior:'smooth', block:'center'}); (box.closest('.panel') || box).classList.add('shake'); setTimeout(() => (box.closest('.panel') || box).classList.remove('shake'), 600); }
+      const msg = document.getElementById('pickMsg'); if(msg) msg.textContent = '먼저 한쪽을 골라 주세요.';
+      else alertPick();
+    };
+  }
+}
+function alertPick(){
+  const h = document.querySelector('.panel .opts'); if(!h) return;
+  let m = document.getElementById('pickMsg2');
+  if(!m){ m = document.createElement('p'); m.id = 'pickMsg2'; m.className = 'muted'; h.after(m); }
+  m.textContent = '먼저 느낌 하나를 골라 주세요.';
 }
 
 function collectAnswers(){
@@ -1140,11 +1162,12 @@ async function printSheet(it, withAnswers, D = DAY){
   if(it.type === 'useful') act = `<b class="t">③ 나와 어떤 관계가 있을까?</b>
       <p class="q">✏️ ${esc(a.impact_question)}</p>${lines(2)}<p class="q">✏️ ${esc(a.wonder_question)}</p>${lines(2)}`;
   if(it.type === 'debate') act = `<b class="t">③ ${esc(a.issue)}</b>
-      <div class="two">${['a','b'].map(s => `<div class="side-p"><b>□ ${esc(a['side_'+s].title)}</b><br>${(a['side_'+s].reasons||[]).map(esc).join(' ')}</div>`).join('')}</div>
+      <p class="small">내 생각과 가까운 쪽 네모에 ✔ 하세요.</p>
+      <div class="two">${['a','b'].map(s => `<div class="side-p"><span class="pbox"></span><b>${esc(a['side_'+s].title)}</b><br>${(a['side_'+s].reasons||[]).map(esc).join(' ')}</div>`).join('')}</div>
       <p class="q">✏️ ${esc(a.choose_question)}</p>${lines(2)}<p class="q">✏️ ${esc(a.other_side_question)}</p>${lines(2)}`;
   if(it.type === 'media') act = `<b class="t">③ 같은 사건, 다른 제목</b>
       <table>${(it.headlines||[]).map(h => `<tr><td style="width:20%">${esc(h.source)}</td><td>${esc(h.title)}</td></tr>`).join('')}</table>
-      <p>제목들의 느낌에 ○ 하세요: ${(a.feeling_choices||[]).map(c => `(　) ${esc(c)}`).join('　')}</p>
+      <p>제목들의 느낌 하나에 ✔ 하세요: ${(a.feeling_choices||[]).map(c => `<span class="pbox sm"></span>${esc(c)}`).join('　')}</p>
       <p class="q">✏️ ${esc(a.why_question)}</p>${lines(2)}<p class="q">✏️ ${esc(a.rewrite_question)}</p>${lines(2)}`;
   let html = `${qr ? `<div class="qr"><img src="${qr}" alt="">뉴스 다시 보기</div>` : ''}<h1>${esc(it.title)}</h1>
     <div class="meta"><span>오늘의 시사 · ${esc(D.date)} · 출처 ${esc(it.source)} (새로 쓴 요약, AI 생성)</span><span>____학년 ____번 이름: ________</span></div>
@@ -1165,7 +1188,16 @@ async function printSheet(it, withAnswers, D = DAY){
       <div class="box"><b class="t">더 물어볼 질문 · 주의할 점</b>${(t.extra_questions||[]).map(q=>`<p>· ${esc(q)}</p>`).join('')}${(t.cautions||[]).map(q=>`<p>※ ${esc(q)}</p>`).join('')}</div>
       <div class="box"><b class="t">교과 연계</b>${(it.curriculum||[]).map(c=>`<p>${esc(c)}</p>`).join('')}</div>`;
   }
-  document.getElementById('print').innerHTML = html;
+  const pr = document.getElementById('print');
+  pr.style.zoom = '';
+  pr.innerHTML = html;
+  // 내용이 길어 첫 장을 넘으면 글자·칸을 조금씩 줄여 A4 한 장에 맞춤 (정답 포함 인쇄는 두 장이라 첫 장만 맞춤)
+  pr.classList.add('measure');
+  const pxPerMm = 96 / 25.4, pageMm = 271;
+  const cut = pr.querySelector('.pb');
+  const h = (cut ? cut.offsetTop : pr.scrollHeight) / pxPerMm;
+  pr.classList.remove('measure');
+  if(h > pageMm) pr.style.zoom = Math.max(0.78, pageMm / h).toFixed(3);
   setTimeout(() => window.print(), 150);
 }
 
