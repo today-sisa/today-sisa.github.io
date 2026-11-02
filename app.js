@@ -56,7 +56,7 @@ function render(st){
   window.scrollTo({top:0});
 }
 window.addEventListener('popstate', e => { if(e.state) render(e.state); });
-const TEACHER_VIEWS = new Set(['teacherHome','teacherMode','guide','share','results','classSetup','classReady','devNote','classLog','studentLog','pastNews','pastDay']);
+const TEACHER_VIEWS = new Set(['classImport','teacherHome','teacherMode','guide','share','results','classSetup','classReady','devNote','classLog','studentLog','pastNews','pastDay']);
 document.getElementById('backBtn').onclick = () => history.back();
 document.getElementById('devBtn').onclick = () => go('devNote', {from: (history.state && history.state.view) || ''});
 document.getElementById('homeBtn').onclick = () => go(soloMode && ITEM ? 'soloHome' : CLASS && STUDENT ? 'studentHome' : 'home', soloMode && ITEM ? {r:ITEM.rank} : {});
@@ -112,10 +112,10 @@ async function showStats(){
   const MIN = CFG.STATS_MIN || 10;
   let st = LS.get('stats', null);
   if(!st || Date.now() - st.at > 3 * 3600e3){
-    try{ const j = await (await fetch(`${CFG.REGISTRY_URL}?action=stats`)).json(); if(j.ok){ st = {...j, at:Date.now()}; LS.set('stats', st); } }catch(e){}
+    try{ const j = await (await fetch(`${CFG.REGISTRY_URL}?action=stats`)).json(); if(j.ok && typeof j.teachers === 'number'){ st = {...j, at:Date.now()}; LS.set('stats', st); } }catch(e){}
   }
   const el = document.getElementById('stats');
-  if(!el || !st || st.teachers < MIN) return;
+  if(!el || !st || !(Number(st.teachers) >= MIN)) return;
   el.innerHTML = `🌱 지금 <b>${st.teachers.toLocaleString()}명의 선생님</b>${st.classes ? `, <b>${st.classes.toLocaleString()}개 반</b>이` : '이'} 함께 시사 공부 중`;
   el.hidden = false;
 }
@@ -687,6 +687,8 @@ const GUIDE = [
 let gsCode = '';
 VIEWS.classSetup = async () => {
   show(`<h2>반 만들기</h2>
+    ${CFG.REGISTRY_URL ? `<div class="import-box"><b>다른 브라우저나 컴퓨터에서 이미 반을 만들었나요?</b>
+      <button class="btn sun small-btn" id="toImport" type="button">반코드로 불러오기</button></div>` : ''}
     <p>학생 답과 오늘의 주제는 <b>선생님의 구글 시트에만</b> 저장돼요. 처음 한 번만 하면 됩니다. (3분)</p>
     <div class="panel"><ol class="steps">
       <li><b>답안 시트 사본 만들기</b>
@@ -709,6 +711,7 @@ VIEWS.classSetup = async () => {
     <input type="text" id="className" placeholder="예: ○○초 5·6학년" maxlength="30">
     <div class="row"><button class="btn" id="makeClass" type="button">연결 확인하고 반 만들기</button></div>
     <p id="setupMsg" class="muted"></p>`);
+  const ti = document.getElementById('toImport'); if(ti) ti.onclick = () => go('classImport');
   try{ gsCode = gsCode || await (await fetch('apps-script/teacher-sheet.gs')).text(); }
   catch(e){ gsCode = '코드를 불러오지 못했어요. 저장소의 apps-script/teacher-sheet.gs 파일을 열어 복사해 주세요.'; }
   if(!document.getElementById('gs')) return;
@@ -734,6 +737,36 @@ VIEWS.classSetup = async () => {
   };
 };
 // QR·링크에는 반 시트 주소를 직접 넣어 등록소를 거치지 않게 함 (등록소는 반코드를 손으로 칠 때만)
+/* 이미 만든 반 불러오기: 반코드 + 선생님 열쇠 */
+VIEWS.classImport = () => {
+  if(!teacherOK()) return go('teacherGate', {}, true);
+  show(`<h2>반코드로 불러오기</h2>
+    <p>엣지에서 만든 반을 웨일에서 쓰거나, 학교 컴퓨터에서 만든 반을 집 컴퓨터에서 쓸 때 해요.</p>
+    <label class="field" for="imCode">반코드 (6글자)</label>
+    <input type="text" id="imCode" maxlength="6" autocomplete="off" placeholder="예: K7P2QM" style="font-size:24px;letter-spacing:.12em;text-transform:uppercase">
+    <label class="field" for="imKey">선생님 열쇠</label>
+    <input type="text" id="imKey" autocomplete="off" placeholder="답안 시트의 '설정' 탭 B1 칸">
+    <p class="muted">선생님 열쇠는 내 답안 시트(구글 드라이브)를 열고 아래쪽 <b>'설정' 탭</b>의 <b>B1 칸</b>에 있어요. 아이들에게는 알려 주지 마세요.</p>
+    <div class="row"><button class="btn" id="imGo" type="button">불러오기</button><span class="muted" id="imMsg"></span></div>`);
+  imGo.onclick = async () => {
+    const code = imCode.value.trim().toUpperCase(), key = imKey.value.trim();
+    if(code.length !== 6){ imMsg.textContent = '반코드는 6글자예요.'; return; }
+    if(!key){ imMsg.textContent = '선생님 열쇠를 붙여 넣어 주세요.'; return; }
+    imGo.disabled = true; imMsg.textContent = '반을 찾는 중…';
+    let cls = null;
+    try{ const r = await (await fetch(`${CFG.REGISTRY_URL}?action=lookup&code=${encodeURIComponent(code)}`)).json(); if(r.ok) cls = r; }catch(e){}
+    if(!cls){ imGo.disabled = false; imMsg.textContent = '없는 반코드예요. 한 글자씩 다시 확인해 주세요.'; return; }
+    imMsg.textContent = '열쇠를 확인하는 중…';
+    let ping = {}, okKey = false;
+    try{ ping = await (await fetch(cls.url + '?action=ping')).json(); }catch(e){}
+    try{ const a = await (await fetch(`${cls.url}?action=answers&date=${DAY.date}&key=${encodeURIComponent(key)}`)).json(); okKey = !!a.ok; }catch(e){}
+    if(!okKey && ping.version >= 2){ imGo.disabled = false; imMsg.textContent = '열쇠가 맞지 않아요. 답안 시트 \'설정\' 탭 B1 칸을 다시 복사해 주세요.'; return; }
+    LS.set('myClass', {url: cls.url, name: cls.name || '우리 반', code: cls.code, sheetUrl: ping.sheetUrl || '', key: okKey ? key : ''});
+    LS.set('mode', 'web');
+    go('classReady', {}, true);
+  };
+};
+
 const classLink = mine => `${BASE}?u=${encodeURIComponent(mine.url)}&n=${encodeURIComponent(mine.name)}${mine.code ? `&c=${mine.code}` : ''}`;
 VIEWS.classReady = () => {
   const mine = LS.get('myClass', null);
