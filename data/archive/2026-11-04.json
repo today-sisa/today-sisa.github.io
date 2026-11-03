@@ -1,0 +1,605 @@
+{
+ "version": 2,
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T06:46+09:00",
+ "hidden": false,
+ "sample": false,
+ "items": [
+  {
+   "title": "미국의 중요한 중간선거가 열렸어요",
+   "words": [
+    {
+     "word": "중간선거",
+     "meaning": "대통령 임기 중간에 의원을 뽑는 선거예요.",
+     "wrong": [
+      "대통령을 새로 뽑는 큰 선거예요.",
+      "1년에 한 번씩 하는 투표예요."
+     ]
+    },
+    {
+     "word": "경합지",
+     "meaning": "어느 쪽이 이길지 알기 어려운 곳이에요.",
+     "wrong": [
+      "투표를 아예 하지 않는 지역이에요.",
+      "한쪽 정당만 무조건 이기는 곳이에요."
+     ]
+    }
+   ],
+   "summary": [
+    "미국에서 의원을 뽑는 중간선거 투표가 진행 중이에요.",
+    "이번 선거는 높은 물가와 경제 상황이 큰 문제로 꼽혀요.",
+    "선거 결과에 따라 미국의 의회 권력이 바뀔 수 있어요."
+   ],
+   "five_w": {
+    "who": "미국 유권자들과 정치인들",
+    "when": "2026년 11월 3일",
+    "where": "미국 전 지역",
+    "what": "상·하원 의원을 뽑는 중간선거",
+    "how": "주별로 투표를 진행함",
+    "why": "의회 권력의 지형을 결정하려고"
+   },
+   "activity": {
+    "impact_question": "미국의 선거 결과는 우리 경제에 어떤 영향을 줄까요?",
+    "wonder_question": "미국 중간선거에 대해 더 알고 싶은 점은 무엇인가요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "미국 중간선거 투표가 순차적으로 진행되고 있어요.",
+     "answer": "사실",
+     "reason": "기사에 나온 실제 투표 진행 상황이에요."
+    },
+    {
+     "sentence": "하원은 민주당이 과반을 차지할 가능성이 높아요.",
+     "answer": "사실",
+     "reason": "선거 분석 기관의 최근 분석 결과예요."
+    },
+    {
+     "sentence": "이번 선거는 물가 문제가 가장 중요한 쟁점이에요.",
+     "answer": "의견",
+     "reason": "유권자들이 중요하게 생각하는 주관적 생각이에요."
+    },
+    {
+     "sentence": "선거 결과로 우리나라 경제가 큰 타격을 입을 거예요.",
+     "answer": "의견",
+     "reason": "앞으로의 일에 대한 예측과 걱정이 담겨 있어요."
+    }
+   ],
+   "challenge": "다른 나라의 선거 결과가 우리 삶에 왜 중요할까요?",
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "미국의 경제 정책이 바뀌면 우리나라 물가나 무역에도 영향을 줄 수 있어요.",
+     "wonder_question": "우리나라와 미국의 관계는 앞으로 어떻게 달라질지 궁금해요.",
+     "challenge": "세계 여러 나라는 서로 물건을 사고팔며 긴밀하게 연결되어 있기 때문이에요."
+    },
+    "extra_questions": [
+     "우리나라의 국회의원을 뽑는 선거와 미국의 중간선거는 어떤 점이 비슷하고 다를까요?",
+     "선거 결과가 나올 때까지 시간이 오래 걸리는 이유는 무엇일까요?"
+    ],
+    "cautions": [
+     "특정 정당이나 정치인의 입장을 지지하거나 비판하지 않도록 중립적으로 지도해 주세요.",
+     "복잡한 미국의 정치 제도를 초등학교 5학년 수준에서 이해하기 쉽게 단순화하여 설명해 주세요."
+    ]
+   },
+   "rank": 1,
+   "type": "useful",
+   "category": "세계",
+   "topic": "미국 중간선거와 국제 정세",
+   "reason": "미국 중간선거 결과가 한국 경제와 외교에 미치는 영향을 다루어 세계 경제와 정치의 흐름을 이해하는 데 유익함",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12326323",
+   "original_title": "트럼프 \"많은 사람 죽이고 싶지 않지만 필요하다면 할 것\"",
+   "member_titles": [
+    "트럼프 운명 오늘 판가름…오후부터 결과 윤곽",
+    "트럼프 \"많은 사람 죽이고 싶지 않지만 필요하다면 할 것\"",
+    "\"민주당이 승리 시 '반도체 걱정'…공화당은 '관세 압박'\"",
+    "미, 5천300만 명 사전투표 역대 최대…트럼프 강행군 속 민주당 우세 전망",
+    "[美중간선거] 트럼프 \"생각보다 좋을 것\"…野상원대표 \"다수당 예상\"",
+    "오늘 미국 중간선거…민주, 상·하원 장악 가능성 주목"
+   ],
+   "pub": "2026-11-04",
+   "related": [
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008829331&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008829057&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nbnRFa1dJZGtiM05CYzZyTGpBa0tTV25tTm1qYVM4d2REWEgzbFpta3pXWjFUNlNsY01xMVp2al9IZ1h1anQ4VWQwYThnQmQ2enVqV1BuRF9LWkE?oc=5"
+    },
+    {
+     "source": "연합뉴스",
+     "link": "https://www.yna.co.kr/view/AKR20261104006500071"
+    }
+   ],
+   "video": null,
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (23자, 15자 이내로): 대통령 임기 중간에 의원을 뽑는 선거…",
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 대통령을 새로 뽑는 큰 선거예요.…",
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 1년에 한 번씩 하는 투표예요.…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 15자 이내로): 어느 쪽이 이길지 알기 어려운 곳이에…",
+    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 투표를 아예 하지 않는 지역이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 한쪽 정당만 무조건 이기는 곳이에요.…"
+   ]
+  },
+  {
+   "title": "가상화폐 해킹을 두고 벌어진 다툼",
+   "words": [
+    {
+     "word": "해킹",
+     "meaning": "몰래 시스템에 침입하는 일",
+     "wrong": [
+      "컴퓨터를 새로 조립하는 일",
+      "인터넷 속도를 빠르게 하는 일"
+     ]
+    },
+    {
+     "word": "자금 세탁",
+     "meaning": "더러운 돈을 깨끗하게 꾸미는 일",
+     "wrong": [
+      "지폐를 물에 깨끗이 씻는 일",
+      "새 돈으로 교환해 주는 일"
+     ]
+    }
+   ],
+   "summary": [
+    "미국은 가상화폐 해킹의 배후로 북한을 지목했어요.",
+    "북한은 미국의 주장이 낭설이라며 강하게 반박했어요.",
+    "두 나라는 사이버 범죄를 두고 서로 다투고 있어요."
+   ],
+   "five_w": {
+    "who": "미국과 북한",
+    "when": "최근",
+    "where": "인터넷 공간",
+    "what": "해킹 배후 공방",
+    "how": "성명 발표",
+    "why": "사이버 범죄 책임 공방"
+   },
+   "activity": {
+    "issue": "미국의 해킹 배후 지목은 정당한 행동일까요?",
+    "side_a": {
+     "title": "정당한 조치",
+     "reasons": [
+      "범죄를 막으려면 당연히 지적해야 해요."
+     ]
+    },
+    "side_b": {
+     "title": "정치적 도발",
+     "reasons": [
+      "확실한 증거 없이 누명을 씌우는 행동이에요."
+     ]
+    },
+    "choose_question": "나는 어느 쪽이에요? 그 까닭은요?",
+    "other_side_question": "반대쪽 생각의 좋은 점은 뭘까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "미국은 북한을 해킹 배후로 지목했어요.",
+     "answer": "사실",
+     "reason": "실제 뉴스에서 발표한 내용이에요."
+    },
+    {
+     "sentence": "북한은 미국의 주장을 전면 부인했어요.",
+     "answer": "사실",
+     "reason": "담화를 통해 입장을 밝혔어요."
+    },
+    {
+     "sentence": "이런 주장은 두 나라 사이를 더 악화시켜요.",
+     "answer": "의견",
+     "reason": "앞으로의 관계를 예상한 생각이에요."
+    },
+    {
+     "sentence": "사이버 범죄는 국제 사회가 힘을 합쳐 막아야 해요.",
+     "answer": "의견",
+     "reason": "필요성에 대한 개인의 판단이에요."
+    }
+   ],
+   "challenge": "내가 만약 두 나라의 갈등을 해결하는 외교관이라면 어떤 말을 해주고 싶나요?",
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-2 세계 여러 나라의 자연과 문화"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "choose_question": "정당한 조치 입장이에요. 국제 범죄는 널리 알려야 피해를 줄일 수 있기 때문이에요.",
+     "other_side_question": "상대방 입장은 오해로 인한 갈등을 줄이고 대화를 먼저 시도해야 한다는 장점이 있어요.",
+     "challenge": "증거를 투명하게 공개하고 대화를 통해 문제를 평화롭게 해결하자고 말하고 싶어요."
+    },
+    "extra_questions": [
+     "가상화폐 범죄가 우리 생활에 미치는 영향은 무엇일까요?",
+     "인터넷 공간에서 벌어지는 범죄를 막으려면 어떤 노력이 필요할까요?"
+    ],
+    "cautions": [
+     "특정 국가에 대한 편견이나 감정적인 비난으로 이어지지 않도록 중립적인 태도를 지도해요.",
+     "가상화폐와 해킹이라는 용어의 개념을 아이들이 오해하지 않게 정리해 주세요."
+    ]
+   },
+   "rank": 2,
+   "type": "debate",
+   "category": "사회",
+   "topic": "가상화폐 해킹 배후 공방",
+   "reason": "대규모 가상화폐 해킹 사건을 두고 미국과 북한의 입장이 첨예하게 갈려 사이버 안보와 외교적 갈등을 보여줌",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12326262",
+   "original_title": "김여정 '첫' 반응…\"배후\" 지목한 미국에 \"정치적 도발\"",
+   "member_titles": [
+    "美 \"北 사이버범죄는 문제\"…北 해킹 부인 반박",
+    "20분 만에 8조 원 탈취...\"내부 시스템 침투\"",
+    "\"배후는 북한\" 미국이 지목하자…김여정 의미심장 발언",
+    "\"방금도 포착\" 돈 세탁 '줄줄이'…\"북 돈줄 끊을 수 있다\"",
+    "북한 김여정 \"바이낸스 사태, 미국 정치적 도발\"",
+    "김여정 '첫' 반응…\"배후\" 지목한 미국에 \"정치적 도발\""
+   ],
+   "pub": "2026-11-04",
+   "related": [
+    {
+     "source": "연합뉴스TV",
+     "link": "https://www.yonhapnewstv.co.kr/news/MYH20261104052323S1V"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBndG95MlNNOXNUbjFkZ1EyY19FUDdnN1d6VFdqMUQ2YVQwUDJHY05CZDVPUGZGZzZhR1RkbEwyN09Xc3NYbTBSNXlzQktOcTdIUk9KOTliVmh5c0dYbFE?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008829060&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008829061&plink=RSSLINK&cooper=RSSREADER"
+    }
+   ],
+   "video": {
+    "id": "RzyhOiKeheQ",
+    "title": "김여정 '첫' 반응…\"배후\" 지목한 미국에 \"정치적 도발\" / JTBC 뉴스룸",
+    "channel": "JTBC News",
+    "kind": "news",
+    "match": 1.0
+   },
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 인터넷 속도를 빠르게 하는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 더러운 돈을 깨끗하게 꾸미는 일…"
+   ]
+  },
+  {
+   "title": "역삼동 방화 사건 피의자 신상 공개",
+   "words": [
+    {
+     "word": "신상공개",
+     "meaning": "이름과 나이 등을 알림",
+     "wrong": [
+      "죄를 용서해 주는 일",
+      "새로운 물건을 파는 일"
+     ]
+    },
+    {
+     "word": "구속송치",
+     "meaning": "죄를 지어 붙잡혀 넘김",
+     "wrong": [
+      "상처를 깨끗이 치료함",
+      "물건을 안전하게 보관함"
+     ]
+    }
+   ],
+   "summary": [
+    "서울 역삼동 빌딩 두 곳에 불이 났어요.",
+    "많은 사람이 다치고 피의자가 붙잡혔어요.",
+    "경찰은 피의자의 신상을 공개했어요."
+   ],
+   "five_w": {
+    "who": "경찰과 피의자 이명수",
+    "when": "지난달 20일과 오늘",
+    "where": "서울 역삼동 빌딩",
+    "what": "방화 피의자 신상 공개",
+    "how": "경찰청 홈페이지에 공개",
+    "why": "공공의 이익이 커서"
+   },
+   "activity": {
+    "impact_question": "범죄 예방을 위해 어떤 노력이 필요할까요?",
+    "wonder_question": "피의자의 신상을 공개하는 기준은 뭘까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "피의자의 나이는 77살이에요.",
+     "answer": "사실",
+     "reason": "기사에 나온 정확한 숫자예요."
+    },
+    {
+     "sentence": "신상 정보는 한 달 동안 공개돼요.",
+     "answer": "사실",
+     "reason": "30일간 공개된다고 적혀 있어요."
+    },
+    {
+     "sentence": "범죄자 신상은 모두 공개해야 해요.",
+     "answer": "의견",
+     "reason": "사람마다 생각이 다를 수 있어요."
+    },
+    {
+     "sentence": "이런 일은 다시 일어나지 않을 거예요.",
+     "answer": "의견",
+     "reason": "앞날을 확실하게 알 수 없어요."
+    }
+   ],
+   "challenge": "범죄 피의자의 신상을 공개하는 것에 대해 어떻게 생각하나요?",
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "CCTV를 많이 설치하고 이웃을 살피는 노력이 필요해요.",
+     "wonder_question": "피해의 중대성과 범행의 잔인성을 따져서 결정해요.",
+     "challenge": "국민의 알 권리와 범죄 예방을 위해 필요하지만, 가족이 피해를 볼 수도 있어요."
+    },
+    "extra_questions": [
+     "경찰이 신상을 공개하는 이유는 무엇인가요?",
+     "우리가 일상에서 지켜야 할 안전 수칙은 무엇이 있나요?"
+    ],
+    "cautions": [
+     "사건의 잔인성이나 자극적인 표현에 집중하지 않도록 지도해 주세요.",
+     "피의자에 대한 혐오 표현이나 과도한 비난보다는 사회적 안전에 초점을 맞춰 주세요."
+    ]
+   },
+   "rank": 3,
+   "type": "useful",
+   "category": "사회",
+   "topic": "역삼동 연쇄 방화범 신상 공개",
+   "reason": "흉악 범죄 피의자의 신상 공개 제도를 통해 사회적 안전과 법의 집행 과정을 배울 수 있음",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12326239",
+   "original_title": "'역삼동 연쇄 방화' 피의자 신상공개…77세 이명수",
+   "member_titles": [
+    "'역삼동 연쇄 방화' 피의자 신상 공개...77살 이명수",
+    "'역삼동 연쇄 방화' 피의자 신상공개…77세 이명수",
+    "역삼 빌딩 방화 피의자는 '77살 이명수'…신상정보 공개"
+   ],
+   "pub": "2026-11-03",
+   "related": [
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1SX1VyZXRBd29jaDRZTmxRejhQRDd6b1dJTnZQcmhvZ2d6cHBQTUdrRTdJZUlFamM3ZFhwWHBEX19kQXFBc1F5UFpIR0VGTzk2Mi1KUE1aX21YYmdaSE9oaDF0Yjd1eTRxTXNLUUxQWQ?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008829071&plink=RSSLINK&cooper=RSSREADER"
+    }
+   ],
+   "video": {
+    "id": "uh7Wz90vzlI",
+    "title": "'역삼동 연쇄방화' 피의자 신상공개…77세 이명수 / SBS 실시간 라이브",
+    "channel": "SBS 뉴스",
+    "kind": "news",
+    "match": 1.0
+   },
+   "needs_review": false,
+   "review_notes": []
+  },
+  {
+   "title": "울주군에서 찾은 공룡 꼬리 흔적",
+   "words": [
+    {
+     "word": "화석",
+     "meaning": "옛날 생물의 흔적",
+     "wrong": [
+      "살아 있는 동물",
+      "돌멩이 조각"
+     ]
+    },
+    {
+     "word": "보존",
+     "meaning": "잘 지켜서 남김",
+     "wrong": [
+      "모두 부수기",
+      "새로 만들기"
+     ]
+    }
+   ],
+   "summary": [
+    "울주군에서 공룡 꼬리 흔적이 발견됐어요.",
+    "꼬리가 바닥을 쓸며 생긴 흔적이에요.",
+    "국내에서 처음으로 확인된 모양이에요."
+   ],
+   "five_w": {
+    "who": "연구진",
+    "when": "최근",
+    "where": "울주군",
+    "what": "공룡 꼬리 흔적 발견",
+    "how": "조사를 통해서",
+    "why": "기다란 모양의 흔적이 남아서"
+   },
+   "activity": {
+    "impact_question": "이 발견은 우리 동네에 어떤 자랑거리가 될까요?",
+    "wonder_question": "공룡에 대해 더 알고 싶은 것은 무엇인가요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "울주군에서 공룡 꼬리 흔적이 발견됐어요.",
+     "answer": "사실",
+     "reason": "조사 결과로 밝혀진 내용이에요."
+    },
+    {
+     "sentence": "이 흔적은 모양이 아주 신기해요.",
+     "answer": "의견",
+     "reason": "사람마다 다르게 느낄 수 있어요."
+    },
+    {
+     "sentence": "국내에서 처음 보존된 모양의 흔적이에요.",
+     "answer": "사실",
+     "reason": "지금까지 찾은 적 없는 형태예요."
+    },
+    {
+     "sentence": "앞으로 많은 사람들이 이곳을 찾아올 거예요.",
+     "answer": "의견",
+     "reason": "아직 일어나지 않은 일이에요."
+    }
+   ],
+   "challenge": "내가 만약 공룡 흔적을 처음 발견했다면 어떤 기분이 들었을까요?",
+   "curriculum": [
+    "사회 5-1 우리 국토의 자연환경",
+    "과학 4-2 지층과 화석"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "우리 동네가 공룡이 살았던 곳으로 유명해져서 사람들이 많이 찾아올 것 같아요.",
+     "wonder_question": "이 흔적을 남긴 공룡은 몸집이 얼마나 컸을지 궁금해요.",
+     "challenge": "너무 신기해서 깜짝 놀라고 온 동네 사람들에게 자랑하고 싶었을 것 같아요."
+    },
+    "extra_questions": [
+     "우리 지역에는 옛날 생물의 흔적이 남아 있는 곳이 있을까요?",
+     "소중한 자연 유산을 앞으로 어떻게 지켜야 할까요?"
+    ],
+    "cautions": [
+     "학생들이 화석과 공룡에 대한 호기심을 자연스럽게 가질 수 있도록 지도해요.",
+     "발견된 장소나 의미를 사실 그대로 이해했는지 확인해요."
+    ]
+   },
+   "rank": 4,
+   "type": "useful",
+   "category": "과학·환경",
+   "topic": "울주군 공룡 꼬리 흔적 발견",
+   "reason": "국내 유일하게 보존된 공룡 꼬리 흔적 발견 소식으로 학생들의 과학적 호기심과 지역 문화재에 대한 관심을 높임",
+   "source": "KBS",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5oSEZ4Q3pjQU1VeTlueVMzX1Z0ZmFldkhYODhUMHlDNElkZFJ0YW9RWm9BSDJYQlNhOW03WWMxTTRvLUZwX0kxeEo2emtUYkZzbWlkUjRFNDlzZGZ4UmZaZ1VXdTQ1QQ?oc=5",
+   "original_title": "울주군에 공룡 꼬리 흔적 발견…“국내 유일 보존”",
+   "member_titles": [
+    "울주군에 공룡 꼬리 흔적 발견…“국내 유일 보존”"
+   ],
+   "pub": "2026-11-03",
+   "related": [],
+   "video": {
+    "id": "V2X5R6sf230",
+    "title": "울산서 ‘공룡 꼬리’ 흔적 발견…“국내 유일 보존” / KBS 2026.11.03.",
+    "channel": "KBS News",
+    "kind": "news",
+    "match": 0.8125
+   },
+   "needs_review": false,
+   "review_notes": []
+  },
+  {
+   "title": "우리나라와 튀르키예의 만남",
+   "words": [
+    {
+     "word": "정상회담",
+     "meaning": "나라의 대표가 만나서 의논하는 일",
+     "wrong": [
+      "가장 높은 산봉우리에 오르는 일",
+      "서로 마음이 상해 사과하는 일"
+     ]
+    },
+    {
+     "word": "양해각서",
+     "meaning": "정식 계약 전에 서로 뜻을 모으는 것",
+     "wrong": [
+      "양쪽 나라가 치르는 시험",
+      "서로의 잘못을 이해하는 글"
+     ]
+    }
+   ],
+   "summary": [
+    "한국과 튀르키예가 정상회담을 열었어요.",
+    "원전과 방산 등 협력을 강화하기로 했어요.",
+    "희토류 등 공급망 협력도 약속했어요."
+   ],
+   "five_w": {
+    "who": "한국과 튀르키예 정상",
+    "when": "2026년 11월",
+    "where": "기사에 없음",
+    "what": "원전과 방산 협력 강화",
+    "how": "정상회담을 열고 합의",
+    "why": "양국의 실질적인 성과를 위해"
+   },
+   "activity": {
+    "impact_question": "이 일, 우리 생활엔 어떤 영향을 줄까요?",
+    "wonder_question": "더 알고 싶은 내용 한 가지는요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "두 나라는 정상회담을 열었어요.",
+     "answer": "사실",
+     "reason": "실제로 일어난 일이에요."
+    },
+    {
+     "sentence": "양해각서 4건을 체결했어요.",
+     "answer": "사실",
+     "reason": "뉴스에서 확인된 내용이에요."
+    },
+    {
+     "sentence": "이 협력은 우리 경제에 큰 도움이 될 거예요.",
+     "answer": "의견",
+     "reason": "아직 일어나지 않은 일이에요."
+    },
+    {
+     "sentence": "앞으로 두 나라의 관계가 더 좋아질 거예요.",
+     "answer": "의견",
+     "reason": "앞날을 짐작하는 생각이에요."
+    }
+   ],
+   "challenge": "다른 나라와 협력하면 좋은 점을 한 문장으로 써 봐요.",
+   "curriculum": [
+    "사회 5-2 우리 경제의 발전",
+    "사회 6-2 세계 속의 대한민국"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "우리 나라의 기술을 알리고 필요한 자원을 더 쉽게 얻을 수 있어요.",
+     "wonder_question": "원전을 짓는 일은 우리 기업에 어떤 이익을 주나요?"
+    },
+    "extra_questions": [
+     "다른 나라와 꼭 협력해야 하는 까닭은 무엇인가요?",
+     "우리가 수입하는 자원에는 어떤 것이 있나요?"
+    ],
+    "cautions": [
+     "외교와 경제 협력이 우리 생활에 미치는 영향을 중심으로 지도합니다.",
+     "어려운 경제 용어는 아이들의 눈높이에 맞추어 설명합니다."
+    ]
+   },
+   "rank": 5,
+   "type": "useful",
+   "category": "경제",
+   "topic": "한·튀르키예 정상회담과 협력",
+   "reason": "한국과 튀르키예가 원전, 방산, 첨단 기술 분야에서 협력을 강화하기로 한 외교 및 경제 성과를 다룸",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12326311",
+   "original_title": "한·튀르키예 정상회담…'원전 금융지원·희토류 공급망' 등 MOU 4건 체결",
+   "member_titles": [
+    "한·튀르키예 전략관계 심화…\"신규 원전 참여 지원\"",
+    "한·튀르키예 정상회담…'원전 금융지원·희토류 공급망' 등 MOU 4건 체결",
+    "한-튀르키예 공동언론발표...\"전략적 동반자 관계 심화\" [현장영상+]",
+    "에르도안 튀르키예 대통령 내일 국빈 방한‥\"중동 정세 논의\""
+   ],
+   "pub": "2026-11-04",
+   "related": [
+    {
+     "source": "연합뉴스TV",
+     "link": "https://www.yonhapnewstv.co.kr/news/MYH20261104003050yS0"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1fdGlyZmFpRjRVdDhFc3g3aUF6VWhteXVkTm5rZWtYRUxlbm95cktUb0h6bVRrdldrZzhJU1hIOEhOS3JDWnlEbDBENkM0OWs5cFJjMXN2b0ZIUXozSHh2SVY0WEZfX3o5UDVZSTRNcw?oc=5"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0weFQ3V21OYmRidVlUYnVHRkd0Z0xmZUlPbVBLY2U2ejBDQXc1LV9KZEZ2eVlFdXZoa2JpSFJoZ25rbW0tQkdDc3hJaVd6ek1wWVlUV2NQdHdpa0RkSlVjQUJwSTNOSi1KeVVoRzMtdl9KZEl6bU5PX9IBeEFVX3lxTFBsUUZ6LXRNdXhjeEgzd2VMcExPLUg0MnJGODZuenByeUlzN1JMRWdqMHZWX0thdTZfSkdHQW43UnVqckdhTUpWbERXdE1VTFZNYXNJUW5TWWFyZ1lpWHdZUDM1ZTk1WTI1dWYwSTM1dldxSF9hLTVtYw?oc=5"
+    }
+   ],
+   "video": null,
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 나라의 대표가 만나서 의논하는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 가장 높은 산봉우리에 오르는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 서로 마음이 상해 사과하는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 정식 계약 전에 서로 뜻을 모으는 것…"
+   ]
+  }
+ ]
+}
