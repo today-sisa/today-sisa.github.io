@@ -231,12 +231,14 @@ VIEWS.teacherHome = () => {
         ${it.needs_review ? `<p class="muted" style="color:var(--warn)">자동 검사에서 확인이 필요한 부분이 있어요. 교사용에서 확인해 주세요.</p>` : ''}
       </div></li>`).join('')}</ol>
     <div class="row" style="justify-content:center"><button class="btn ghost" id="toPast" type="button">📚 지난 뉴스 · 학습지 다시 보기</button></div>
+    <p class="stats" id="stats" hidden></p>
     <details class="panel"><summary>오늘 뉴스가 수업에 맞지 않나요?</summary>
       <p class="muted">이유를 보내 주시면 선정 지침을 고치는 데 씁니다.</p>
       <div class="row">${['너무 어려움','부적절함','지루함','기타'].map(r => `<button class="btn ghost small-btn" data-reason="${r}" type="button">${r}</button>`).join('')}</div>
       <input type="text" id="fbMemo" placeholder="한 줄 메모 (선택)"><p class="muted" id="fbMsg"></p>
     </details>${footer()}`);
   chMode.onclick = () => go('teacherMode');
+  showStats();
   toPast.onclick = () => go('pastNews');
   if(mine) toLog.onclick = () => go('classLog', {tab:'date'});
   if(mine){ toQR.onclick = () => go('classReady'); toRes.onclick = () => go('results', {r: topicRank || 1}); refreshTopic(mine); }
