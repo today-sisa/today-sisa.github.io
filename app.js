@@ -111,16 +111,19 @@ async function showStats(){
   if(!CFG.REGISTRY_URL) return;
   const BIG = CFG.STATS_MIN || 10;   // 이 숫자부터는 "함께 공부 중" 문구, 그 전에는 "함께 시작했어요"
   let st = LS.get('stats', null);
-  // 1명 이상이면 3시간, 0명이면 2분만 기억 (처음 들어온 직후 숫자가 늦게 뜨지 않게)
-  if(!st || Date.now() - st.at > (Number(st.teachers) >= 1 ? 3 * 3600e3 : 120e3)){
+  // 1개 반 이상이면 3시간, 0이면 2분만 기억 (처음 들어온 직후 숫자가 늦게 뜨지 않게)
+  const total = x => Math.max(Number(x && x.teachers) || 0, Number(x && x.classes) || 0);
+  if(!st || Date.now() - st.at > (total(st) >= 1 ? 3 * 3600e3 : 120e3)){
     try{ const j = await (await fetch(`${CFG.REGISTRY_URL}?action=stats`)).json(); if(j.ok && typeof j.teachers === 'number'){ st = {...j, at:Date.now()}; LS.set('stats', st); } }catch(e){}
   }
   const el = document.getElementById('stats');
-  const t = Number(st && st.teachers), c = Number(st && st.classes) || 0;
-  if(!el || !(t >= 1)) return;
-  el.innerHTML = t >= BIG
-    ? `🌱 지금 <b>${t.toLocaleString()}명의 선생님</b>${c ? `, <b>${c.toLocaleString()}개 반</b>이` : '이'} 함께 시사 공부 중`
-    : `🌱 <b>${t}명의 선생님</b>${c ? `과 <b>${c}개 반</b>이` : '이'} 오늘의 시사를 함께 시작했어요`;
+  // 종이 학습지 선생님(기기 수)과 웹앱 반(등록된 반 수)을 '반'으로 합쳐 셈.
+  // 웹앱 선생님도 기기 수에 이미 들어 있으므로 더하지 않고 큰 쪽을 씀 (겹쳐 세기 방지)
+  const n = total(st);
+  if(!el || !(n >= 1)) return;
+  el.innerHTML = n >= BIG
+    ? `🌱 지금 <b>${n.toLocaleString()}개 반</b>이 함께 시사 공부 중`
+    : `🌱 <b>${n}개 반</b>이 오늘의 시사를 함께 시작했어요`;
   el.hidden = false;
 }
 
