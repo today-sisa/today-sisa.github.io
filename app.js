@@ -83,8 +83,10 @@ const srcOf = (it, want) => !it ? 'video' : !it.video ? (hasArt(it) ? 'article' 
 const teacherSrc = (it, D = DAY) => srcOf(it, LS.get(`src:${D.date}:${it.rank}`, 'video'));
 const reviewLink = (it, D = DAY, src) => `${BASE}?date=${D.date}&r=${it.rank}&v=1${srcOf(it, src || teacherSrc(it, D)) === 'article' ? '&a=1' : ''}`;
 // 웹앱 반: 선생님 시트에는 '순위'만 저장되므로, 기사 뉴스는 순위+0.5로 보냄 (예: 2순위 기사 = 2.5)
-const encRank = (rank, src) => src === 'article' ? rank + 0.5 : rank;
-const decRank = v => ({rank: Math.floor(Number(v)), src: Number(v) % 1 ? 'article' : 'video'});
+// 시트는 1~5만 받으므로 5순위 기사는 4.75로 보냄 (x.5 = x순위 기사, 4.75 = 5순위 기사)
+const encRank = (rank, src) => src === 'article' ? (rank >= 5 ? 4.75 : rank + 0.5) : rank;
+const decRank = v => { v = Number(v); const f = Math.round((v % 1) * 100);
+  return f === 75 ? {rank: Math.ceil(v), src: 'article'} : {rank: Math.floor(v), src: f ? 'article' : 'video'}; };
 function boldWords(html, it){
   for(const w of (it.words || [])) if(w.word) html = html.split(esc(w.word)).join(`<b>${esc(w.word)}</b>`);
   return html;
