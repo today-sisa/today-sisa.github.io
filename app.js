@@ -21,7 +21,8 @@ let CLASS = null;      // 학생: {url, name, code}
 let STUDENT = null;    // {number, name}
 let state = {};        // 학생 답
 let tvMode = false;
-let soloMode = false;   // 반 없이 QR로 들어와 혼자 풀기 (답 제출 없음)
+let soloMode = false;
+let SRC = 'video';     // 오늘 아이들이 볼 것: 'video'(영상 뉴스) | 'article'(기사 뉴스) — 선생님이 정함   // 반 없이 QR로 들어와 혼자 풀기 (답 제출 없음)
 
 /* ───────── 데이터 ───────── */
 async function getJSON(path){
@@ -76,7 +77,30 @@ function banners(forTeacher, it){
   return h;
 }
 const footer = () => `<p class="foot">뉴스 선정과 학습지는 AI가 자동으로 만들었어요. 수업 전 선생님 검토를 권장합니다. 기사 원문은 각 언론사에 있으며, 이 사이트는 새로 쓴 요약과 링크만 제공합니다.</p>`;
-const reviewLink = (it, D = DAY) => `${BASE}?date=${D.date}&r=${it.rank}&v=1`;
+const hasArt = it => !!(it && it.article && (it.article.happened || []).length);
+// 영상이 없으면 기사, 기사가 없으면 영상(없으면 요약)으로 자동
+const srcOf = (it, want) => !it ? 'video' : !it.video ? (hasArt(it) ? 'article' : 'video') : (want === 'article' && hasArt(it) ? 'article' : 'video');
+const teacherSrc = (it, D = DAY) => srcOf(it, LS.get(`src:${D.date}:${it.rank}`, 'video'));
+const reviewLink = (it, D = DAY, src) => `${BASE}?date=${D.date}&r=${it.rank}&v=1${srcOf(it, src || teacherSrc(it, D)) === 'article' ? '&a=1' : ''}`;
+// 웹앱 반: 선생님 시트에는 '순위'만 저장되므로, 기사 뉴스는 순위+0.5로 보냄 (예: 2순위 기사 = 2.5)
+const encRank = (rank, src) => src === 'article' ? rank + 0.5 : rank;
+const decRank = v => ({rank: Math.floor(Number(v)), src: Number(v) % 1 ? 'article' : 'video'});
+function boldWords(html, it){
+  for(const w of (it.words || [])) if(w.word) html = html.split(esc(w.word)).join(`<b>${esc(w.word)}</b>`);
+  return html;
+}
+function articleHTML(it, forPrint){
+  const A = it.article || {}, bg = A.background || {};
+  const P = t => `<p>${boldWords(esc(t), it)}</p>`;
+  return `<div class="article">
+    ${!forPrint && it.video ? `<img class="art-img" src="https://i.ytimg.com/vi/${esc(it.video.id)}/hqdefault.jpg" alt="" loading="lazy">` : ''}
+    <h3>무슨 일이 있었나요?</h3>${(A.happened || []).map(P).join('')}
+    ${A.why ? `<h3>왜 이런 일이 생겼을까요?</h3>${P(A.why)}` : ''}
+    ${bg.text ? `<div class="art-box"><b>📘 ${esc(bg.title || '알아 두면 좋은 배경지식')}</b>${P(bg.text)}</div>` : ''}
+    ${A.deeper ? `<div class="art-box deep"><b>🔎 6학년 더 깊이</b>${P(A.deeper)}</div>` : ''}
+    <p class="art-note">여러 기사를 바탕으로 AI가 아이들 눈높이로 새로 쓴 글이에요. 원문: ${esc(it.source)}</p>
+  </div>`;
+}
 const dayCache = {};
 async function dayFor(date){   // 지난 날짜 학습지 불러오기 (없으면 오늘 것)
   if(!date || date === DAY.date) return DAY;
@@ -201,7 +225,7 @@ VIEWS.teacherHome = () => {
     <div class="mode-bar">지금: <b>${paper ? '🖨️ 종이 학습지' : '📱 웹앱 학습지'}</b> <button class="link-btn" id="chMode" type="button">바꾸기</button></div>
     ${paper ? '' : `<div class="panel">${mine
       ? `<b>우리 반: ${esc(mine.name)}</b>${mine.code ? ` · 반코드 <b>${esc(mine.code)}</b>` : ''}
-         <p class="muted" id="topicNow">오늘 주제: ${topicRank ? `${topicRank}순위` : '아직 고르지 않음 (고를 때까지 아이들은 기다리는 화면을 봐요)'}</p>
+         <p class="muted" id="topicNow">오늘 주제: ${topicRank ? `${topicRank}순위 · ${teacherSrc(itemByRank(topicRank)) === 'article' ? '📖 기사' : '🎬 영상'}` : '아직 고르지 않음 (고를 때까지 아이들은 기다리는 화면을 봐요)'}</p>
          <div class="row"><button class="btn sun small-btn" id="toRes" type="button">답 모아 보기</button>
            <button class="btn ghost small-btn" id="toLog" type="button">우리 반 기록</button>
            <button class="btn ghost small-btn" id="toQR" type="button">QR·반 링크 보기</button>
@@ -254,6 +278,10 @@ VIEWS.teacherNews = ({r}) => {
   const topicRank = mine ? LS.get(`topic:${mine.url}:${DAY.date}`, null) : null;
   const picked = mine && topicRank === it.rank;
   const ok = full(it);
+  const src = teacherSrc(it);
+  const srcPick = ok && it.video && hasArt(it) ? `<p class="src-q">아이들이 무엇으로 볼까요?</p>
+      <div class="src-tabs"><button type="button" data-src="video" class="${src === 'video' ? 'on' : ''}">🎬 영상 뉴스</button><button type="button" data-src="article" class="${src === 'article' ? 'on' : ''}">📖 기사 뉴스</button></div>`
+    : ok && hasArt(it) && !it.video ? `<p class="src-q">이 뉴스는 영상이 없어서 <b>📖 기사 뉴스</b>로 해요.</p>` : '';
   let main = '';
   if(!ok) main = `<p class="muted">이 뉴스는 학습지 없이 기사만 있어요. 다른 뉴스를 골라 주세요.</p>`;
   else if(paper) main = `<button class="btn sun big-link" id="nPrint" type="button">🖨️ 학습지 인쇄</button>`;
@@ -262,15 +290,15 @@ VIEWS.teacherNews = ({r}) => {
       <button class="btn sun big-link" id="nShare" type="button">QR·반코드 크게 띄우기</button>
       <div class="row"><button class="btn small-btn" id="nRes" type="button">답 모아 보기</button></div>`;
   else main = `<button class="btn sun big-link" id="nTopic" type="button">우리 반 주제로 정하기</button>
-      <p class="muted">누르면 아이들 화면에 이 뉴스가 뜨고, QR·반코드 화면으로 넘어가요.${topicRank ? ` (지금 주제: ${topicRank}순위)` : ''}</p>`;
+      <p class="muted">누르면 아이들 화면에 이 뉴스(${src === 'article' ? '기사' : '영상'})가 뜨고, QR·반코드 화면으로 넘어가요.${topicRank ? ` (지금 주제: ${topicRank}순위)` : ''}</p>`;
   show(`${banners(true, it)}
     <p class="muted">${it.rank}순위 · <span class="tag ${it.type}">${TYPE_NAME[it.type]}</span><span class="tag cat">${esc(it.category)}</span>${daysAgo(it)}</p>
     <h2>${esc(it.title)}</h2>
     <p>${(it.summary||[]).map(esc).join(' ')}</p>
     <p class="muted">선정 이유: ${esc(it.reason)}</p>
-    <div class="panel">${main}
+    <div class="panel">${srcPick}${main}
       ${ok ? `<div class="row">
-        ${paper ? `<button class="btn ghost small-btn" id="nShare" type="button">QR 크게 띄우기 (영상)</button>` : ''}
+        ${paper ? `<button class="btn ghost small-btn" id="nShare" type="button">QR 크게 띄우기 (${src === 'article' ? '기사' : '영상'})</button>` : ''}
         <button class="btn ghost small-btn" id="nTV" type="button">TV 화면</button>
         <button class="btn ghost small-btn" id="nGuide" type="button">교사용 (정답·예시)</button>
         ${paper ? '' : `<button class="btn ghost small-btn" id="nPrint" type="button">종이로 인쇄</button>`}
@@ -279,12 +307,17 @@ VIEWS.teacherNews = ({r}) => {
     <p class="mini-links">${it.video ? `<a href="${videoLink(it.video)}" target="_blank" rel="noopener">영상 보기 (${esc(it.video.channel)})</a> · ` : ''}<a href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문 (${esc(it.source)})</a></p>
     <div class="row"><button class="btn ghost small-btn" id="nBack" type="button">← 다른 뉴스 고르기</button></div>${footer()}`);
   const $ = id => document.getElementById(id);
+  document.querySelectorAll('[data-src]').forEach(b => b.onclick = () => {
+    LS.set(`src:${DAY.date}:${it.rank}`, b.dataset.src);
+    if(picked) setTopic(mine, it.rank, null);   // 이미 우리 반 주제면 아이들 화면도 바꿈
+    VIEWS.teacherNews({r:it.rank});
+  });
   if($('nPrint')) $('nPrint').onclick = () => printSheet(it, false);
   if($('nShare')) $('nShare').onclick = () => go('share', {r:it.rank});
   if($('nSetup')) $('nSetup').onclick = () => go('classSetup');
   if($('nRes')) $('nRes').onclick = () => go('results', {r:it.rank});
   if($('nTopic')) $('nTopic').onclick = e => setTopic(mine, it.rank, e.currentTarget);
-  if($('nTV')) $('nTV').onclick = () => { ITEM = it; tvMode = true; state = {}; STUDENT = {number:'', name:'우리 반'}; go('step', {i:0, r:it.rank, tv:1}); };
+  if($('nTV')) $('nTV').onclick = () => { ITEM = it; SRC = teacherSrc(it); tvMode = true; state = {}; STUDENT = {number:'', name:'우리 반'}; go('step', {i:0, r:it.rank, tv:1}); };
   if($('nGuide')) $('nGuide').onclick = () => go('guide', {r:it.rank});
   $('nBack').onclick = () => history.back();
 };
@@ -296,32 +329,35 @@ async function refreshTopic(mine){
   }
   try{
     const r = await (await fetch(mine.url + '?action=topic')).json();
-    if(r.ok && r.date === DAY.date && r.rank && LS.get(`topic:${mine.url}:${DAY.date}`, null) !== r.rank){
-      LS.set(`topic:${mine.url}:${DAY.date}`, r.rank);
+    const dr = r.ok && r.rank ? decRank(r.rank) : null;
+    if(dr && r.date === DAY.date && (LS.get(`topic:${mine.url}:${DAY.date}`, null) !== dr.rank || LS.get(`src:${DAY.date}:${dr.rank}`, 'video') !== dr.src)){
+      LS.set(`topic:${mine.url}:${DAY.date}`, dr.rank); LS.set(`src:${DAY.date}:${dr.rank}`, dr.src);
       if(history.state && history.state.view === 'teacherHome') VIEWS.teacherHome();
     }
   }catch(e){}
 }
 
 async function setTopic(mine, rank, btn){
-  btn.disabled = true; btn.textContent = '저장하는 중…';
-  const payload = JSON.stringify({app:'today-news', action:'setTopic', date:DAY.date, rank, key: mine.key || ''});
+  if(btn){ btn.disabled = true; btn.textContent = '저장하는 중…'; }
+  const sent = encRank(rank, teacherSrc(itemByRank(rank)));
+  const payload = JSON.stringify({app:'today-news', action:'setTopic', date:DAY.date, rank: sent, key: mine.key || ''});
   let ok = false, err = '';
   try{ const j = await (await fetch(mine.url, {method:'POST', body:payload})).json(); ok = !!j.ok; err = j.error || ''; }
   catch(e){
     try{ await fetch(mine.url, {method:'POST', body:payload, mode:'no-cors'});
       const t = await (await fetch(mine.url + '?action=topic')).json();  // 정말 저장됐는지 확인
-      ok = t.ok && t.date === DAY.date && Number(t.rank) === rank; if(!ok) err = 'key';
+      ok = t.ok && t.date === DAY.date && Number(t.rank) === sent; if(!ok) err = 'key';
     }catch(e2){}
   }
   if(!ok){
+    if(!btn) return;
     btn.disabled = false;
     if(err === 'key'){ btn.textContent = '선생님 열쇠가 필요해요'; setTimeout(() => go('results', {r:rank}), 900); }
     else btn.textContent = '다시 눌러 주세요 (저장 실패)';
     return;
   }
   LS.set(`topic:${mine.url}:${DAY.date}`, rank);
-  go('share', {r:rank});
+  if(btn) go('share', {r:rank});
 }
 
 async function sendFeedback(reason){
@@ -386,15 +422,15 @@ VIEWS.share = ({r}) => {
           ${mine && mine.code ? `<p class="muted">반코드</p><div class="share-code">${esc(mine.code)}</div>` : ''}
           <p class="share-how">${mine
             ? (mine.code ? '학생 → 반코드 입력, 또는 QR 찍기' : 'QR을 찍어 들어와요')
-            : 'QR을 찍으면 오늘 뉴스 영상이 열려요<br><span class="muted">학습지는 종이로 해요</span>'}</p>
+            : `QR을 찍으면 오늘 뉴스 ${teacherSrc(it) === 'article' ? '기사' : '영상'}가 열려요<br><span class="muted">학습지는 종이로 해요</span>`}</p>
         </div>
       </div>
       <h3>어떻게 할까요?</h3>
       <div class="choice two-col">
-        <button class="big" id="shTV" type="button"><strong>교실 화면으로 함께 보기</strong><span>영상부터 TV에 띄우고 다 같이 이야기해요</span></button>
+        <button class="big" id="shTV" type="button"><strong>교실 화면으로 함께 보기</strong><span>${teacherSrc(it) === 'article' ? '기사' : '영상'}부터 TV에 띄우고 다 같이 이야기해요</span></button>
         ${mine
           ? `<button class="big" id="shSolo" type="button"><strong>아이들이 각자 보기</strong><span>이 화면을 띄워 두면 아이들이 QR${mine.code ? '·반코드' : ''}로 들어와 각자 풀어요</span></button>`
-          : `<button class="big" id="shSolo" type="button"><strong>아이들이 각자 영상 보기</strong><span>아이들이 QR로 영상을 보고, 학습지는 종이로 해요</span></button>`}
+          : `<button class="big" id="shSolo" type="button"><strong>아이들이 각자 ${teacherSrc(it) === 'article' ? '기사 읽기' : '영상 보기'}</strong><span>아이들이 QR로 ${teacherSrc(it) === 'article' ? '기사를 읽고' : '영상을 보고'}, 학습지는 종이로 해요</span></button>`}
       </div>
       ${mine ? '' : `<div class="row" style="justify-content:center"><button class="btn sun" id="shPrint" type="button">학습지 인쇄</button></div>`}
       <div class="row"><button class="btn ghost small-btn" id="shFull" type="button">전체 화면</button>
@@ -402,7 +438,7 @@ VIEWS.share = ({r}) => {
         <button class="btn ghost small-btn" id="shBack" type="button">뉴스 목록으로</button></div>
     </div>`, true);
   drawQR(document.getElementById('bigQR'), link, 360);
-  shTV.onclick = () => { ITEM = it; tvMode = true; state = {}; STUDENT = {number:'', name:'우리 반'}; go('step', {i:0, r:it.rank, tv:1}); };
+  shTV.onclick = () => { ITEM = it; SRC = teacherSrc(it); tvMode = true; state = {}; STUDENT = {number:'', name:'우리 반'}; go('step', {i:0, r:it.rank, tv:1}); };
   if(!mine){ shPrint.onclick = () => printSheet(it, false); }
   shSolo.onclick = () => { shSolo.querySelector('span').textContent = '아이들이 들어오는 동안 이 화면을 그대로 띄워 두세요.'; document.getElementById('bigQR').scrollIntoView({behavior:'smooth', block:'center'}); };
   shFull.onclick = () => { const el = document.documentElement; (el.requestFullscreen ? el.requestFullscreen() : Promise.reject()).catch(() => {}); };
@@ -878,10 +914,10 @@ VIEWS.nameEntry = () => {
 };
 
 async function classTopicRank(){
-  if(qs.get('r')) return Number(qs.get('r'));
+  if(qs.get('r')){ SRC = qs.get('a') ? 'article' : 'video'; return Number(qs.get('r')); }
   try{
     const r = await (await fetch(CLASS.url + '?action=topic')).json();
-    if(r.ok && r.date === DAY.date && r.rank) return Number(r.rank);
+    if(r.ok && r.date === DAY.date && r.rank){ const d = decRank(r.rank); SRC = d.src; return d.rank; }
     if(r.ok) return 0;          // 선생님이 아직 오늘 주제를 고르지 않음
   }catch(e){}
   return -1;                    // 시트에 연결하지 못함
@@ -901,7 +937,7 @@ VIEWS.studentHome = async () => {
     <p>${esc(STUDENT.name)} 학생, 좋은 아침이에요.</p>
     <div class="today"><span class="tag ${ITEM.type}">${TYPE_NAME[ITEM.type]}</span>
       <h2 style="margin-top:10px">${esc(ITEM.title)}</h2>
-      <p class="muted">영상 보기 3~5분, 학습지 10~15분</p>
+      <p class="muted">${srcOf(ITEM, SRC) === 'article' ? '기사 읽기' : '영상 보기'} 3~5분, 학습지 10~15분</p>
       ${done ? '<p><b>오늘 학습지를 이미 냈어요.</b> 다시 풀어도 돼요.</p>' : ''}
       <div class="row"><button class="btn sun" id="startBtn" type="button">시작하기</button></div>
     </div>
@@ -941,24 +977,25 @@ function streak(){
 }
 
 /* ───────── 다시 보기 (학습지 QR) ───────── */
-VIEWS.review = ({r}) => {
+VIEWS.review = ({r, a}) => {
   const it = itemByRank(r);
-  show(`<p class="muted">${esc(DAY.date)} 오늘의 시사 다시 보기</p><h2>${esc(it.title)}</h2>
-    ${it.video ? `<div class="video"><div id="yt"></div><div class="cover" id="vCover" hidden><div><p style="font-size:22px">영상 끝</p></div></div></div>
+  const art = srcOf(it, a ? 'article' : 'video') === 'article';
+  show(`<p class="muted">${esc(DAY.date)} 오늘의 시사 ${art ? '기사 읽기' : '다시 보기'}</p><h2>${esc(it.title)}</h2>
+    ${art ? articleHTML(it) : it.video ? `<div class="video"><div id="yt"></div><div class="cover" id="vCover" hidden><div><p style="font-size:22px">영상 끝</p></div></div></div>
       <p class="muted">${esc(it.video.channel)} 공식 채널 영상 · 영상이 안 나오면 아래 기사 원문을 보세요.</p>`
       : `<div class="panel"><p>오늘은 이 뉴스에 맞는 영상이 없어요. 아래 기사 원문을 보세요.</p></div>`}
     <a class="btn ghost big-link" href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문 열기 (${esc(it.source)})</a>${footer()}`);
-  if(it.video) mountYT(it.video.id, null);
+  if(!art && it.video) mountYT(it.video.id, null);
 };
 
 /* ───────── 학습 단계 ───────── */
-const STEPS = ['영상 보기','오늘의 낱말','육하원칙','핵심 활동','사실일까 의견일까','마무리'];
+const STEPS = ['영상·기사 보기','오늘의 낱말','육하원칙','핵심 활동','사실일까 의견일까','마무리'];
 const saveAns = () => { if(!tvMode) LS.set(`ans:${DAY.date}:${ITEM.rank}`, state); };
 VIEWS.soloHome = ({r}) => {
-  ITEM = itemByRank(r); soloMode = true; tvMode = false;
+  ITEM = itemByRank(r); soloMode = true; tvMode = false; SRC = qs.get('a') ? 'article' : 'video';
   state = LS.get(`ans:${DAY.date}:${ITEM.rank}`, {});
   show(`${banners(false)}<div class="today"><span class="tag ${ITEM.type}">${TYPE_NAME[ITEM.type]}</span>
-    <h2 style="margin-top:10px">${esc(ITEM.title)}</h2><p class="muted">영상 보기 3~5분, 학습지 10~15분</p>
+    <h2 style="margin-top:10px">${esc(ITEM.title)}</h2><p class="muted">${srcOf(ITEM, SRC) === 'article' ? '기사 읽기' : '영상 보기'} 3~5분, 학습지 10~15분</p>
     <div class="row"><button class="btn sun" id="startBtn" type="button">시작하기</button></div></div>`);
   startBtn.onclick = () => go('step', {i:0, r:ITEM.rank});
 };
@@ -981,6 +1018,10 @@ VIEWS.step = ({i, r, tv}) => {
   };
   const origin = `<a class="btn ${tvMode ? 'sun big-link' : 'ghost small-btn'}" href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문 열기 (${esc(it.source)})</a>`;
 
+  if(i === 0 && srcOf(it, SRC) === 'article'){
+    show(bar + `<h2>${esc(it.title)}</h2>` + articleHTML(it) + `<p class="muted">다 읽었으면 <b>다음</b>을 눌러 학습지를 시작해요.</p>` + nav());
+    return bindNav();
+  }
   if(i === 0){
     show(bar + `<h2>${esc(it.title)}</h2>` + (it.video
       ? `<div class="video"><div id="yt"></div>
@@ -1231,6 +1272,7 @@ async function qrDataURL(text){
   return c ? c.toDataURL('image/png') : '';
 }
 async function printSheet(it, withAnswers, D = DAY){
+  const art = srcOf(it, teacherSrc(it, D)) === 'article';
   const a = it.activity || {}, t = it.teacher || {};
   const lines = n => Array.from({length:n}, () => '<div class="lines"></div>').join('');
   const L3 = {who:'누가', what:'무엇을', why:'왜'};
@@ -1246,7 +1288,8 @@ async function printSheet(it, withAnswers, D = DAY){
       <table>${(it.headlines||[]).map(h => `<tr><td style="width:20%">${esc(h.source)}</td><td>${esc(h.title)}</td></tr>`).join('')}</table>
       <p>제목들의 느낌 하나에 ✔ 하세요: ${(a.feeling_choices||[]).map(c => `<span class="pbox sm"></span>${esc(c)}`).join('　')}</p>
       <p class="q">✏️ ${esc(a.why_question)}</p>${lines(2)}<p class="q">✏️ ${esc(a.rewrite_question)}</p>${lines(2)}`;
-  let html = `${qr ? `<div class="qr"><img src="${qr}" alt="">뉴스 다시 보기</div>` : ''}<h1>${esc(it.title)}</h1>
+  let html = `${art ? `<div class="art-page"><h1>${esc(it.title)}</h1>
+      <div class="meta"><span>오늘의 시사 · ${esc(D.date)} · 읽기 자료</span><span>읽고 뒷면 학습지를 풀어요</span></div>${articleHTML(it, true)}</div><div class="pb"></div>` : ''}<div class="ws">${qr ? `<div class="qr"><img src="${qr}" alt="">${art ? '기사 다시 읽기' : '뉴스 다시 보기'}</div>` : ''}<h1>${esc(it.title)}</h1>
     <div class="meta"><span>오늘의 시사 · ${esc(D.date)} · 출처 ${esc(it.source)} (새로 쓴 요약, AI 생성)</span><span>____학년 ____번 이름: ________</span></div>
     <div class="box" style="clear:both"><b class="t">① 오늘의 낱말 — 알맞은 뜻에 ○ 하세요</b>
       <table>${(it.words||[]).map(w => `<tr><td style="width:16%"><b>${esc(w.word)}</b></td><td>${shuffleSeeded([w.meaning,...(w.wrong||[])], D.date+w.word).map(o=>`(　) ${esc(o)}`).join('　　')}</td></tr>`).join('')}</table></div>
@@ -1255,7 +1298,7 @@ async function printSheet(it, withAnswers, D = DAY){
       <p class="small">기사에 없으면 '기사에 없음'이라고 써요.</p></div>
     <div class="box">${act}</div>
     <div class="box"><b class="t">④ 사실이면 '사', 의견이면 '의'</b>
-      <table>${(it.facts_opinions||[]).map(f=>`<tr><td>${esc(f.sentence)}</td><td style="width:14mm"></td></tr>`).join('')}</table></div>`;
+      <table>${(it.facts_opinions||[]).map(f=>`<tr><td>${esc(f.sentence)}</td><td style="width:14mm"></td></tr>`).join('')}</table></div></div>`;
   if(withAnswers){
     html += `<div class="pb"></div><h1>정답과 예시 답안</h1>
       <div class="box"><b class="t">낱말</b>${(it.words||[]).map(w=>`<p>${esc(w.word)}: ${esc(w.meaning)}</p>`).join('')}</div>
@@ -1271,8 +1314,7 @@ async function printSheet(it, withAnswers, D = DAY){
   // 내용이 길어 첫 장을 넘으면 글자·칸을 조금씩 줄여 A4 한 장에 맞춤 (정답 포함 인쇄는 두 장이라 첫 장만 맞춤)
   pr.classList.add('measure');
   const pxPerMm = 96 / 25.4, pageMm = 271;
-  const cut = pr.querySelector('.pb');
-  const h = (cut ? cut.offsetTop : pr.scrollHeight) / pxPerMm;
+  const h = pr.querySelector('.ws').offsetHeight / pxPerMm;   // 학습지 한 장만 재서 맞춤
   pr.classList.remove('measure');
   if(h > pageMm) pr.style.zoom = Math.max(0.78, pageMm / h).toFixed(3);
   setTimeout(() => window.print(), 150);
@@ -1294,7 +1336,7 @@ async function boot(){
   document.getElementById('brandTitle').textContent = CFG.SITE_TITLE || '오늘의 시사';
 
   // 학습지 QR로 들어온 '다시 보기'
-  if(qs.get('v') && qs.get('r')) return go('review', {r:Number(qs.get('r'))}, true);
+  if(qs.get('v') && qs.get('r')) return go('review', {r:Number(qs.get('r')), a: qs.get('a') ? 1 : 0}, true);
   // 반 없이 선생님 QR로 들어온 '혼자 풀기'
   if(qs.get('solo') && qs.get('r')) return go('soloHome', {r:Number(qs.get('r'))}, true);
 

@@ -547,8 +547,18 @@ def check_worksheet(cfg: dict, ws: dict, pick: dict, source_text: str) -> list[s
             for r in reasons:
                 too_long(f"{side} 이유", r, LIMITS["reason"])
     too_long("도전 문항", m.get("challenge", ""), LIMITS["question"] + 15)
+    # 학습용 기사: 문단 2~3개, 문단 길이, 배경지식·더 깊이
+    art = m.get("article") or {}
+    hp = art.get("happened") or []
+    if not (isinstance(hp, list) and 1 <= len(hp) <= 3 and all(isinstance(x, str) and x.strip() for x in hp)):
+        problems.append("학습용 기사(article.happened) 문단이 1~3개 있어야 함")
+    for x in hp if isinstance(hp, list) else []:
+        too_long("기사 문단", x, 230)
+    too_long("기사 '왜' 문단", art.get("why", ""), 230)
+    too_long("배경지식", (art.get("background") or {}).get("text", ""), 120)
+    too_long("6학년 더 깊이", art.get("deeper", ""), 120)
     # 중립 검사: 제목·요약·발문에 한쪽으로 기운 표현이 있으면 안 됨 (찬반 이유·의견 문장은 제외)
-    neutral_text = all_text([m.get("title", ""), m.get("summary", []), act.get("issue", ""),
+    neutral_text = all_text([m.get("title", ""), m.get("summary", []), act.get("issue", ""), m.get("article", {}),
                              {k: v for k, v in act.items() if k.endswith("_question")}])
     loaded = [w for w in cfg.get("loaded_words", []) if w in neutral_text]
     if loaded:
@@ -559,7 +569,7 @@ def check_worksheet(cfg: dict, ws: dict, pick: dict, source_text: str) -> list[s
         problems.append(f"금지어 포함: {', '.join(hit)}")
     # 지어낸 숫자 검사: 요약·육하원칙에 나온 숫자는 자료에 있어야 함
     src_nums = {n.replace(",", "") for n in NUM_RE.findall(source_text)}
-    for n in NUM_RE.findall(all_text([m.get("summary", []), fw])):
+    for n in NUM_RE.findall(all_text([m.get("summary", []), fw, m.get("article", {})])):
         n2 = n.replace(",", "").rstrip(".")
         if len(n2) >= 2 and n2 not in src_nums:
             problems.append(f"자료에 없는 숫자 '{n}' (지어낸 내용일 수 있음)")
@@ -581,6 +591,10 @@ def tone_problems(ws: dict) -> list[str]:
     texts += [v for k, v in act.items() if isinstance(v, str) and (k.endswith("_question") or k == "issue")]
     if m.get("challenge"):
         texts.append(m["challenge"])
+    art = m.get("article") or {}
+    for para in list(art.get("happened") or []) + [art.get("why", ""), (art.get("background") or {}).get("text", ""), art.get("deeper", "")]:
+        if isinstance(para, str) and para.strip():
+            texts += [x for x in re.split(r"(?<=[.!?])\s+", para.strip()) if x]
     bad = [t for t in texts if isinstance(t, str) and t.strip() and not YO_END.search(t.strip())]
     return [f"'~요' 체가 아닌 문장 {len(bad)}개 (모두 '~요'로 끝나게): " + " / ".join(b[:18] for b in bad[:4])] if bad else []
 
