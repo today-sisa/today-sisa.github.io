@@ -599,13 +599,28 @@ def make_worksheet(cfg, pick, by_id, body, videos, d) -> dict:
         p2 = check_worksheet(cfg, ws2, pick, source_text)
         if len(p2) <= len(problems):  # 다시 받은 것이 더 나쁘지 않으면 바꿈
             ws, problems = ws2, p2
-    ws["_problems"] = problems  # 말투 문제는 교사 화면 경고에는 넣지 않음 (내용 오류만 표시)
+    ws["_problems"] = problems  # 기록용. 교사 화면에는 alerts(중요한 주의)만 보임
     return ws
 
 
 # ─────────────────────────── 6. 저장 ───────────────────────────
 
-def build_item(pick, by_id, ws, videos) -> dict:
+ALERT_LABELS = ["혐오감을 줄 수 있어요", "민감한 인물이 등장해요", "아이들이 불안해할 수 있어요", "가정마다 생각이 크게 다를 수 있어요"]
+
+
+def make_alerts(cfg: dict, ws: dict) -> list[dict]:
+    """선생님 화면에 띄울 '정말 중요한 주의'만 모음. 글자 수·형식 같은 사소한 검사는 기록에만 남김."""
+    out = []
+    for a in (ws.get("alerts") or [])[:3]:
+        if isinstance(a, dict) and a.get("label") in ALERT_LABELS and a["label"] not in [x["label"] for x in out]:
+            out.append({"label": a["label"], "detail": str(a.get("detail", ""))[:40]})
+    banned = [p.split(": ", 1)[1] for p in ws.get("_problems", []) if p.startswith("금지어 포함: ")]
+    if banned and not any(x["label"] == ALERT_LABELS[0] for x in out):
+        out.append({"label": ALERT_LABELS[0], "detail": f"학습지에 '{banned[0]}' 같은 말이 있어요"[:40]})
+    return out
+
+
+def build_item(pick, by_id, ws, videos, cfg=None) -> dict:
     vi = ws.get("video_index", -1)
     video = videos[vi] if isinstance(vi, int) and 0 <= vi < len(videos) else None
     main = dict(ws.get("main", {}))
@@ -622,7 +637,8 @@ def build_item(pick, by_id, ws, videos) -> dict:
         "related": [{"source": by_id[m]["source"], "link": by_id[m]["link"]}
                     for m in pick["members"] if m != pick["main"]][:4],
         "video": video,
-        "needs_review": bool(ws.get("_problems")),
+        "alerts": make_alerts(cfg or {}, ws),           # 선생님 화면에 보이는 주의 (중요한 것만)
+        "needs_review": bool(ws.get("_problems")),      # 자동 검사 기록 (화면에는 안 보임)
         "review_notes": ws.get("_problems", []),
     }
 
@@ -771,12 +787,13 @@ def run():
             log(f"{p['rank']}순위 학습지 실패: {e}")
             RUN["items"].append({"rank": p["rank"], "error": str(e)[:120]})
             continue
-        item = build_item(p, by_id, ws, videos)
+        item = build_item(p, by_id, ws, videos, cfg)
         items.append(item)
         RUN["items"].append({"rank": p["rank"], "body_chars": len(body), "video_candidates": len(videos),
-                             "video": bool(item["video"]), "problems": ws["_problems"]})
+                             "video": bool(item["video"]), "problems": ws["_problems"],
+                             "alerts": [a["label"] for a in item["alerts"]]})
         if ws["_problems"]:
-            log(f"{p['rank']}순위 검사에서 남은 문제(교사 검토 표시로 공개):", ws["_problems"])
+            log(f"{p['rank']}순위 검사에서 남은 문제(기록만, 화면에는 안 보임):", ws["_problems"])
         if not MOCK:
             time.sleep(5)  # 무료 등급 분당 호출 제한 여유
     if not items:

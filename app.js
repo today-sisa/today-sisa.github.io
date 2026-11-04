@@ -72,7 +72,7 @@ function banners(forTeacher, it){
   let h = '';
   if(DAY.sample) h += `<div class="banner info">지금은 <b>예시 화면</b>이에요. 첫 자동 실행이 끝나면 실제 뉴스로 바뀝니다.</div>`;
   if(!qs.get('date') && DAY.date !== todayKST()) h += `<div class="banner info">오늘 학습지가 아직 없어 가장 최근(${esc(DAY.date)}) 학습지를 보여 줘요.</div>`;
-  if(forTeacher && it && it.needs_review) h += `<div class="banner warn">자동 검사에서 확인이 필요한 부분이 있었어요: ${esc((it.review_notes||[]).join(', '))}. 수업 전에 한 번 읽어 봐 주세요.</div>`;
+  if(forTeacher && it && (it.alerts||[]).length) h += `<div class="banner warn">${it.alerts.map(a => `⚠️ <b>${esc(a.label)}</b>${a.detail ? ` <span>(${esc(a.detail)})</span>` : ''}`).join('<br>')}<br><span class="muted">수업 전에 영상과 교사용을 한 번 봐 주세요.</span></div>`;
   return h;
 }
 const footer = () => `<p class="foot">뉴스 선정과 학습지는 AI가 자동으로 만들었어요. 수업 전 선생님 검토를 권장합니다. 기사 원문은 각 언론사에 있으며, 이 사이트는 새로 쓴 요약과 링크만 제공합니다.</p>`;
@@ -225,7 +225,7 @@ VIEWS.teacherHome = () => {
           <button class="btn ${topicRank === it.rank ? '' : 'sun'} small-btn" data-open="${it.rank}" type="button">${topicRank === it.rank ? '✓ 우리 반 주제 · 열기' : '이 뉴스로 하기'}</button>
           <span class="mini-links">${it.video ? `<a href="${videoLink(it.video)}" target="_blank" rel="noopener">영상 보기</a> · ` : ''}<a href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문</a></span>
         </div>
-        ${it.needs_review ? `<p class="muted" style="color:var(--warn)">자동 검사에서 확인이 필요한 부분이 있어요. 교사용에서 확인해 주세요.</p>` : ''}
+        ${(it.alerts||[]).length ? `<p class="muted" style="color:var(--warn)">⚠️ ${it.alerts.map(a => esc(a.label)).join(' · ')}</p>` : ''}
       </div></li>`).join('')}</ol>
     <div class="row" style="justify-content:center"><button class="btn ghost" id="toPast" type="button">📚 지난 뉴스 · 학습지 다시 보기</button></div>
     <p class="stats" id="stats" hidden></p>
