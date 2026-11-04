@@ -1,0 +1,673 @@
+{
+ "version": 2,
+ "date": "2026-11-05",
+ "generated_at": "2026-11-05T07:13+09:00",
+ "hidden": false,
+ "sample": false,
+ "items": [
+  {
+   "title": "미국 중간선거, 민주당의 압승",
+   "words": [
+    {
+     "word": "중간선거",
+     "meaning": "대통령 임기 중간에 치르는 선거예요",
+     "wrong": [
+      "대통령을 새로 뽑는 큰 선거예요",
+      "국회의원을 뽑는 대통령 선거예요"
+     ]
+    },
+    {
+     "word": "레임덕",
+     "meaning": "임기 끝에 권력이 약해지는 일이에요",
+     "wrong": [
+      "대통령의 인기가 갑자기 높아지는 일이에요",
+      "나라의 경제가 갑자기 좋아지는 일이에요"
+     ]
+    }
+   ],
+   "summary": [
+    "미국 중간선거에서 야당인 민주당이 압승했어요.",
+    "트럼프 대통령은 정책을 바꿀 생각이 없다고 했어요.",
+    "민주당은 전쟁 예산을 끊겠다며 압박하고 있어요."
+   ],
+   "five_w": {
+    "who": "미국 민주당",
+    "when": "2026년 11월",
+    "where": "미국",
+    "what": "중간선거 압승",
+    "how": "상·하원 모두 탈환",
+    "why": "전쟁과 물가에 분노해서"
+   },
+   "activity": {
+    "impact_question": "이 선거 결과는 우리나라 경제에 어떤 영향을 줄까요?",
+    "wonder_question": "앞으로 미국 정치와 경제는 어떻게 될까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "민주당이 미국 중간선거에서 상·하원을 탈환했어요.",
+     "answer": "사실",
+     "reason": "선거 결과로 확인된 일이에요"
+    },
+    {
+     "sentence": "트럼프 대통령은 선거 패배 후에도 정면 돌파를 선언했어요.",
+     "answer": "사실",
+     "reason": "대통령의 실제 발언이에요"
+    },
+    {
+     "sentence": "의회가 행정부를 잘 제어해 줄 것이라 안도감이 들어요.",
+     "answer": "의견",
+     "reason": "사람마다 다르게 느낄 수 있어요"
+    },
+    {
+     "sentence": "이번 선거의 최대 패배자는 일론 머스크예요.",
+     "answer": "의견",
+     "reason": "언론의 평가일 뿐 정답은 없어요"
+    }
+   ],
+   "challenge": "거대 야당이 된 민주당과 대통령이 협력하려면 무엇이 가장 중요할까요?",
+   "article": {
+    "happened": [
+     "미국에서 대통령 임기 중간에 치르는 중간선거가 열렸어요. 야당인 민주당이 상원과 하원에서 모두 크게 이겼어요.",
+     "민주당은 선거에서 승리한 뒤 이란 전쟁을 당장 끝내라고 요구했어요. 또 트럼프 일가와 측근들을 조사하겠다고 했어요."
+    ],
+    "why": "트럼프 행정부의 전쟁과 물가 상승에 분노한 유권자들이 민주당을 선택했기 때문이에요.",
+    "background": {
+     "title": "중간선거란?",
+     "text": "대통령 임기 4년 중 2년이 지났을 때 치르는 국회의원 선거예요."
+    },
+    "deeper": "거대 야당이 된 민주당과 트럼프 대통령이 맞부딪히면서 앞으로 미국의 정치가 큰 혼란에 빠질 수 있어요."
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "미국의 물가와 환율이 변해서 우리 나라 무역에도 영향을 줄 수 있어요.",
+     "wonder_question": "미국과 이란의 전쟁이 정말 끝날지 궁금해요.",
+     "challenge": "서로의 입장을 인정하고 대화로 문제를 해결하려는 태도가 중요해요."
+    },
+    "extra_questions": [
+     "트럼프 대통령이 선거 패배를 인정하면서도 정책을 안 바꾸는 이유는 뭘까요?",
+     "야당이 국회를 차지하면 대통령의 힘은 어떻게 될까요?"
+    ],
+    "cautions": [
+     "정치적 갈등이 다뤄지므로 어느 한쪽을 지지하거나 비난하지 않도록 지도해 주세요."
+    ]
+   },
+   "rank": 1,
+   "type": "useful",
+   "category": "세계",
+   "topic": "미국 중간선거 민주당 압승",
+   "reason": "미국 중간선거 결과 야당인 민주당이 상·하원을 모두 탈환하며 트럼프 정부의 국정 운영에 큰 변화가 예상되는 국제 주요 뉴스임.",
+   "source": "SBS",
+   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008831301&plink=RSSLINK&cooper=RSSREADER",
+   "original_title": "미 민주 상·하원 압승…트럼프 \"탄핵하면 파멸\"",
+   "member_titles": [
+    "美선거 끝나자 뉴욕증시 급등…다우 3% 오르며 53,000선 회복",
+    "트럼프 \"중간선거 패배, 이란전쟁 때문…탄핵 추진 시 파멸\"",
+    "미 민주 상·하원 압승…트럼프 \"탄핵하면 파멸\"",
+    "흑인 여성·무슬림·원주민까지…미 중간선거 '최초' 기록 쏟아졌다",
+    "트럼프 “중간선거 결과 전적 수용 의향…민주당과 협력”",
+    "이란 \"트럼프 중간선거 참패 후 변화 기대한다면 큰 착각\""
+   ],
+   "pub": "2026-11-05",
+   "related": [
+    {
+     "source": "연합뉴스",
+     "link": "https://www.yna.co.kr/view/AKR20261105009851072"
+    },
+    {
+     "source": "연합뉴스TV",
+     "link": "https://www.yonhapnewstv.co.kr/news/AKR20261105041628wF7"
+    },
+    {
+     "source": "JTBC",
+     "link": "https://news.jtbc.co.kr/article/NB12326536"
+    },
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9kTDNSRzJXVXRpSWFNaDJSNkdNQVhnb0tXZnVzNGJ0U0Rja3FMdGdzaXIyNWQxZEdlM1p5eHBVN2pJODZMTU9QbkNSR1M5RWgyWnRjSEhrQ1g0WGkwaFkzVUszTFpPQQ?oc=5"
+    }
+   ],
+   "video": {
+    "id": "vvGdDmOQ0CE",
+    "title": "[현장] 미 민주 상·하원 압승..트럼프 \"탄핵하면 파멸\" / SBS 모닝와이드",
+    "channel": "SBS 뉴스",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [
+    {
+     "label": "혐오감을 줄 수 있어요",
+     "detail": "학습지에 '환율' 같은 말이 있어요"
+    }
+   ],
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 대통령 임기 중간에 치르는 선거예요…",
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 대통령을 새로 뽑는 큰 선거예요…",
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 국회의원을 뽑는 대통령 선거예요…",
+    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 임기 끝에 권력이 약해지는 일이에요…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 15자 이내로): 대통령의 인기가 갑자기 높아지는 일이…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 15자 이내로): 나라의 경제가 갑자기 좋아지는 일이에…",
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 트럼프 대통령은 선거 패배 후에도 정…",
+    "금지어 포함: 환율"
+   ]
+  },
+  {
+   "title": "대선 허위 발언 2심도 당선 무효형",
+   "words": [
+    {
+     "word": "항소심",
+     "meaning": "2단계 재판이에요",
+     "wrong": [
+      "처음 받는 재판이에요",
+      "대법원 최종 재판이에요"
+     ]
+    },
+    {
+     "word": "당선무효형",
+     "meaning": "당선이 취소되는 형벌",
+     "wrong": [
+      "선거에서 주는 상이에요",
+      "투표를 다시 하는 권리요"
+     ]
+    }
+   ],
+   "summary": [
+    "윤석열 전 대통령이 2심에서도 당선 무효형을 선고받았어요.",
+    "대선 당시 허위 사실을 공표한 혐의가 모두 유죄로 인정됐어요.",
+    "판결이 확정되면 선거 비용 397억 원을 반환해야 해요."
+   ],
+   "five_w": {
+    "who": "윤석열 전 대통령",
+    "when": "2026년 11월 4일",
+    "where": "서울고등법원",
+    "what": "선거법 위반 2심 재판",
+    "how": "항소를 기각했어요",
+    "why": "허위 사실을 공표해서요"
+   },
+   "activity": {
+    "issue": "선거 때 한 말로 당선이 무효가 되는 일, 어떻게 생각하나요?",
+    "side_a": {
+     "title": "엄격한 처벌",
+     "reasons": [
+      "올바른 선택을 방해했으니까요"
+     ]
+    },
+    "side_b": {
+     "title": "정치적 판결",
+     "reasons": [
+      "표현의 자유를 침해할 수 있어요"
+     ]
+    },
+    "choose_question": "나는 어느 쪽이에요? 그 까닭은요?",
+    "other_side_question": "반대쪽 생각의 좋은 점은 뭘까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "법원은 윤 전 대통령에게 징역 1년 6개월을 선고했어요.",
+     "answer": "사실",
+     "reason": "재판부의 실제 선고 결과예요."
+    },
+    {
+     "sentence": "변호인단은 결론이 정해진 판결이라며 상고하겠다고 밝혔어요.",
+     "answer": "사실",
+     "reason": "변호인단의 공식 입장을 전했어요."
+    },
+    {
+     "sentence": "선거 비용 397억 원을 반환하는 것은 정당한 조치예요.",
+     "answer": "의견",
+     "reason": "사람마다 생각이 다를 수 있어요."
+    },
+    {
+     "sentence": "이번 판결은 우리나라 선거 문화를 더욱 공정하게 만들 거예요.",
+     "answer": "의견",
+     "reason": "앞날에 대한 개인적인 예상이에요."
+    }
+   ],
+   "challenge": "선거에서 거짓말을 엄하게 처벌해야 하는 까닭을 한 문장으로 써요.",
+   "article": {
+    "happened": [
+     "대선 후보 시절 허위 발언을 한 혐의로 재판을 받은 윤석열 전 대통령이 항소심에서도 당선 무효형을 선고받았어요.",
+     "서울고등법원은 1심과 같이 징역 1년 6개월에 집행유예 3년을 선고하고 두 가지 발언 모두 유죄로 판단했어요."
+    ],
+    "why": "재판부는 피고인이 허위 사실을 공표하여 선거인의 올바른 선택권을 침해하고 선거의 공정성을 훼손했다고 밝혔어요.",
+    "background": {
+     "title": "당선무효형이란?",
+     "text": "선거법을 어겨서 당선이 취소되거나 후보 자격을 잃게 만드는 형벌이에요."
+    },
+    "deeper": "재판 결과에 불복할 경우 대법원에서 마지막 최종 재판을 받게 돼요."
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "choose_question": "엄격한 처벌 쪽에 공감해요. 선거는 공정해야 하니까요.",
+     "challenge": "유권자가 후보를 바르게 판단할 기회를 지키기 위해서예요."
+    },
+    "extra_questions": [
+     "선거에서 후보자의 말이 왜 중요할까요?",
+     "거짓 발언이 선거에 어떤 영향을 줄까요?"
+    ],
+    "cautions": [
+     "정치적 성향이나 특정 정당에 대한 비판으로 수업이 치우치지 않도록 주의해요."
+    ]
+   },
+   "rank": 2,
+   "type": "debate",
+   "category": "사회",
+   "topic": "윤석열 전 대통령 2심 유죄",
+   "reason": "선거법 위반 혐의로 기소된 전직 대통령의 항소심 당선무효형 선고와 선거비용 반환 문제를 다루어 법치와 정치적 책임에 대한 관점을 넓힘.",
+   "source": "MBC",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1iSV93QmJreUZGTy12LXB3X0tnMGJaMzlzOXpHSDFWT0lzUmN0V2pId2hHYjd3YW5mSGwyTVEtZ1pxLWZEUURScnljc0tyV1gzT0IzalhuVXVoRFZSLUQtczVXaEhwRkxHVDJqdy0xRUpBSVRUNko0b9IBeEFVX3lxTE5VZHAwblN4dzRsN2ttTTRnWTB4LTl5V2hyZk5IbDAyamtqQmJkb3hRejRrSFRBeEtOVVRjRkZsUldRNjV0blQxZV9FaDVmalEwV0JBZ04yQ3dkRV83RS0zdDBieGREbnUwUzJoVzR0Rnh2a20wSVVtOQ?oc=5",
+   "original_title": "'허위 발언' 윤석열 2심도 당선무효형‥국힘 397억 반환하나",
+   "member_titles": [
+    "'국힘 397억 반환' 걸린 윤석열 2심 곧 선고...YTN 생중계",
+    "'윤석열 거짓말' 2심도 유죄…국힘, 확정 시 397억 반환",
+    "‘당선무효형’ 대법 확정되면 윤석열이 ‘헌정 사상 첫 사례’",
+    "윤석열 선거법 2심도 당선 무효형…확정시 국힘 397억 반환 [선고 풀영상]",
+    "'허위 발언' 윤석열 2심도 당선무효형‥국힘 397억 반환하나",
+    "\"오차범위 접전 때 거짓말을\"‥\"죄질이\" 판사 작심 尹 질타 [현장영상]"
+   ],
+   "pub": "2026-11-04",
+   "related": [
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5UZWJqXzJObGc3Z2NYNVF4TnppTWpudm1VS0kxQjUxeTJHbVVzSWZCYldITkRfcGxLeVBoZVItc3M0VzVrMS1SczJOTkpMTzlJS09qZU9IaWRlTHcyd0E?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008831004&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "JTBC",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBfaEdvb1BaeU1BVTllQkU2OEt1c2M3QXhwdnl2ODlnNm1rNGZpV3V5NlZFLWhmLTIxSXB0QzM0NUdxYktLVkJVVzZsbG1rdXgtRmptSg?oc=5"
+    },
+    {
+     "source": "JTBC",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4wU1RXZk0zSFVQdHNmdkdxSXlQSWJ5X0NrQTMzV3VSNUt3NUtkX09sZGwtVFctWUVsZGNEVzdDVDlmS3EtdGgxRnp1REJ3eTNQdUdYcg?oc=5"
+    }
+   ],
+   "video": {
+    "id": "huqBiUPS670",
+    "title": "'허위 발언' 윤석열 2심도 당선무효형‥국힘 397억 반환하나 (2026.11.04/뉴스데스크/MBC)",
+    "channel": "MBC News",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 법원은 윤 전 대통령에게 징역 1년 …",
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 변호인단은 결론이 정해진 판결이라며 …",
+    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 선거 비용 397억 원을 반환하는 것…",
+    "사실·의견 문장이(가) 너무 김 (34자, 30자 이내로): 이번 판결은 우리나라 선거 문화를 더…",
+    "발문 issue이(가) 너무 김 (34자, 30자 이내로): 선거 때 한 말로 당선이 무효가 되는…"
+   ]
+  },
+  {
+   "title": "순천대와 경국대에 새 의대 생겨요",
+   "words": [
+    {
+     "word": "의과대학",
+     "meaning": "의사를 기르는 학교예요",
+     "wrong": [
+      "병원에서 일하는 곳이에요",
+      "간호사를 가르치는 곳이에요"
+     ]
+    },
+    {
+     "word": "정원",
+     "meaning": "정해진 학생 수예요",
+     "wrong": [
+      "학교에 있는 마당이에요",
+      "건물의 크기예요"
+     ]
+    }
+   ],
+   "summary": [
+    "순천대와 경국대에 의대가 새로 생겨요.",
+    "순천대는 60명, 경국대는 40명이 와요.",
+    "2030년에 첫 신입생이 들어와요."
+   ],
+   "five_w": {
+    "who": "교육부와 복지부",
+    "when": "2026년 11월",
+    "where": "순천대와 경국대",
+    "what": "의과대학 신설",
+    "how": "정원 각각 배정",
+    "why": "의료 강화 목적"
+   },
+   "activity": {
+    "impact_question": "새 의대가 생기면 우리 동네는 어떨까요?",
+    "wonder_question": "더 알고 싶은 것은 무엇인가요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "순천대에 의과대학이 새로 생겨요.",
+     "answer": "사실",
+     "reason": "정부가 발표한 내용이에요."
+    },
+    {
+     "sentence": "경국대 의대 정원은 40명이에요.",
+     "answer": "사실",
+     "reason": "기사에 나온 숫자예요."
+    },
+    {
+     "sentence": "새 의대가 생기면 의사가 많이 늘어요.",
+     "answer": "의견",
+     "reason": "앞으로의 일에 대한 생각이에요."
+    },
+    {
+     "sentence": "지방 의료 문제가 쉽게 해결돼요.",
+     "answer": "의견",
+     "reason": "사람마다 다르게 생각해요."
+    }
+   ],
+   "challenge": "새 의대가 생기는 것에 대해 내 생각을 적어봐요.",
+   "article": {
+    "happened": [
+     "전남 순천대와 경북 경국대에 의과대학이 새로 생겨요. 정부는 지역의 의료를 튼튼하게 만들기 위해 이 결정을 내렸어요.",
+     "순천대 의대에는 60명, 경국대 의대에는 40명의 정원이 각각 배정되었어요."
+    ],
+    "why": "정부는 의사가 부족한 지역을 돕고 사람들이 어디서나 병원에 쉽게 가도록 하려고 새 의대를 만들기로 했어요.",
+    "background": {
+     "title": "의과대학이란?",
+     "text": "사람을 치료하는 의사가 되기 위해 공부하는 대학교의 학과예요."
+    },
+    "deeper": "대학들은 2030년에 첫 신입생을 받는 것을 목표로 차근차근 준비를 시작할 예정이에요."
+   },
+   "curriculum": [
+    "사회 5-1 우리 사회의 와이파이",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "우리 동네 근처에도 의사가 더 많아질 수 있어요.",
+     "wonder_question": "다른 지역에도 의대가 더 생기는지 궁금해요.",
+     "challenge": "의사가 부족한 곳에 도움이 될 것 같아요."
+    },
+    "extra_questions": [
+     "지방에 의대가 생기면 어떤 점이 좋을까요?",
+     "학생 수가 정해진 이유는 무엇일까요?"
+    ],
+    "cautions": [
+     "특정 지역이나 대학에 치우치지 않게 지도해요."
+    ]
+   },
+   "rank": 3,
+   "type": "useful",
+   "category": "정책",
+   "topic": "지방 국립대 의대 신설",
+   "reason": "지역 필수 의료 공백을 해소하기 위해 순천대와 경국대에 의과대학을 신설하기로 한 정부 정책으로 교육 및 의료 불균형 해소와 연계됨.",
+   "source": "SBS",
+   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008831020&plink=RSSLINK&cooper=RSSREADER",
+   "original_title": "지역의대 새로 만든다…순천대 60명·경국대 40명 배정",
+   "member_titles": [
+    "순천대·경국대에 지역의대 신설...2030년 신입생 입학",
+    "국립순천대·국립경국대에 지역 의대 신설...2030학년도부터 모집",
+    "지역의대 새로 만든다…순천대 60명·경국대 40명 배정"
+   ],
+   "pub": "2026-11-04",
+   "related": [
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5pU0NYOUFTS0FOX1lUZUxzUHRkMEhVZUlrU1pUUHBvQ2M5M1dXMXdVLVhaTGxwZlRMUnIzVXFlWnVldmtGdVAxV29xcmJhTV9Eb2JpWjdPZ1FkRVhpRWc?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKOVQ0Z1cwYnlhVFVFNl9rVFE2YW5na1FmNjZGYUFHRVJLejZCRWY0WnF4X00yYjd4MFRtU19LU2ZxazIxZGxXRmlQM01UVGRUTGI0ejQ2UDQ2QldJVEJwMHQtakpiZTd4R1BDQjNLMA?oc=5"
+    }
+   ],
+   "video": {
+    "id": "8wNH7CDSKTk",
+    "title": "지역의대 새로 만든다..순천대 60명·경국대 40명 배정 / SBS 8뉴스",
+    "channel": "SBS 뉴스",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [],
+   "needs_review": false,
+   "review_notes": []
+  },
+  {
+   "title": "가상화폐 거래소를 노린 해킹",
+   "words": [
+    {
+     "word": "악성코드",
+     "meaning": "컴퓨터를 해치는 프로그램이에요.",
+     "wrong": [
+      "컴퓨터를 빠르게 만드는 프로그램이에요.",
+      "컴퓨터 바이러스 백신 프로그램이에요."
+     ]
+    },
+    {
+     "word": "침투",
+     "meaning": "몰래 남의 구역에 들어가는 일이에요.",
+     "wrong": [
+      "컴퓨터를 새로 구입해서 설치하는 일이에요.",
+      "인터넷 연결을 더 빠르게 만드는 일이에요."
+     ]
+    }
+   ],
+   "summary": [
+    "세계 최대 가상화폐 거래소가 큰 해킹 피해를 입었어요.",
+    "북한 해커들은 이직 면접인 것처럼 속여서 접근했어요.",
+    "직원이 내려받은 프로그램으로 내부 서버에 침입했어요."
+   ],
+   "five_w": {
+    "who": "북한 해커와 거래소 개발자",
+    "when": "올해 6월부터 9월",
+    "where": "가상화폐 거래소",
+    "what": "8조 원대 해킹 사고 발생",
+    "how": "가짜 면접으로 악성코드 유포",
+    "why": "거래소 시스템에 침입하려고"
+   },
+   "activity": {
+    "impact_question": "사이버 공격을 막으려면 어떤 준비를 해야 할까요?",
+    "wonder_question": "해커들은 어떻게 직원들의 정보를 알아냈을까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "거래소는 8조 원대의 해킹 피해를 입었어요.",
+     "answer": "사실",
+     "reason": "조사 보고서로 확인된 내용이에요."
+    },
+    {
+     "sentence": "해커들이 사람의 심리를 파고들어 공격했어요.",
+     "answer": "사실",
+     "reason": "보안 전문가가 분석한 내용이에요."
+    },
+    {
+     "sentence": "사람을 노리는 해킹이 앞으로 더 늘어날 거예요.",
+     "answer": "의견",
+     "reason": "앞으로의 일을 예측하는 말이에요."
+    },
+    {
+     "sentence": "온라인 면접은 아예 없애는 것이 좋겠어요.",
+     "answer": "의견",
+     "reason": "개인의 생각을 나타낸 말이에요."
+    }
+   ],
+   "challenge": "모르는 사람이 보낸 파일을 열지 않아야 하는 까닭은 무엇인가요?",
+   "article": {
+    "happened": [
+     "세계 최대 가상화폐 거래소가 8조 원에 달하는 사상 최대 해킹 피해를 입었어요.",
+     "북한 해커들은 몇 달 전부터 거래소 개발자들의 정보를 모으며 치밀하게 접근했어요."
+    ],
+    "why": "해커들은 구직 플랫폼에서 이직 면접을 제안하며 직원과 친해졌고, 최종 면접이라며 악성코드가 숨겨진 프로그램을 내려받게 만들었어요.",
+    "background": {
+     "title": "악성코드란?",
+     "text": "컴퓨터에 몰래 들어가 망가뜨리거나 정보를 훔쳐내는 나쁜 프로그램이에요."
+    },
+    "deeper": "보안이 철저한 곳이라도 사람의 신뢰와 심리를 파고드는 공격에는 쉽게 무너질 수 있어요."
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "수상한 파일은 열지 않고 보안 교육을 자주 해야 해요.",
+     "wonder_question": "개발자의 개인정보를 어디서 구했는지 궁금해요.",
+     "challenge": "컴퓨터에 악성코드가 들어와 중요한 정보를 훔쳐갈 수 있어요."
+    },
+    "extra_questions": [
+     "내가 만약 개발자였다면 가짜 면접을 눈치채고 피할 수 있었을까요?",
+     "온라인으로 사람을 만날 때 조심해야 할 점은 무엇이 있을까요?"
+    ],
+    "cautions": [
+     "학생들이 해킹 기술 자체보다 사람의 마음을 이용하는 범죄 수법에 초점을 맞추도록 지도해 주세요."
+    ]
+   },
+   "rank": 4,
+   "type": "useful",
+   "category": "과학·환경",
+   "topic": "가상화폐 거래소 북한 해킹",
+   "reason": "북한 해커들이 가짜 채용 면접을 위장해 대형 가상화폐 거래소를 해킹한 수법을 상세히 다뤄 디지털 보안의 중요성을 일깨움.",
+   "source": "SBS",
+   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008831013&plink=RSSLINK&cooper=RSSREADER",
+   "original_title": "'이직 면접' 미끼에 당했다…'8조' 해킹 어떻게 됐나 보니",
+   "member_titles": [
+    "'이직 면접' 미끼에 당했다…'8조' 해킹 어떻게 됐나 보니",
+    "가짜 채용 열어 '악성코드'를…'바이낸스 8조 탈취' 전말",
+    "채용하려는 것처럼 접근…바이낸스 해킹의 전말 [소셜픽]"
+   ],
+   "pub": "2026-11-04",
+   "related": [
+    {
+     "source": "JTBC",
+     "link": "https://news.jtbc.co.kr/article/NB12326464"
+    },
+    {
+     "source": "JTBC",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE00emNGWlZvaWRhNFpZcGtKMzVmaWRuVHdSZk9GZVg5U0stVUFqam9BSWEzdWVDRm40aG5YTkFENzEwNkc1cWJvUDVRYWRpTG42MU16dg?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 컴퓨터를 해치는 프로그램이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 15자 이내로): 컴퓨터를 빠르게 만드는 프로그램이에요…",
+    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 컴퓨터 바이러스 백신 프로그램이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 몰래 남의 구역에 들어가는 일이에요.…",
+    "낱말 뜻 보기이(가) 너무 김 (23자, 15자 이내로): 컴퓨터를 새로 구입해서 설치하는 일이…",
+    "낱말 뜻 보기이(가) 너무 김 (23자, 15자 이내로): 인터넷 연결을 더 빠르게 만드는 일이…"
+   ]
+  },
+  {
+   "title": "전기차 배터리 속인 벤츠",
+   "words": [
+    {
+     "word": "배상",
+     "meaning": "남에게 입힌 손해를 물어줌",
+     "wrong": [
+      "물건을 공짜로 나누어 줌",
+      "새로운 물건을 사서 줌"
+     ]
+    },
+    {
+     "word": "리콜",
+     "meaning": "만든 제품에 문제가 있어 고쳐 줌",
+     "wrong": [
+      "제품을 더 비싸게 팔아 줌",
+      "쓰던 물건을 버리게 함"
+     ]
+    }
+   ],
+   "summary": [
+    "벤츠가 전기차에 다른 배터리를 썼어요.",
+    "화재 위험이 있는 중국산이었어요.",
+    "소비자들에게 돈을 배상하라는 결정이 나왔어요."
+   ],
+   "five_w": {
+    "who": "벤츠코리아와 소비자",
+    "when": "2년 전과 최근",
+    "where": "인천 아파트 등",
+    "what": "배터리 종류를 속여 팔았어요",
+    "how": "조사와 분쟁조정을 거쳐요",
+    "why": "화재와 피해 때문이에요"
+   },
+   "activity": {
+    "impact_question": "내가 산 물건이 거짓이었다면 어땠을까요?",
+    "wonder_question": "다른 자동차 회사도 이런 일이 있을까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "벤츠는 중국산 배터리를 사용했어요.",
+     "answer": "사실",
+     "reason": "조사를 통해 밝혀진 일이에요."
+    },
+    {
+     "sentence": "차가 폭발할까 봐 정말 무서웠어요.",
+     "answer": "의견",
+     "reason": "사람마다 느끼는 감정이 달라요."
+    },
+    {
+     "sentence": "소비자들에게 400만 원씩 배상하라고 했어요.",
+     "answer": "사실",
+     "reason": "기관이 결정한 내용이에요."
+    },
+    {
+     "sentence": "기업들은 처음부터 솔직하게 말해야 해요.",
+     "answer": "의견",
+     "reason": "사람들의 생각이나 주장이에요."
+    }
+   ],
+   "challenge": "기업이 소비자를 속였을 때 받을 수 있는 다른 벌은 무엇이 있을까요?",
+   "article": {
+    "happened": [
+     "2년 전 인천의 한 아파트 지하 주차장에서 전기차에 불이 났어요.",
+     "조사 결과 벤츠가 화재 위험이 있는 중국산 배터리를 쓰고도 숨겼다는 사실이 드러났어요."
+    ],
+    "why": "다른 좋은 배터리를 쓴다고 속여서 차를 팔았기 때문에 피해를 입은 소비자들에게 배상하라는 결정이 나왔어요.",
+    "background": {
+     "title": "배상과 보상",
+     "text": "남에게 피해를 주었을 때 그 손해를 돈이나 물건으로 갚아주는 것을 말해요."
+    },
+    "deeper": "기업이 소비자의 믿음을 저버렸을 때 어떤 법적인 책임을 지게 되는지 더 찾아볼 수 있어요."
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-2 법의 의미와 민주적 생활"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "화가 나고 물건을 믿지 못하게 될 것 같아요.",
+     "wonder_question": "다른 벤츠 차량에도 문제가 없는지 궁금해요."
+    },
+    "extra_questions": [
+     "기업이 물건을 팔 때 가장 중요한 것은 무엇일까요?",
+     "피해를 입은 소비자들은 어떤 마음이었을까요?"
+    ],
+    "cautions": [
+     "특정 브랜드에 대한 무조건적인 비난보다는 소비자의 권리와 기업의 책임에 초점을 맞춰 지도해 주세요."
+    ]
+   },
+   "rank": 5,
+   "type": "useful",
+   "category": "경제",
+   "topic": "벤츠코리아 중국산 배터리 은폐",
+   "reason": "전기차 배터리 제조사 정보 은폐 논란을 통해 기업의 윤리적 책임과 소비자 권익 보호 문제를 다룸.",
+   "source": "SBS",
+   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008831008&plink=RSSLINK&cooper=RSSREADER",
+   "original_title": "전기차에 중국산 배터리 쓰고 속였다…벤츠코리아 결국",
+   "member_titles": [
+    "전기차에 중국산 배터리 쓰고 속였다…벤츠코리아 결국"
+   ],
+   "pub": "2026-11-04",
+   "related": [],
+   "video": null,
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 만든 제품에 문제가 있어 고쳐 줌…"
+   ]
+  }
+ ]
+}
