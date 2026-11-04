@@ -56,7 +56,7 @@ function render(st){
   window.scrollTo({top:0});
 }
 window.addEventListener('popstate', e => { if(e.state) render(e.state); });
-const TEACHER_VIEWS = new Set(['classImport','teacherHome','teacherMode','guide','share','results','classSetup','classReady','devNote','classLog','studentLog','pastNews','pastDay']);
+const TEACHER_VIEWS = new Set(['classImport','teacherHome','teacherNews','teacherMode','guide','share','results','classSetup','classReady','devNote','classLog','studentLog','pastNews','pastDay']);
 document.getElementById('backBtn').onclick = () => history.back();
 document.getElementById('devBtn').onclick = () => go('devNote', {from: (history.state && history.state.view) || ''});
 document.getElementById('homeBtn').onclick = () => go(soloMode && ITEM ? 'soloHome' : CLASS && STUDENT ? 'studentHome' : 'home', soloMode && ITEM ? {r:ITEM.rank} : {});
@@ -211,25 +211,19 @@ VIEWS.teacherHome = () => {
     </div>`}
     <h2>오늘의 뉴스</h2>
     <p class="muted">${paper
-      ? '하나를 골라 <b>학습지 인쇄</b>를 누르세요. <b>QR 크게 띄우기</b>를 누르면 아이들이 QR로 영상을 각자 볼 수 있어요.'
-      : mine ? '하나를 골라 <b>우리 반 주제로 정하기</b>를 누르면 QR·반코드 화면이 크게 떠요. 아이들 화면에도 그 뉴스가 떠요.'
-      : '반을 만들면 여기서 <b>우리 반 주제로 정하기</b>를 할 수 있어요.'}</p>
+      ? '하나를 골라 <b>이 뉴스로 하기</b>를 누르면 학습지 인쇄, QR, TV 화면을 한곳에서 쓸 수 있어요.'
+      : mine ? '하나를 골라 <b>이 뉴스로 하기</b>를 누른 뒤 <b>우리 반 주제로 정하기</b>를 누르면 QR·반코드 화면이 떠요.'
+      : '반을 만들면 뉴스를 골라 <b>우리 반 주제로 정하기</b>를 할 수 있어요.'}</p>
     <ol class="rank-list">${DAY.items.map(it => `
       <li><span class="num">${it.rank}</span><div>
         <span class="tag ${it.type}">${TYPE_NAME[it.type]}</span><span class="tag cat">${esc(it.category)}</span>${daysAgo(it)}
         ${topicRank === it.rank ? '<span class="picked-topic">오늘 우리 반 주제</span>' : ''}
         <h3 style="margin-top:6px">${esc(it.title)}</h3>
-        <p>${(it.summary||[]).map(esc).join(' ')}</p>
+        <p>${esc((it.summary||[])[0] || '')}</p>
         <p class="muted">선정 이유: ${esc(it.reason)}</p>
-        <div class="row">
-          ${mine && full(it) ? `<button class="btn ${topicRank === it.rank ? 'ghost' : 'sun'} small-btn" data-topic="${it.rank}" type="button">${topicRank === it.rank ? '✓ 우리 반 주제' : '우리 반 주제로 정하기'}</button>` : ''}
-          ${paper && full(it) ? `<button class="btn sun small-btn" data-print="${it.rank}" type="button">학습지 인쇄</button>` : ''}
-          ${full(it) && (paper || (mine && topicRank === it.rank)) ? `<button class="btn ${paper ? 'ghost' : 'sun'} small-btn" data-share="${it.rank}" type="button">QR 크게 띄우기${paper ? ' (영상)' : ''}</button>` : ''}
-          ${full(it) ? `<button class="btn small-btn" data-tv="${it.rank}" type="button">TV 화면</button>
-            ${paper ? '' : `<button class="btn ghost small-btn" data-print="${it.rank}" type="button">인쇄</button>`}
-            <button class="btn ghost small-btn" data-guide="${it.rank}" type="button">교사용</button>` : ''}
-          ${it.video ? `<a class="btn ghost small-btn" href="${videoLink(it.video)}" target="_blank" rel="noopener">영상 (${esc(it.video.channel)})</a>` : ''}
-          <a class="btn ghost small-btn" href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문 (${esc(it.source)})</a>
+        <div class="row card-act">
+          <button class="btn ${topicRank === it.rank ? '' : 'sun'} small-btn" data-open="${it.rank}" type="button">${topicRank === it.rank ? '✓ 우리 반 주제 · 열기' : '이 뉴스로 하기'}</button>
+          <span class="mini-links">${it.video ? `<a href="${videoLink(it.video)}" target="_blank" rel="noopener">영상 보기</a> · ` : ''}<a href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문</a></span>
         </div>
         ${it.needs_review ? `<p class="muted" style="color:var(--warn)">자동 검사에서 확인이 필요한 부분이 있어요. 교사용에서 확인해 주세요.</p>` : ''}
       </div></li>`).join('')}</ol>
@@ -246,12 +240,53 @@ VIEWS.teacherHome = () => {
   if(mine) toLog.onclick = () => go('classLog', {tab:'date'});
   if(mine){ toQR.onclick = () => go('classReady'); toRes.onclick = () => go('results', {r: topicRank || 1}); refreshTopic(mine); }
   else if(!paper) toSetup.onclick = () => go('classSetup');
-  document.querySelectorAll('[data-topic]').forEach(b => b.onclick = () => setTopic(mine, Number(b.dataset.topic), b));
-  document.querySelectorAll('[data-tv]').forEach(b => b.onclick = () => { ITEM = itemByRank(b.dataset.tv); tvMode = true; state = {}; STUDENT = {number:'', name:'우리 반'}; go('step', {i:0, r:ITEM.rank, tv:1}); });
-  document.querySelectorAll('[data-share]').forEach(b => b.onclick = () => go('share', {r:Number(b.dataset.share)}));
-  document.querySelectorAll('[data-print]').forEach(b => b.onclick = () => printSheet(itemByRank(b.dataset.print), false));
-  document.querySelectorAll('[data-guide]').forEach(b => b.onclick = () => go('guide', {r:Number(b.dataset.guide)}));
+  document.querySelectorAll('[data-open]').forEach(b => b.onclick = () => go('teacherNews', {r:Number(b.dataset.open)}));
   document.querySelectorAll('[data-reason]').forEach(b => b.onclick = () => sendFeedback(b.dataset.reason));
+};
+
+/* 뉴스 하나를 고른 뒤: 그 뉴스로 할 수 있는 일을 한곳에 */
+VIEWS.teacherNews = ({r}) => {
+  if(!teacherOK()) return go('teacherGate', {}, true);
+  const it = itemByRank(r);
+  if(!it) return go('teacherHome', {}, true);
+  const paper = getMode() === 'paper';
+  const mine = paper ? null : LS.get('myClass', null);
+  const topicRank = mine ? LS.get(`topic:${mine.url}:${DAY.date}`, null) : null;
+  const picked = mine && topicRank === it.rank;
+  const ok = full(it);
+  let main = '';
+  if(!ok) main = `<p class="muted">이 뉴스는 학습지 없이 기사만 있어요. 다른 뉴스를 골라 주세요.</p>`;
+  else if(paper) main = `<button class="btn sun big-link" id="nPrint" type="button">🖨️ 학습지 인쇄</button>`;
+  else if(!mine) main = `<p class="muted">웹앱 학습지는 반을 먼저 만들어야 해요. (처음 한 번 3분)</p><button class="btn sun big-link" id="nSetup" type="button">반 만들기</button>`;
+  else if(picked) main = `<p><span class="picked-topic">✓ 오늘 우리 반 주제</span></p>
+      <button class="btn sun big-link" id="nShare" type="button">QR·반코드 크게 띄우기</button>
+      <div class="row"><button class="btn small-btn" id="nRes" type="button">답 모아 보기</button></div>`;
+  else main = `<button class="btn sun big-link" id="nTopic" type="button">우리 반 주제로 정하기</button>
+      <p class="muted">누르면 아이들 화면에 이 뉴스가 뜨고, QR·반코드 화면으로 넘어가요.${topicRank ? ` (지금 주제: ${topicRank}순위)` : ''}</p>`;
+  show(`${banners(true, it)}
+    <p class="muted">${it.rank}순위 · <span class="tag ${it.type}">${TYPE_NAME[it.type]}</span><span class="tag cat">${esc(it.category)}</span>${daysAgo(it)}</p>
+    <h2>${esc(it.title)}</h2>
+    <p>${(it.summary||[]).map(esc).join(' ')}</p>
+    <p class="muted">선정 이유: ${esc(it.reason)}</p>
+    <div class="panel">${main}
+      ${ok ? `<div class="row">
+        ${paper ? `<button class="btn ghost small-btn" id="nShare" type="button">QR 크게 띄우기 (영상)</button>` : ''}
+        <button class="btn ghost small-btn" id="nTV" type="button">TV 화면</button>
+        <button class="btn ghost small-btn" id="nGuide" type="button">교사용 (정답·예시)</button>
+        ${paper ? '' : `<button class="btn ghost small-btn" id="nPrint" type="button">종이로 인쇄</button>`}
+      </div>` : ''}
+    </div>
+    <p class="mini-links">${it.video ? `<a href="${videoLink(it.video)}" target="_blank" rel="noopener">영상 보기 (${esc(it.video.channel)})</a> · ` : ''}<a href="${esc(it.link)}" target="_blank" rel="noopener">기사 원문 (${esc(it.source)})</a></p>
+    <div class="row"><button class="btn ghost small-btn" id="nBack" type="button">← 다른 뉴스 고르기</button></div>${footer()}`);
+  const $ = id => document.getElementById(id);
+  if($('nPrint')) $('nPrint').onclick = () => printSheet(it, false);
+  if($('nShare')) $('nShare').onclick = () => go('share', {r:it.rank});
+  if($('nSetup')) $('nSetup').onclick = () => go('classSetup');
+  if($('nRes')) $('nRes').onclick = () => go('results', {r:it.rank});
+  if($('nTopic')) $('nTopic').onclick = e => setTopic(mine, it.rank, e.currentTarget);
+  if($('nTV')) $('nTV').onclick = () => { ITEM = it; tvMode = true; state = {}; STUDENT = {number:'', name:'우리 반'}; go('step', {i:0, r:it.rank, tv:1}); };
+  if($('nGuide')) $('nGuide').onclick = () => go('guide', {r:it.rank});
+  $('nBack').onclick = () => history.back();
 };
 
 async function refreshTopic(mine){
