@@ -569,7 +569,6 @@ def check_worksheet(cfg: dict, ws: dict, pick: dict, source_text: str) -> list[s
     if len(source_text or "") >= 1500 and art_len < 450:
         problems.append(f"학습용 기사가 너무 짧음 ({art_len}자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것")
     too_long("배경지식", (art.get("background") or {}).get("text", ""), 120)
-    too_long("6학년 더 깊이", art.get("deeper", ""), 120)
     # 중립 검사: 제목·요약·발문에 한쪽으로 기운 표현이 있으면 안 됨 (찬반 이유·의견 문장은 제외)
     neutral_text = all_text([m.get("title", ""), m.get("summary", []), act.get("issue", ""), m.get("article", {}),
                              {k: v for k, v in act.items() if k.endswith("_question")}])
@@ -605,11 +604,16 @@ def tone_problems(ws: dict) -> list[str]:
     if m.get("challenge"):
         texts.append(m["challenge"])
     art = m.get("article") or {}
-    for para in list(art.get("happened") or []) + [art.get("why", ""), (art.get("background") or {}).get("text", ""), art.get("deeper", "")]:
-        if isinstance(para, str) and para.strip():
-            texts += [x for x in re.split(r"(?<=[.!?])\s+", para.strip()) if x]
+    split = lambda para: [x for x in re.split(r"(?<=[.!?])\s+", para.strip()) if x] if isinstance(para, str) and para.strip() else []
+    texts += split((art.get("background") or {}).get("text", ""))   # 배경지식 상자만 '~요'
     bad = [t for t in texts if isinstance(t, str) and t.strip() and not YO_END.search(t.strip())]
-    return [f"'~요' 체가 아닌 문장 {len(bad)}개 (모두 '~요'로 끝나게): " + " / ".join(b[:18] for b in bad[:4])] if bad else []
+    out = [f"'~요' 체가 아닌 문장 {len(bad)}개 (모두 '~요'로 끝나게): " + " / ".join(b[:18] for b in bad[:4])] if bad else []
+    # 학습용 기사 본문(happened·why)은 실제 기사 말투('~다')
+    news = [x for para in list(art.get("happened") or []) + [art.get("why", "")] for x in split(para)]
+    yo = [x for x in news if YO_END.search(x.strip()) or re.search(r"(니다|니까)[.?!…\"'’”)]*$", x.strip())]
+    if yo:
+        out.append(f"학습용 기사 본문에 기사체('~다')가 아닌 문장 {len(yo)}개 (happened·why는 '~했다/~이다'로): " + " / ".join(b[:18] for b in yo[:4]))
+    return out
 
 
 def make_worksheet(cfg, pick, by_id, body, videos, d) -> dict:
