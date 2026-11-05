@@ -101,6 +101,7 @@ function articleHTML(it, forPrint){
     ${bg.text ? `<div class="art-box"><b>📘 ${esc(bg.title || '알아 두면 좋은 배경지식')}</b>${P(bg.text)}</div>` : ''}
     ${A.deeper ? `<div class="art-box deep"><b>🔎 6학년 더 깊이</b>${P(A.deeper)}</div>` : ''}
     <p class="art-note">여러 기사를 바탕으로 AI가 아이들 눈높이로 새로 쓴 글이에요. 원문: ${esc(it.source)}</p>
+    ${!forPrint && it.link ? `<p class="art-link"><a href="${esc(it.link)}" target="_blank" rel="noopener">📰 원문 기사 보기 (${esc(it.source)})</a> <span>언론사 사이트라 광고가 나올 수 있어요</span></p>` : ''}
   </div>`;
 }
 const dayCache = {};

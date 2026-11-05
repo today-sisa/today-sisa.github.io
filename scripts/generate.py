@@ -553,8 +553,13 @@ def check_worksheet(cfg: dict, ws: dict, pick: dict, source_text: str) -> list[s
     if not (isinstance(hp, list) and 1 <= len(hp) <= 3 and all(isinstance(x, str) and x.strip() for x in hp)):
         problems.append("학습용 기사(article.happened) 문단이 1~3개 있어야 함")
     for x in hp if isinstance(hp, list) else []:
-        too_long("기사 문단", x, 230)
-    too_long("기사 '왜' 문단", art.get("why", ""), 230)
+        too_long("기사 문단", x, 260)
+    too_long("기사 '왜' 문단", art.get("why", ""), 260)
+    # 너무 짧은 기사: 원문 자료가 충분한데 요약처럼 짧으면 다시 쓰게 함
+    art_len = sum(len(x) for x in hp if isinstance(x, str)) if isinstance(hp, list) else 0
+    art_len += len(art.get("why", "") or "")
+    if len(source_text or "") >= 1500 and art_len < 450:
+        problems.append(f"학습용 기사가 너무 짧음 ({art_len}자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것")
     too_long("배경지식", (art.get("background") or {}).get("text", ""), 120)
     too_long("6학년 더 깊이", art.get("deeper", ""), 120)
     # 중립 검사: 제목·요약·발문에 한쪽으로 기운 표현이 있으면 안 됨 (찬반 이유·의견 문장은 제외)
