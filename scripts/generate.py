@@ -555,6 +555,14 @@ def check_worksheet(cfg: dict, ws: dict, pick: dict, source_text: str) -> list[s
     for x in hp if isinstance(hp, list) else []:
         too_long("기사 문단", x, 260)
     too_long("기사 '왜' 문단", art.get("why", ""), 260)
+    # 오늘의 낱말이 학습용 기사에 실제로 나오는지 (활용형 '배상하라'처럼 붙어 나와도 인정)
+    art_text = " ".join([x for x in hp if isinstance(x, str)] if isinstance(hp, list) else []) + " " + str(art.get("why", "") or "")
+    if art_text.strip():
+        for w in m.get("words") or []:
+            word = str((w or {}).get("word", "")).strip()
+            stem = re.sub(r"(하다|되다|하기|적|성)$", "", word) or word
+            if word and word not in art_text and stem not in art_text:
+                problems.append(f"오늘의 낱말 '{word}'이(가) 학습용 기사에 없음 — 기사 본문(happened나 why)에 '{word}'를 그대로 넣어 다시 쓸 것")
     # 너무 짧은 기사: 원문 자료가 충분한데 요약처럼 짧으면 다시 쓰게 함
     art_len = sum(len(x) for x in hp if isinstance(x, str)) if isinstance(hp, list) else 0
     art_len += len(art.get("why", "") or "")
