@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 113,
+   "count": 112,
    "raw_entries": 120
   },
   {
@@ -33,37 +33,37 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 94,
+   "count": 89,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 97,
+   "count": 89,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 95,
+   "count": 97,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 84,
+   "count": 89,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 97,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 96,
+   "count": 99,
    "raw_entries": 100
   }
  ],
@@ -77,51 +77,43 @@
   "KBS": 17,
   "MBC": 17
  },
- "model": "gemini-flash-lite-latest",
+ "model": "gemini-flash-latest",
  "picks": [
   {
    "rank": 1,
-   "type": "debate",
+   "type": "useful",
    "source": "JTBC",
-   "title": "'오만 남방까지' 청해부대 작전 범위 확대…초계기 투입"
+   "title": "지방에 맡긴 '소방재정' 손본다…당정, 국가 지원 확대 추진"
   },
   {
    "rank": 2,
-   "type": "debate",
-   "source": "SBS",
-   "title": "기본 제도까지 흔드는 AI…\"권력과 관계 바뀌어야\" 제안"
+   "type": "useful",
+   "source": "연합뉴스TV",
+   "title": "초겨울 추위 속 서울 이른 첫눈…오늘 남부 비"
   },
   {
    "rank": 3,
-   "type": "useful",
+   "type": "debate",
    "source": "SBS",
-   "title": "\"이대로면 멸종\" 뼈대만 남았다…하얀 무덤 변한 지리산"
+   "title": "데이터센터 공사장까지 점거했다…유럽 곳곳 반대 시위"
   },
   {
    "rank": 4,
-   "type": "useful",
-   "source": "YTN",
-   "title": "'차 옆에서 담그고 외국인도 함께'...괴산 김장 축제"
+   "type": "debate",
+   "source": "MBC",
+   "title": "힌두교 신자에 소고기 발골을?‥노동위 \"부당 해고\""
   },
   {
    "rank": 5,
    "type": "useful",
    "source": "SBS",
-   "title": "\"그 차 왜 사\" 핀잔 들었는데…한국서 '일본 차' 앞질렀다"
+   "title": "2년 연속 11승 대기록…\"소름 돋았다\" 안세영 감격 순간"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 0,
-   "video_candidates": 6,
-   "video": true,
-   "problems": [],
-   "alerts": []
-  },
-  {
-   "rank": 2,
-   "body_chars": 1946,
+   "body_chars": 1282,
    "video_candidates": 2,
    "video": true,
    "problems": [],
@@ -130,43 +122,40 @@
    ]
   },
   {
+   "rank": 2,
+   "body_chars": 980,
+   "video_candidates": 6,
+   "video": true,
+   "problems": [],
+   "alerts": []
+  },
+  {
    "rank": 3,
-   "body_chars": 1692,
+   "body_chars": 1741,
    "video_candidates": 2,
    "video": true,
-   "problems": [
-    "한쪽으로 기운 표현: 꼭 필요한 (제목·요약·발문은 중립적으로)"
-   ],
+   "problems": [],
    "alerts": []
   },
   {
    "rank": 4,
    "body_chars": 0,
-   "video_candidates": 1,
+   "video_candidates": 3,
    "video": true,
-   "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (24자, 15자 이내로): 겨울에 먹을 김치를 한꺼번에 많이 담…",
-    "낱말 뜻 보기이(가) 너무 김 (19자, 15자 이내로): 옛날부터 전해 내려오는 고유한 풍습…",
-    "학습용 기사(article.happened) 문단이 1~3개 있어야 함",
-    "자료에 없는 숫자 '2013' (지어낸 내용일 수 있음)"
-   ],
-   "alerts": []
+   "problems": [],
+   "alerts": [
+    "가정마다 생각이 크게 다를 수 있어요"
+   ]
   },
   {
    "rank": 5,
-   "body_chars": 1972,
+   "body_chars": 1705,
    "video_candidates": 1,
-   "video": false,
-   "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (20자, 15자 이내로): 나라 사이 물건을 사고팔 때 내는 돈…",
-    "요약 문장이(가) 너무 김 (36자, 35자 이내로): 올해 한국 수입차 시장에서 중국산 차…",
-    "요약 문장이(가) 너무 김 (37자, 35자 이내로): 중국산 차는 비슷한 국산 차보다 가격…",
-    "육하원칙 why이(가) 너무 김 (21자, 18자 이내로): 중국 내 판매가 줄어 해외로 눈을 돌…",
-    "학습용 기사가 너무 짧음 (382자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
+   "video": true,
+   "problems": [],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-06T06:59+09:00"
+ "finished_at": "2026-11-09T06:38+09:00"
 }
