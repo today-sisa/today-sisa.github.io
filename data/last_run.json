@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 112,
+   "count": 117,
    "raw_entries": 120
   },
   {
@@ -33,31 +33,31 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 89,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 89,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 97,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 89,
+   "count": 84,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 94,
+   "count": 96,
    "raw_entries": 100
   },
   {
@@ -81,57 +81,55 @@
  "picks": [
   {
    "rank": 1,
-   "type": "useful",
-   "source": "JTBC",
-   "title": "지방에 맡긴 '소방재정' 손본다…당정, 국가 지원 확대 추진"
+   "type": "debate",
+   "source": "MBC",
+   "title": "다음 주 수능‥\"스마트안경 착용만 해도 부정행위\""
   },
   {
    "rank": 2,
    "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "초겨울 추위 속 서울 이른 첫눈…오늘 남부 비"
+   "source": "MBC",
+   "title": "사라지는 '크리스마스 트리'‥기후 변화 경고"
   },
   {
    "rank": 3,
-   "type": "debate",
+   "type": "useful",
    "source": "SBS",
-   "title": "데이터센터 공사장까지 점거했다…유럽 곳곳 반대 시위"
+   "title": "'싸게 팔아라' 압박…'쿠팡이츠·배민' 과징금 6천억"
   },
   {
    "rank": 4,
    "type": "debate",
-   "source": "MBC",
-   "title": "힌두교 신자에 소고기 발골을?‥노동위 \"부당 해고\""
+   "source": "JTBC",
+   "title": "서울역 ‘술 금지령’ 떨어지자…\"죽으란 거냐\" 노숙인들 반발"
   },
   {
    "rank": 5,
    "type": "useful",
-   "source": "SBS",
-   "title": "2년 연속 11승 대기록…\"소름 돋았다\" 안세영 감격 순간"
+   "source": "MBC",
+   "title": "900원 올렸다가 역풍‥유니클로 결국 '백기'"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1282,
-   "video_candidates": 2,
+   "body_chars": 3500,
+   "video_candidates": 3,
    "video": true,
    "problems": [],
-   "alerts": [
-    "민감한 인물이 등장해요"
-   ]
+   "alerts": []
   },
   {
    "rank": 2,
-   "body_chars": 980,
-   "video_candidates": 6,
+   "body_chars": 0,
+   "video_candidates": 1,
    "video": true,
    "problems": [],
    "alerts": []
   },
   {
    "rank": 3,
-   "body_chars": 1741,
+   "body_chars": 1687,
    "video_candidates": 2,
    "video": true,
    "problems": [],
@@ -140,22 +138,20 @@
   {
    "rank": 4,
    "body_chars": 0,
-   "video_candidates": 3,
+   "video_candidates": 2,
    "video": true,
    "problems": [],
-   "alerts": [
-    "가정마다 생각이 크게 다를 수 있어요"
-   ]
+   "alerts": []
   },
   {
    "rank": 5,
-   "body_chars": 1705,
-   "video_candidates": 1,
+   "body_chars": 0,
+   "video_candidates": 3,
    "video": true,
    "problems": [],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-09T06:38+09:00"
+ "finished_at": "2026-11-10T07:00+09:00"
 }
