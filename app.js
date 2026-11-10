@@ -96,8 +96,7 @@ function articleHTML(it, forPrint){
   const P = t => `<p>${boldWords(esc(t), it)}</p>`;
   return `<div class="article">
     ${!forPrint && it.video ? `<img class="art-img" src="https://i.ytimg.com/vi/${esc(it.video.id)}/hqdefault.jpg" alt="" loading="lazy">` : ''}
-    <h3>무슨 일이 있었나요?</h3>${(A.happened || []).map(P).join('')}
-    ${A.why ? `<h3>왜 이런 일이 생겼을까요?</h3>${P(A.why)}` : ''}
+    <div class="art-body">${(A.happened || []).map(P).join('')}${A.why ? P(A.why) : ''}</div>
     ${bg.text ? `<div class="art-box"><b>📘 ${esc(bg.title || '알아 두면 좋은 배경지식')}</b>${P(bg.text)}</div>` : ''}
     <p class="art-note">여러 기사를 바탕으로 AI가 아이들 눈높이로 새로 쓴 글이에요. 원문: ${esc(it.source)}</p>
     ${!forPrint && it.link ? `<p class="art-link"><a href="${esc(it.link)}" target="_blank" rel="noopener">📰 원문 기사 보기 (${esc(it.source)})</a> <span>언론사 사이트라 광고가 나올 수 있어요</span></p>` : ''}
