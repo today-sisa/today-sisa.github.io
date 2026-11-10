@@ -610,7 +610,7 @@ def tone_problems(ws: dict) -> list[str]:
     out = [f"'~요' 체가 아닌 문장 {len(bad)}개 (모두 '~요'로 끝나게): " + " / ".join(b[:18] for b in bad[:4])] if bad else []
     # 학습용 기사 본문(happened·why)은 실제 기사 말투('~다')
     news = [x for para in list(art.get("happened") or []) + [art.get("why", "")] for x in split(para)]
-    yo = [x for x in news if YO_END.search(x.strip()) or re.search(r"(니다|니까)[.?!…\"'’”)]*$", x.strip())]
+    yo = [x for x in news if YO_END.search(x.strip()) or re.search(r"((?<!아)니다|니까)[.?!…\"'’”)]*$", x.strip())]
     if yo:
         out.append(f"학습용 기사 본문에 기사체('~다')가 아닌 문장 {len(yo)}개 (happened·why는 '~했다/~이다'로): " + " / ".join(b[:18] for b in yo[:4]))
     return out
