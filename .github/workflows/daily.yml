@@ -29,7 +29,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -70,5 +70,6 @@ jobs:
             echo "바뀐 내용 없음"
           else
             git commit -m "오늘의 시사 $(TZ=Asia/Seoul date +%Y-%m-%d)"
+            git pull --rebase origin main || true   # 실행 중에 코드가 바뀌어도 올라가게
             git push
           fi

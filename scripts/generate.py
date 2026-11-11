@@ -186,6 +186,15 @@ def apply_banned(cfg: dict, items: list[dict]) -> list[dict]:
 _dead_models: set = set()
 
 
+START = time.time()
+BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "50"))   # 깃허브 제한 60분 안에서 저장까지 마치도록
+_slow = {}   # 모델별 시간 초과 횟수
+
+
+def minutes_left() -> float:
+    return BUDGET_MIN - (time.time() - START) / 60
+
+
 def gemini(cfg: dict, prompt: str, mock_name: str, temperature: float = 0.4) -> dict:
     if MOCK:
         return json.loads((FIXTURES / mock_name).read_text(encoding="utf-8"))
@@ -206,7 +215,7 @@ def gemini(cfg: dict, prompt: str, mock_name: str, temperature: float = 0.4) -> 
                 r = requests.post(
                     f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
                     headers={"x-goog-api-key": key, "Content-Type": "application/json"},
-                    json=body, timeout=300,
+                    json=body, timeout=150,
                 )
                 if r.status_code == 429 and ("PerDay" in r.text or "per day" in r.text.lower()):
                     last = f"{model} 오늘 무료 한도 다 씀"
@@ -229,10 +238,13 @@ def gemini(cfg: dict, prompt: str, mock_name: str, temperature: float = 0.4) -> 
             except (json.JSONDecodeError, KeyError, IndexError) as e:
                 last = f"{model} 응답 형식 오류 {e}"
                 time.sleep(3)
-            except requests.exceptions.RequestException as e:  # 시간 초과·연결 끊김 → 다시 시도
+            except requests.exceptions.RequestException as e:  # 시간 초과·연결 끊김 → 바로 다음 모델로
                 last = f"{model} 연결 문제 {str(e)[:80]}"
-                log(f"Gemini 연결 문제, 다시 시도 ({attempt + 1}/3): {model}")
-                time.sleep(10)
+                _slow[model] = _slow.get(model, 0) + 1
+                if _slow[model] >= 2:
+                    _dead_models.add(model)  # 오늘 두 번 응답이 없으면 이번 실행에서는 건너뜀
+                log(f"Gemini 응답 없음 → 다음 모델로 넘어감: {model} (오늘 {_slow[model]}번째)")
+                break
         if last and (not errors or errors[-1] != last):
             errors.append(last)
     RUN.setdefault("gemini_errors", []).extend(e for e in errors if e not in RUN.get("gemini_errors", []))
@@ -481,7 +493,7 @@ def build_worksheet_prompt(pick: dict, by_id: dict, body: str, videos: list[dict
 
 NUM_RE = re.compile(r"\d[\d,.]*")
 # 글자 수 상한 (띄어쓰기 포함). 지침(worksheet.md)의 목표보다 5자쯤 여유
-LIMITS = {"word": 15, "summary": 35, "five_w": 18, "sentence": 30, "question": 30, "reason": 35}
+LIMITS = {"word": 20, "summary": 35, "five_w": 18, "sentence": 30, "question": 30, "reason": 35}
 
 
 def all_text(obj) -> str:
@@ -623,7 +635,8 @@ def make_worksheet(cfg, pick, by_id, body, videos, d) -> dict:
     ws = gemini(cfg, prompt, mock, temperature=0.5)
     problems = check_worksheet(cfg, ws, pick, source_text)
     tone = tone_problems(ws)
-    if (problems or tone) and not MOCK:
+    serious = [x for x in problems if "너무 김" not in x]   # 글자 수만 조금 넘는 것은 다시 쓰지 않음
+    if (serious or tone) and not MOCK and minutes_left() > 8:
         log(f"{pick['rank']}순위 학습지 검사 문제 → 한 번 다시 요청:", problems + tone)
         fix = prompt + "\n\n[이전 출력의 문제점 — 모두 고쳐서 다시 출력]\n- " + "\n- ".join(problems + tone)
         ws2 = gemini(cfg, fix, "worksheet.json", temperature=0.3)
@@ -810,6 +823,10 @@ def run():
 
     items, RUN["items"] = [], []
     for p in picks:
+        if items and minutes_left() < 4:   # 시간이 모자라면 만든 것까지만 저장
+            log(f"시간이 모자라 {p['rank']}순위부터는 건너뛰고, 만든 {len(items)}개를 먼저 올립니다.")
+            RUN["notes"].append(f"시간 부족으로 {len(items)}개만 만듦")
+            break
         body = gather_body(p, by_id)
         videos = vids[id(p)]
         try:
