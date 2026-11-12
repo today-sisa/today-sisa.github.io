@@ -1,0 +1,664 @@
+{
+ "version": 2,
+ "date": "2026-11-13",
+ "generated_at": "2026-11-13T06:56+09:00",
+ "hidden": false,
+ "sample": false,
+ "items": [
+  {
+   "title": "엔비디아 수장의 사임과 조사",
+   "words": [
+    {
+     "word": "최고경영자",
+     "meaning": "회사를 대표하는 최고 책임자예요",
+     "wrong": [
+      "회사의 돈을 관리하는 사람이에요",
+      "회사의 물건을 외국으로 파는 사람이에요"
+     ]
+    },
+    {
+     "word": "수출 통제",
+     "meaning": "다른 나라이 물건을 보내는 걸 막는 일이에요",
+     "wrong": [
+      "외국에서 물건을 살 때 세금을 깎아주는 일이에요",
+      "회사의 주식을 다른 사람에게 나누어주는 일이에요"
+     ]
+    }
+   ],
+   "summary": [
+    "엔비디아의 최고경영자가 자리에서 물러났어요.",
+    "미국 정치권에서는 관련 조사가 이어지고 있어요.",
+    "정부 부처 사이에서도 수출 통제를 두고 갈등이 생겼어요."
+   ],
+   "five_w": {
+    "who": "젠슨 황과 미국 정치인",
+    "when": "2026년 11월",
+    "where": "미국 백악관과 의회",
+    "what": "최고경영자 사임과 조사",
+    "how": "공개 경고와 서한 발송",
+    "why": "안보 우려와 관련 의혹 조사"
+   },
+   "activity": {
+    "impact_question": "기업의 문제가 나라에 어떤 영향을 줄까요?",
+    "wonder_question": "더 알고 싶은 것 한 가지는요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "미국 의회는 젠슨 황에게 브리핑 참석을 요구했어요.",
+     "answer": "사실",
+     "reason": "실제 의회에서 서한을 보냈어요."
+    },
+    {
+     "sentence": "재무장관과 상무장관이 회의에서 충돌했어요.",
+     "answer": "사실",
+     "reason": "언론 보도로 확인된 내용이에요."
+    },
+    {
+     "sentence": "이번 조사는 나라를 위해 반드시 필요한 일이에요.",
+     "answer": "의견",
+     "reason": "사람마다 생각이 다를 수 있어요."
+    },
+    {
+     "sentence": "기업 대표는 원래 자리에서 물러나면 안 돼요.",
+     "answer": "의견",
+     "reason": "개인의 선택에 대한 평가예요."
+    }
+   ],
+   "challenge": "기업의 중요한 결정이 사회에 미치는 영향은 무엇인지 한 문장으로 써 보세요.",
+   "article": {
+    "happened": [
+     "미국 엔비디아의 최고경영자가 스캔들로 인해 수장 자리에서 물러났다. 회사는 임시 경영 체제로 전환했다.",
+     "미국 하원 특별위원회는 그에게 비공개 브리핑 출석을 요구했다. 출석하지 않으면 소환장을 발부하겠다고 경고했다.",
+     "야당은 관련 의혹에 대한 철저한 조사를 요구하며 서한을 보냈다. 백악관 회의에서도 관련 정책을 두고 장관들 사이에 충돌이 일어났다."
+    ],
+    "why": "미국 상무부는 첨단 기술 제품의 수출 통제 방안을 강화하고 있다. 국가 안보를 둘러싼 우려가 커지면서 정치권과 정부의 조사가 계속 이어질 것으로 보인다.",
+    "background": {
+     "title": "수출 통제란 무엇인가요?",
+     "text": "나라 간의 안전을 위해 중요한 물건이나 기술이 다른 나라로 쉽게 넘어가지 못하도록 막는 제도예요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 우리 사회의 경제 활동",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "기업이 흔들리면 일자리가 줄어들고 경제가 불안해질 수 있어요.",
+     "wonder_question": "임시 경영 체제는 앞으로 기업에 어떤 변화를 줄까 궁금해요.",
+     "challenge": "기업의 큰 변화는 경제와 일자리 전반에 직접적인 영향을 미칠 수 있어요."
+    },
+    "extra_questions": [
+     "기업 대표의 개인적인 일이 회사에 왜 큰 문제가 될까요?",
+     "정부가 기업의 수출을 관리하는 까닭은 무엇일까요?"
+    ],
+    "cautions": [
+     "정치적 입장에 치우치지 않고 사실 관계 중심으로 지도합니다."
+    ]
+   },
+   "rank": 1,
+   "type": "useful",
+   "category": "경제",
+   "topic": "엔비디아 젠슨 황 사임",
+   "reason": "AI 반도체 대표 기업 CEO의 사임과 글로벌 기술 패권 변화를 다룬 경제·과학 이슈로 방송사 보도가 집중됨.",
+   "source": "YTN",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KTjRabjFGX2cyejI3OHBpNDU5MXVnN3IxcS1qTFZlelBGeUQ5dm5FNkRIU29KMWNsVTVfMUg1Vmgwa2hxUlNQMnFIM1VvSkZ6WC02SkluNTdDT2NXRXBMa2hxSjJDSHNmdGkwamhWaw?oc=5",
+   "original_title": "젠슨 황 엔비디아 CEO 전격 사임...CFO가 임시 경영",
+   "member_titles": [
+    "젠슨 황 엔비디아 CEO 전격 사임...CFO가 임시 경영",
+    "“젠슨 황 연인 앨리스 황, 10조원 규모 엔비디아 AI칩 중국으로 밀반입”",
+    "왜 반도체 수출 규제를 풀었나...전방위 조사 예고",
+    "젠슨 황 후계자로 애플 스루지 거론…CFO가 임시수장 맡을 듯",
+    "\"젠슨 황, 강제 소환할 수도\"…백악관서도 '충돌'",
+    "\"젠슨 황 내연녀 49세...전 남편 만나 인생역전\""
+   ],
+   "pub": "2026-11-13",
+   "related": [
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1CS1VEYUF0NC1lNEJqbUkwTFB2WGVrZEdWUld0ekNCZ2ZGb3lKVnpPcHNIcVRFRXZoWFgzaE16NDE1LXQ3WWpzYmFUeGdNNHg3ZTh6X1Q0dlB5NjA?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HTWxMQjhxRmJsLTBrS0ZrSFJscUVyQTc0Rkk4U1Q3VXNETkRleVVsNnR0VlBfZmFZdktTd2w3V0dycDdOZ1NpZXNFVFMxNW92Sy1rejJCcFZBQmpWMDdOeDV4aENQS2gxS2V6Rk84NA?oc=5"
+    },
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ub190LXpqY2NxRXNiYlZoYVM2OUxOelJXNWdpNE04VGQ0X0staDdmektiT1NkMkVkbWhGTXdBaGRVemlPc3Z2WXJfX01ub3l1cTlDNG5QNlQzQVJrLTJza2phMEZ6bm9MNFpv?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008843680&plink=RSSLINK&cooper=RSSREADER"
+    }
+   ],
+   "video": {
+    "id": "WCHx9UwE4Oc",
+    "title": "젠슨 황 엔비디아 CEO 전격 사임...CFO가 임시 경영 / YTN",
+    "channel": "YTN",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [
+    {
+     "label": "민감한 인물이 등장해요",
+     "detail": "정치인과 기업 대표가 등장해요."
+    }
+   ],
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 회사의 물건을 외국으로 파는 사람이에…",
+    "낱말 뜻 보기이(가) 너무 김 (24자, 20자 이내로): 다른 나라이 물건을 보내는 걸 막는 …",
+    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 외국에서 물건을 살 때 세금을 깎아주…",
+    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 회사의 주식을 다른 사람에게 나누어주…",
+    "학습용 기사가 너무 짧음 (276자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ]
+  },
+  {
+   "title": "집 지키는 카메라가 해킹 위험이라니요",
+   "words": [
+    {
+     "word": "사생활",
+     "meaning": "남에게 알리고 싶지 않은 개인 생활",
+     "wrong": [
+      "학교에서 지키는 여러 가지 규칙",
+      "여러 사람이 함께 일하는 사회 생활"
+     ]
+    },
+    {
+     "word": "보안",
+     "meaning": "안전을 지키고 비밀을 보호하는 일",
+     "wrong": [
+      "물건의 잘못된 곳을 고치는 일",
+      "인터넷의 속도를 빠르게 하는 일"
+     ]
+    }
+   ],
+   "summary": [
+    "집안용 카메라 제품들의 안전성을 조사했어요.",
+    "국산 고가 제품도 해킹 위험이 발견됐어요.",
+    "침실 같은 곳에는 설치를 피하는 게 안전해요."
+   ],
+   "five_w": {
+    "who": "한국소비자원",
+    "when": "2026년 11월 12일",
+    "where": "우리나라와 중국",
+    "what": "가정용 카메라 3개 제품의 해킹 위험",
+    "how": "10개 제품을 수거해 보안 성능 점검",
+    "why": "가정의 사생활 유출을 막기 위해"
+   },
+   "activity": {
+    "impact_question": "우리 집 카메라 보안을 지키려면 어떻게 할까요?",
+    "wonder_question": "카메라 해킹을 막는 방법 중 더 알고 싶은 것은요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "조사한 10개 제품 중 3개에서 위험이 나왔어요.",
+     "answer": "사실",
+     "reason": "검사 결과로 확인된 내용이에요."
+    },
+    {
+     "sentence": "비싼 국산 제품이라도 믿고 쓰면 안 돼요.",
+     "answer": "의견",
+     "reason": "사람의 생각과 판단이 담겼어요."
+    },
+    {
+     "sentence": "가장 비싼 제품도 실시간 영상이 뚫렸어요.",
+     "answer": "사실",
+     "reason": "실제 점검에서 드러난 사실이에요."
+    },
+    {
+     "sentence": "집 안에는 카메라를 아예 두지 않는 게 좋아요.",
+     "answer": "의견",
+     "reason": "개인의 주장이나 선택이에요."
+    }
+   ],
+   "challenge": "안전하게 인터넷 기기를 쓰기 위해 지켜야 할 규칙을 써 봐요.",
+   "article": {
+    "happened": [
+     "한국소비자원이 집에서 쓰는 가정용 카메라 10개 제품을 조사한 결과, 일부 국산 제품도 해킹 위험에 노출된 것으로 드러났다. 이번 조사는 우리나라와 중국에서 만든 10개 브랜드의 제품을 하나씩 거두어 보안 성능을 꼼꼼히 점검하는 방식으로 이루어졌다.",
+     "점검 결과 국산 제품 두 종류와 중국산 제품 한 종류 등 모두 3개 제품에서 영상이 밖으로 샐 가능성이 확인됐다. 조사 대상 가운데 가장 값이 비싼 제품조차 다른 사람이 집 안의 실시간 영상을 들여다볼 수 있는 취약점을 드러냈다. 다른 두 제품은 인터넷 저장 공간에 보관된 영상이 해킹될 위험이 있었다.",
+     "최근 아이나 반려동물을 돌보기 위해 집 안에 카메라를 두는 가정이 늘고 있다. 많은 소비자가 사생활 보호를 위해 일부러 비싼 국산 제품을 골랐지만 안전을 완전히 믿기 어려운 상황이다. 문제를 확인한 회사들은 결함을 고쳤거나 보완하는 작업을 진행 중이라고 밝혔다."
+    ],
+    "why": "전문가들은 영상이 모이는 인터넷 서버가 공격을 받으면 완전히 안전을 장담하기 어렵다고 설명했다. 정부는 위험 제품의 판매를 강제로 멈출 권한이 없어 소비자 주의를 당부했다. 전문가들은 침실이나 욕실처럼 개인적인 공간에는 카메라 설치를 피하고 비밀번호를 자주 바꾸는 것이 안전하다고 조언했다.",
+    "background": {
+     "title": "클라우드 서비스란?",
+     "text": "인터넷에 연결된 큰 컴퓨터에 사진이나 영상을 맡겨 두고 언제든 꺼내 보는 기술이에요. 편리하지만 보안 관리가 매우 중요해요."
+    }
+   },
+   "curriculum": [
+    "사회 5-2 사회의 새로운 변화와 오늘날의 우리",
+    "사회 6-1 우리나라의 경제 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "집에서 쓰는 홈캠의 비밀번호를 복잡하게 바꾸고 주기적으로 업데이트해야 해요.",
+     "wonder_question": "해킹 공격을 막아 주는 안전한 비밀번호 설정법이나 암호화 기술이 궁금해요.",
+     "challenge": "초기 비밀번호를 반드시 바꾸고, 카메라를 쓰지 않을 때는 가림막으로 렌즈를 가려요."
+    },
+    "extra_questions": [
+     "집 안을 비추는 카메라가 해킹되면 어떤 위험한 일이 생길 수 있을까요?",
+     "물건을 살 때 원산지나 가격만 믿지 않고 어떤 점을 더 살펴봐야 할까요?"
+    ],
+    "cautions": [
+     "가정에 홈캠이 설치된 학생들이 지나친 공포나 불안감을 느끼지 않도록 비밀번호 변경 등 일상적인 예방법 중심으로 지도해 주세요."
+    ]
+   },
+   "rank": 2,
+   "type": "useful",
+   "category": "사회",
+   "topic": "국산 홈캠 해킹 보안 논란",
+   "reason": "학생들의 생활과 밀접한 스마트 기기 및 사생활 보호 문제를 다루어 미디어 리터러시 교육에 적합함.",
+   "source": "SBS",
+   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008843697&plink=RSSLINK&cooper=RSSREADER",
+   "original_title": "내 방 24시간 훔쳐보는 '눈'…\"국산도 못 믿어\"",
+   "member_titles": [
+    "내 방 24시간 훔쳐보는 '눈'…\"국산도 못 믿어\"",
+    "시중 유통 가정용 IP카메라서 보안 구멍…일부 영상유출·강제조작 위험"
+   ],
+   "pub": "2026-11-12",
+   "related": [
+    {
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05ckN6VGt5bU4yMjBEOWVZTHpaZV9pRDVJelhUb1F6R2Yyb04wRkZLZWp1M3JmQVdpWXJHdWhwTGNTYk01Q1lmd2tPSTBJY2JtaUR0aWlBV3RZamwwMV9hRENJemxWWEE?oc=5"
+    }
+   ],
+   "video": {
+    "id": "4toKmH4vBVc",
+    "title": "내 방 24시간 훔쳐보는 '눈'..\"국산도 못 믿어\" / SBS 8뉴스",
+    "channel": "SBS 뉴스",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [
+    {
+     "label": "아이들이 불안해할 수 있어요",
+     "detail": "집에 있는 카메라 해킹에 불안을 느낄 수 있어요"
+    }
+   ],
+   "needs_review": true,
+   "review_notes": [
+    "육하원칙 what이(가) 너무 김 (20자, 18자 이내로): 가정용 카메라 3개 제품의 해킹 위험…",
+    "육하원칙 how이(가) 너무 김 (20자, 18자 이내로): 10개 제품을 수거해 보안 성능 점검…"
+   ]
+  },
+  {
+   "title": "운전대 없는 사이버캡이 왔어요",
+   "words": [
+    {
+     "word": "자율주행",
+     "meaning": "사람이 직접 운전하지 않고 차가 스스로 움직이는 기술이에요",
+     "wrong": [
+      "차가 고장 나서 멈춰 서 있는 상태예요",
+      "사람이 조종기로 차를 조종하는 기술이에요"
+     ]
+    },
+    {
+     "word": "상용화",
+     "meaning": "새로운 물건이나 기술을 실제로 만들어 널리 쓰는 일이에요",
+     "wrong": [
+      "물건을 상자에 넣어 멀리 보내는 일이에요",
+      "가게에서 물건을 싸게 파는 할인 행사예요"
+     ]
+    }
+   ],
+   "summary": [
+    "운전대와 페달이 없는 사이버캡이 우리나라에 처음으로 전시됐어요.",
+    "미국에서는 이미 사이버캡이 운행되지만 우리나라는 아직 시판 계획이 없어요.",
+    "국내 테슬라 차들은 자율주행 기능이 있지만 중국산은 기능을 쓸 수 없어요."
+   ],
+   "five_w": {
+    "who": "테슬라",
+    "when": "최근",
+    "where": "우리나라 쇼핑몰",
+    "what": "사이버캡 첫 공개",
+    "how": "무인 자율주행으로",
+    "why": "새로운 기술을 보여주려고"
+   },
+   "activity": {
+    "impact_question": "우리 동네에 사이버캡이 달린다면 어떤 점이 편리할까요?",
+    "wonder_question": "내가 타고 싶은 자율주행차는 어떤 모습일까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "사이버캡 안에는 운전대와 페달이 없어요.",
+     "answer": "사실",
+     "reason": "눈으로 직접 보고 확인할 수 있는 모습이에요."
+    },
+    {
+     "sentence": "미국 텍사스주에서는 사이버캡이 이미 상용화됐어요.",
+     "answer": "사실",
+     "reason": "실제로 도로에서 운행되고 있는 사실이에요."
+    },
+    {
+     "sentence": "앞으로 모든 자동차는 운전대가 사라질 거예요.",
+     "answer": "의견",
+     "reason": "앞으로의 일을 미리 짐작하여 말한 내용이에요."
+    },
+    {
+     "sentence": "자율주행차가 늘어나면 교통사고가 전혀 없을 거예요.",
+     "answer": "의견",
+     "reason": "확실하게 증명되지 않은 개인의 생각이에요."
+    }
+   ],
+   "challenge": "자율주행차가 우리 삶을 어떻게 바꿀지 한 문장으로 적어보세요.",
+   "article": {
+    "happened": [
+     "테슬라는 최근 운전대와 페달이 없는 무인 자율주행 로봇 택시 사이버캡을 우리나라에 처음으로 공개했다. 평일 오전인데도 대형 쇼핑몰 로비에는 새로운 차를 구경하려는 사람들로 가득 북적였다. 이번에 선보인 차는 인간의 개입 없이 스스로 주행하는 기술을 담고 있다.",
+     "미국 텍사스주 등 일부 지역에서는 이미 사이버캡이 상용화되어 도로를 달리고 있다. 하지만 우리나라에는 아직 정확한 판매 계획이 나오지 않은 상태이다. 국내에 들어온 일부 테슬라 차량은 자율주행 보조 기능을 가지고 있지만 활용에 제한이 있다.",
+     "국내에서 팔린 테슬라 차량 중 상당수는 중국에서 만들어져 들어왔다. 이 차량들은 구조가 같아도 자율주행 보조 기능을 사용할 수 없도록 막혀 있다. 회사가 국내 도입에 적극적으로 나서지 않으면서 일부 운전자들은 아쉬움을 드러내고 있다."
+    ],
+    "why": "테슬라는 이미 국내 수입차 시장에서 인기가 높아 급할 것이 없다는 분석이 나온다. 정부도 서류가 부족한 상황에서 먼저 나서지 않아 단기간에 문제가 해결되기는 어려워 보인다.",
+    "background": {
+     "title": "자율주행 단계란 무엇일까요?",
+     "text": "자율주행은 사람이 얼마나 개입하느냐에 따라 0단계부터 5단계까지 나누어져요. 숫자가 높을수록 차가 스스로 안전하게 운전하는 능력이 뛰어나요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 과학기술의 발달과 우리 생활",
+    "사회 6-2 우리 속의 세계"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "버스나 택시를 기다리지 않고 편리하게 이동할 수 있을 것 같아요.",
+     "wonder_question": "하늘을 나는 자율주행차가 빨리 만들어지면 좋겠어요."
+    },
+    "extra_questions": [
+     "운전기사 없는 택시를 타면 어떤 기분이 들까요?",
+     "자율주행차가 사고를 냈을 때는 누구의 책임일까요?"
+    ],
+    "cautions": [
+     "특정 기업이나 제품을 옹호하거나 비판하지 않도록 지도해요."
+    ]
+   },
+   "rank": 3,
+   "type": "useful",
+   "category": "과학·환경",
+   "topic": "자율주행 사이버캡 공개",
+   "reason": "운전대와 페달이 없는 미래형 자율주행 기술의 도입과 교통 시스템의 변화를 보여주는 신기술 뉴스.",
+   "source": "SBS",
+   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008843684&plink=RSSLINK&cooper=RSSREADER",
+   "original_title": "페달·운전대 없는 '사이버캡'…한국서 자율주행은?",
+   "member_titles": [
+    "페달·운전대 없는 '사이버캡'…한국서 자율주행은?"
+   ],
+   "pub": "2026-11-12",
+   "related": [],
+   "video": {
+    "id": "2wsIbN95d0U",
+    "title": "페달·운전대 없는 '사이버캡'..한국서 자율주행은? / SBS 8뉴스",
+    "channel": "SBS 뉴스",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (32자, 20자 이내로): 사람이 직접 운전하지 않고 차가 스스…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 차가 고장 나서 멈춰 서 있는 상태예…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 사람이 조종기로 차를 조종하는 기술이…",
+    "낱말 뜻 보기이(가) 너무 김 (31자, 20자 이내로): 새로운 물건이나 기술을 실제로 만들어…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 물건을 상자에 넣어 멀리 보내는 일이…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 가게에서 물건을 싸게 파는 할인 행사…",
+    "요약 문장이(가) 너무 김 (41자, 35자 이내로): 미국에서는 이미 사이버캡이 운행되지만…",
+    "요약 문장이(가) 너무 김 (41자, 35자 이내로): 국내 테슬라 차들은 자율주행 기능이 …"
+   ]
+  },
+  {
+   "title": "박항서 감독, 인종차별 대응으로 징계",
+   "words": [
+    {
+     "word": "인종차별",
+     "meaning": "피부색이나 나라로 사람을 다르게 대함",
+     "wrong": [
+      "운동 경기를 공정하게 진행하는 규칙",
+      "선수들에게 상금을 나누어 주는 제도"
+     ]
+    },
+    {
+     "word": "징계",
+     "meaning": "잘못한 일에 대해 규칙에 따라 벌을 줌",
+     "wrong": [
+      "경기를 이겼을 때 받는 특별한 상",
+      "선수가 다쳤을 때 치료해 주는 과정"
+     ]
+    }
+   ],
+   "summary": [
+    "박항서 감독이 이끄는 팀의 경기에서 관중이 인종차별을 했어요.",
+    "박 감독은 선수를 보호하려고 관중에게 강하게 항의했어요.",
+    "태국축구협회는 박 감독의 대응이 부적절하다며 징계를 내렸어요."
+   ],
+   "five_w": {
+    "who": "박항서 감독",
+    "when": "지난 1일",
+    "where": "태국 축구 경기장",
+    "what": "인종차별 대응으로 징계 받음",
+    "how": "출전 정지와 제재금 부과",
+    "why": "관중과 충돌해서"
+   },
+   "activity": {
+    "impact_question": "스포츠 경기에서 차별이 생기면 어떤 문제가 생길까요?",
+    "wonder_question": "더 알고 싶은 것 한 가지는요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "태국축구협회는 박 감독에게 2경기 출전 정지를 줬어요.",
+     "answer": "사실",
+     "reason": "실제 협회에서 결정한 일이에요."
+    },
+    {
+     "sentence": "경기장에 있던 관중은 선수들에게 나쁜 말을 했어요.",
+     "answer": "사실",
+     "reason": "기사에 보도된 실제 상황이에요."
+    },
+    {
+     "sentence": "선수를 보호하려고 화를 낸 것은 당연해요.",
+     "answer": "의견",
+     "reason": "사람마다 생각이 다를 수 있어요."
+    },
+    {
+     "sentence": "폭력적인 행동은 어떤 이유로도 정당화될 수 없어요.",
+     "answer": "의견",
+     "reason": "지켜야 할 규칙에 대한 생각이에요."
+    }
+   ],
+   "challenge": "지도자가 선수를 보호하는 올바른 방법에 대해 한 문장으로 써봐요.",
+   "article": {
+    "happened": [
+     "태국 프로축구 2부리그에서 활동하는 박항서 감독이 경기 중 관중과 충돌했다. 지난 1일 태국에서 열린 원정경기에서 일부 관중이 선수들을 향해 인종차별 발언을 했다. 파타야 팬으로 추정되는 관중은 박 감독에게 모욕적인 말을 반복했다.",
+     "이 관중들은 마다가스카르 출신 미드필더에게도 외모를 비하하는 발언을 했다. 경기장에 있던 관중들의 차별적인 언행은 계속해서 이어졌다. 선수들을 향한 모욕적인 행동은 경기 분위기를 크게 해쳤다.",
+     "격분한 박 감독은 해당 관중을 향해 직접 항의하며 강하게 대응했다. 박 감독 측은 선수를 보호하기 위한 행동이었다고 설명했다. 하지만 태국축구협회는 박 감독의 대응 과정에 문제가 있다고 판단했다."
+    ],
+    "why": "태국축구협회는 선수를 보호하려는 마음은 이해하지만 대응 방식이 잘못되었다고 밝혔다. 협회는 박 감독에게 징계를 내렸으며 관중에게도 제재금을 부과했다. 이번 일로 스포츠 경기장에서의 차별과 올바른 대응 방법에 대한 관심이 커지고 있다.",
+    "background": {
+     "title": "인종차별이란 무엇일까요?",
+     "text": "사람의 피부색이나 출신 나라가 다르다는 이유로 놀리거나 차별하는 행동이에요. 모두가 똑같이 존중받아야 해요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리 겨레의 삶과 문화"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "경기에 집중하기 어렵고 사람들의 마음에 큰 상처를 줄 수 있어요.",
+     "wonder_question": "인종차별을 한 관중은 앞으로 어떤 벌을 받게 되나요?",
+     "challenge": "차분한 말과 정해진 규칙으로 항의해야 해요."
+    },
+    "extra_questions": [
+     "내가 박 감독이었다면 어떻게 행동했을까요?",
+     "스포츠 경기에서 가장 중요한 가치는 무엇일까요?"
+    ],
+    "cautions": [
+     "인종차별이라는 단어의 뜻을 학생들이 바르게 이해하도록 지도합니다.",
+     "폭력적인 대응과 선수를 보호하는 행동의 차이를 나누어 이야기해 봅니다."
+    ]
+   },
+   "rank": 4,
+   "type": "useful",
+   "category": "스포츠",
+   "topic": "박항서 감독 인종차별 대응 징계",
+   "reason": "스포츠 현장에서 발생한 인종차별 문제와 이에 대응하는 과정 속 페어플레이 정신을 생각해 볼 수 있는 기사.",
+   "source": "MBC",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ON09aY0xKazlHRUU2M2paUlR0b3NPRmlraFhmLXhIQm5EVkUtUVA0ZnZDam9kTERTUE1rVWJ0cldraDZfSVZkdnJFVXBnMlNva3J5dmZhRW1jNHQzeFk1Qm5Ddm00REhWQzR5QjB1V1FLZ3BHbzFaUNIBeEFVX3lxTFBmbWJwdmZfcFFXTkY2eHNkb0JLdkVGWjZCUDkwX1NUdTRSZUFaZkZFZ2Jsam8xMmxqSkVCT0hFLWlTSXNQNlBFVzg0azl1bnFGVWFUSUZHY01MNDRQWlRLbDZMdnlCQ3EyV2ZYYm1kOHFCeGFOdHQ2Rg?oc=5",
+   "original_title": "'인종차별한 관중 충돌' 박항서 감독에게 '2경기 출전 정지'",
+   "member_titles": [
+    "\"김치맨\" 외쳐댄 관중과 충돌…박항서, 끝내 징계받았다",
+    "'인종차별한 관중 충돌' 박항서 감독에게 '2경기 출전 정지'"
+   ],
+   "pub": "2026-11-12",
+   "related": [
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008843563&plink=RSSLINK&cooper=RSSREADER"
+    }
+   ],
+   "video": {
+    "id": "ojU-uHvDrz4",
+    "title": "'인종차별한 관중 충돌' 박항서 감독에게 '2경기 출전 정지' (2026.11.12/뉴스데스크/MBC)",
+    "channel": "MBC News",
+    "kind": "news",
+    "match": 1.0
+   },
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 잘못한 일에 대해 규칙에 따라 벌을 …"
+   ]
+  },
+  {
+   "title": "분당에서 버스 등 32대 연쇄 추돌 사고가 발생했어요",
+   "words": [
+    {
+     "word": "제동장치",
+     "meaning": "차를 멈추는 장치예요",
+     "wrong": [
+      "차를 빠르게 달리는 장치예요",
+      "자동차의 문을 닫는 장치예요"
+     ]
+    },
+    {
+     "word": "정밀감정",
+     "meaning": "자세히 살펴 원인을 찾는 일이에요",
+     "wrong": [
+      "물건을 깨끗하게 닦는 일이에요",
+      "차를 새롭게 색칠하는 일이에요"
+     ]
+    }
+   ],
+   "summary": [
+    "분당에서 시내버스가 32대 연쇄 추돌 사고를 냈어요.",
+    "운전기사는 제동장치가 안 됐다고 주장하고 있어요.",
+    "경찰은 블랙박스를 토대로 정확한 원인을 조사 중이에요."
+   ],
+   "five_w": {
+    "who": "시내버스 운전기사",
+    "when": "어제 아침",
+    "where": "경기 분당",
+    "what": "32대 연쇄 추돌 사고",
+    "how": "국과수와 경찰이 정밀 감정",
+    "why": "사고 원인을 밝히기 위함"
+   },
+   "activity": {
+    "impact_question": "이 사고는 우리 동네에 어떤 영향을 줄까요?",
+    "wonder_question": "교통사고를 줄일 방법은 무엇이 있을까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "경기 분당에서 버스 추돌 사고가 났어요.",
+     "answer": "사실",
+     "reason": "뉴스 기사에 보도된 내용이에요."
+    },
+    {
+     "sentence": "운전기사는 제동장치 고장을 주장했어요.",
+     "answer": "사실",
+     "reason": "경찰 조사에서 나온 말이에요."
+    },
+    {
+     "sentence": "모든 버스 회사는 점검을 소홀히 할 거예요.",
+     "answer": "의견",
+     "reason": "확인되지 않은 개인의 생각이에요."
+    },
+    {
+     "sentence": "앞으로는 이런 사고가 전혀 안 생길 거예요.",
+     "answer": "의견",
+     "reason": "미래의 일을 단정할 수 없어요."
+    }
+   ],
+   "challenge": "도로에서 안전을 지키기 위해 우리가 할 수 있는 일은 무엇인가요?",
+   "article": {
+    "happened": [
+     "어제 경기 분당에서 시내버스가 32대를 들이받는 연쇄 추돌 사고가 발생했다. 이 사고로 승객 등 많은 사람이 다쳐 병원 치료를 받았다. 출근길에 일어난 갑작스러운 사고로 주변 도로가 큰 혼잡을 빚었다.",
+     "사고를 낸 버스는 중국에서 만든 전기 저상버스인 것으로 확인됐다. 버스 회사 측은 정기 점검을 꾸준히 해왔으며 최근 검사에서도 문제가 없었다고 밝혔다. 하지만 갑작스러운 돌진 원인은 아직 정확히 밝혀지지 않은 상태이다.",
+     "경찰과 국립과학수사연구원은 사고 차량의 운행기록장치를 수거해 정밀감정 작업에 착수했다. 또한 현장 폐쇄회로(CCTV)와 차량 블랙박스 영상을 분석하며 당시 상황을 차근차근 재구성하고 있다."
+    ],
+    "why": "사고를 낸 운전기사는 현장에서 제동장치가 제대로 작동하지 않았다고 주장했다. 그러나 경찰은 기사의 약물 복용 여부와 페달 오조작 가능성 등 여러 가지 원인을 열어두고 조사하고 있다. 관할 지자체인 성남시는 비슷한 사고를 막기 위해 지역 내 버스 회사들에 긴급 정비를 실시하라는 공문을 보냈다.",
+    "background": {
+     "title": "운행기록장치란 무엇인가요?",
+     "text": "자동차가 얼마나 빠르게 달렸고 브레이크를 언제 밟았는지 기록하는 장치예요. 사고가 났을 때 원인을 찾는 데 큰 도움을 줘요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 우리 사회의 법과 제도",
+    "사회 6-2 우리 사회의 과제와 해결"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "우리 동네 버스도 안전한지 걱정하게 되고, 대중교통을 탈 때 더 불안해질 수 있어요.",
+     "wonder_question": "전기 저상버스의 구조적 결함은 없었는지 더 자세히 알고 싶어요.",
+     "challenge": "횡단보도를 건널 때 스마트폰을 보지 않고 주변을 잘 살피며 안전하게 다녀야 해요."
+    },
+    "extra_questions": [
+     "사고가 났을 때 경찰이 가장 먼저 해야 할 일은 무엇일까요?",
+     "버스 회사가 지켜야 할 안전 수칙에는 어떤 것이 있을까요?"
+    ],
+    "cautions": [
+     "부상자나 피해 규모에 대해 자극적으로 이야기하지 않도록 지도해 주세요."
+    ]
+   },
+   "rank": 5,
+   "type": "useful",
+   "category": "사회",
+   "topic": "분당 32대 연쇄추돌 사고",
+   "reason": "출근길 대규모 차량 연쇄 추돌 사고로 교통 안전과 차량 결함 여부를 점검하는 사회적 중요 사건.",
+   "source": "KBS",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tSk1yWWN3RjNHaHNmN2dEWEFaZVpNS1VqeFNYYm9hdTNYZkhyX1lJa0pzQTJMTWRpQnFVem5DN0NMeTYtWE9aMXlkdGN2cEFaWWF6NXBKdDQ0clp6eXZYWWlWbUJHdw?oc=5",
+   "original_title": "분당서 버스·승용차 등 32대 연쇄 추돌 사고…승객 등 57명 다쳐",
+   "member_titles": [
+    "“폭탄 터진줄”…부서지고 넘어지고, 출근길 시민 대혼란",
+    "분당서 출근길 차량 32대 연쇄추돌…57명 부상",
+    "'70명 부상' 출근길 분당 버스 사고...기사 입건 예정",
+    "경기 성남에서 32대 연쇄 추돌...\"브레이크 고장\"",
+    "분당서 버스·승용차 등 32대 연쇄 추돌 사고…승객 등 57명 다쳐",
+    "출근길 '70명 부상'…블랙박스로 사고 재구성"
+   ],
+   "pub": "2026-11-12",
+   "related": [
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nd1hkRl84ZzlaMEhTc1VRSGJKemFVb0o4UVhUWlQyczRNQXVlSkVYcUxadGhqS0hUWXV0dkM0UVFlSVpGcnJGRDdPVzZQeGJ3Qk1JcklEakJaWHdyN2RuTndoS19kQQ?oc=5"
+    },
+    {
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIUy1vVkRrTmc2M0pCODlLZUpUemRoQ1ZwaXM1N3dmb3NDU3ZkSkhRa2NCeHVDb3RqUm1nTG13M090SExCdS1GUzFhczRuZ0dvX2NGV1ljRUJhcTE0dHNRWWRHMmNRMzA?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nWDBNTjg4MVE4MFNFak9oaDVwTlhHT3VpX1NDQ09EbUxjMDFCRTJvNGQyV1FRRzYtbzg2blJCMndJcXFFZkZVSm5RMmNBWlRGTDlUXzBzajE2LVlaQUE?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kV0hBazV2S0loa1RWclFET2s1TE01R1M4ME9mZ0Y2ZEFuSHYySkVUT045eVBqeHQzU1RwdjE0Z2Rvdnczb0NlOXRxV3ZKXzZidnZrRGozZDdOSFAyLWc?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [
+    {
+     "label": "아이들이 불안해할 수 있어요",
+     "detail": "대형 교통사고와 부상자 언급 때문이에요."
+    }
+   ],
+   "needs_review": false,
+   "review_notes": []
+  }
+ ]
+}

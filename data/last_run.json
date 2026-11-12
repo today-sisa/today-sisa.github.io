@@ -33,136 +33,151 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 94,
+   "count": 91,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 96,
+   "count": 93,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 97,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 89,
+   "count": 85,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 97,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 96,
+   "count": 99,
    "raw_entries": 100
   }
  ],
  "notes": [],
  "candidates_by_source": {
   "연합뉴스": 18,
-  "연합뉴스TV": 17,
   "SBS": 17,
   "JTBC": 17,
   "YTN": 17,
   "KBS": 17,
-  "MBC": 17
+  "MBC": 17,
+  "연합뉴스TV": 17
  },
  "model": "gemini-flash-lite-latest",
  "picks": [
   {
    "rank": 1,
    "type": "useful",
-   "source": "SBS",
-   "title": "두꺼운 패딩 입고 안전벨트?…\"하지 말라\" 전문가 경고"
+   "source": "YTN",
+   "title": "젠슨 황 엔비디아 CEO 전격 사임...CFO가 임시 경영"
   },
   {
    "rank": 2,
-   "type": "debate",
-   "source": "연합뉴스TV",
-   "title": "배추값 42% 하락에…정부, 3만톤 출하정지 추진"
+   "type": "useful",
+   "source": "SBS",
+   "title": "내 방 24시간 훔쳐보는 '눈'…\"국산도 못 믿어\""
   },
   {
    "rank": 3,
    "type": "useful",
    "source": "SBS",
-   "title": "허우적대자 \"같이 살자, 다 왔어\"…비번 소방관의 외침"
+   "title": "페달·운전대 없는 '사이버캡'…한국서 자율주행은?"
   },
   {
    "rank": 4,
-   "type": "debate",
-   "source": "SBS",
-   "title": "고개 떨군 '스마트폰 좀비'…과실은 운전자 100%"
+   "type": "useful",
+   "source": "MBC",
+   "title": "'인종차별한 관중 충돌' 박항서 감독에게 '2경기 출전 정지'"
   },
   {
    "rank": 5,
    "type": "useful",
-   "source": "SBS",
-   "title": "\"완전 자리 잡았나\" 산란까지…달라진 제주 바다 풍경"
+   "source": "KBS",
+   "title": "분당서 버스·승용차 등 32대 연쇄 추돌 사고…승객 등 57명 다쳐"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1280,
-   "video_candidates": 2,
+   "body_chars": 1564,
+   "video_candidates": 3,
    "video": true,
-   "problems": [],
-   "alerts": []
+   "problems": [
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 회사의 물건을 외국으로 파는 사람이에…",
+    "낱말 뜻 보기이(가) 너무 김 (24자, 20자 이내로): 다른 나라이 물건을 보내는 걸 막는 …",
+    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 외국에서 물건을 살 때 세금을 깎아주…",
+    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 회사의 주식을 다른 사람에게 나누어주…",
+    "학습용 기사가 너무 짧음 (276자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": [
+    "민감한 인물이 등장해요"
+   ]
   },
   {
    "rank": 2,
-   "body_chars": 0,
-   "video_candidates": 1,
+   "body_chars": 1804,
+   "video_candidates": 2,
    "video": true,
-   "problems": [],
-   "alerts": []
+   "problems": [
+    "육하원칙 what이(가) 너무 김 (20자, 18자 이내로): 가정용 카메라 3개 제품의 해킹 위험…",
+    "육하원칙 how이(가) 너무 김 (20자, 18자 이내로): 10개 제품을 수거해 보안 성능 점검…"
+   ],
+   "alerts": [
+    "아이들이 불안해할 수 있어요"
+   ]
   },
   {
    "rank": 3,
-   "body_chars": 1250,
-   "video_candidates": 1,
+   "body_chars": 2972,
+   "video_candidates": 3,
    "video": true,
-   "problems": [],
+   "problems": [
+    "낱말 뜻 보기이(가) 너무 김 (32자, 20자 이내로): 사람이 직접 운전하지 않고 차가 스스…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 차가 고장 나서 멈춰 서 있는 상태예…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 사람이 조종기로 차를 조종하는 기술이…",
+    "낱말 뜻 보기이(가) 너무 김 (31자, 20자 이내로): 새로운 물건이나 기술을 실제로 만들어…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 물건을 상자에 넣어 멀리 보내는 일이…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 가게에서 물건을 싸게 파는 할인 행사…",
+    "요약 문장이(가) 너무 김 (41자, 35자 이내로): 미국에서는 이미 사이버캡이 운행되지만…",
+    "요약 문장이(가) 너무 김 (41자, 35자 이내로): 국내 테슬라 차들은 자율주행 기능이 …"
+   ],
    "alerts": []
   },
   {
    "rank": 4,
-   "body_chars": 1763,
-   "video_candidates": 1,
-   "video": false,
+   "body_chars": 1946,
+   "video_candidates": 2,
+   "video": true,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (18자, 15자 이내로): 스마트폰을 보며 걷는 사람이에요.…",
-    "낱말 뜻 보기이(가) 너무 김 (16자, 15자 이내로): 스마트폰을 고치는 사람이에요.…",
-    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 스마트폰을 안 쓰는 사람이에요.…",
-    "육하원칙 how이(가) 너무 김 (22자, 18자 이내로): 운전자에게만 책임을 묻는 기준 개선 …",
-    "발문 issue이(가) 너무 김 (38자, 30자 이내로): 스마트폰을 보며 걷다 사고가 나면 보…",
-    "학습용 기사가 너무 짧음 (394자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 잘못한 일에 대해 규칙에 따라 벌을 …"
    ],
    "alerts": []
   },
   {
    "rank": 5,
-   "body_chars": 1082,
+   "body_chars": 1656,
    "video_candidates": 0,
    "video": false,
-   "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (17자, 15자 이내로): 열대와 온대 사이의 따뜻한 지역…",
-    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 앞으로 제주 바다의 물고기 종류가 더…",
-    "발문 wonder_question이(가) 너무 김 (35자, 30자 이내로): 제주 바다에 사는 물고기에 대해 더 …"
-   ],
-   "alerts": []
+   "problems": [],
+   "alerts": [
+    "아이들이 불안해할 수 있어요"
+   ]
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-12T08:56+09:00"
+ "finished_at": "2026-11-13T06:56+09:00"
 }
