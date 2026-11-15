@@ -760,7 +760,8 @@ def main():
         return run()
     try:
         run()
-        write_run_summary(RUN.get("status_override", "성공"))
+        if RUN.get("status_override") != "건너뜀(이미 있음)":   # 예비 실행이 아침 기록을 덮어쓰지 않게
+            write_run_summary(RUN.get("status_override", "성공"))
     except BaseException as e:
         RUN["notes"].append(f"오류: {e}")
         write_run_summary("실패")
@@ -789,6 +790,16 @@ def run():
         log(f"{d} 은(는) {reason}이라 건너뜁니다.")
         RUN["status_override"] = f"건너뜀({reason})"
         return
+
+    # 예비 실행: 오늘 것이 이미 만들어져 있으면 아무것도 쓰지 않고 끝 (--force면 다시 만듦)
+    if not a.force and not MOCK:
+        try:
+            if json.loads((DATA / "today.json").read_text(encoding="utf-8")).get("date") == d.isoformat():
+                log(f"{d} 학습지가 이미 있어서 건너뜁니다. (예비 실행)")
+                RUN["status_override"] = "건너뜀(이미 있음)"
+                return
+        except (OSError, ValueError):
+            pass
 
     cands = apply_banned(cfg, fetch_candidates(cfg))
     if len(cands) < 5:
