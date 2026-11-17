@@ -33,135 +33,148 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 88,
+   "count": 93,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 97,
-   "raw_entries": 100
+   "count": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:news.kbs.co.kr+when:3d&hl=ko&gl=K"
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 96,
+   "count": 98,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 86,
-   "raw_entries": 100
+   "count": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:news.sbs.co.kr+when:3d&hl=ko&gl=K"
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 94,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 97,
-   "raw_entries": 100
+   "count": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=site:yonhapnewstv.co.kr+when:3d&hl=ko&"
   }
  ],
  "notes": [],
  "candidates_by_source": {
-  "연합뉴스": 18,
-  "연합뉴스TV": 17,
-  "SBS": 17,
-  "JTBC": 17,
-  "YTN": 17,
-  "KBS": 17,
-  "MBC": 17
+  "연합뉴스": 26,
+  "연합뉴스TV": 5,
+  "SBS": 11,
+  "JTBC": 26,
+  "YTN": 26,
+  "MBC": 26
  },
  "model": "gemini-flash-lite-latest",
  "picks": [
   {
    "rank": 1,
    "type": "useful",
-   "source": "KBS",
-   "title": "미국 항공당국 “최악 지나가…항공운항 15일 완전 정상화”"
+   "source": "JTBC",
+   "title": "대법원, 한덕수 내란중요임무 19일 선고…구속만료 하루전"
   },
   {
    "rank": 2,
    "type": "useful",
-   "source": "YTN",
-   "title": "대부도 갯벌서 멸종위기종 '흰발농게' 집단 서식"
+   "source": "SBS",
+   "title": "손글씨로 잇따라 \"감사해요\"…주민들 웃게 한 상자 보니"
   },
   {
    "rank": 3,
-   "type": "debate",
-   "source": "KBS",
-   "title": "작년 응급실 이용 환자 30%는 경증·비응급…“필요했던 환자들보다 많아”"
+   "type": "useful",
+   "source": "연합뉴스TV",
+   "title": "오늘 오후부터 전국 비…수능날 영하권 추위"
   },
   {
    "rank": 4,
-   "type": "useful",
-   "source": "SBS",
-   "title": "카나리아제도에 '우르르'…하루 새 1,500명 이주민 왔다"
+   "type": "debate",
+   "source": "JTBC",
+   "title": "철사만큼 가는 카메라…'감독관 교육'으로 해결? [소셜픽]"
   },
   {
    "rank": 5,
-   "type": "debate",
-   "source": "SBS",
-   "title": "결국 직접 나선다…광주 곳곳 '전두환 찬양' 현수막 뜨자"
+   "type": "useful",
+   "source": "JTBC",
+   "title": "젠슨 황 돌아올까?…\"엔비디아 이사회, 복귀 논의 안 해\""
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1101,
-   "video_candidates": 1,
+   "body_chars": 0,
+   "video_candidates": 3,
    "video": true,
-   "problems": [
-    "사실·의견 문장이(가) 너무 김 (38자, 30자 이내로): 미국 교통부는 계약업체가 케이블을 교…",
-    "학습용 기사가 너무 짧음 (362자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
-   "alerts": []
+   "problems": [],
+   "alerts": [
+    "민감한 인물이 등장해요"
+   ]
   },
   {
    "rank": 2,
-   "body_chars": 0,
-   "video_candidates": 1,
-   "video": true,
-   "problems": [
-    "한쪽으로 기운 표현: 꼭 필요한 (제목·요약·발문은 중립적으로)"
-   ],
-   "alerts": []
-  },
-  {
-   "rank": 3,
-   "body_chars": 0,
+   "body_chars": 1195,
    "video_candidates": 1,
    "video": true,
    "problems": [],
    "alerts": []
   },
   {
-   "rank": 4,
-   "body_chars": 0,
-   "video_candidates": 1,
+   "rank": 3,
+   "body_chars": 1071,
+   "video_candidates": 8,
    "video": true,
    "problems": [
-    "학습용 기사가 너무 짧음 (423자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "발문 impact_question이(가) 너무 김 (31자, 30자 이내로): 갑자기 날씨가 추워지면 우리 생활엔 …",
+    "발문 wonder_question이(가) 너무 김 (32자, 30자 이내로): 이번 수능 날 날씨에 대해 더 알고 …",
+    "학습용 기사가 너무 짧음 (330자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": []
+  },
+  {
+   "rank": 4,
+   "body_chars": 1327,
+   "video_candidates": 0,
+   "video": false,
+   "problems": [
+    "발문 issue이(가) 너무 김 (39자, 30자 이내로): 인공지능을 막기 위해 시험장에 전자기…",
+    "학습용 기사가 너무 짧음 (437자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ],
    "alerts": []
   },
   {
    "rank": 5,
-   "body_chars": 1270,
+   "body_chars": 1856,
    "video_candidates": 0,
    "video": false,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 국민이 정부나 기관에 바라는 점을 말…",
-    "육하원칙 why이(가) 너무 김 (20자, 18자 이내로): 혐오와 비방 표현으로 인한 민원 해결…"
+    "낱말 뜻 보기이(가) 너무 김 (27자, 20자 이내로): 사람처럼 생각하고 배울 수 있는 컴퓨…",
+    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 물건을 빠르게 만들어 내는 공장 시설…",
+    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 세계 여러 나라의 돈을 바꿔 주는 장…",
+    "낱말 뜻 보기이(가) 너무 김 (29자, 20자 이내로): 어떤 일이나 사업에 이익을 얻으려고 …",
+    "낱말 뜻 보기이(가) 너무 김 (29자, 20자 이내로): 가지고 있던 물건을 다른 사람에게 공…",
+    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 은행에 돈을 맡기고 정해진 이자를 받…",
+    "요약 문장이(가) 너무 김 (39자, 35자 이내로): 젠슨 황이 떠난 뒤에도 엔비디아의 인…",
+    "요약 문장이(가) 너무 김 (41자, 35자 이내로): 하지만 앞으로의 운영 방향을 점검하면…",
+    "요약 문장이(가) 너무 김 (39자, 35자 이내로): 전문가들은 투자 방식이 안정적인 대형…",
+    "사실·의견 문장이(가) 너무 김 (37자, 30자 이내로): 엔비디아는 대형 금융사들과 손잡고 자…",
+    "사실·의견 문장이(가) 너무 김 (36자, 30자 이내로): 새로운 거래에서는 투자자들이 더 확실…",
+    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 로이터 통신은 16일에 관련 내용을 …",
+    "사실·의견 문장이(가) 너무 김 (33자, 30자 이내로): 자금이 더 탄탄한 대형 기업들에 돌아…",
+    "발문 impact_question이(가) 너무 김 (34자, 30자 이내로): 우리 생활에 인공지능 기술이 더 많아…"
    ],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-16T08:28+09:00"
+ "finished_at": "2026-11-17T09:01+09:00"
 }
