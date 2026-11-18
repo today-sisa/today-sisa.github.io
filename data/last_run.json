@@ -33,19 +33,19 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 93,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 97,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 94,
+   "count": 96,
    "raw_entries": 100
   },
   {
@@ -57,14 +57,14 @@
   {
    "source": "JTBC",
    "via": "google",
-   "count": 98,
+   "count": 97,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 94,
-   "raw_entries": 99
+   "count": 98,
+   "raw_entries": 100
   }
  ],
  "notes": [],
@@ -81,100 +81,88 @@
  "picks": [
   {
    "rank": 1,
-   "type": "debate",
-   "source": "SBS",
-   "title": "단추마다 스티커…숨긴 폰에 '재난문자' 울린다"
+   "type": "useful",
+   "source": "연합뉴스TV",
+   "title": "경찰, 오늘 전국 '경계강화' 발령…부정행위 엄단"
   },
   {
    "rank": 2,
    "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "경북 상주 규모 3.6 지진…올해 최대 규모"
+   "source": "KBS",
+   "title": "누리호 5차 발사 성공 최종 확인…“목표궤도 진입 정상 수행”"
   },
   {
    "rank": 3,
    "type": "useful",
-   "source": "SBS",
-   "title": "달콤한 성장 전망, 씁쓸한 긴축 경고"
+   "source": "연합뉴스TV",
+   "title": "수능일 중부·경북 영하권 추위…전북 최고 8㎝ 눈"
   },
   {
    "rank": 4,
-   "type": "useful",
-   "source": "KBS",
-   "title": "미 국가안보국 내부 통신망 마비…“사이버 공격 증거 없어”"
+   "type": "debate",
+   "source": "SBS",
+   "title": "강남 새 아파트 80%가 임대주택…\"좋다\" vs \"별로\""
   },
   {
    "rank": 5,
    "type": "useful",
-   "source": "JTBC",
-   "title": "\"김정은도 만나고 싶어 해\"…트럼프, 북미회담 가능성 또 언급"
+   "source": "SBS",
+   "title": "배터리서 '연기' 나면 10초 뒤 '펑'…소화기보다 대피가 먼저"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1955,
-   "video_candidates": 3,
+   "body_chars": 1095,
+   "video_candidates": 4,
    "video": true,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 시험 문제를 미리 알려 주는 친절한 …",
-    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 정해진 규칙을 아주 잘 지키는 모범적…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 친구끼리 서로 비밀을 나누지 않는 태…",
-    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 어려운 문제를 끝까지 혼자서 풀어내는…"
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 바르지 못한 방법으로 시험을 치르는 …",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 문제를 풀지 않고 깨끗하게 비워두는 …"
    ],
    "alerts": []
   },
   {
    "rank": 2,
-   "body_chars": 1027,
-   "video_candidates": 3,
-   "video": true,
+   "body_chars": 0,
+   "video_candidates": 0,
+   "video": false,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 지진이 땅속에서 처음 일어난 곳의 바…"
+    "학습용 기사가 너무 짧음 (295자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ],
-   "alerts": [
-    "아이들이 불안해할 수 있어요"
-   ]
+   "alerts": []
   },
   {
    "rank": 3,
-   "body_chars": 1588,
-   "video_candidates": 2,
-   "video": true,
-   "problems": [
-    "발문 impact_question이(가) 너무 김 (33자, 30자 이내로): 우리 나라 경제가 좋아지면 우리 삶엔…",
-    "한쪽으로 기운 표현: 역대급 (제목·요약·발문은 중립적으로)"
-   ],
+   "body_chars": 1008,
+   "video_candidates": 0,
+   "video": false,
+   "problems": [],
    "alerts": []
   },
   {
    "rank": 4,
-   "body_chars": 1718,
-   "video_candidates": 0,
+   "body_chars": 1923,
+   "video_candidates": 1,
    "video": false,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 정보를 주고받기 위해 연결된 통신 체…",
-    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 컴퓨터 망을 해쳐 정보를 훔치거나 망…",
-    "학습용 기사가 너무 짧음 (429자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
-   "alerts": []
-  },
-  {
-   "rank": 5,
-   "body_chars": 1831,
-   "video_candidates": 0,
-   "video": false,
-   "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (26자, 20자 이내로): 나라의 대표들이 만나 중요한 일을 의…",
-    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 잘못을 바로잡으려고 정한 규칙으로 제…",
-    "도전 문항이(가) 너무 김 (50자, 45자 이내로): 만약 내가 정상회담에 참여한다면, 북…",
-    "학습용 기사가 너무 짧음 (442자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "학습용 기사가 너무 짧음 (426자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ],
    "alerts": [
     "가정마다 생각이 크게 다를 수 있어요"
    ]
+  },
+  {
+   "rank": 5,
+   "body_chars": 1734,
+   "video_candidates": 1,
+   "video": false,
+   "problems": [
+    "학습용 기사가 너무 짧음 (267자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-18T06:07+09:00"
+ "finished_at": "2026-11-19T05:57+09:00"
 }
