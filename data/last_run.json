@@ -33,38 +33,38 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 95,
+   "count": 92,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 96,
+   "count": 100,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 96,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 86,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 97,
+   "count": 98,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
    "count": 98,
-   "raw_entries": 100
+   "raw_entries": 99
   }
  ],
  "notes": [],
@@ -82,87 +82,95 @@
   {
    "rank": 1,
    "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "경찰, 오늘 전국 '경계강화' 발령…부정행위 엄단"
+   "source": "SBS",
+   "title": "수출 1조 달러 새 역사…24시간 HBM 생산 현장"
   },
   {
    "rank": 2,
    "type": "useful",
-   "source": "KBS",
-   "title": "누리호 5차 발사 성공 최종 확인…“목표궤도 진입 정상 수행”"
+   "source": "SBS",
+   "title": "전국에서 10.5초간 '삐삐삐'…초유의 수능 재난문자"
   },
   {
    "rank": 3,
    "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "수능일 중부·경북 영하권 추위…전북 최고 8㎝ 눈"
+   "source": "SBS",
+   "title": "\"이 약 있어요?\" 폰 보면서 줄줄줄…위험한 자가 진단"
   },
   {
    "rank": 4,
-   "type": "debate",
-   "source": "SBS",
-   "title": "강남 새 아파트 80%가 임대주택…\"좋다\" vs \"별로\""
+   "type": "useful",
+   "source": "연합뉴스",
+   "title": "앤트로픽, 111.5달러에 거래 시작…장중 100달러 밑으로(종합)"
   },
   {
    "rank": 5,
    "type": "useful",
-   "source": "SBS",
-   "title": "배터리서 '연기' 나면 10초 뒤 '펑'…소화기보다 대피가 먼저"
+   "source": "연합뉴스",
+   "title": "네덜란드서 참전용사 초청 행사…올해 작고한 14명 호명해 예우"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1095,
-   "video_candidates": 4,
+   "body_chars": 1746,
+   "video_candidates": 2,
    "video": true,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 바르지 못한 방법으로 시험을 치르는 …",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 문제를 풀지 않고 깨끗하게 비워두는 …"
+    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 컴퓨터나 전자기기에 쓰이는 핵심 부품…",
+    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 전기를 전혀 통하지 않게 막아주는 도…",
+    "육하원칙 why이(가) 너무 김 (19자, 18자 이내로): 모든 국민이 함께 땀 흘려 노력해서…",
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 우리나라는 사상 처음으로 연간 수출 …"
    ],
    "alerts": []
   },
   {
    "rank": 2,
-   "body_chars": 0,
-   "video_candidates": 0,
-   "video": false,
+   "body_chars": 1613,
+   "video_candidates": 2,
+   "video": true,
    "problems": [
-    "학습용 기사가 너무 짧음 (295자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 바르지 못한 방법으로 시험을 치르는 …"
    ],
    "alerts": []
   },
   {
    "rank": 3,
-   "body_chars": 1008,
-   "video_candidates": 0,
-   "video": false,
-   "problems": [],
+   "body_chars": 1764,
+   "video_candidates": 2,
+   "video": true,
+   "problems": [
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 미래의 건강을 미리 알아보는 일이에요…",
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 약 등을 먹고 난 뒤의 나쁜 반응이에…",
+    "육하원칙 how이(가) 너무 김 (22자, 18자 이내로): 인공지능에 증상을 입력하여 약을 추천…"
+   ],
    "alerts": []
   },
   {
    "rank": 4,
-   "body_chars": 1923,
-   "video_candidates": 1,
+   "body_chars": 1699,
+   "video_candidates": 0,
    "video": false,
    "problems": [
-    "학습용 기사가 너무 짧음 (426자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 회사의 주식을 시장에 처음 내놓는 일…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 회사의 모든 주식을 합친 전체 가치예…",
+    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 앤트로픽의 시초가 기준 시가총액은 2…",
+    "사실·의견 문장이(가) 너무 김 (34자, 30자 이내로): 인공지능 기술이 앞으로 우리 삶을 훨…",
+    "사실·의견 문장이(가) 너무 김 (33자, 30자 이내로): 기술 기업 주식에 처음 투자하는 것은…"
    ],
-   "alerts": [
-    "가정마다 생각이 크게 다를 수 있어요"
-   ]
+   "alerts": []
   },
   {
    "rank": 5,
-   "body_chars": 1734,
-   "video_candidates": 1,
+   "body_chars": 1238,
+   "video_candidates": 0,
    "video": false,
    "problems": [
-    "학습용 기사가 너무 짧음 (267자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "자료에 없는 숫자 '5300' (지어낸 내용일 수 있음)"
    ],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-19T05:57+09:00"
+ "finished_at": "2026-11-20T05:52+09:00"
 }
