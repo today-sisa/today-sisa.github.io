@@ -206,10 +206,52 @@ def gemini(cfg: dict, prompt: str, mock_name: str, temperature: float = 0.4) -> 
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": temperature, "responseMimeType": "application/json"},
     }
-    last, errors = None, []
-    for model in cfg["gemini_models"]:
+    models = list(cfg["gemini_models"])
+    waits = [60, 120, 240, 480]   # 모든 모델이 바쁠 때(503 등) 기다렸다 다시 — 합쳐서 최대 15분
+    for rnd in range(len(waits) + 1):
+        result, errors, busy = _gemini_round(models, body, key)
+        if result is not None:
+            return result
+        if rnd == 0:   # 처음 실패하면, 지금 쓸 수 있는 다른 flash 모델을 찾아 뒤에 붙임 (모델 이름이 바뀌어도 버팀)
+            extra = _discover_models(key, models)
+            if extra:
+                log(f"쓸 수 있는 다른 모델 찾음: {extra}")
+                models += extra
+                result, errors2, busy2 = _gemini_round(extra, body, key)
+                if result is not None:
+                    return result
+                errors += errors2
+                busy = busy or busy2
+        RUN.setdefault("gemini_errors", []).extend(e for e in errors if e not in RUN.get("gemini_errors", []))
+        if not busy or rnd == len(waits) or minutes_left() < waits[rnd] / 60 + 10:
+            raise RuntimeError(f"Gemini 호출 실패: {' / '.join(errors)}")
+        log(f"제미나이 모델이 모두 바빠요 → {waits[rnd] // 60}분 뒤 다시 시도 ({rnd + 1}/{len(waits)})")
+        time.sleep(waits[rnd])
+    raise RuntimeError("Gemini 호출 실패")
+
+
+def _discover_models(key: str, known: list[str]) -> list[str]:
+    import requests
+    try:
+        r = requests.get("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200",
+                         headers={"x-goog-api-key": key}, timeout=30)
+        names = [m["name"].split("/", 1)[1] for m in r.json().get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+    except Exception:
+        return []
+    skip = ("image", "tts", "audio", "live", "embedding", "preview", "exp", "thinking")
+    out = [n for n in names if "flash" in n and n not in known and n not in _dead_models and not any(k in n for k in skip)]
+    return out[:3]
+
+
+def _gemini_round(models: list[str], body: dict, key: str):
+    """모델을 차례로 한 번씩 시도. (결과, 오류 목록, '잠깐 바쁜 것'이었는지)"""
+    import requests
+    last, errors, busy = None, [], False
+    for model in models:
         if model in _dead_models:
             continue
+        last = None
         for attempt in range(3):
             try:
                 r = requests.post(
@@ -221,8 +263,9 @@ def gemini(cfg: dict, prompt: str, mock_name: str, temperature: float = 0.4) -> 
                     last = f"{model} 오늘 무료 한도 다 씀"
                     _dead_models.add(model)  # 오늘은 이 모델 건너뜀
                     break
-                if r.status_code in (429, 500, 502, 503):
+                if r.status_code in (429, 500, 502, 503, 504):
                     last = f"{model} {r.status_code}"
+                    busy = True
                     time.sleep(15 * (attempt + 1))
                     continue
                 if r.status_code in (400, 403, 404):
@@ -234,21 +277,21 @@ def gemini(cfg: dict, prompt: str, mock_name: str, temperature: float = 0.4) -> 
                 text = re.sub(r"^```(json)?|```$", "", text.strip()).strip()
                 log(f"Gemini 응답 받음 ({model})")
                 RUN["model"] = model
-                return json.loads(text)
+                return json.loads(text), errors, busy
             except (json.JSONDecodeError, KeyError, IndexError) as e:
                 last = f"{model} 응답 형식 오류 {e}"
                 time.sleep(3)
             except requests.exceptions.RequestException as e:  # 시간 초과·연결 끊김 → 바로 다음 모델로
                 last = f"{model} 연결 문제 {str(e)[:80]}"
+                busy = True
                 _slow[model] = _slow.get(model, 0) + 1
                 if _slow[model] >= 2:
                     _dead_models.add(model)  # 오늘 두 번 응답이 없으면 이번 실행에서는 건너뜀
                 log(f"Gemini 응답 없음 → 다음 모델로 넘어감: {model} (오늘 {_slow[model]}번째)")
                 break
-        if last and (not errors or errors[-1] != last):
+        if last:
             errors.append(last)
-    RUN.setdefault("gemini_errors", []).extend(e for e in errors if e not in RUN.get("gemini_errors", []))
-    raise RuntimeError(f"Gemini 호출 실패: {' / '.join(errors) or last}")
+    return None, errors, busy
 
 
 # ─────────────────────────── 2. 선정 ───────────────────────────

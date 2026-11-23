@@ -1,7 +1,7 @@
 /**
  * 오늘의 시사 — 아침 깨우기 (구글 타이머 → 깃허브 실행 요청)
  * ------------------------------------------------------------
- * 깃허브 예약 실행은 늦거나 빠지는 날이 있어서, 구글 타이머가 매일 아침 5~6시에
+ * 깃허브 예약 실행은 늦거나 빠지는 날이 있어서, 구글 타이머가 매일 아침 5~6시와 7~8시(예비)에
  * "오늘 학습지가 없으면 만들어 줘"라고 깃허브에 한 번 더 요청합니다.
  * 이미 만들어져 있으면 깃허브가 몇 초 만에 끝내므로 제미나이·유튜브를 더 쓰지 않습니다.
  *
@@ -40,9 +40,10 @@ function wakeGithub() {
     (code === 401 ? '\n→ 토큰이 틀렸거나 기한이 지났어요. 새 토큰을 만들어 GH_TOKEN 을 바꿔 주세요.' : ''));
 }
 
-/** 처음 한 번 실행: 매일 아침 5~6시(한국) 타이머 만들기. 여러 번 실행해도 하나만 남습니다. */
+/** 처음 한 번 실행: 매일 아침 5~6시, 7~8시(한국) 타이머 두 개 만들기. 여러 번 실행해도 두 개만 남습니다.
+ *  7~8시 것은 예비: 오늘 학습지가 이미 있으면 깃허브가 몇 초 만에 끝냅니다. */
 function setup() {
   ScriptApp.getProjectTriggers().filter(t => t.getHandlerFunction() === 'wakeGithub').forEach(t => ScriptApp.deleteTrigger(t));
-  ScriptApp.newTrigger('wakeGithub').timeBased().everyDays(1).atHour(5).inTimezone('Asia/Seoul').create();
-  Logger.log('타이머 설정 완료: 매일 아침 5~6시 사이 (주말은 자동으로 건너뜀)');
+  [5, 7].forEach(h => ScriptApp.newTrigger('wakeGithub').timeBased().everyDays(1).atHour(h).inTimezone('Asia/Seoul').create());
+  Logger.log('타이머 설정 완료: 매일 아침 5~6시, 7~8시 (주말은 자동으로 건너뜀)');
 }
