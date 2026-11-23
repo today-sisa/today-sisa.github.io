@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 112,
+   "count": 118,
    "raw_entries": 120
   },
   {
@@ -15,8 +15,8 @@
   {
    "source": "SBS",
    "via": "direct",
-   "count": 14,
-   "raw_entries": 14
+   "count": 15,
+   "raw_entries": 15
   },
   {
    "source": "JTBC",
@@ -33,13 +33,13 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 88,
+   "count": 90,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 96,
+   "count": 95,
    "raw_entries": 100
   },
   {
@@ -51,23 +51,25 @@
   {
    "source": "SBS",
    "via": "google",
-   "count": 87,
+   "count": 84,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 92,
+   "count": 97,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 98,
-   "raw_entries": 99
+   "count": 93,
+   "raw_entries": 100
   }
  ],
- "notes": [],
+ "notes": [
+  "오류: Gemini 호출 실패: gemini-flash-latest 503 / gemini-flash-lite-latest 503 / gemini-3.1-flash-lite 503 / gemini-2.5-flash-lite 사용 불가(404)"
+ ],
  "candidates_by_source": {
   "연합뉴스": 18,
   "연합뉴스TV": 17,
@@ -77,105 +79,12 @@
   "KBS": 17,
   "MBC": 17
  },
- "model": "gemini-flash-lite-latest",
- "picks": [
-  {
-   "rank": 1,
-   "type": "useful",
-   "source": "JTBC",
-   "title": "정부, 증시 급락에 18년 만에 '증시안정 펀드' 준비"
-  },
-  {
-   "rank": 2,
-   "type": "debate",
-   "source": "YTN",
-   "title": "\"젠슨 형, 왜 여기서 나와?\"...스캔들의 기막힌 변신"
-  },
-  {
-   "rank": 3,
-   "type": "useful",
-   "source": "SBS",
-   "title": "세월 태운 '필생 과업', 93세 학자의 플라톤 완간"
-  },
-  {
-   "rank": 4,
-   "type": "useful",
-   "source": "SBS",
-   "title": "\"도파민 팡팡\" 첫날에만 3,300명…영하 추위에 '활짝'"
-  },
-  {
-   "rank": 5,
-   "type": "useful",
-   "source": "MBC",
-   "title": "'은퇴 예고' 최민정, 쇼트트랙 월드투어 1000m 3연속 금메달"
-  }
+ "gemini_errors": [
+  "gemini-flash-latest 503",
+  "gemini-flash-lite-latest 503",
+  "gemini-3.1-flash-lite 503",
+  "gemini-2.5-flash-lite 사용 불가(404)"
  ],
- "items": [
-  {
-   "rank": 1,
-   "body_chars": 1820,
-   "video_candidates": 3,
-   "video": true,
-   "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 주식이 크게 떨어질 때 정부가 쓰는 …",
-    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 나라에서 가난한 사람을 돕는 지원금이…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 은행에 저축하면 주는 이자 모음이에요…",
-    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 회사가 자기 돈으로 직접 산 회사 주…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 회사가 문을 닫을 때 나누는 돈이에요…",
-    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 외국인은 지난 일주일 동안 많은 공매…",
-    "학습용 기사가 너무 짧음 (409자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것",
-    "금지어 포함: 주가"
-   ],
-   "alerts": [
-    "혐오감을 줄 수 있어요"
-   ]
-  },
-  {
-   "rank": 2,
-   "body_chars": 1997,
-   "video_candidates": 1,
-   "video": true,
-   "problems": [
-    "요약 문장이(가) 너무 김 (40자, 35자 이내로): 정부는 수출 규칙을 제대로 지켰는지 …",
-    "발문 issue이(가) 너무 김 (33자, 30자 이내로): 인공지능 반도체 수출 규칙, 더욱 엄…"
-   ],
-   "alerts": []
-  },
-  {
-   "rank": 3,
-   "body_chars": 1876,
-   "video_candidates": 2,
-   "video": true,
-   "problems": [
-    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 오랫동안 한 길을 파는 노력은 언제나…",
-    "학습용 기사가 너무 짧음 (400자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
-   "alerts": []
-  },
-  {
-   "rank": 4,
-   "body_chars": 1640,
-   "video_candidates": 2,
-   "video": true,
-   "problems": [
-    "학습용 기사가 너무 짧음 (392자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
-   "alerts": []
-  },
-  {
-   "rank": 5,
-   "body_chars": 0,
-   "video_candidates": 1,
-   "video": true,
-   "problems": [
-    "사실·의견 문장이(가) 너무 김 (33자, 30자 이내로): 최민정 선수는 우리나라를 대표하는 훌…",
-    "발문 impact_question이(가) 너무 김 (38자, 30자 이내로): 우리나라 선수가 세계 대회에서 좋은 …",
-    "발문 wonder_question이(가) 너무 김 (32자, 30자 이내로): 오랫동안 운동을 계속할 때 가장 필요…",
-    "학습용 기사가 너무 짧음 (332자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
-   "alerts": []
-  }
- ],
- "status": "성공",
- "finished_at": "2026-11-23T06:00+09:00"
+ "status": "실패",
+ "finished_at": "2026-11-24T05:50+09:00"
 }
