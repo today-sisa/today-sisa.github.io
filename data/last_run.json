@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 117,
+   "count": 115,
    "raw_entries": 120
   },
   {
@@ -15,8 +15,8 @@
   {
    "source": "SBS",
    "via": "direct",
-   "count": 17,
-   "raw_entries": 17
+   "count": 15,
+   "raw_entries": 15
   },
   {
    "source": "JTBC",
@@ -33,38 +33,38 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 91,
+   "count": 92,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 94,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 94,
+   "count": 97,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 87,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 99,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 96,
-   "raw_entries": 100
+   "count": 89,
+   "raw_entries": 99
   }
  ],
  "notes": [],
@@ -77,78 +77,80 @@
   "KBS": 17,
   "MBC": 17
  },
- "model": "gemini-flash-lite-latest",
+ "model": "gemini-3.1-flash-lite",
  "picks": [
   {
    "rank": 1,
    "type": "useful",
-   "source": "YTN",
-   "title": "태안 침몰 어선 '해광호' 확인...실종자 수색 최우선 [현장영상+]"
+   "source": "연합뉴스TV",
+   "title": "서울지하철 노사 임단협 타결…총파업 철회"
   },
   {
    "rank": 2,
-   "type": "debate",
-   "source": "JTBC",
-   "title": "수능 부정행위 5명 형사 고발…온라인 자백·판매 글도 조사"
+   "type": "useful",
+   "source": "KBS",
+   "title": "외교부, 러 군용기 KADIZ 진입에 “유감 표명·재발 방지 촉구”"
   },
   {
    "rank": 3,
-   "type": "media",
-   "source": "JTBC",
-   "title": "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]"
+   "type": "debate",
+   "source": "SBS",
+   "title": "똑같은 시험지 2장인데…'숨겨진 암호'로 커닝 잡는다?"
   },
   {
    "rank": 4,
    "type": "useful",
-   "source": "MBC",
-   "title": "한전, 고객 등 152만명 개인정보 유출‥주민·계좌번호도 포함"
+   "source": "JTBC",
+   "title": "원곡도 커버곡도 AI 작품…저작권 논란? 즐기기 시작했다"
   },
   {
    "rank": 5,
    "type": "useful",
-   "source": "SBS",
-   "title": "치아 사이 20초 닦아 '혈당 측정'…마법의 치실 나왔다"
+   "source": "KBS",
+   "title": "산업부 ‘진주 딸기·통영 굴’ 수출 지원 논의"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1692,
-   "video_candidates": 3,
+   "body_chars": 1099,
+   "video_candidates": 1,
    "video": true,
-   "problems": [],
-   "alerts": [
-    "아이들이 불안해할 수 있어요"
-   ]
+   "problems": [
+    "발문 impact_question이(가) 너무 김 (31자, 30자 이내로): 지하철이 정상 운행되어 우리 동네에 …",
+    "발문 wonder_question이(가) 너무 김 (36자, 30자 이내로): 노사가 합의한 내용 중 가장 중요하다…"
+   ],
+   "alerts": []
   },
   {
    "rank": 2,
-   "body_chars": 1268,
-   "video_candidates": 0,
-   "video": false,
+   "body_chars": 695,
+   "video_candidates": 3,
+   "video": true,
    "problems": [
-    "학습용 기사가 너무 짧음 (399자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "육하원칙 why이(가) 너무 김 (20자, 18자 이내로): 러시아는 국제법 위반이 아니라고 주장…",
+    "발문 impact_question이(가) 너무 김 (33자, 30자 이내로): 우리나라 영공 근처에 군용기가 나타나…"
    ],
    "alerts": []
   },
   {
    "rank": 3,
-   "body_chars": 2966,
-   "video_candidates": 0,
-   "video": false,
-   "problems": [],
-   "alerts": [
-    "민감한 인물이 등장해요"
-   ]
+   "body_chars": 1852,
+   "video_candidates": 2,
+   "video": true,
+   "problems": [
+    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 시험 등에서 정당하지 않은 방법으로 …",
+    "도전 문항이(가) 너무 김 (49자, 45자 이내로): AI의 부정행위를 막기 위해 기술 외…",
+    "학습용 기사가 너무 짧음 (377자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": []
   },
   {
    "rank": 4,
    "body_chars": 0,
-   "video_candidates": 0,
-   "video": false,
-   "problems": [
-    "학습용 기사가 너무 짧음 (444자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
+   "video_candidates": 1,
+   "video": true,
+   "problems": [],
    "alerts": []
   },
   {
@@ -157,12 +159,13 @@
    "video_candidates": 0,
    "video": false,
    "problems": [
-    "오늘의 낱말 '센서'이(가) 학습용 기사에 없음 — 기사 본문(happened나 why)에 '센서'를 그대로 넣어 다시 쓸 것",
-    "학습용 기사가 너무 짧음 (416자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 지역 특산물을 수출하는 것이 경제에 …",
+    "발문 impact_question이(가) 너무 김 (31자, 30자 이내로): 우리 동네 특산물이 세계에 알려지면 …",
+    "발문 wonder_question이(가) 너무 김 (31자, 30자 이내로): 우리 지역에서 외국으로 수출하면 좋을…"
    ],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-24T09:06+09:00"
+ "finished_at": "2026-11-25T06:17+09:00"
 }
