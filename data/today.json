@@ -1,189 +1,191 @@
 {
  "version": 2,
- "date": "2026-11-23",
- "generated_at": "2026-11-23T06:00+09:00",
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T09:06+09:00",
  "hidden": false,
  "sample": false,
  "items": [
   {
-   "title": "정부, 주식시장 안정을 위해 펀드 준비해요",
+   "title": "바닷속 가라앉은 어선과 구조 활동",
    "words": [
     {
-     "word": "증시안정펀드",
-     "meaning": "주식이 크게 떨어질 때 정부가 쓰는 돈이에요.",
+     "word": "선체",
+     "meaning": "배의 뼈대와 몸체",
      "wrong": [
-      "나라에서 가난한 사람을 돕는 지원금이에요.",
-      "은행에 저축하면 주는 이자 모음이에요."
+      "배를 모는 선장",
+      "배에 실은 짐"
      ]
     },
     {
-     "word": "자사주",
-     "meaning": "회사가 자기 돈으로 직접 산 회사 주식이에요.",
+     "word": "조류",
+     "meaning": "바닷물이 흐르는 움직임",
      "wrong": [
-      "외국인에게만 파는 특별한 주식이에요.",
-      "회사가 문을 닫을 때 나누는 돈이에요."
+      "바다에 사는 새",
+      "하늘에 부는 바람"
      ]
     }
    ],
    "summary": [
-    "정부는 주식시장이 크게 흔들려 긴급회의를 열었어요.",
-    "18년 만에 증시안정펀드를 준비하고 자사주 매입을 도와요.",
-    "주가 안정을 위해 불법 공매도를 집중 감시하기로 했어요."
+    "바다에서 사라진 배가 깊은 물속에서 발견됐어요.",
+    "물살이 거세고 물이 흐려 수색에 어려움을 겪고 있어요.",
+    "해경은 날씨가 나아지면 선원 수색을 다시 시작해요."
    ],
    "five_w": {
-    "who": "정부",
-    "when": "최근",
-    "where": "우리나라",
-    "what": "증시안정펀드 준비",
-    "how": "긴급회의를 열어",
-    "why": "주식시장 안정을 위해"
+    "who": "태안해양경찰서와 해군",
+    "when": "2026년 11월 22일",
+    "where": "충남 태안 앞바다",
+    "what": "가라앉은 배를 발견함",
+    "how": "바닷속 탐사 장비로",
+    "why": "사라진 배와 사람을 찾기 위해"
    },
    "activity": {
-    "impact_question": "주식시장이 흔들리면 우리 동네엔 어떤 일이 생길까요?",
-    "wonder_question": "정부 대책 중 가장 궁금한 점은 무엇인가요?"
+    "impact_question": "바다 안전사고는 우리 삶에 어떤 영향을 줄까요?",
+    "wonder_question": "깊은 바다를 수색할 때 더 알고 싶은 점은요?"
    },
    "facts_opinions": [
     {
-     "sentence": "정부는 증시안정펀드 가동을 준비하겠다고 발표했어요.",
+     "sentence": "배는 53미터 깊이 바다에서 발견됐어요.",
      "answer": "사실",
-     "reason": "실제 정부의 발표 내용이에요."
+     "reason": "측정한 사실이에요."
     },
     {
-     "sentence": "이번 대책으로 주식시장이 곧 안정을 찾을 거예요.",
+     "sentence": "선원들을 찾기 위해 배를 먼저 건져야 해요.",
      "answer": "의견",
-     "reason": "앞으로의 일은 확실하지 않아요."
+     "reason": "사람마다 생각이 달라요."
     },
     {
-     "sentence": "외국인은 지난 일주일 동안 많은 공매도 물량을 팔았어요.",
+     "sentence": "물속이 어두워서 앞이 잘 보이지 않아요.",
      "answer": "사실",
-     "reason": "기사에 기록된 통계예요."
+     "reason": "실제 상황이에요."
     },
     {
-     "sentence": "공매도 제한을 뺀 것은 아주 잘한 결정이에요.",
+     "sentence": "날씨가 좋아지면 수색이 금방 끝날 거예요.",
      "answer": "의견",
-     "reason": "사람마다 다르게 생각할 수 있어요."
+     "reason": "미래의 짐작이에요."
     }
    ],
-   "challenge": "정부가 주식시장을 지키려는 까닭을 한 줄로 써요.",
+   "challenge": "물속이 위험할 때 사람 대신 도울 장비를 상상해 써 봐요.",
    "article": {
     "happened": [
-     "정부는 최근 국내외 주식시장이 크게 흔들리자 긴급회의를 열었다. 경제부총리와 한국은행 총재 등이 모여 대책을 논의했다. 시장의 공포 심리를 진정시키기 위한 조치이다.",
-     "정부는 필요할 때 바로 쓸 수 있는 증시안정펀드 구성을 준비하고 있다. 이 펀드가 실제로 쓰이면 2008년 금융위기 이후 18년 만이다. 정부는 시장이 불안할 때 적극적으로 개입할 계획이다.",
-     "또한 상장기업이 자사주 수량을 더 쉽게 살 수 있도록 규제를 풀기로 했다. 주가를 지키기 위한 다양한 방법이 함께 추진되고 있다. 다만 이번 대책에 공매도 제한은 빠졌다."
+     "충남 태안 앞바다에서 사라졌던 어선 해광호가 바닷속에서 발견되었다. 해군은 깊은 바다를 살피는 무인 탐사 장비를 넣어 수심 53미터 아래 가라앉아 있는 배를 찾아냈다. 배는 바닥에서 약 30도 기울어진 상태로 놓여 있었다.",
+     "하지만 배에 타고 있던 선원들의 모습은 아직 확인되지 않았다. 해양경찰은 배가 발견되자마자 잠수 구조대원을 물속으로 들여보냈다. 그러나 바닷속 시야가 2에서 3미터에 그칠 정도로 물이 탁했고, 물살이 빨라 선체 안으로 들어가지는 못했다.",
+     "구조대원들은 거센 조류 때문에 장비가 제대로 움직이지 않자 대원 안전을 위해 바다 위로 돌아왔다. 해경은 현재 배 주변에 배와 항공기 30여 대를 보내 주변 바다를 계속 살피고 있다. 실종된 사람을 먼저 찾는 일이 가장 급하기 때문이다."
     ],
-    "why": "정부가 공매도 제한을 이번 대책에 넣지 않은 것은 다른 나라와의 규칙을 지키기 위해서이다. 대신 불법으로 이익을 얻는 행위를 집중해서 감시하기로 했다. 앞으로 정부의 대책이 시장에 어떤 영향을 줄지 주목된다.",
+    "why": "바다는 물살이 세고 깊을수록 사람이 들어가서 작업하기가 매우 위험하다. 해경은 날씨가 나아지는 대로 다시 잠수사를 들여보내 배 안쪽을 자세히 살펴볼 계획이다. 또 해군과 힘을 합쳐 물속 작업을 돕는 특수 장치인 다이빙벨을 쓰는 방법도 함께 준비하고 있다.",
     "background": {
-     "title": "공매도란 무엇일까요?",
-     "text": "주식이 앞으로 내릴 것 같을 때 먼저 빌려서 팔고, 나중에 싸게 사서 갚는 거래 방법이에요."
+     "title": "다이빙벨이란 무엇인가요?",
+     "text": "잠수사가 깊은 바닷속에서 숨을 쉬며 머물 수 있게 만든 종 모양의 큰 방이에요."
     }
    },
    "curriculum": [
-    "사회 5-1 우리 경제의 성장과 발전",
-    "사회 6-1 우리나라의 경제 발전"
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-2 통일 한국의 발전과 지구촌의 미래"
    ],
    "teacher": {
     "sample_answers": {
-     "impact_question": "물가가 오르거나 부모님의 회사가 어려워질 수 있어요.",
-     "wonder_question": "펀드 돈이 실제로 언제 사용되는지 궁금해요.",
-     "challenge": "주식시장이 무너지면 경제 전체가 어려워지기 때문이에요."
+     "impact_question": "바다에서 일하는 분들이 다치거나 사라지면 그 가족들이 슬퍼하고, 우리가 먹는 수산물을 구하기도 어려워질 수 있어요.",
+     "wonder_question": "거센 물살 속에서 잠수사들이 어떻게 안전하게 숨을 쉬고 서로 연락하는지 더 알고 싶어요.",
+     "challenge": "거센 물살을 견디며 손과 카메라가 달린 원격 조종 잠수 로봇을 만들어 사람 대신 배 안을 탐색하게 할 수 있어요."
     },
     "extra_questions": [
-     "정부가 직접 경제에 개입하는 것은 어떤 의미가 있을까요?",
-     "불법 공매도를 막는 것이 왜 중요할까요?"
+     "바다에서 사고가 났을 때 구조 활동을 가로막는 자연환경에는 무엇이 있을까요?",
+     "물속에서 일하는 잠수 구조대원의 안전을 지키려면 어떤 준비가 필요할까요?"
     ],
     "cautions": [
-     "어려운 경제 용어가 많으므로 낱말 뜻을 먼저 충분히 설명해 주세요."
+     "선원들의 생사가 확인되지 않은 조난 사고이므로 희생자나 실종자에 대해 장난스러운 태도를 보이지 않도록 지도합니다.",
+     "사고의 자극적인 부분보다 구조대원의 노력과 해상 안전의 중요성에 초점을 맞추어 지도합니다."
     ]
    },
    "rank": 1,
    "type": "useful",
-   "category": "경제",
-   "topic": "18년 만의 증시안정펀드",
-   "reason": "주가 하락에 대응하기 위해 정부가 증권시장안정펀드 가동을 준비하는 경제 정책을 다룬 유익한 뉴스입니다.",
-   "source": "JTBC",
-   "link": "https://news.jtbc.co.kr/article/NB12329282",
-   "original_title": "정부, 증시 급락에 18년 만에 '증시안정 펀드' 준비",
+   "category": "사회",
+   "topic": "해상 사고와 재난 안전",
+   "reason": "해상 사고 사례를 통해 재난 발생 시 대응 체계와 안전의 중요성을 배우고 생명의 소중함을 다룰 수 있음.",
+   "source": "YTN",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93OHpIeGJYY21sUHBKUE5yQnJIR3BBVk40bDBMcXUwbUQ4dE5DUmExLWZHTjY0YjZHcl9IbmRNYnROcnYzWl91Tzl6Yzdtc1dERTFMSkVuWEc1VWdfTnc?oc=5",
+   "original_title": "태안 침몰 어선 '해광호' 확인...실종자 수색 최우선 [현장영상+]",
    "member_titles": [
-    "18년 만에 '증시안정펀드' 준비…공매도 규제 제외",
-    "정부, 증시 급락에 18년 만에 '증시안정 펀드' 준비"
+    "해광호 수심 53m 발견...기상 여건 고려 '수중 수색'",
+    "탁한 시야 탓에 \"확인 실패\"…흔적 없는 7명 선원들",
+    "태안 침몰 어선 '해광호' 확인...실종자 수색 최우선 [현장영상+]",
+    "충남 태안 실종 어선 '해광호', 수색 나흘만에 발견"
    ],
-   "pub": "2026-11-22",
+   "pub": "2026-11-24",
    "related": [
     {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1BbGtpVWxFMEgwSkNud3BHTTlPNGJTX1ZiU0hldHJuZVVmbVk2dlY0OG03Zlp3emo0UGVhOFhfYmo3dGlycVJmQ3VBMG5mZkRyQXFQN1NvNGdGTXE2NjVfeDdKWlFRUmFQNndUZmtiaw?oc=5"
+    },
+    {
      "source": "SBS",
-     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008857885&plink=RSSLINK&cooper=RSSREADER"
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008859625&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1xbTRObkZRNEwzMVpIVklDTzladWx3YktHcjN1NThSclU2TmJLeUN1QTJxQWhnR3FkaVhHZE4ta2pJR01IWkNiSFlFSHByTjJMUFprenF2VEo3UEtIb05jdUdyNnYyTWNhSUpLaXJCX3ZHVEpRY0RF0gF3QVVfeXFMTnVyRGIzWHVhRDVSRVNZel9hdWs4M2pueC1rRmVkazdWSUcxbVlmM3lBbm0xVWtwRkRHNTFJdEFyUm81WUU5VnFHWXFITmxFY0xSY25rVnFNR3lFSlA4VFkzTi1qRXRUa242bjdnc2JNUlpwNmtaQXc?oc=5"
     }
    ],
    "video": {
-    "id": "1WaCgeZoTao",
-    "title": "18년 만에 '증시안정펀드' 준비..공매도 규제 제외 / SBS 8뉴스",
-    "channel": "SBS 뉴스",
+    "id": "LAJolA5w7r4",
+    "title": "바닷속에서 해광호 선체 확인...실종자 수색 본격화 / YTN",
+    "channel": "YTN",
     "kind": "news",
-    "match": 1.0
+    "match": 0.4444444444444444
    },
    "alerts": [
     {
-     "label": "혐오감을 줄 수 있어요",
-     "detail": "학습지에 '주가' 같은 말이 있어요"
+     "label": "아이들이 불안해할 수 있어요",
+     "detail": "선박 침몰 및 실종자 수색 상황 다룸"
     }
    ],
-   "needs_review": true,
-   "review_notes": [
-    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 주식이 크게 떨어질 때 정부가 쓰는 …",
-    "낱말 뜻 보기이(가) 너무 김 (23자, 20자 이내로): 나라에서 가난한 사람을 돕는 지원금이…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 은행에 저축하면 주는 이자 모음이에요…",
-    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 회사가 자기 돈으로 직접 산 회사 주…",
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 회사가 문을 닫을 때 나누는 돈이에요…",
-    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 외국인은 지난 일주일 동안 많은 공매…",
-    "학습용 기사가 너무 짧음 (409자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것",
-    "금지어 포함: 주가"
-   ]
+   "needs_review": false,
+   "review_notes": []
   },
   {
-   "title": "첨단 반도체 밀반입 의혹과 조사",
+   "title": "수능 부정행위와 대학 합격 논란",
    "words": [
     {
-     "word": "밀반입",
-     "meaning": "법을 어기고 물건을 몰래 들여옴",
+     "word": "부정행위",
+     "meaning": "시험에서 바르지 못한 행동을 함",
      "wrong": [
-      "물건을 외국으로 몰래 내다 돎",
-      "세금을 내고 정식으로 사들임"
+      "시험 시간을 착각해서 늦게 옴",
+      "시험 문제를 열심히 풀어서 맞춤"
      ]
     },
     {
-     "word": "수출통제",
-     "meaning": "나라 밖으로 물건을 팔 때 제한함",
+     "word": "맹점",
+     "meaning": "제도나 일의 살피지 못한 허점",
      "wrong": [
-      "물건 가격을 나라에서 똑같이 정함",
-      "외국 물건을 무조건 공짜로 들여옴"
+      "시험 제도의 아주 훌륭한 장점",
+      "눈이 나빠서 안경을 쓰는 부분"
      ]
     }
    ],
    "summary": [
-    "미국 장관이 인공지능 반도체 밀반입 사건을 조사하고 있어요.",
-    "기업 대표의 개인 사생활과 회사 규정 위반은 별개라고 밝혔어요.",
-    "정부는 수출 규칙을 제대로 지켰는지 열흘 안에 자료를 내라고 요구했어요."
+    "교육부는 수능 부정행위자 5명을 고발했어요.",
+    "적발된 학생이 수시 전형에 합격했어요.",
+    "제도의 허점을 고쳐야 한다는 목소리가 커요."
    ],
    "five_w": {
-    "who": "미국 재무부 장관",
-    "when": "2026년 11월 22일",
-    "where": "미국",
-    "what": "반도체 밀반입 의혹 조사",
-    "how": "규정 준수 자료 제출 요구",
-    "why": "수출 규칙 위반 여부를 파악하려고"
+    "who": "교육부와 수험생",
+    "when": "최근",
+    "where": "온라인 커뮤니티와 대학",
+    "what": "수능 부정행위와 수시 합격 논란",
+    "how": "스마트 기기 등을 사용함",
+    "why": "제도의 허점 때문이에요"
    },
    "activity": {
-    "issue": "인공지능 반도체 수출 규칙, 더욱 엄격하게 관리해야 할까요?",
+    "issue": "부정행위로 적발된 학생의 수시 합격은 인정해야 할까요?",
     "side_a": {
-     "title": "엄격한 관리 필요",
+     "title": "합격 취소",
      "reasons": [
-      "국가 안보와 기술 유출을 막을 수 있어요."
+      "불공정한 방법이므로 기회를 빼앗았어요."
      ]
     },
     "side_b": {
-     "title": "자유로운 거래 보장",
+     "title": "합격 유지",
      "reasons": [
-      "기업의 빠른 성장을 방해할 수 있어요."
+      "해당 전형은 수능 성적을 안 봐요."
      ]
     },
     "choose_question": "나는 어느 쪽이에요? 그 까닭은요?",
@@ -191,444 +193,521 @@
    },
    "facts_opinions": [
     {
-     "sentence": "미국 재무부 장관은 반도체 밀반입을 조사하고 있어요.",
+     "sentence": "교육부는 스마트 기기 사용자를 고발했어요.",
      "answer": "사실",
-     "reason": "장관이 직접 밝힌 내용이에요."
+     "reason": "실제로 일어난 일이에요."
     },
     {
-     "sentence": "정부는 열흘 안에 관련 자료를 내라고 요구했어요.",
-     "answer": "사실",
-     "reason": "실제 있었던 요구 사항이에요."
-    },
-    {
-     "sentence": "내연녀 관련 의혹은 가짜 소문에 불과할 거예요.",
-     "answer": "의견",
-     "reason": "확실하게 밝혀지지 않은 생각이에요."
-    },
-    {
-     "sentence": "앞으로 기업들이 수출 규칙을 더 잘 지키게 될 거예요.",
-     "answer": "의견",
-     "reason": "앞으로의 일을 미리 짐작한 것이에요."
-    }
-   ],
-   "challenge": "우리 나라가 첨단 기술을 지키기 위해 할 수 있는 일은 무엇일까요?",
-   "article": {
-    "happened": [
-     "미국 정부가 인공지능 반도체가 나라 밖으로 빠져나간 과정에 대해 조사에 나섰다. 스콧 베선트 미국 재무부 장관은 최근 벌어진 첨단 반도체 밀반입 사건과 관련해 입장을 밝혔다. 이번 일은 기업의 인공지능 반도체 수출 과정에서 규칙을 어겼는지가 핵심 쟁점으로 떠올랐다.",
-     "장관은 기업 대표의 개인적인 사생활 문제와 회사의 규정 위반은 서로 구분해야 한다고 강조했다. 대표가 다른 사람의 행동을 미리 알았는지는 확실하지 않다고 설명했다. 다만 회사가 정부의 수출통제 규칙을 제대로 지켰는지는 철저하게 따져봐야 한다고 덧붙였다.",
-     "미국 정부는 해당 기업에 규칙을 잘 지켰는지 증명할 수 있는 자료를 열흘 안에 제출하라고 요구했다. 거래 과정에 기록된 자료를 바탕으로 잘못이 어디에 있었는지 정확히 파악할 계획이다. 현재 기업은 임시 대표가 경영을 맡아 필요한 절차를 이어가고 있다."
-    ],
-    "why": "이번 조사는 나라 간 첨단 기술 경쟁이 치열해진 상황에서 벌어졌다. 정부는 앞으로도 기술이 몰래 빠져나가지 못하도록 관리와 감독을 더욱 강화할 것으로 보인다.",
-    "background": {
-     "title": "수출통제란 무엇인가요?",
-     "text": "나라 밖으로 물건이나 기술을 팔 때, 나라의 안전을 위해 물품의 이동을 법으로 제한하는 것을 말해요."
-    }
-   },
-   "curriculum": [
-    "사회 5-1 인권 존중과 정의로운 사회",
-    "사회 6-1 우리나라의 경제 발전"
-   ],
-   "teacher": {
-    "sample_answers": {
-     "choose_question": "엄격한 관리 필요 쪽에 공감해요. 첨단 기술이 유출되면 나라 경제에 큰 피해를 줄 수 있기 때문이에요.",
-     "challenge": "보안 시설을 철저히 관리하고 기술을 보호하는 법을 더 엄격하게 만들어야 해요."
-    },
-    "extra_questions": [
-     "기업 대표의 개인적인 일과 회사의 일은 왜 분리해서 봐야 할까요?",
-     "나라마다 첨단 기술을 보호하려는 이유는 무엇일까요?"
-    ],
-    "cautions": [
-     "기사에 등장하는 개인의 사생활 문제에 지나치게 집중하지 않도록 지도합니다.",
-     "국가 간 무역과 기술 안보라는 개념을 5학년 눈높이에 맞춰 쉽게 설명해 줍니다."
-    ]
-   },
-   "rank": 2,
-   "type": "debate",
-   "category": "과학·환경",
-   "topic": "엔비디아 밀반입 논란",
-   "reason": "AI 반도체 밀반입 의혹과 미·중 무역 갈등의 재점화 가능성을 다루어 기술과 외교의 관계를 생각하게 합니다.",
-   "source": "YTN",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zRkxoal9jMVp2bjZfLTJ3Sk5SWVh5b2wzdzYtQTl2V3Jyb1JLd3RSSm9vQlNobEZCaWNHMVhNNVpPQkVGMHhrSjdVWmhXZ1BZei1JQVZmS29ORVVpNGc?oc=5",
-   "original_title": "\"젠슨 형, 왜 여기서 나와?\"...스캔들의 기막힌 변신",
-   "member_titles": [
-    "\"젠슨 형, 왜 여기서 나와?\"...스캔들의 기막힌 변신",
-    "美재무장관 \"엔비디아의 규정준수 여부는 젠슨황 개인사와 별개\"",
-    "\"'엔비디아 사태', 휴전 두달 남은 美中 무역전쟁 재점화할수도\""
-   ],
-   "pub": "2026-11-23",
-   "related": [
-    {
-     "source": "연합뉴스",
-     "link": "https://www.yna.co.kr/view/AKR20261123001500071"
-    },
-    {
-     "source": "연합뉴스",
-     "link": "https://www.yna.co.kr/view/AKR20261123000700071"
-    }
-   ],
-   "video": {
-    "id": "LA155bHRLdI",
-    "title": "\"젠슨 형, 왜 여기서 나와?\"...스캔들의 기막힌 변신 / YTN",
-    "channel": "YTN",
-    "kind": "news",
-    "match": 1.0
-   },
-   "alerts": [],
-   "needs_review": true,
-   "review_notes": [
-    "요약 문장이(가) 너무 김 (40자, 35자 이내로): 정부는 수출 규칙을 제대로 지켰는지 …",
-    "발문 issue이(가) 너무 김 (33자, 30자 이내로): 인공지능 반도체 수출 규칙, 더욱 엄…"
-   ]
-  },
-  {
-   "title": "93세 학자의 플라톤 전집 완간",
-   "words": [
-    {
-     "word": "고전",
-     "meaning": "오랫동안 읽히는 훌륭한 책",
-     "wrong": [
-      "아주 비싼 옛날 물건",
-      "옛날 생활을 그린 그림"
-     ]
-    },
-    {
-     "word": "주석",
-     "meaning": "낱말이나 뜻을 풀이한 글",
-     "wrong": [
-      "글을 쓸 때 쓰는 연필",
-      "책을 묶어 만든 표지"
-     ]
-    }
-   ],
-   "summary": [
-    "93세 철학자가 플라톤 전집을 완성했어요.",
-    "30년이 넘는 시간 동안 번역에 매달렸어요.",
-    "국내 처음이자 세계적으로도 드문 일이에요."
-   ],
-   "five_w": {
-    "who": "박종현 명예교수",
-    "when": "2026년 11월",
-    "where": "우리나라",
-    "what": "플라톤 전집 완간",
-    "how": "혼자 원전을 번역함",
-    "why": "독자와의 약속을 지킴"
-   },
-   "activity": {
-    "impact_question": "오랫동안 한 가지 일을 해낸 느낌은 어떨까요?",
-    "wonder_question": "내가 30년 동안 꾸준히 하고 싶은 일은 뭘까요?"
-   },
-   "facts_opinions": [
-    {
-     "sentence": "박종현 교수는 30년 넘게 번역을 했어요.",
-     "answer": "사실",
-     "reason": "실제로 오랜 기간 책을 번역했어요."
-    },
-    {
-     "sentence": "플라톤 전집 완간은 학문의 소중한 기초가 돼요.",
-     "answer": "의견",
-     "reason": "번역의 가치에 대한 생각이에요."
-    },
-    {
-     "sentence": "플라톤 역주 전집 13권이 국내 처음으로 나왔어요.",
-     "answer": "사실",
-     "reason": "처음 나온 전집이라는 기록이 있어요."
-    },
-    {
-     "sentence": "오랫동안 한 길을 파는 노력은 언제나 큰 가치가 있어요.",
-     "answer": "의견",
-     "reason": "꾸준한 노력의 의미를 평가했어요."
-    }
-   ],
-   "challenge": "내가 오랜 시간 동안 꾸준히 노력해 본 경험을 적어보세요.",
-   "article": {
-    "happened": [
-     "93세의 철학자가 30년 넘는 대장정 끝에 서양 철학의 기초인 플라톤 전집을 처음으로 완간했다. 이번에 나온 책은 철학 전공자가 고전 원전을 바탕으로 꼼꼼한 주석까지 달아 완성한 역작이다.",
-     "박종현 명예교수는 50대에 시작한 번역을 90대가 될 때까지 멈추지 않았다. 아침부터 밤까지 영어와 독어 등 여러 외국어 자료를 참고하며 번역에 매달려 마침내 13권을 모두 마무리했다.",
-     "이러한 플라톤 역주 전집 단독 완간은 국내에서 처음 있는 일이며 세계적으로도 드문 일이다. 오랜 세월 동안 한길을 걸어온 노학자의 노력은 우리나라 학술계에 중요한 이정표가 되었다."
-    ],
-    "why": "학술적으로 충실한 고전 번역은 모든 학문의 기초가 되기 때문에 매우 중요하다. 박 교수는 후배들과 독자들에게 한 약속을 지키기 위해 끝까지 포기하지 않았다고 밝혔다.",
-    "background": {
-     "title": "고전 번역이란 무엇일까요?",
-     "text": "옛날 사람들이 남긴 중요한 책을 우리말과 우리글로 바르게 옮기는 일이에요. 다른 나라의 깊은 생각을 우리말로 쉽게 배울 수 있게 도와줘요."
-    }
-   },
-   "curriculum": [
-    "사회 5-1 우리 사회의 부당함과 인권",
-    "사회 6-1 우리나라의 정치 발전"
-   ],
-   "teacher": {
-    "sample_answers": {
-     "impact_question": "보람차고 아주 자랑스러울 것 같아요.",
-     "wonder_question": "책을 많이 읽고 글을 쓰는 일을 꾸준히 하고 싶어요.",
-     "challenge": "매일 꾸준히 책을 읽고 독서록을 썼던 경험이 기억나요."
-    },
-    "extra_questions": [
-     "어려운 일을 만났을 때 끝까지 해낸 적이 있나요?",
-     "내가 좋아하는 분야의 책은 어떤 것이 있나요?"
-    ],
-    "cautions": [
-     "나이가 많음이나 학문적 성과를 단순한 경쟁으로 보지 않도록 지도해요."
-    ]
-   },
-   "rank": 3,
-   "type": "useful",
-   "category": "생활·문화",
-   "topic": "93세 학자의 플라톤 완간",
-   "reason": "오랜 시간 동안 인류 고전을 우리말 번역으로 완성해 낸 학자의 끈기와 성취를 보여주는 밝은 뉴스입니다.",
-   "source": "SBS",
-   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008857894&plink=RSSLINK&cooper=RSSREADER",
-   "original_title": "세월 태운 '필생 과업', 93세 학자의 플라톤 완간",
-   "member_titles": [
-    "세월 태운 '필생 과업', 93세 학자의 플라톤 완간"
-   ],
-   "pub": "2026-11-22",
-   "related": [],
-   "video": {
-    "id": "ZWOAgz3qwx0",
-    "title": "세월 태운 '필생 과업', 93세 학자의 플라톤 완간 / SBS 8뉴스",
-    "channel": "SBS 뉴스",
-    "kind": "news",
-    "match": 1.0
-   },
-   "alerts": [],
-   "needs_review": true,
-   "review_notes": [
-    "사실·의견 문장이(가) 너무 김 (31자, 30자 이내로): 오랫동안 한 길을 파는 노력은 언제나…",
-    "학습용 기사가 너무 짧음 (400자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ]
-  },
-  {
-   "title": "강원도 스키장들이 문을 열었어요",
-   "words": [
-    {
-     "word": "슬로프",
-     "meaning": "스키를 타는 눈길",
-     "wrong": [
-      "눈을 만드는 기계",
-      "겨울철 추운 날씨"
-     ]
-    },
-    {
-     "word": "제설기",
-     "meaning": "눈을 만들어 내는 기계",
-     "wrong": [
-      "눈을 치우는 도구",
-      "스키를 타는 장비"
-     ]
-    }
-   ],
-   "summary": [
-    "강원 지역의 스키장들이 문을 열었어요.",
-    "추운 날씨에도 많은 사람들이 찾았어요.",
-    "기후 변화로 영업 일수가 줄고 있어요."
-   ],
-   "five_w": {
-    "who": "스키어와 보더",
-    "when": "2026년 11월 22일",
-    "where": "강원 지역 스키장",
-    "what": "스키장이 문을 열었어요",
-    "how": "제설기로 눈을 뿌려요",
-    "why": "본격적인 추위가 시작돼서"
-   },
-   "activity": {
-    "impact_question": "이 일, 우리 동네엔 어떤 영향을 줄까요?",
-    "wonder_question": "더 알고 싶은 것 한 가지는요?"
-   },
-   "facts_opinions": [
-    {
-     "sentence": "강원 지역 스키장 두 곳이 문을 열었어요.",
-     "answer": "사실",
-     "reason": "기사에 나온 실제 사건이에요."
-    },
-    {
-     "sentence": "개장 첫날에만 삼천 명이 넘게 찾았어요.",
-     "answer": "사실",
-     "reason": "방문객 수를 직접 셌어요."
-    },
-    {
-     "sentence": "스키를 타면 즐거움이 커질 거예요.",
+     "sentence": "부정행위 학생이 합격한 것은 부당해요.",
      "answer": "의견",
      "reason": "사람마다 생각이 다를 수 있어요."
     },
     {
-     "sentence": "겨울에는 스키장에 가는 것이 가장 좋아요.",
+     "sentence": "수능 성적은 부정행위로 무효가 되었어요.",
+     "answer": "사실",
+     "reason": "규정에 적힌 내용이에요."
+    },
+    {
+     "sentence": "입학 제도의 허점을 빨리 고쳐야 해요.",
      "answer": "의견",
-     "reason": "개인의 선호가 담긴 말이에요."
+     "reason": "앞으로 어떻게 할지에 대한 생각이에요."
     }
    ],
-   "challenge": "겨울철 스포츠를 즐길 때 가장 중요한 안전 수칙은 무엇일까요?",
+   "challenge": "우리 학교 시험에서 지키어야 할 규칙은 무엇이 있을까요?",
    "article": {
     "happened": [
-     "매서운 추위의 시작과 함께 강원 지역의 스키장들이 나란히 문을 열었다. 아침 기온이 영하로 떨어지면서 스키어들이 모여들었다. 하얗게 눈이 덮인 슬로프 위로 스키어들이 신나게 질주했다.",
-     "낮에도 기온이 영하에 머물자 제설기가 쉴 새 없이 눈을 만들어 냈다. 눈썰매장에선 아이들이 튜브를 타며 겨울을 즐겼다. 개장한 지 얼마 되지 않아 수많은 사람이 찾아와 스키를 즐겼다.",
-     "강원 지역 스키장 두 곳이 이날 문을 열었다. 첫날에만 삼천 명이 넘는 방문객이 찾았다. 추운 날씨 속에서도 사람들은 겨울 스포츠를 만끽했다."
+     "교육부가 최근 수능 시험장에서 스마트 기기를 사용한 부정행위자 5명을 경찰에 고발했다. 이번 조사는 공정한 시험 제도를 지키기 위한 조치로 이루어졌다.",
+     "온라인 커뮤니티에는 수능 도중 재난문자가 울려 부정행위로 처리된 학생이 대학 수시 전형에 합격했다는 글이 올라왔다. 이 글은 많은 사람들의 관심을 받았다.",
+     "글을 올린 작성자는 부정행위를 한 학생이 합격증을 받는 것은 불합리하다고 지적했다. 또한 간절하게 준비한 다른 학생들의 기회를 빼앗는 일이라고 주장했다."
     ],
-    "why": "기후 변화로 인해 스키장마다 개장은 늦어지고 폐장은 빨라지고 있다. 이 때문에 영업 일수가 줄어드는 고민이 깊어지고 있다. 스키장들은 운영 시간을 조정하며 좋은 환경을 만들기 위해 노력하고 있다.",
+    "why": "현행 규정상 수능에서 부정행위가 적발되면 해당 시험 성적은 무효가 된다. 하지만 수능 최저학력기준이 없는 수시 전형에는 수능 성적이 반영되지 않아 합격이 가능할 수 있다. 이러한 제도의 맹점이 드러나면서 교육부는 사실관계를 확인하고 신중하게 살펴볼 예정이다.",
     "background": {
-     "title": "제설기란 무엇인가요?",
-     "text": "눈이 부족할 때 인공으로 눈을 만들어 내는 기계예요."
+     "title": "수시 전형이란?",
+     "text": "수능 점수보다 학교생활 기록이나 논술 등 다른 실력을 중심으로 대학에 들어가는 방법이에요."
     }
    },
    "curriculum": [
-    "사회 5-1 우리 국토의 자연환경",
-    "사회 6-2 지속가능한 미래의 삶"
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
    ],
    "teacher": {
     "sample_answers": {
-     "impact_question": "겨울철 관광 손님이 늘어나 지역 상권에 도움이 될 수 있어요.",
-     "wonder_question": "날씨가 따뜻해지면 스키장은 어떻게 운영되는지 궁금해요."
+     "choose_question": "합격 취소 쪽에 동의해요. 정직하게 시험을 본 다른 친구들이 피해를 보기 때문이에요.",
+     "challenge": "시험 중에는 선생님의 안내를 잘 따르고, 허용되지 않은 물건은 절대 소지하지 않아야 해요."
     },
     "extra_questions": [
-     "기후 변화가 겨울 스포츠에 어떤 문제를 일으키나요?",
-     "스키장이 오래 운영되려면 어떤 노력이 필요할까요?"
+     "시험에서 규칙을 지키는 것이 왜 중요할까요?",
+     "대학 입학 제도는 어떤 점을 고치면 좋을까요?"
     ],
     "cautions": [
-     "기후 변화에 따른 환경 문제를 함께 이야기해 주세요."
+     "특정 학교나 학생을 비난하지 않도록 공정한 태도를 강조해 주세요.",
+     "제도의 허점과 규칙의 중요성에 초점을 맞춰 토론을 이끌어 주세요."
+    ]
+   },
+   "rank": 2,
+   "type": "debate",
+   "category": "사회",
+   "topic": "수능 AI 부정행위와 기술의 명암",
+   "reason": "최근 이슈인 AI를 활용한 부정행위와 이를 막기 위한 기술적 대응을 통해 디지털 윤리와 공정성에 대해 토론하기 적합함.",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12329495",
+   "original_title": "수능 부정행위 5명 형사 고발…온라인 자백·판매 글도 조사",
+   "member_titles": [
+    "'재난문자' 울렸는데 수시 합격?…\"불합리하다\" 분통",
+    "수능 부정행위 5명 형사 고발…온라인 자백·판매 글도 조사",
+    "'앞치마 입고 논술 시험'‥AI 부정행위 논란에 대학가도 비상",
+    "'AI 안경' 없이 '깔깔'…서울의대생 성적 다 밝혔다",
+    "응시생 눈에는 안 보였던 'AI 인스펙터' 통했다‥부정행위 차단 '급주목'",
+    "AI 부정행위 논란 후 첫 국가자격시험‥부정행위 5명 적발·1명 무효"
+   ],
+   "pub": "2026-11-24",
+   "related": [
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008859909&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTI5Q3VGem9JSWItV0h1VTU3S0pVYlp6VUN3dkJZeEh1QnhUblNwVFhuZnRMNWREdTU4OWZuRExTVUV2SE1GRnl4bWp5S2xxQnl0RGFJX0ZxSEZ0WGltVG1Dckp3U2h6ZkFhWUtnWTVnNWx6bGNjTtIBeEFVX3lxTE05bXQ4M05Iam8yVWxDOWRsZDRwaWZEcVVELVRXbFFzdDh3MXZLU1dxSnRnOXEtY2NHcHNGdUpxNzhOZmdla3BDMDBKSmdDWXlEeHluU0xlYWV0c0xHVDdxbXNQaWtNcHdWV1VaY3QwT2tqeWo1anB2cg?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008859910&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5vYTJFSk85cHExR0VSM3NVRnFTOVhmN2h4bmJYNi1BeFBtVlVrVzl6OE9TWjhCYjJTU3FiNnhJMzRKbWZ1R1JDR25PVmRBX2pRV29STlppTzhWZUF5eGE2cElXT3hkRkNGOS1CYk5uUkFvcDNYZ0RJ0gF3QVVfeXFMUElxU2JYaUtBekZtQXk5aWJvM2F1OFJJMFZUWGJFeGdPQk5LdGhidlFfN2FzUFFGYmJwdGRCYWwyUzJTNV9hZXBVYzVhdGNad0h1TUNXdEZDNzloSExXV2haV3ZocHN5aEhkbjM2TUF6R241MkFtb00?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "학습용 기사가 너무 짧음 (399자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ]
+  },
+  {
+   "title": "인공지능 반도체 대표의 복귀",
+   "words": [
+    {
+     "word": "경영",
+     "meaning": "기업을 이끌고 관리함",
+     "wrong": [
+      "물건을 사고파는 시장",
+      "법을 만드는 국가 기관"
+     ]
+    },
+    {
+     "word": "불확실성",
+     "meaning": "앞일이 확실하지 않음",
+     "wrong": [
+      "모든 일이 결정된 상태",
+      "약속을 지키려는 태도"
+     ]
+    }
+   ],
+   "summary": [
+    "인공지능 반도체 기업의 대표가 회사로 다시 돌아왔어요.",
+    "우리나라 반도체 기업들과 협력도 계속 이어질 전망이에요.",
+    "대표를 둘러싼 조사가 남아 있어 지켜보아야 해요."
+   ],
+   "five_w": {
+    "who": "젠슨 황 대표",
+    "when": "2026년 11월",
+    "where": "미국 엔비디아 회사",
+    "what": "대표 자리 복귀",
+    "how": "회사 이사회 만장일치 결정",
+    "why": "국가안보 위험 없다고 판단"
+   },
+   "activity": {
+    "feeling_choices": [
+     "기대와 안도",
+     "걱정과 의심",
+     "놀라움과 호기심"
+    ],
+    "why_question": "신문사마다 제목이 다른 까닭은 뭘까요?",
+    "rewrite_question": "내가 기자라면 어떤 제목을 붙이고 싶나요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "대표는 물러난 지 11일 만에 다시 복귀했어요.",
+     "answer": "사실",
+     "reason": "실제 일어난 사실이에요."
+    },
+    {
+     "sentence": "대표의 복귀는 매우 훌륭한 결정이에요.",
+     "answer": "의견",
+     "reason": "사람의 생각이에요."
+    },
+    {
+     "sentence": "미국 정부 관계자의 의견을 듣고 결정했어요.",
+     "answer": "사실",
+     "reason": "발표된 확인 사실이에요."
+    },
+    {
+     "sentence": "앞으로 모든 문제가 다 해결될 것 같아요.",
+     "answer": "의견",
+     "reason": "개인의 추측이에요."
+    }
+   ],
+   "challenge": "제목이 독자의 마음에 미치는 영향을 한 문장으로 써 볼까요?",
+   "article": {
+    "happened": [
+     "세계적인 인공지능 반도체 기업 엔비디아의 젠슨 황 최고경영자가 자리에서 물러난 지 11일 만에 다시 돌아왔다. 회사 이사회는 회의를 열고 만장일치로 그의 복귀를 결정했다. 이사회는 정부 관계자들의 의견을 들은 뒤 국가안보 위험이 없다고 판단했다고 밝혔다.",
+     "황 대표는 전 세계 인공지능 반도체 공급을 이끄는 핵심 인물이다. 그가 갑자기 자리에서 물러났을 때 세계 반도체 시장은 큰 혼란에 빠졌다. 하지만 이번에 빠른 복귀가 이루어지면서 시장의 큰 불안감과 불확실성은 상당 부분 줄어들게 되었다.",
+     "우리나라 대표 반도체 기업들도 안도의 한숨을 내쉬었다. 삼성전자와 에스케이하이닉스는 차세대 기억장치 반도체를 엔비디아에 공급하며 함께 일하고 있다. 대표의 복귀로 두 기업과 맺어 온 부품 공급 협력 관계가 앞으로도 차질 없이 이어질 것이라는 기대가 커졌다."
+    ],
+    "why": "대표의 복귀로 기업 경영 공백은 조기에 해결되었지만 아직 불씨는 남아 있다. 외국 정보기관과 관련된 의혹에 대한 조사가 여전히 진행되고 있기 때문이다. 앞으로 조사 결과와 각국의 반도체 정책 변화에 따라 세계 인공지능 산업의 흐름이 다시 흔들릴 수도 있다.",
+    "background": {
+     "title": "인공지능 반도체란?",
+     "text": "사람처럼 생각하고 학습하는 인공지능 기술을 빠르게 계산해 주는 특별한 컴퓨터 두뇌 부품이에요."
+    }
+   },
+   "curriculum": [
+    "사회 5-2 우리 경제의 성장과 발전",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "why_question": "신문사마다 중요하게 생각하는 내용이나 독자에게 전하고 싶은 초점이 서로 다르기 때문이에요.",
+     "rewrite_question": "인공지능 반도체 대표 복귀, 세계 시장의 기대와 남은 숙제",
+     "challenge": "어떤 제목을 보느냐에 따라 사건을 긍정적으로 볼 수도 있고 불안하게 볼 수도 있어요."
+    },
+    "extra_questions": [
+     "신문 기사를 읽을 때 제목만 보고 내용을 판단하면 어떤 문제가 생길까요?",
+     "우리나라 반도체 기업들이 세계 다른 기업들과 협력하는 것은 왜 중요할까요?"
+    ],
+    "cautions": [
+     "정치적 논란이나 특정 인물에 대한 가치 판단으로 흐르지 않도록, 언론사가 사건의 서로 다른 면(경제적 영향 vs 안보 논란)을 강조했다는 점에 초점을 맞추어 지도해 주세요."
+    ]
+   },
+   "headlines": [
+    {
+     "source": "JTBC",
+     "title": "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]",
+     "link": "https://news.jtbc.co.kr/article/NB12329494"
+    },
+    {
+     "source": "KBS",
+     "title": "[잇슈 SNS] ‘젠슨 황·앨리스 황 닮은꼴 대회’…의견 분분",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvcjNqSHNNeXh6cklvZ1U2ZnRYQk1XR2ZkQkZMTjJjLVhHS3hQT3JxX3NoMS05YzlvdWdXTFo3OVBmNTVIckVwVUZKeHhESTR4cHpnTEZYQnhRbkotVXFveFVoMnI3Zw?oc=5"
+    },
+    {
+     "source": "연합뉴스TV",
+     "title": "미국 민주당, ’젠슨황 복귀’ 비판…“트럼프가 안보 팔아넘겨“",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05WXJuSDItWFNGWi05aW85cDNBQXlqOXZVRURsbDNDb0tFRmdaS2gzQl9PR0FQR3NLRV92UUF6dEdpaHNTTElPaC02a2lUYllWeS1NdDB6VEhhUER4aWtsZ2VBS1lmLWc?oc=5"
+    },
+    {
+     "source": "YTN",
+     "title": "젠슨 황 엔비디아 CEO 즉시 복귀...이사회 만장일치 결정",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPUlMwVFhibDRLOWpPOC1OdnFhRjlHY3M0Rk1WNTVFaVJiRG9XTDdqN3M3OXF3MVI2VFMwTmdkZVRjZW1HMFNOdHZoc2pGR1MzR3l4SkNzclNQeXRFeTZBbjI5cDFfRkw5NnBiTXltUQ?oc=5"
+    },
+    {
+     "source": "YTN",
+     "title": "젠슨 황 엽기적 막말 논란 속...\"한국, AI 거품 최종 단계\"",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tVms4cWt0dHExZ05sM0hmX0lkeHpndU1pZkstVEc4QmZmZjhWdjdQYUtjSnJ4VjhzUnd0TXlKVkRZbmFnck5LS2haYnRqNU1rM2NVXzJEZTVTUUlnbnc?oc=5"
+    },
+    {
+     "source": "MBC",
+     "title": "\"모욕해야 성과 나와\"‥젠슨 황 폭언 폭로 파문",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iOVlHa3RKV2FNMUpTaGFyLUZ0SUx1VzdRVVV0TlZxS3ZpNlhjS3BoZjlSaE9pWmZ3LUZvWkJyenJHSVc0MDEwMzJ2Mnl4RVZyWEdmSW55M05wQk1MMXd0QWZOczVPUEc3THFzcUlFdWY2UEtq0gF0QVVfeXFMTUljQlo3NEplb21XTGJuUkdTUmRyc1VpZmEyRjVHMDlxSUR5X3dhYnFfN2hKTkpYZXRlOXVqUHg4UFpXTDg1X2F2VnM0MVhmX2ZaVEdnV1BCbmZ2T3RNZUN4WHlLem0wMHdvNGp5R2lVcXdlM1k?oc=5"
+    },
+    {
+     "source": "연합뉴스",
+     "title": "젠슨황 깜짝 복귀에 삼전닉스 HBM 불확실성·피크아웃 우려↓",
+     "link": "https://www.yna.co.kr/view/AKR20261124025800003"
+    },
+    {
+     "source": "연합뉴스",
+     "title": "트럼프 지휘·밴스 투입…은밀히 진행된 '젠슨황 구하기' 작전(종합)",
+     "link": "https://www.yna.co.kr/view/AKR20261124005551071"
+    }
+   ],
+   "rank": 3,
+   "type": "media",
+   "category": "경제",
+   "topic": "엔비디아 젠슨 황 복귀와 논란",
+   "reason": "글로벌 기업 CEO의 복귀를 둘러싼 정치적 해석과 언론사별 보도 관점의 차이를 비교하며 미디어 리터러시를 학습하기 좋음.",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12329494",
+   "original_title": "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]",
+   "member_titles": [
+    "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]",
+    "[잇슈 SNS] ‘젠슨 황·앨리스 황 닮은꼴 대회’…의견 분분",
+    "미국 민주당, ’젠슨황 복귀’ 비판…“트럼프가 안보 팔아넘겨“",
+    "젠슨 황 엔비디아 CEO 즉시 복귀...이사회 만장일치 결정",
+    "젠슨 황 엽기적 막말 논란 속...\"한국, AI 거품 최종 단계\"",
+    "\"모욕해야 성과 나와\"‥젠슨 황 폭언 폭로 파문"
+   ],
+   "pub": "2026-11-24",
+   "related": [
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvcjNqSHNNeXh6cklvZ1U2ZnRYQk1XR2ZkQkZMTjJjLVhHS3hQT3JxX3NoMS05YzlvdWdXTFo3OVBmNTVIckVwVUZKeHhESTR4cHpnTEZYQnhRbkotVXFveFVoMnI3Zw?oc=5"
+    },
+    {
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05WXJuSDItWFNGWi05aW85cDNBQXlqOXZVRURsbDNDb0tFRmdaS2gzQl9PR0FQR3NLRV92UUF6dEdpaHNTTElPaC02a2lUYllWeS1NdDB6VEhhUER4aWtsZ2VBS1lmLWc?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPUlMwVFhibDRLOWpPOC1OdnFhRjlHY3M0Rk1WNTVFaVJiRG9XTDdqN3M3OXF3MVI2VFMwTmdkZVRjZW1HMFNOdHZoc2pGR1MzR3l4SkNzclNQeXRFeTZBbjI5cDFfRkw5NnBiTXltUQ?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tVms4cWt0dHExZ05sM0hmX0lkeHpndU1pZkstVEc4QmZmZjhWdjdQYUtjSnJ4VjhzUnd0TXlKVkRZbmFnck5LS2haYnRqNU1rM2NVXzJEZTVTUUlnbnc?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [
+    {
+     "label": "민감한 인물이 등장해요",
+     "detail": "정치 지도자와 기업 대표의 논란이 언급돼요."
+    }
+   ],
+   "needs_review": false,
+   "review_notes": []
+  },
+  {
+   "title": "한전 고객 개인정보가 유출됐어요",
+   "words": [
+    {
+     "word": "개인정보",
+     "meaning": "나를 나타내는 정보예요",
+     "wrong": [
+      "물건을 사고파는 기록이에요",
+      "동네 사람들의 이름이에요"
+     ]
+    },
+    {
+     "word": "유출",
+     "meaning": "비밀이 밖으로 새어 나갔어요",
+     "wrong": [
+      "물건을 안전하게 지켰어요",
+      "새로운 정보를 알아냈어요"
+     ]
+    }
+   ],
+   "summary": [
+    "한국전력공사 고객의 개인정보가 밖으로 새어 나갔어요.",
+    "주민번호와 계좌번호 같은 중요한 정보도 포함됐어요.",
+    "한전은 피해를 줄이려고 대책을 마련하고 있어요."
+   ],
+   "five_w": {
+    "who": "한국전력공사",
+    "when": "최근",
+    "where": "전국",
+    "what": "개인정보 유출",
+    "how": "시스템 관리 소홀",
+    "why": "보안 점검 부족"
+   },
+   "activity": {
+    "impact_question": "내 정보가 새어나가면 어떤 일이 생길까요?",
+    "wonder_question": "개인정보를 지키려면 어떻게 해야 할까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "한전 고객 152만 명의 정보가 새어나갔어요.",
+     "answer": "사실",
+     "reason": "실제 일어난 사건이에요."
+    },
+    {
+     "sentence": "주민번호와 계좌번호도 함께 포함되었어요.",
+     "answer": "사실",
+     "reason": "조사 결과로 밝혀졌어요."
+    },
+    {
+     "sentence": "기업들이 보안을 더 철저하게 관리해야 해요.",
+     "answer": "의견",
+     "reason": "앞으로 바라는 점이에요."
+    },
+    {
+     "sentence": "비밀번호를 자주 바꾸는 것이 가장 안전해요.",
+     "answer": "의견",
+     "reason": "개인적인 생각이에요."
+    }
+   ],
+   "challenge": "모르는 번호로 온 문자에 링크를 누르면 안 되는 까닭은 무엇인가요?",
+   "article": {
+    "happened": [
+     "한국전력공사에서 고객 152만 명의 개인정보가 유출되는 사고가 발생했다. 이번 일로 많은 사람들의 소중한 정보가 안전하게 지켜지지 못했다. 회사는 이 사실을 확인하고 피해를 줄이기 위한 조치를 시작했다.",
+     "새어나간 정보 속에는 이름뿐만 아니라 주민번호와 계좌번호까지 포함되었다. 이러한 정보는 우리 생활과 밀접한 중요한 내용이라 더욱 큰 걱정을 샀다. 피해를 입은 고객들은 혹시 모를 피해를 걱정하고 있다.",
+     "한국전력공사는 문제가 생긴 부분을 즉시 바로잡겠다고 밝혔다. 고객들에게 사과를 전하고 추가 피해가 없도록 살피는 중이다. 사람들은 철저한 원인 조사를 요구하고 있다."
+    ],
+    "why": "이처럼 대규모 정보가 새어나간 원인은 보안 시스템의 빈틈 때문이다. 전문가들은 기업들이 평소에 고객 정보를 더 안전하게 관리해야 한다고 강조한다. 앞으로 정부와 기업은 보안을 강화하여 비슷한 일이 생기지 않도록 노력할 예정이다.",
+    "background": {
+     "title": "개인정보란 무엇일까요?",
+     "text": "이름이나 전화번호처럼 나를 알 수 있는 소중한 정보예요. 다른 사람에게 알려지지 않도록 잘 지켜야 해요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "모르는 전화나 문자가 와서 불편할 수 있어요.",
+     "wonder_question": "비밀번호를 자주 바꾸고 의심스러운 링크는 누르지 않아요.",
+     "challenge": "해킹 프로그램이나 악성코드가 스마트폰에 깔릴 수 있기 때문이에요."
+    },
+    "extra_questions": [
+     "내 개인정보를 지키기 위해 평소에 무엇을 하나요?",
+     "기업이 고객 정보를 보호하려면 어떤 준비가 필요할까요?"
+    ],
+    "cautions": [
+     "학생들이 자신의 개인정보가 유출된 적은 없는지 과도하게 불안해하지 않도록 지도해 주세요."
     ]
    },
    "rank": 4,
    "type": "useful",
    "category": "생활·문화",
-   "topic": "강원 스키장 개장",
-   "reason": "겨울철을 맞아 스키장이 개장하고 사람들이 모이는 일상 속 계절 변화를 다룬 가벼운 소식입니다.",
-   "source": "SBS",
-   "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008857888&plink=RSSLINK&cooper=RSSREADER",
-   "original_title": "\"도파민 팡팡\" 첫날에만 3,300명…영하 추위에 '활짝'",
+   "topic": "개인정보 유출과 디지털 보안",
+   "reason": "학생들이 사용하는 서비스와 밀접한 개인정보 보호의 중요성을 실생활 사례를 통해 경각심을 일깨울 수 있음.",
+   "source": "MBC",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBqNGllTTgwamlGVEpVR3pLbTBzUmsxRUhkamE1QldsNTZPa1EtelczREJCUTBvSWEzY3RaZ1owVHVDbFcxV21nckNwbUxaaU5qXzhuRXZQNXE4LVdVZDJjendtMkxqSW1yRzI1V1dVY1RKbFhm0gF0QVVfeXFMTkdYY1ZZTEFfVTQtQjBVRW40MGJVTTZIWnRPVVZxNTBlNVdXcjZOSHZ1NFJhanRZbUxXVEhZVkRueFNITFFXajQwa3l4a1RUYnpyYVJSU1cxbEE1V1NTVFBUenM4bGthZjRuM1d1R2dmRTJZQXE?oc=5",
+   "original_title": "한전, 고객 등 152만명 개인정보 유출‥주민·계좌번호도 포함",
    "member_titles": [
-    "\"도파민 팡팡\" 첫날에만 3,300명…영하 추위에 '활짝'"
+    "한전, 개인정보 150여만건 유출…주민·계좌번호도 포함",
+    "이번엔 카드번호까지...한전, 또 150만 건 정보유출",
+    "한전, 고객 등 152만명 개인정보 유출‥주민·계좌번호도 포함",
+    "한전 150여만 건 또 유출‥카드·주민번호도",
+    "삼성증권도 해킹 피해...계좌번호·운전면허번호까지 털려"
    ],
-   "pub": "2026-11-22",
-   "related": [],
-   "video": {
-    "id": "Stag0LMbNWo",
-    "title": "\"도파민 팡팡\" 첫날에만 3,300명..영하 추위에 '활짝' / SBS 8뉴스",
-    "channel": "SBS 뉴스",
-    "kind": "news",
-    "match": 1.0
-   },
+   "pub": "2026-11-23",
+   "related": [
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBUbE5jNmJWZlJzTm9kVS1UVnBFZHJrLXBRVVdtTmFUSUl3OUlYdGJZOHo1STFfRV9LX2pNVXE3VG1TY3l5MXRSSVJ1dDhCMnMtdVJnMXBKR0VSc00?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mSU14eDBSa1MtVzd4VzNpRnJodC1jY3BfRUhQOFBXcm4zLWFEaEt1T2lpbmtFR1lnN1Q5blAtUlRILUNxM1ZaTEJFRTRDRzROU0t0d2Vzdk5CdHJKaHc?oc=5"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1lUDlxUXdGYlZObnFOMDlfcS14TlQtd05TM0FhbmtiTmk5VEZmVUp1RGJ3eTBjQlY1WnlVSVdGeVJ0cmdXejhKOHNMU0RhSV9NMF96TGdGeUxUQ29Bd24zbnRQbGVfV3V6Yl9xajBlWXl1dkJoRmdlNGtR0gF6QVVfeXFMTkswNWpKVUMzaHdjM29SQzg1NWN0aU1KM25Ta05iYUZUWHM3NUZKd1JmcWpjN2d2dHk3NEplS01EQ0FqZUk1V0tXTUFWX25CZ2V1ZWQ1cXRxcmV1WmJ0RkxmUVJPdW9Fdzk0RFN2NEFlNDllMk5MMU5BTFE?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lZk9rUUNZSVZjWFlXZzFQSy1admRxVGpLUk83QUZ5eFVETUI0R3paSGpjcl9jUGoyVzRLWUxRMnFxUzNDd1J2X2VTODFMaGpxVWx4WWNZNk8tbFdzQ1N0R1VBRG45YU5kbWNydzVQOA?oc=5"
+    }
+   ],
+   "video": null,
    "alerts": [],
    "needs_review": true,
    "review_notes": [
-    "학습용 기사가 너무 짧음 (392자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "학습용 기사가 너무 짧음 (444자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ]
   },
   {
-   "title": "최민정 선수의 금메달 소식",
+   "title": "치실로 혈당을 잰다고요?",
    "words": [
     {
-     "word": "월드투어",
-     "meaning": "여러 나라를 돌며 하는 경기",
+     "word": "혈당",
+     "meaning": "피 속에 든 설탕 양",
      "wrong": [
-      "세계 기록을 재는 시험",
-      "훈련을 끝내는 모임"
+      "피 속에 든 물의 양",
+      "피 속에 든 소금 양"
      ]
     },
     {
-     "word": "은퇴",
-     "meaning": "하던 일에서 물러나는 것",
+     "word": "센서",
+     "meaning": "신호를 알아채는 장치",
      "wrong": [
-      "새로운 상을 받는 것",
-      "경기에 다시 나오는 것"
+      "소리를 크게 하는 곳",
+      "전기를 저장하는 통"
      ]
     }
    ],
    "summary": [
-    "최민정 선수가 쇼트트랙 경기에서 금메달을 땄어요.",
-    "1000미터 종목에서 세 번 연속으로 1위를 차지했어요.",
-    "이번 시즌이 끝난 뒤 선수 생활을 멈출 수도 있어요."
+    "치아 사이를 닦는 특별한 치실이 개발되었어요.",
+    "이 치실은 20초 만에 혈당을 측정할 수 있어요.",
+    "바늘로 찌르지 않아 건강 관리가 훨씬 편해져요."
    ],
    "five_w": {
-    "who": "최민정 선수",
+    "who": "연구진",
     "when": "최근",
-    "where": "쇼트트랙 경기장",
-    "what": "1000m 금메달 획득",
-    "how": "빠른 속도로 질주",
-    "why": "뛰어난 실력 발휘"
+    "where": "실험실",
+    "what": "혈당 측정 치실 개발",
+    "how": "타액으로 센서 반응",
+    "why": "편리한 건강 관리를 위해"
    },
    "activity": {
-    "impact_question": "우리나라 선수가 세계 대회에서 좋은 성적을 내면 어떤 기분이 들까요?",
-    "wonder_question": "오랫동안 운동을 계속할 때 가장 필요한 마음은 무엇일까요?"
+    "impact_question": "이 기술이 나오면 어떤 점이 좋을까요?",
+    "wonder_question": "더 알고 싶은 기술은 무엇인가요?"
    },
    "facts_opinions": [
     {
-     "sentence": "최민정 선수는 1000미터 경기에서 1위를 했어요.",
+     "sentence": "이 치실은 타액으로 혈당을 잴 수 있어요.",
      "answer": "사실",
-     "reason": "경기 결과로 확인된 내용이에요."
+     "reason": "개발된 치실의 실제 기능이에요."
     },
     {
-     "sentence": "최민정 선수는 우리나라를 대표하는 훌륭한 쇼트트랙 선수예요.",
+     "sentence": "치실로 혈당을 재는 것은 정말 신기해요.",
      "answer": "의견",
-     "reason": "사람마다 다르게 생각할 수 있어요."
+     "reason": "사람마다 다르게 느끼는 생각이에요."
     },
     {
-     "sentence": "이번 시즌은 최민정 선수의 마지막 해가 될 수 있어요.",
+     "sentence": "이 기술은 바늘을 쓰지 않아 아프지 않아요.",
      "answer": "사실",
-     "reason": "선수 본인이 은퇴를 예고했어요."
+     "reason": "피를 뽑지 않는 측정 방식이에요."
     },
     {
-     "sentence": "은퇴를 결정하는 것은 정말 아쉬운 일이에요.",
+     "sentence": "앞으로 모든 병원에서 이 치실을 쓸 거예요.",
      "answer": "의견",
-     "reason": "사람에 따라 느낌이 다를 수 있어요."
+     "reason": "아직 확실하지 않은 미래의 예측이에요."
     }
    ],
-   "challenge": "내가 좋아하는 운동 선수가 은퇴를 앞두고 있다면 어떤 말을 해주고 싶나요?",
+   "challenge": "내가 개발하고 싶은 건강 도구를 한 문장으로 써요.",
    "article": {
     "happened": [
-     "쇼트트랙 국가대표 최민정 선수가 월드투어 1000m 경기에서 다시 한번 금메달을 목에 걸었다. 이번 대회에서 뛰어난 실력을 보여주며 당당히 1위로 결승선을 통과했다.",
-     "최민정 선수는 이번 시즌을 끝으로 은퇴할 계획임을 미리 밝혔다. 마지막이 될 수도 있는 무대에서 흔들림 없는 모습을 보여주며 팬들의 환호를 받았다.",
-     "출전하는 경기마다 좋은 성적을 거두며 세계 최고 수준의 기량을 증명했다. 태극마크를 달고 뛰는 마지막 순간까지 최선을 다하는 모습이 빛났다."
+     "최근 연구진이 치아 사이를 닦으며 혈당을 측정할 수 있는 특별한 치실을 개발했다. 이 치실은 우리가 매일 쓰는 치실 모양과 비슷하다. 하지만 그 안에는 아주 작은 기술이 숨겨져 있다.",
+     "사람들은 치아 사이를 20초 동안 닦기만 하면 된다. 그때 묻어 나오는 침을 통해 몸의 상태를 확인할 수 있다. 바늘로 손가락을 찌르지 않아도 피 속에 있는 혈당 수치를 쉽게 알 수 있다.",
+     "기존에는 혈당을 측정하려면 아픈 과정을 거쳐야 했다. 하지만 이 치실을 사용하면 그런 번거로움을 크게 줄일 수 있다. 아프지 않고 편하게 건강을 챙길 수 있는 길이 열린 것이다."
     ],
-    "why": "오랫동안 정상을 지켜온 선수가 마지막까지 멋진 도전을 이어가며 큰 감동을 주고 있다. 앞으로 남은 경기에서도 멋진 활약을 펼칠 것으로 기대된다.",
+    "why": "이런 기술이 개발된 이유는 당뇨병 환자들이 매일 겪는 고통을 줄여주기 위해서이다. 앞으로 이 치실이 상용화(실제로 널리 쓰임)되면 더 많은 사람이 스스로 건강을 쉽게 관리할 수 있을 것으로 보인다.",
     "background": {
-     "title": "쇼트트랙 월드투어란 무엇인가요?",
-     "text": "세계 여러 나라를 돌며 겨루는 쇼트트랙 국제 대회예요. 나라마다 돌아가며 경기를 열어요."
+     "title": "타액이란 무엇일까요?",
+     "text": "입안에서 나오는 침을 뜻해요. 타액 속에는 우리 몸의 건강 상태를 알려주는 여러 가지 정보가 담겨 있어요."
     }
    },
    "curriculum": [
-    "사회 5-1 인권 존중과 정의로운 사회",
-    "사회 6-1 우리나라의 정치 발전"
+    "사회 5-1 우리 사회의 와닿는 법",
+    "과학 6-1 우리 몸의 구조와 기능"
    ],
    "teacher": {
     "sample_answers": {
-     "impact_question": "우리나라가 세계에 알려져서 자랑스럽고 기뻐요.",
-     "wonder_question": "힘든 순간을 이겨내는 마음가짐이 가장 중요할 것 같아요.",
-     "challenge": "그동안 정말 수고 많았고 앞으로의 날들을 응원한다고 말하고 싶어요."
+     "impact_question": "매일 아는 검사를 안 해도 되어서 편할 것 같아요.",
+     "wonder_question": "가격이 얼마나 비쌀지 궁금해요.",
+     "challenge": "먹기만 해도 키가 커지는 사탕을 만들고 싶어요."
     },
     "extra_questions": [
-     "오랫동안 한 분야에서 최고 자리를 지키려면 어떤 노력이 필요할까요?",
-     "최민정 선수의 경기 모습을 보고 배운 점은 무엇인가요?"
+     "이 기술이 가장 필요한 사람은 누구일까요?",
+     "새로운 기술이 우리 생활을 어떻게 바꿀까요?"
     ],
     "cautions": [
-     "특정 선수의 은퇴에 초점을 맞추기보다 그동안의 노력과 성취에 집중하여 지도합니다."
+     "아직 개발 단계인 기술이므로 모든 환자가 바로 쓸 수 있는 것은 아님을 안내합니다."
     ]
    },
    "rank": 5,
    "type": "useful",
-   "category": "스포츠",
-   "topic": "최민정 쇼트트랙 금메달",
-   "reason": "쇼트트랙 월드투어에서 3연속 금메달을 차지한 선수의 도전과 성취를 다룬 밝은 스포츠 뉴스입니다.",
-   "source": "MBC",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5EWjRWeFdYUmRCWEZnWjNOdGJKRHZFNmlpRWlRc2ZYUHdkaUQxaEJXdFVVbUo0VWlhaG1leFRUN2JNa25GRzRTZ1owQ1Fwc0ZYMjBrR0VGdGtTNksxMFFPY0p6QnJtZVN4SzEwLWZRYWQ1VnZhWEHSAXZBVV95cUxPTUN3eTZ0ODFaUm90Y3R4dnN3bl9sQ1NOc1dXbEZhcFNybHc4b3JaUThEbkZLSl81bmF0Q3h3STh4aVV3SG5YNlJpSWJrQThta2JrZnd6b25TYk9JSlRZMXBySG9yUEJIaHJ3OFFOajNLTEhITnZR?oc=5",
-   "original_title": "'은퇴 예고' 최민정, 쇼트트랙 월드투어 1000m 3연속 금메달",
+   "category": "과학·환경",
+   "topic": "건강을 돕는 새로운 기술",
+   "reason": "아이들의 실생활과 밀접한 건강 관리 기술을 소개하여 과학 기술이 우리 삶을 어떻게 개선하는지 밝은 측면을 보여줌.",
+   "source": "SBS",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBmTHBKX1BfWXF4RV9XbUJGeGVBdW9xUFUyQVZEbk1DODl5RWRuTUJvVndaZEJ5MG12SXRicnFvTUQ5UnJ2eWxQQXF6OTJqUzdyc2VMemt6eVRuUU93UDVMaXNyX2s0U085elHSAWZBVV95cUxQRmhGVW85UmdxQmlndF9nQ3ZPdDk5clVHVTJsSllUMVZPZlJNZGJfd3ZqNHdpOU9mV2pldXNKb21kMHBKYzhvbVBKM2RuckZRdDNuZGlmbm5xaHM4cGdhX1dBMXlDa3c?oc=5",
+   "original_title": "치아 사이 20초 닦아 '혈당 측정'…마법의 치실 나왔다",
    "member_titles": [
-    "'은퇴 예고' 최민정, 쇼트트랙 월드투어 1000m 3연속 금메달"
+    "치아 사이 20초 닦아 '혈당 측정'…마법의 치실 나왔다"
    ],
-   "pub": "2026-11-21",
+   "pub": "2026-11-24",
    "related": [],
-   "video": {
-    "id": "HSpeG6WqtPQ",
-    "title": "'라스트 댄스' 최민정 '쾌속 질주'..전 종목 1위 통과 / SBS 8뉴스",
-    "channel": "SBS 뉴스",
-    "kind": "news",
-    "match": 0.1111111111111111
-   },
+   "video": null,
    "alerts": [],
    "needs_review": true,
    "review_notes": [
-    "사실·의견 문장이(가) 너무 김 (33자, 30자 이내로): 최민정 선수는 우리나라를 대표하는 훌…",
-    "발문 impact_question이(가) 너무 김 (38자, 30자 이내로): 우리나라 선수가 세계 대회에서 좋은 …",
-    "발문 wonder_question이(가) 너무 김 (32자, 30자 이내로): 오랫동안 운동을 계속할 때 가장 필요…",
-    "학습용 기사가 너무 짧음 (332자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "오늘의 낱말 '센서'이(가) 학습용 기사에 없음 — 기사 본문(happened나 why)에 '센서'를 그대로 넣어 다시 쓸 것",
+    "학습용 기사가 너무 짧음 (416자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ]
   }
  ]

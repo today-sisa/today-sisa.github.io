@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 118,
+   "count": 117,
    "raw_entries": 120
   },
   {
@@ -15,8 +15,8 @@
   {
    "source": "SBS",
    "via": "direct",
-   "count": 15,
-   "raw_entries": 15
+   "count": 17,
+   "raw_entries": 17
   },
   {
    "source": "JTBC",
@@ -33,43 +33,41 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 90,
+   "count": 91,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 95,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 95,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 84,
+   "count": 87,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 97,
+   "count": 99,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 93,
+   "count": 96,
    "raw_entries": 100
   }
  ],
- "notes": [
-  "오류: Gemini 호출 실패: gemini-flash-latest 503 / gemini-flash-lite-latest 503 / gemini-3.1-flash-lite 503 / gemini-2.5-flash-lite 사용 불가(404)"
- ],
+ "notes": [],
  "candidates_by_source": {
   "연합뉴스": 18,
   "연합뉴스TV": 17,
@@ -79,12 +77,92 @@
   "KBS": 17,
   "MBC": 17
  },
- "gemini_errors": [
-  "gemini-flash-latest 503",
-  "gemini-flash-lite-latest 503",
-  "gemini-3.1-flash-lite 503",
-  "gemini-2.5-flash-lite 사용 불가(404)"
+ "model": "gemini-flash-lite-latest",
+ "picks": [
+  {
+   "rank": 1,
+   "type": "useful",
+   "source": "YTN",
+   "title": "태안 침몰 어선 '해광호' 확인...실종자 수색 최우선 [현장영상+]"
+  },
+  {
+   "rank": 2,
+   "type": "debate",
+   "source": "JTBC",
+   "title": "수능 부정행위 5명 형사 고발…온라인 자백·판매 글도 조사"
+  },
+  {
+   "rank": 3,
+   "type": "media",
+   "source": "JTBC",
+   "title": "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]"
+  },
+  {
+   "rank": 4,
+   "type": "useful",
+   "source": "MBC",
+   "title": "한전, 고객 등 152만명 개인정보 유출‥주민·계좌번호도 포함"
+  },
+  {
+   "rank": 5,
+   "type": "useful",
+   "source": "SBS",
+   "title": "치아 사이 20초 닦아 '혈당 측정'…마법의 치실 나왔다"
+  }
  ],
- "status": "실패",
- "finished_at": "2026-11-24T05:50+09:00"
+ "items": [
+  {
+   "rank": 1,
+   "body_chars": 1692,
+   "video_candidates": 3,
+   "video": true,
+   "problems": [],
+   "alerts": [
+    "아이들이 불안해할 수 있어요"
+   ]
+  },
+  {
+   "rank": 2,
+   "body_chars": 1268,
+   "video_candidates": 0,
+   "video": false,
+   "problems": [
+    "학습용 기사가 너무 짧음 (399자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": []
+  },
+  {
+   "rank": 3,
+   "body_chars": 2966,
+   "video_candidates": 0,
+   "video": false,
+   "problems": [],
+   "alerts": [
+    "민감한 인물이 등장해요"
+   ]
+  },
+  {
+   "rank": 4,
+   "body_chars": 0,
+   "video_candidates": 0,
+   "video": false,
+   "problems": [
+    "학습용 기사가 너무 짧음 (444자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": []
+  },
+  {
+   "rank": 5,
+   "body_chars": 0,
+   "video_candidates": 0,
+   "video": false,
+   "problems": [
+    "오늘의 낱말 '센서'이(가) 학습용 기사에 없음 — 기사 본문(happened나 why)에 '센서'를 그대로 넣어 다시 쓸 것",
+    "학습용 기사가 너무 짧음 (416자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
+   "alerts": []
+  }
+ ],
+ "status": "성공",
+ "finished_at": "2026-11-24T09:06+09:00"
 }

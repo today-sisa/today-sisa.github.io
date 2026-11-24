@@ -1,0 +1,714 @@
+{
+ "version": 2,
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T09:06+09:00",
+ "hidden": false,
+ "sample": false,
+ "items": [
+  {
+   "title": "바닷속 가라앉은 어선과 구조 활동",
+   "words": [
+    {
+     "word": "선체",
+     "meaning": "배의 뼈대와 몸체",
+     "wrong": [
+      "배를 모는 선장",
+      "배에 실은 짐"
+     ]
+    },
+    {
+     "word": "조류",
+     "meaning": "바닷물이 흐르는 움직임",
+     "wrong": [
+      "바다에 사는 새",
+      "하늘에 부는 바람"
+     ]
+    }
+   ],
+   "summary": [
+    "바다에서 사라진 배가 깊은 물속에서 발견됐어요.",
+    "물살이 거세고 물이 흐려 수색에 어려움을 겪고 있어요.",
+    "해경은 날씨가 나아지면 선원 수색을 다시 시작해요."
+   ],
+   "five_w": {
+    "who": "태안해양경찰서와 해군",
+    "when": "2026년 11월 22일",
+    "where": "충남 태안 앞바다",
+    "what": "가라앉은 배를 발견함",
+    "how": "바닷속 탐사 장비로",
+    "why": "사라진 배와 사람을 찾기 위해"
+   },
+   "activity": {
+    "impact_question": "바다 안전사고는 우리 삶에 어떤 영향을 줄까요?",
+    "wonder_question": "깊은 바다를 수색할 때 더 알고 싶은 점은요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "배는 53미터 깊이 바다에서 발견됐어요.",
+     "answer": "사실",
+     "reason": "측정한 사실이에요."
+    },
+    {
+     "sentence": "선원들을 찾기 위해 배를 먼저 건져야 해요.",
+     "answer": "의견",
+     "reason": "사람마다 생각이 달라요."
+    },
+    {
+     "sentence": "물속이 어두워서 앞이 잘 보이지 않아요.",
+     "answer": "사실",
+     "reason": "실제 상황이에요."
+    },
+    {
+     "sentence": "날씨가 좋아지면 수색이 금방 끝날 거예요.",
+     "answer": "의견",
+     "reason": "미래의 짐작이에요."
+    }
+   ],
+   "challenge": "물속이 위험할 때 사람 대신 도울 장비를 상상해 써 봐요.",
+   "article": {
+    "happened": [
+     "충남 태안 앞바다에서 사라졌던 어선 해광호가 바닷속에서 발견되었다. 해군은 깊은 바다를 살피는 무인 탐사 장비를 넣어 수심 53미터 아래 가라앉아 있는 배를 찾아냈다. 배는 바닥에서 약 30도 기울어진 상태로 놓여 있었다.",
+     "하지만 배에 타고 있던 선원들의 모습은 아직 확인되지 않았다. 해양경찰은 배가 발견되자마자 잠수 구조대원을 물속으로 들여보냈다. 그러나 바닷속 시야가 2에서 3미터에 그칠 정도로 물이 탁했고, 물살이 빨라 선체 안으로 들어가지는 못했다.",
+     "구조대원들은 거센 조류 때문에 장비가 제대로 움직이지 않자 대원 안전을 위해 바다 위로 돌아왔다. 해경은 현재 배 주변에 배와 항공기 30여 대를 보내 주변 바다를 계속 살피고 있다. 실종된 사람을 먼저 찾는 일이 가장 급하기 때문이다."
+    ],
+    "why": "바다는 물살이 세고 깊을수록 사람이 들어가서 작업하기가 매우 위험하다. 해경은 날씨가 나아지는 대로 다시 잠수사를 들여보내 배 안쪽을 자세히 살펴볼 계획이다. 또 해군과 힘을 합쳐 물속 작업을 돕는 특수 장치인 다이빙벨을 쓰는 방법도 함께 준비하고 있다.",
+    "background": {
+     "title": "다이빙벨이란 무엇인가요?",
+     "text": "잠수사가 깊은 바닷속에서 숨을 쉬며 머물 수 있게 만든 종 모양의 큰 방이에요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-2 통일 한국의 발전과 지구촌의 미래"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "바다에서 일하는 분들이 다치거나 사라지면 그 가족들이 슬퍼하고, 우리가 먹는 수산물을 구하기도 어려워질 수 있어요.",
+     "wonder_question": "거센 물살 속에서 잠수사들이 어떻게 안전하게 숨을 쉬고 서로 연락하는지 더 알고 싶어요.",
+     "challenge": "거센 물살을 견디며 손과 카메라가 달린 원격 조종 잠수 로봇을 만들어 사람 대신 배 안을 탐색하게 할 수 있어요."
+    },
+    "extra_questions": [
+     "바다에서 사고가 났을 때 구조 활동을 가로막는 자연환경에는 무엇이 있을까요?",
+     "물속에서 일하는 잠수 구조대원의 안전을 지키려면 어떤 준비가 필요할까요?"
+    ],
+    "cautions": [
+     "선원들의 생사가 확인되지 않은 조난 사고이므로 희생자나 실종자에 대해 장난스러운 태도를 보이지 않도록 지도합니다.",
+     "사고의 자극적인 부분보다 구조대원의 노력과 해상 안전의 중요성에 초점을 맞추어 지도합니다."
+    ]
+   },
+   "rank": 1,
+   "type": "useful",
+   "category": "사회",
+   "topic": "해상 사고와 재난 안전",
+   "reason": "해상 사고 사례를 통해 재난 발생 시 대응 체계와 안전의 중요성을 배우고 생명의 소중함을 다룰 수 있음.",
+   "source": "YTN",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93OHpIeGJYY21sUHBKUE5yQnJIR3BBVk40bDBMcXUwbUQ4dE5DUmExLWZHTjY0YjZHcl9IbmRNYnROcnYzWl91Tzl6Yzdtc1dERTFMSkVuWEc1VWdfTnc?oc=5",
+   "original_title": "태안 침몰 어선 '해광호' 확인...실종자 수색 최우선 [현장영상+]",
+   "member_titles": [
+    "해광호 수심 53m 발견...기상 여건 고려 '수중 수색'",
+    "탁한 시야 탓에 \"확인 실패\"…흔적 없는 7명 선원들",
+    "태안 침몰 어선 '해광호' 확인...실종자 수색 최우선 [현장영상+]",
+    "충남 태안 실종 어선 '해광호', 수색 나흘만에 발견"
+   ],
+   "pub": "2026-11-24",
+   "related": [
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1BbGtpVWxFMEgwSkNud3BHTTlPNGJTX1ZiU0hldHJuZVVmbVk2dlY0OG03Zlp3emo0UGVhOFhfYmo3dGlycVJmQ3VBMG5mZkRyQXFQN1NvNGdGTXE2NjVfeDdKWlFRUmFQNndUZmtiaw?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008859625&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1xbTRObkZRNEwzMVpIVklDTzladWx3YktHcjN1NThSclU2TmJLeUN1QTJxQWhnR3FkaVhHZE4ta2pJR01IWkNiSFlFSHByTjJMUFprenF2VEo3UEtIb05jdUdyNnYyTWNhSUpLaXJCX3ZHVEpRY0RF0gF3QVVfeXFMTnVyRGIzWHVhRDVSRVNZel9hdWs4M2pueC1rRmVkazdWSUcxbVlmM3lBbm0xVWtwRkRHNTFJdEFyUm81WUU5VnFHWXFITmxFY0xSY25rVnFNR3lFSlA4VFkzTi1qRXRUa242bjdnc2JNUlpwNmtaQXc?oc=5"
+    }
+   ],
+   "video": {
+    "id": "LAJolA5w7r4",
+    "title": "바닷속에서 해광호 선체 확인...실종자 수색 본격화 / YTN",
+    "channel": "YTN",
+    "kind": "news",
+    "match": 0.4444444444444444
+   },
+   "alerts": [
+    {
+     "label": "아이들이 불안해할 수 있어요",
+     "detail": "선박 침몰 및 실종자 수색 상황 다룸"
+    }
+   ],
+   "needs_review": false,
+   "review_notes": []
+  },
+  {
+   "title": "수능 부정행위와 대학 합격 논란",
+   "words": [
+    {
+     "word": "부정행위",
+     "meaning": "시험에서 바르지 못한 행동을 함",
+     "wrong": [
+      "시험 시간을 착각해서 늦게 옴",
+      "시험 문제를 열심히 풀어서 맞춤"
+     ]
+    },
+    {
+     "word": "맹점",
+     "meaning": "제도나 일의 살피지 못한 허점",
+     "wrong": [
+      "시험 제도의 아주 훌륭한 장점",
+      "눈이 나빠서 안경을 쓰는 부분"
+     ]
+    }
+   ],
+   "summary": [
+    "교육부는 수능 부정행위자 5명을 고발했어요.",
+    "적발된 학생이 수시 전형에 합격했어요.",
+    "제도의 허점을 고쳐야 한다는 목소리가 커요."
+   ],
+   "five_w": {
+    "who": "교육부와 수험생",
+    "when": "최근",
+    "where": "온라인 커뮤니티와 대학",
+    "what": "수능 부정행위와 수시 합격 논란",
+    "how": "스마트 기기 등을 사용함",
+    "why": "제도의 허점 때문이에요"
+   },
+   "activity": {
+    "issue": "부정행위로 적발된 학생의 수시 합격은 인정해야 할까요?",
+    "side_a": {
+     "title": "합격 취소",
+     "reasons": [
+      "불공정한 방법이므로 기회를 빼앗았어요."
+     ]
+    },
+    "side_b": {
+     "title": "합격 유지",
+     "reasons": [
+      "해당 전형은 수능 성적을 안 봐요."
+     ]
+    },
+    "choose_question": "나는 어느 쪽이에요? 그 까닭은요?",
+    "other_side_question": "반대쪽 생각의 좋은 점은 뭘까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "교육부는 스마트 기기 사용자를 고발했어요.",
+     "answer": "사실",
+     "reason": "실제로 일어난 일이에요."
+    },
+    {
+     "sentence": "부정행위 학생이 합격한 것은 부당해요.",
+     "answer": "의견",
+     "reason": "사람마다 생각이 다를 수 있어요."
+    },
+    {
+     "sentence": "수능 성적은 부정행위로 무효가 되었어요.",
+     "answer": "사실",
+     "reason": "규정에 적힌 내용이에요."
+    },
+    {
+     "sentence": "입학 제도의 허점을 빨리 고쳐야 해요.",
+     "answer": "의견",
+     "reason": "앞으로 어떻게 할지에 대한 생각이에요."
+    }
+   ],
+   "challenge": "우리 학교 시험에서 지키어야 할 규칙은 무엇이 있을까요?",
+   "article": {
+    "happened": [
+     "교육부가 최근 수능 시험장에서 스마트 기기를 사용한 부정행위자 5명을 경찰에 고발했다. 이번 조사는 공정한 시험 제도를 지키기 위한 조치로 이루어졌다.",
+     "온라인 커뮤니티에는 수능 도중 재난문자가 울려 부정행위로 처리된 학생이 대학 수시 전형에 합격했다는 글이 올라왔다. 이 글은 많은 사람들의 관심을 받았다.",
+     "글을 올린 작성자는 부정행위를 한 학생이 합격증을 받는 것은 불합리하다고 지적했다. 또한 간절하게 준비한 다른 학생들의 기회를 빼앗는 일이라고 주장했다."
+    ],
+    "why": "현행 규정상 수능에서 부정행위가 적발되면 해당 시험 성적은 무효가 된다. 하지만 수능 최저학력기준이 없는 수시 전형에는 수능 성적이 반영되지 않아 합격이 가능할 수 있다. 이러한 제도의 맹점이 드러나면서 교육부는 사실관계를 확인하고 신중하게 살펴볼 예정이다.",
+    "background": {
+     "title": "수시 전형이란?",
+     "text": "수능 점수보다 학교생활 기록이나 논술 등 다른 실력을 중심으로 대학에 들어가는 방법이에요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "choose_question": "합격 취소 쪽에 동의해요. 정직하게 시험을 본 다른 친구들이 피해를 보기 때문이에요.",
+     "challenge": "시험 중에는 선생님의 안내를 잘 따르고, 허용되지 않은 물건은 절대 소지하지 않아야 해요."
+    },
+    "extra_questions": [
+     "시험에서 규칙을 지키는 것이 왜 중요할까요?",
+     "대학 입학 제도는 어떤 점을 고치면 좋을까요?"
+    ],
+    "cautions": [
+     "특정 학교나 학생을 비난하지 않도록 공정한 태도를 강조해 주세요.",
+     "제도의 허점과 규칙의 중요성에 초점을 맞춰 토론을 이끌어 주세요."
+    ]
+   },
+   "rank": 2,
+   "type": "debate",
+   "category": "사회",
+   "topic": "수능 AI 부정행위와 기술의 명암",
+   "reason": "최근 이슈인 AI를 활용한 부정행위와 이를 막기 위한 기술적 대응을 통해 디지털 윤리와 공정성에 대해 토론하기 적합함.",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12329495",
+   "original_title": "수능 부정행위 5명 형사 고발…온라인 자백·판매 글도 조사",
+   "member_titles": [
+    "'재난문자' 울렸는데 수시 합격?…\"불합리하다\" 분통",
+    "수능 부정행위 5명 형사 고발…온라인 자백·판매 글도 조사",
+    "'앞치마 입고 논술 시험'‥AI 부정행위 논란에 대학가도 비상",
+    "'AI 안경' 없이 '깔깔'…서울의대생 성적 다 밝혔다",
+    "응시생 눈에는 안 보였던 'AI 인스펙터' 통했다‥부정행위 차단 '급주목'",
+    "AI 부정행위 논란 후 첫 국가자격시험‥부정행위 5명 적발·1명 무효"
+   ],
+   "pub": "2026-11-24",
+   "related": [
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008859909&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTI5Q3VGem9JSWItV0h1VTU3S0pVYlp6VUN3dkJZeEh1QnhUblNwVFhuZnRMNWREdTU4OWZuRExTVUV2SE1GRnl4bWp5S2xxQnl0RGFJX0ZxSEZ0WGltVG1Dckp3U2h6ZkFhWUtnWTVnNWx6bGNjTtIBeEFVX3lxTE05bXQ4M05Iam8yVWxDOWRsZDRwaWZEcVVELVRXbFFzdDh3MXZLU1dxSnRnOXEtY2NHcHNGdUpxNzhOZmdla3BDMDBKSmdDWXlEeHluU0xlYWV0c0xHVDdxbXNQaWtNcHdWV1VaY3QwT2tqeWo1anB2cg?oc=5"
+    },
+    {
+     "source": "SBS",
+     "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008859910&plink=RSSLINK&cooper=RSSREADER"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5vYTJFSk85cHExR0VSM3NVRnFTOVhmN2h4bmJYNi1BeFBtVlVrVzl6OE9TWjhCYjJTU3FiNnhJMzRKbWZ1R1JDR25PVmRBX2pRV29STlppTzhWZUF5eGE2cElXT3hkRkNGOS1CYk5uUkFvcDNYZ0RJ0gF3QVVfeXFMUElxU2JYaUtBekZtQXk5aWJvM2F1OFJJMFZUWGJFeGdPQk5LdGhidlFfN2FzUFFGYmJwdGRCYWwyUzJTNV9hZXBVYzVhdGNad0h1TUNXdEZDNzloSExXV2haV3ZocHN5aEhkbjM2TUF6R241MkFtb00?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "학습용 기사가 너무 짧음 (399자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ]
+  },
+  {
+   "title": "인공지능 반도체 대표의 복귀",
+   "words": [
+    {
+     "word": "경영",
+     "meaning": "기업을 이끌고 관리함",
+     "wrong": [
+      "물건을 사고파는 시장",
+      "법을 만드는 국가 기관"
+     ]
+    },
+    {
+     "word": "불확실성",
+     "meaning": "앞일이 확실하지 않음",
+     "wrong": [
+      "모든 일이 결정된 상태",
+      "약속을 지키려는 태도"
+     ]
+    }
+   ],
+   "summary": [
+    "인공지능 반도체 기업의 대표가 회사로 다시 돌아왔어요.",
+    "우리나라 반도체 기업들과 협력도 계속 이어질 전망이에요.",
+    "대표를 둘러싼 조사가 남아 있어 지켜보아야 해요."
+   ],
+   "five_w": {
+    "who": "젠슨 황 대표",
+    "when": "2026년 11월",
+    "where": "미국 엔비디아 회사",
+    "what": "대표 자리 복귀",
+    "how": "회사 이사회 만장일치 결정",
+    "why": "국가안보 위험 없다고 판단"
+   },
+   "activity": {
+    "feeling_choices": [
+     "기대와 안도",
+     "걱정과 의심",
+     "놀라움과 호기심"
+    ],
+    "why_question": "신문사마다 제목이 다른 까닭은 뭘까요?",
+    "rewrite_question": "내가 기자라면 어떤 제목을 붙이고 싶나요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "대표는 물러난 지 11일 만에 다시 복귀했어요.",
+     "answer": "사실",
+     "reason": "실제 일어난 사실이에요."
+    },
+    {
+     "sentence": "대표의 복귀는 매우 훌륭한 결정이에요.",
+     "answer": "의견",
+     "reason": "사람의 생각이에요."
+    },
+    {
+     "sentence": "미국 정부 관계자의 의견을 듣고 결정했어요.",
+     "answer": "사실",
+     "reason": "발표된 확인 사실이에요."
+    },
+    {
+     "sentence": "앞으로 모든 문제가 다 해결될 것 같아요.",
+     "answer": "의견",
+     "reason": "개인의 추측이에요."
+    }
+   ],
+   "challenge": "제목이 독자의 마음에 미치는 영향을 한 문장으로 써 볼까요?",
+   "article": {
+    "happened": [
+     "세계적인 인공지능 반도체 기업 엔비디아의 젠슨 황 최고경영자가 자리에서 물러난 지 11일 만에 다시 돌아왔다. 회사 이사회는 회의를 열고 만장일치로 그의 복귀를 결정했다. 이사회는 정부 관계자들의 의견을 들은 뒤 국가안보 위험이 없다고 판단했다고 밝혔다.",
+     "황 대표는 전 세계 인공지능 반도체 공급을 이끄는 핵심 인물이다. 그가 갑자기 자리에서 물러났을 때 세계 반도체 시장은 큰 혼란에 빠졌다. 하지만 이번에 빠른 복귀가 이루어지면서 시장의 큰 불안감과 불확실성은 상당 부분 줄어들게 되었다.",
+     "우리나라 대표 반도체 기업들도 안도의 한숨을 내쉬었다. 삼성전자와 에스케이하이닉스는 차세대 기억장치 반도체를 엔비디아에 공급하며 함께 일하고 있다. 대표의 복귀로 두 기업과 맺어 온 부품 공급 협력 관계가 앞으로도 차질 없이 이어질 것이라는 기대가 커졌다."
+    ],
+    "why": "대표의 복귀로 기업 경영 공백은 조기에 해결되었지만 아직 불씨는 남아 있다. 외국 정보기관과 관련된 의혹에 대한 조사가 여전히 진행되고 있기 때문이다. 앞으로 조사 결과와 각국의 반도체 정책 변화에 따라 세계 인공지능 산업의 흐름이 다시 흔들릴 수도 있다.",
+    "background": {
+     "title": "인공지능 반도체란?",
+     "text": "사람처럼 생각하고 학습하는 인공지능 기술을 빠르게 계산해 주는 특별한 컴퓨터 두뇌 부품이에요."
+    }
+   },
+   "curriculum": [
+    "사회 5-2 우리 경제의 성장과 발전",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "why_question": "신문사마다 중요하게 생각하는 내용이나 독자에게 전하고 싶은 초점이 서로 다르기 때문이에요.",
+     "rewrite_question": "인공지능 반도체 대표 복귀, 세계 시장의 기대와 남은 숙제",
+     "challenge": "어떤 제목을 보느냐에 따라 사건을 긍정적으로 볼 수도 있고 불안하게 볼 수도 있어요."
+    },
+    "extra_questions": [
+     "신문 기사를 읽을 때 제목만 보고 내용을 판단하면 어떤 문제가 생길까요?",
+     "우리나라 반도체 기업들이 세계 다른 기업들과 협력하는 것은 왜 중요할까요?"
+    ],
+    "cautions": [
+     "정치적 논란이나 특정 인물에 대한 가치 판단으로 흐르지 않도록, 언론사가 사건의 서로 다른 면(경제적 영향 vs 안보 논란)을 강조했다는 점에 초점을 맞추어 지도해 주세요."
+    ]
+   },
+   "headlines": [
+    {
+     "source": "JTBC",
+     "title": "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]",
+     "link": "https://news.jtbc.co.kr/article/NB12329494"
+    },
+    {
+     "source": "KBS",
+     "title": "[잇슈 SNS] ‘젠슨 황·앨리스 황 닮은꼴 대회’…의견 분분",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvcjNqSHNNeXh6cklvZ1U2ZnRYQk1XR2ZkQkZMTjJjLVhHS3hQT3JxX3NoMS05YzlvdWdXTFo3OVBmNTVIckVwVUZKeHhESTR4cHpnTEZYQnhRbkotVXFveFVoMnI3Zw?oc=5"
+    },
+    {
+     "source": "연합뉴스TV",
+     "title": "미국 민주당, ’젠슨황 복귀’ 비판…“트럼프가 안보 팔아넘겨“",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05WXJuSDItWFNGWi05aW85cDNBQXlqOXZVRURsbDNDb0tFRmdaS2gzQl9PR0FQR3NLRV92UUF6dEdpaHNTTElPaC02a2lUYllWeS1NdDB6VEhhUER4aWtsZ2VBS1lmLWc?oc=5"
+    },
+    {
+     "source": "YTN",
+     "title": "젠슨 황 엔비디아 CEO 즉시 복귀...이사회 만장일치 결정",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPUlMwVFhibDRLOWpPOC1OdnFhRjlHY3M0Rk1WNTVFaVJiRG9XTDdqN3M3OXF3MVI2VFMwTmdkZVRjZW1HMFNOdHZoc2pGR1MzR3l4SkNzclNQeXRFeTZBbjI5cDFfRkw5NnBiTXltUQ?oc=5"
+    },
+    {
+     "source": "YTN",
+     "title": "젠슨 황 엽기적 막말 논란 속...\"한국, AI 거품 최종 단계\"",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tVms4cWt0dHExZ05sM0hmX0lkeHpndU1pZkstVEc4QmZmZjhWdjdQYUtjSnJ4VjhzUnd0TXlKVkRZbmFnck5LS2haYnRqNU1rM2NVXzJEZTVTUUlnbnc?oc=5"
+    },
+    {
+     "source": "MBC",
+     "title": "\"모욕해야 성과 나와\"‥젠슨 황 폭언 폭로 파문",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iOVlHa3RKV2FNMUpTaGFyLUZ0SUx1VzdRVVV0TlZxS3ZpNlhjS3BoZjlSaE9pWmZ3LUZvWkJyenJHSVc0MDEwMzJ2Mnl4RVZyWEdmSW55M05wQk1MMXd0QWZOczVPUEc3THFzcUlFdWY2UEtq0gF0QVVfeXFMTUljQlo3NEplb21XTGJuUkdTUmRyc1VpZmEyRjVHMDlxSUR5X3dhYnFfN2hKTkpYZXRlOXVqUHg4UFpXTDg1X2F2VnM0MVhmX2ZaVEdnV1BCbmZ2T3RNZUN4WHlLem0wMHdvNGp5R2lVcXdlM1k?oc=5"
+    },
+    {
+     "source": "연합뉴스",
+     "title": "젠슨황 깜짝 복귀에 삼전닉스 HBM 불확실성·피크아웃 우려↓",
+     "link": "https://www.yna.co.kr/view/AKR20261124025800003"
+    },
+    {
+     "source": "연합뉴스",
+     "title": "트럼프 지휘·밴스 투입…은밀히 진행된 '젠슨황 구하기' 작전(종합)",
+     "link": "https://www.yna.co.kr/view/AKR20261124005551071"
+    }
+   ],
+   "rank": 3,
+   "type": "media",
+   "category": "경제",
+   "topic": "엔비디아 젠슨 황 복귀와 논란",
+   "reason": "글로벌 기업 CEO의 복귀를 둘러싼 정치적 해석과 언론사별 보도 관점의 차이를 비교하며 미디어 리터러시를 학습하기 좋음.",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12329494",
+   "original_title": "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]",
+   "member_titles": [
+    "젠슨 황 복귀 반긴 트럼프…미 민주 \"안보 팔아넘겨\" [소셜픽]",
+    "[잇슈 SNS] ‘젠슨 황·앨리스 황 닮은꼴 대회’…의견 분분",
+    "미국 민주당, ’젠슨황 복귀’ 비판…“트럼프가 안보 팔아넘겨“",
+    "젠슨 황 엔비디아 CEO 즉시 복귀...이사회 만장일치 결정",
+    "젠슨 황 엽기적 막말 논란 속...\"한국, AI 거품 최종 단계\"",
+    "\"모욕해야 성과 나와\"‥젠슨 황 폭언 폭로 파문"
+   ],
+   "pub": "2026-11-24",
+   "related": [
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvcjNqSHNNeXh6cklvZ1U2ZnRYQk1XR2ZkQkZMTjJjLVhHS3hQT3JxX3NoMS05YzlvdWdXTFo3OVBmNTVIckVwVUZKeHhESTR4cHpnTEZYQnhRbkotVXFveFVoMnI3Zw?oc=5"
+    },
+    {
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05WXJuSDItWFNGWi05aW85cDNBQXlqOXZVRURsbDNDb0tFRmdaS2gzQl9PR0FQR3NLRV92UUF6dEdpaHNTTElPaC02a2lUYllWeS1NdDB6VEhhUER4aWtsZ2VBS1lmLWc?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPUlMwVFhibDRLOWpPOC1OdnFhRjlHY3M0Rk1WNTVFaVJiRG9XTDdqN3M3OXF3MVI2VFMwTmdkZVRjZW1HMFNOdHZoc2pGR1MzR3l4SkNzclNQeXRFeTZBbjI5cDFfRkw5NnBiTXltUQ?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tVms4cWt0dHExZ05sM0hmX0lkeHpndU1pZkstVEc4QmZmZjhWdjdQYUtjSnJ4VjhzUnd0TXlKVkRZbmFnck5LS2haYnRqNU1rM2NVXzJEZTVTUUlnbnc?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [
+    {
+     "label": "민감한 인물이 등장해요",
+     "detail": "정치 지도자와 기업 대표의 논란이 언급돼요."
+    }
+   ],
+   "needs_review": false,
+   "review_notes": []
+  },
+  {
+   "title": "한전 고객 개인정보가 유출됐어요",
+   "words": [
+    {
+     "word": "개인정보",
+     "meaning": "나를 나타내는 정보예요",
+     "wrong": [
+      "물건을 사고파는 기록이에요",
+      "동네 사람들의 이름이에요"
+     ]
+    },
+    {
+     "word": "유출",
+     "meaning": "비밀이 밖으로 새어 나갔어요",
+     "wrong": [
+      "물건을 안전하게 지켰어요",
+      "새로운 정보를 알아냈어요"
+     ]
+    }
+   ],
+   "summary": [
+    "한국전력공사 고객의 개인정보가 밖으로 새어 나갔어요.",
+    "주민번호와 계좌번호 같은 중요한 정보도 포함됐어요.",
+    "한전은 피해를 줄이려고 대책을 마련하고 있어요."
+   ],
+   "five_w": {
+    "who": "한국전력공사",
+    "when": "최근",
+    "where": "전국",
+    "what": "개인정보 유출",
+    "how": "시스템 관리 소홀",
+    "why": "보안 점검 부족"
+   },
+   "activity": {
+    "impact_question": "내 정보가 새어나가면 어떤 일이 생길까요?",
+    "wonder_question": "개인정보를 지키려면 어떻게 해야 할까요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "한전 고객 152만 명의 정보가 새어나갔어요.",
+     "answer": "사실",
+     "reason": "실제 일어난 사건이에요."
+    },
+    {
+     "sentence": "주민번호와 계좌번호도 함께 포함되었어요.",
+     "answer": "사실",
+     "reason": "조사 결과로 밝혀졌어요."
+    },
+    {
+     "sentence": "기업들이 보안을 더 철저하게 관리해야 해요.",
+     "answer": "의견",
+     "reason": "앞으로 바라는 점이에요."
+    },
+    {
+     "sentence": "비밀번호를 자주 바꾸는 것이 가장 안전해요.",
+     "answer": "의견",
+     "reason": "개인적인 생각이에요."
+    }
+   ],
+   "challenge": "모르는 번호로 온 문자에 링크를 누르면 안 되는 까닭은 무엇인가요?",
+   "article": {
+    "happened": [
+     "한국전력공사에서 고객 152만 명의 개인정보가 유출되는 사고가 발생했다. 이번 일로 많은 사람들의 소중한 정보가 안전하게 지켜지지 못했다. 회사는 이 사실을 확인하고 피해를 줄이기 위한 조치를 시작했다.",
+     "새어나간 정보 속에는 이름뿐만 아니라 주민번호와 계좌번호까지 포함되었다. 이러한 정보는 우리 생활과 밀접한 중요한 내용이라 더욱 큰 걱정을 샀다. 피해를 입은 고객들은 혹시 모를 피해를 걱정하고 있다.",
+     "한국전력공사는 문제가 생긴 부분을 즉시 바로잡겠다고 밝혔다. 고객들에게 사과를 전하고 추가 피해가 없도록 살피는 중이다. 사람들은 철저한 원인 조사를 요구하고 있다."
+    ],
+    "why": "이처럼 대규모 정보가 새어나간 원인은 보안 시스템의 빈틈 때문이다. 전문가들은 기업들이 평소에 고객 정보를 더 안전하게 관리해야 한다고 강조한다. 앞으로 정부와 기업은 보안을 강화하여 비슷한 일이 생기지 않도록 노력할 예정이다.",
+    "background": {
+     "title": "개인정보란 무엇일까요?",
+     "text": "이름이나 전화번호처럼 나를 알 수 있는 소중한 정보예요. 다른 사람에게 알려지지 않도록 잘 지켜야 해요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 인권 존중과 정의로운 사회",
+    "사회 6-1 우리나라의 정치 발전"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "모르는 전화나 문자가 와서 불편할 수 있어요.",
+     "wonder_question": "비밀번호를 자주 바꾸고 의심스러운 링크는 누르지 않아요.",
+     "challenge": "해킹 프로그램이나 악성코드가 스마트폰에 깔릴 수 있기 때문이에요."
+    },
+    "extra_questions": [
+     "내 개인정보를 지키기 위해 평소에 무엇을 하나요?",
+     "기업이 고객 정보를 보호하려면 어떤 준비가 필요할까요?"
+    ],
+    "cautions": [
+     "학생들이 자신의 개인정보가 유출된 적은 없는지 과도하게 불안해하지 않도록 지도해 주세요."
+    ]
+   },
+   "rank": 4,
+   "type": "useful",
+   "category": "생활·문화",
+   "topic": "개인정보 유출과 디지털 보안",
+   "reason": "학생들이 사용하는 서비스와 밀접한 개인정보 보호의 중요성을 실생활 사례를 통해 경각심을 일깨울 수 있음.",
+   "source": "MBC",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBqNGllTTgwamlGVEpVR3pLbTBzUmsxRUhkamE1QldsNTZPa1EtelczREJCUTBvSWEzY3RaZ1owVHVDbFcxV21nckNwbUxaaU5qXzhuRXZQNXE4LVdVZDJjendtMkxqSW1yRzI1V1dVY1RKbFhm0gF0QVVfeXFMTkdYY1ZZTEFfVTQtQjBVRW40MGJVTTZIWnRPVVZxNTBlNVdXcjZOSHZ1NFJhanRZbUxXVEhZVkRueFNITFFXajQwa3l4a1RUYnpyYVJSU1cxbEE1V1NTVFBUenM4bGthZjRuM1d1R2dmRTJZQXE?oc=5",
+   "original_title": "한전, 고객 등 152만명 개인정보 유출‥주민·계좌번호도 포함",
+   "member_titles": [
+    "한전, 개인정보 150여만건 유출…주민·계좌번호도 포함",
+    "이번엔 카드번호까지...한전, 또 150만 건 정보유출",
+    "한전, 고객 등 152만명 개인정보 유출‥주민·계좌번호도 포함",
+    "한전 150여만 건 또 유출‥카드·주민번호도",
+    "삼성증권도 해킹 피해...계좌번호·운전면허번호까지 털려"
+   ],
+   "pub": "2026-11-23",
+   "related": [
+    {
+     "source": "KBS",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBUbE5jNmJWZlJzTm9kVS1UVnBFZHJrLXBRVVdtTmFUSUl3OUlYdGJZOHo1STFfRV9LX2pNVXE3VG1TY3l5MXRSSVJ1dDhCMnMtdVJnMXBKR0VSc00?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mSU14eDBSa1MtVzd4VzNpRnJodC1jY3BfRUhQOFBXcm4zLWFEaEt1T2lpbmtFR1lnN1Q5blAtUlRILUNxM1ZaTEJFRTRDRzROU0t0d2Vzdk5CdHJKaHc?oc=5"
+    },
+    {
+     "source": "MBC",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1lUDlxUXdGYlZObnFOMDlfcS14TlQtd05TM0FhbmtiTmk5VEZmVUp1RGJ3eTBjQlY1WnlVSVdGeVJ0cmdXejhKOHNMU0RhSV9NMF96TGdGeUxUQ29Bd24zbnRQbGVfV3V6Yl9xajBlWXl1dkJoRmdlNGtR0gF6QVVfeXFMTkswNWpKVUMzaHdjM29SQzg1NWN0aU1KM25Ta05iYUZUWHM3NUZKd1JmcWpjN2d2dHk3NEplS01EQ0FqZUk1V0tXTUFWX25CZ2V1ZWQ1cXRxcmV1WmJ0RkxmUVJPdW9Fdzk0RFN2NEFlNDllMk5MMU5BTFE?oc=5"
+    },
+    {
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lZk9rUUNZSVZjWFlXZzFQSy1admRxVGpLUk83QUZ5eFVETUI0R3paSGpjcl9jUGoyVzRLWUxRMnFxUzNDd1J2X2VTODFMaGpxVWx4WWNZNk8tbFdzQ1N0R1VBRG45YU5kbWNydzVQOA?oc=5"
+    }
+   ],
+   "video": null,
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "학습용 기사가 너무 짧음 (444자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ]
+  },
+  {
+   "title": "치실로 혈당을 잰다고요?",
+   "words": [
+    {
+     "word": "혈당",
+     "meaning": "피 속에 든 설탕 양",
+     "wrong": [
+      "피 속에 든 물의 양",
+      "피 속에 든 소금 양"
+     ]
+    },
+    {
+     "word": "센서",
+     "meaning": "신호를 알아채는 장치",
+     "wrong": [
+      "소리를 크게 하는 곳",
+      "전기를 저장하는 통"
+     ]
+    }
+   ],
+   "summary": [
+    "치아 사이를 닦는 특별한 치실이 개발되었어요.",
+    "이 치실은 20초 만에 혈당을 측정할 수 있어요.",
+    "바늘로 찌르지 않아 건강 관리가 훨씬 편해져요."
+   ],
+   "five_w": {
+    "who": "연구진",
+    "when": "최근",
+    "where": "실험실",
+    "what": "혈당 측정 치실 개발",
+    "how": "타액으로 센서 반응",
+    "why": "편리한 건강 관리를 위해"
+   },
+   "activity": {
+    "impact_question": "이 기술이 나오면 어떤 점이 좋을까요?",
+    "wonder_question": "더 알고 싶은 기술은 무엇인가요?"
+   },
+   "facts_opinions": [
+    {
+     "sentence": "이 치실은 타액으로 혈당을 잴 수 있어요.",
+     "answer": "사실",
+     "reason": "개발된 치실의 실제 기능이에요."
+    },
+    {
+     "sentence": "치실로 혈당을 재는 것은 정말 신기해요.",
+     "answer": "의견",
+     "reason": "사람마다 다르게 느끼는 생각이에요."
+    },
+    {
+     "sentence": "이 기술은 바늘을 쓰지 않아 아프지 않아요.",
+     "answer": "사실",
+     "reason": "피를 뽑지 않는 측정 방식이에요."
+    },
+    {
+     "sentence": "앞으로 모든 병원에서 이 치실을 쓸 거예요.",
+     "answer": "의견",
+     "reason": "아직 확실하지 않은 미래의 예측이에요."
+    }
+   ],
+   "challenge": "내가 개발하고 싶은 건강 도구를 한 문장으로 써요.",
+   "article": {
+    "happened": [
+     "최근 연구진이 치아 사이를 닦으며 혈당을 측정할 수 있는 특별한 치실을 개발했다. 이 치실은 우리가 매일 쓰는 치실 모양과 비슷하다. 하지만 그 안에는 아주 작은 기술이 숨겨져 있다.",
+     "사람들은 치아 사이를 20초 동안 닦기만 하면 된다. 그때 묻어 나오는 침을 통해 몸의 상태를 확인할 수 있다. 바늘로 손가락을 찌르지 않아도 피 속에 있는 혈당 수치를 쉽게 알 수 있다.",
+     "기존에는 혈당을 측정하려면 아픈 과정을 거쳐야 했다. 하지만 이 치실을 사용하면 그런 번거로움을 크게 줄일 수 있다. 아프지 않고 편하게 건강을 챙길 수 있는 길이 열린 것이다."
+    ],
+    "why": "이런 기술이 개발된 이유는 당뇨병 환자들이 매일 겪는 고통을 줄여주기 위해서이다. 앞으로 이 치실이 상용화(실제로 널리 쓰임)되면 더 많은 사람이 스스로 건강을 쉽게 관리할 수 있을 것으로 보인다.",
+    "background": {
+     "title": "타액이란 무엇일까요?",
+     "text": "입안에서 나오는 침을 뜻해요. 타액 속에는 우리 몸의 건강 상태를 알려주는 여러 가지 정보가 담겨 있어요."
+    }
+   },
+   "curriculum": [
+    "사회 5-1 우리 사회의 와닿는 법",
+    "과학 6-1 우리 몸의 구조와 기능"
+   ],
+   "teacher": {
+    "sample_answers": {
+     "impact_question": "매일 아는 검사를 안 해도 되어서 편할 것 같아요.",
+     "wonder_question": "가격이 얼마나 비쌀지 궁금해요.",
+     "challenge": "먹기만 해도 키가 커지는 사탕을 만들고 싶어요."
+    },
+    "extra_questions": [
+     "이 기술이 가장 필요한 사람은 누구일까요?",
+     "새로운 기술이 우리 생활을 어떻게 바꿀까요?"
+    ],
+    "cautions": [
+     "아직 개발 단계인 기술이므로 모든 환자가 바로 쓸 수 있는 것은 아님을 안내합니다."
+    ]
+   },
+   "rank": 5,
+   "type": "useful",
+   "category": "과학·환경",
+   "topic": "건강을 돕는 새로운 기술",
+   "reason": "아이들의 실생활과 밀접한 건강 관리 기술을 소개하여 과학 기술이 우리 삶을 어떻게 개선하는지 밝은 측면을 보여줌.",
+   "source": "SBS",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBmTHBKX1BfWXF4RV9XbUJGeGVBdW9xUFUyQVZEbk1DODl5RWRuTUJvVndaZEJ5MG12SXRicnFvTUQ5UnJ2eWxQQXF6OTJqUzdyc2VMemt6eVRuUU93UDVMaXNyX2s0U085elHSAWZBVV95cUxQRmhGVW85UmdxQmlndF9nQ3ZPdDk5clVHVTJsSllUMVZPZlJNZGJfd3ZqNHdpOU9mV2pldXNKb21kMHBKYzhvbVBKM2RuckZRdDNuZGlmbm5xaHM4cGdhX1dBMXlDa3c?oc=5",
+   "original_title": "치아 사이 20초 닦아 '혈당 측정'…마법의 치실 나왔다",
+   "member_titles": [
+    "치아 사이 20초 닦아 '혈당 측정'…마법의 치실 나왔다"
+   ],
+   "pub": "2026-11-24",
+   "related": [],
+   "video": null,
+   "alerts": [],
+   "needs_review": true,
+   "review_notes": [
+    "오늘의 낱말 '센서'이(가) 학습용 기사에 없음 — 기사 본문(happened나 why)에 '센서'를 그대로 넣어 다시 쓸 것",
+    "학습용 기사가 너무 짧음 (416자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ]
+  }
+ ]
+}
