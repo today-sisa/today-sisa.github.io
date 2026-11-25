@@ -3,7 +3,7 @@
   {
    "source": "연합뉴스",
    "via": "direct",
-   "count": 115,
+   "count": 116,
    "raw_entries": 120
   },
   {
@@ -33,38 +33,38 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 92,
+   "count": 97,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 95,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 97,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "SBS",
    "via": "google",
-   "count": 94,
+   "count": 83,
    "raw_entries": 100
   },
   {
    "source": "JTBC",
    "via": "google",
-   "count": 95,
+   "count": 96,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 89,
-   "raw_entries": 99
+   "count": 90,
+   "raw_entries": 100
   }
  ],
  "notes": [],
@@ -77,95 +77,91 @@
   "KBS": 17,
   "MBC": 17
  },
- "model": "gemini-3.1-flash-lite",
+ "model": "gemini-flash-lite-latest",
  "picks": [
   {
    "rank": 1,
    "type": "useful",
    "source": "연합뉴스TV",
-   "title": "서울지하철 노사 임단협 타결…총파업 철회"
+   "title": "이 대통령 \"2030년까지 매년 24만호 공적주택 공급\""
   },
   {
    "rank": 2,
    "type": "useful",
-   "source": "KBS",
-   "title": "외교부, 러 군용기 KADIZ 진입에 “유감 표명·재발 방지 촉구”"
+   "source": "SBS",
+   "title": "차에 치이고도 '벌떡'…모습 감추자 \"외출 자제하라\""
   },
   {
    "rank": 3,
    "type": "debate",
    "source": "SBS",
-   "title": "똑같은 시험지 2장인데…'숨겨진 암호'로 커닝 잡는다?"
+   "title": "강남서 50곳 넘게 '걸어서 배달'…결국 현수막 걸렸다"
   },
   {
    "rank": 4,
    "type": "useful",
-   "source": "JTBC",
-   "title": "원곡도 커버곡도 AI 작품…저작권 논란? 즐기기 시작했다"
+   "source": "연합뉴스TV",
+   "title": "돈뭉치 내놓고도 \"금액 줄어 죄송\"…14년째 찾아온 기부 천사"
   },
   {
    "rank": 5,
-   "type": "useful",
-   "source": "KBS",
-   "title": "산업부 ‘진주 딸기·통영 굴’ 수출 지원 논의"
+   "type": "debate",
+   "source": "SBS",
+   "title": "1700만 줄 쓰고 \"풀었다\"…\"수학자는 끝났다\" 자괴감"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 1099,
-   "video_candidates": 1,
+   "body_chars": 646,
+   "video_candidates": 4,
    "video": true,
    "problems": [
-    "발문 impact_question이(가) 너무 김 (31자, 30자 이내로): 지하철이 정상 운행되어 우리 동네에 …",
-    "발문 wonder_question이(가) 너무 김 (36자, 30자 이내로): 노사가 합의한 내용 중 가장 중요하다…"
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 정부는 2030년까지 매년 24만 호…"
    ],
    "alerts": []
   },
   {
    "rank": 2,
-   "body_chars": 695,
+   "body_chars": 1449,
    "video_candidates": 3,
    "video": true,
    "problems": [
-    "육하원칙 why이(가) 너무 김 (20자, 18자 이내로): 러시아는 국제법 위반이 아니라고 주장…",
-    "발문 impact_question이(가) 너무 김 (33자, 30자 이내로): 우리나라 영공 근처에 군용기가 나타나…"
+    "학습용 기사가 너무 짧음 (308자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ],
-   "alerts": []
+   "alerts": [
+    "아이들이 불안해할 수 있어요"
+   ]
   },
   {
    "rank": 3,
-   "body_chars": 1852,
-   "video_candidates": 2,
-   "video": true,
-   "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (25자, 20자 이내로): 시험 등에서 정당하지 않은 방법으로 …",
-    "도전 문항이(가) 너무 김 (49자, 45자 이내로): AI의 부정행위를 막기 위해 기술 외…",
-    "학습용 기사가 너무 짧음 (377자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
-   ],
+   "body_chars": 1714,
+   "video_candidates": 1,
+   "video": false,
+   "problems": [],
    "alerts": []
   },
   {
    "rank": 4,
    "body_chars": 0,
-   "video_candidates": 1,
-   "video": true,
-   "problems": [],
+   "video_candidates": 0,
+   "video": false,
+   "problems": [
+    "학습용 기사가 너무 짧음 (426자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+   ],
    "alerts": []
   },
   {
    "rank": 5,
-   "body_chars": 0,
-   "video_candidates": 0,
+   "body_chars": 1832,
+   "video_candidates": 1,
    "video": false,
    "problems": [
-    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 지역 특산물을 수출하는 것이 경제에 …",
-    "발문 impact_question이(가) 너무 김 (31자, 30자 이내로): 우리 동네 특산물이 세계에 알려지면 …",
-    "발문 wonder_question이(가) 너무 김 (31자, 30자 이내로): 우리 지역에서 외국으로 수출하면 좋을…"
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 내 생각을 그냥 말로만 전하는 거예요…"
    ],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-25T06:17+09:00"
+ "finished_at": "2026-11-26T06:01+09:00"
 }
