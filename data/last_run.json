@@ -33,19 +33,19 @@
   {
    "source": "YTN",
    "via": "google",
-   "count": 97,
+   "count": 95,
    "raw_entries": 100
   },
   {
    "source": "KBS",
    "via": "google",
-   "count": 96,
+   "count": 94,
    "raw_entries": 100
   },
   {
    "source": "MBC",
    "via": "google",
-   "count": 96,
+   "count": 97,
    "raw_entries": 100
   },
   {
@@ -57,14 +57,14 @@
   {
    "source": "JTBC",
    "via": "google",
-   "count": 96,
+   "count": 98,
    "raw_entries": 100
   },
   {
    "source": "연합뉴스TV",
    "via": "google",
-   "count": 90,
-   "raw_entries": 100
+   "count": 89,
+   "raw_entries": 99
   }
  ],
  "notes": [],
@@ -81,87 +81,98 @@
  "picks": [
   {
    "rank": 1,
-   "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "이 대통령 \"2030년까지 매년 24만호 공적주택 공급\""
+   "type": "debate",
+   "source": "JTBC",
+   "title": "수능 만점 받고도 숨는다…AI 부정행위 논란에 ‘쉬쉬’"
   },
   {
    "rank": 2,
    "type": "useful",
-   "source": "SBS",
-   "title": "차에 치이고도 '벌떡'…모습 감추자 \"외출 자제하라\""
+   "source": "YTN",
+   "title": "미국 '과잉 생산 관세' 한국 15% 유지...'25% 인상' 여지는 남겨"
   },
   {
    "rank": 3,
-   "type": "debate",
+   "type": "useful",
    "source": "SBS",
-   "title": "강남서 50곳 넘게 '걸어서 배달'…결국 현수막 걸렸다"
+   "title": "'핵잠 원자로' 추정 장비…회담 요구에 핵으로 답하다"
   },
   {
    "rank": 4,
    "type": "useful",
-   "source": "연합뉴스TV",
-   "title": "돈뭉치 내놓고도 \"금액 줄어 죄송\"…14년째 찾아온 기부 천사"
+   "source": "SBS",
+   "title": "종부세 19만 명 더 낸다…\"저절로 올랐는데\" 불만도"
   },
   {
    "rank": 5,
-   "type": "debate",
+   "type": "useful",
    "source": "SBS",
-   "title": "1700만 줄 쓰고 \"풀었다\"…\"수학자는 끝났다\" 자괴감"
+   "title": "'고물가 우려' 금리 또 인상…내년 성장률 4.1%로 높여"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "body_chars": 646,
-   "video_candidates": 4,
+   "body_chars": 898,
+   "video_candidates": 3,
    "video": true,
    "problems": [
-    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 정부는 2030년까지 매년 24만 호…"
+    "오늘의 낱말 '개정안'이(가) 학습용 기사에 없음 — 기사 본문(happened나 why)에 '개정안'를 그대로 넣어 다시 쓸 것"
    ],
    "alerts": []
   },
   {
    "rank": 2,
-   "body_chars": 1449,
-   "video_candidates": 3,
+   "body_chars": 1230,
+   "video_candidates": 8,
    "video": true,
    "problems": [
-    "학습용 기사가 너무 짧음 (308자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 다른 나라 물건을 들여올 때 내는 세…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 나라와 나라 사이에 물건을 주고받는 …",
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 미국은 한국에 대한 관세 상한 15%…",
+    "사실·의견 문장이(가) 너무 김 (32자, 30자 이내로): 미국이 관세를 25%까지 올릴 수 있…",
+    "사실·의견 문장이(가) 너무 김 (37자, 30자 이내로): 이번 발표는 실제로 관세를 높이려는 …",
+    "사실·의견 문장이(가) 너무 김 (37자, 30자 이내로): 우리 정부가 글로벌 공급 과잉을 유발…",
+    "발문 impact_question이(가) 너무 김 (33자, 30자 이내로): 다른 나라와의 무역 갈등은 우리 생활…"
    ],
+   "alerts": []
+  },
+  {
+   "rank": 3,
+   "body_chars": 1891,
+   "video_candidates": 1,
+   "video": true,
+   "problems": [],
    "alerts": [
     "아이들이 불안해할 수 있어요"
    ]
   },
   {
-   "rank": 3,
-   "body_chars": 1714,
+   "rank": 4,
+   "body_chars": 1653,
    "video_candidates": 1,
    "video": false,
-   "problems": [],
-   "alerts": []
-  },
-  {
-   "rank": 4,
-   "body_chars": 0,
-   "video_candidates": 0,
-   "video": false,
    "problems": [
-    "학습용 기사가 너무 짧음 (426자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
+    "낱말 뜻 보기이(가) 너무 김 (22자, 20자 이내로): 비싼 집을 가진 사람이 내는 세금이에…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 정부가 정한 집의 공식적인 가격이에요…",
+    "도전 문항이(가) 너무 김 (49자, 45자 이내로): 집값을 올리지 않았는데 세금이 늘어나…"
    ],
    "alerts": []
   },
   {
    "rank": 5,
-   "body_chars": 1832,
+   "body_chars": 1746,
    "video_candidates": 1,
    "video": false,
    "problems": [
-    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 내 생각을 그냥 말로만 전하는 거예요…"
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 은행에서 돈을 빌려주는 쉬운 방법이에…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 물건을 살 때 꼭 내야 하는 세금이에…",
+    "낱말 뜻 보기이(가) 너무 김 (21자, 20자 이내로): 공장에서 물건을 만들 때 드는 돈이에…",
+    "학습용 기사가 너무 짧음 (325자) — happened 3문단(문단마다 3~4문장) + why 3~4문장, 합쳐서 500~800자로 다시 쓸 것"
    ],
    "alerts": []
   }
  ],
  "status": "성공",
- "finished_at": "2026-11-26T06:01+09:00"
+ "finished_at": "2026-11-27T05:52+09:00"
 }
